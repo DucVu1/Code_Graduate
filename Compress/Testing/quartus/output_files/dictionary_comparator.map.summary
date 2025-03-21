@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Mar 14 00:52:20 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : dictionary_comparator
+Top-level Entity Name : zzzz_zzzx_comparator2
+Family : Cyclone II
+Total logic elements : 754
+    Total combinational functions : 754
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 570
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

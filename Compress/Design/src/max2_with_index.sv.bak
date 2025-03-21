@@ -1,0 +1,45 @@
+module max2_with_index#(parameter WIDTH = 3)(
+    input  logic [WIDTH - 1:0] i_a,
+    input  logic [WIDTH - 1:0] i_b,
+    input  logic [3:0] idxA,
+    input  logic [3:0] idxB,
+    input  logic       alignA,
+    input  logic       alignB,
+    output logic [3:0] max_out,
+    output logic [3:0] max_idx,
+    output logic       max_align
+);
+    wire a_gt_b, equal;
+    gt4 comp (
+        .i_a(i_a),
+        .i_b(i_b),
+        .o_a_gt_b(a_gt_b),
+        .o_equal(equal)
+    );
+    
+    always_comb begin
+        if(a_gt_b) begin //a greater than
+            max_out   = i_a;
+            max_idx   = idxA;
+            max_align = alignA;
+        end else if(~a_gt_b && ~equal) begin // b is greater
+            max_out   = i_b;
+            max_idx   = idxB;
+            max_align = alignB;
+        end else begin // A equals B, decide by alignment
+            if(alignA && ~alignB) begin
+                max_out   = i_a;
+                max_idx   = idxA;
+                max_align = alignA;
+            end else if(alignB && ~alignA) begin
+                max_out   = i_b;
+                max_idx   = idxB;
+                max_align = alignB;
+            end else begin
+                max_out   = i_a;
+                max_idx   = idxA;
+                max_align = alignA;
+            end
+        end
+    end
+endmodule

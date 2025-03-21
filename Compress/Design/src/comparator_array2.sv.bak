@@ -1,0 +1,26 @@
+module comparator_array2#(parameter INPUT_WORD = 32, DICT_ENTRY = 16, DICT_WORD = 32)(
+    input logic [INPUT_WORD - 1:0] i_input,
+    input logic [INPUT_WORD*DICT_ENTRY - 1:0] i_dict,
+    output logic [1:0] o_type_matched,
+    output logic o_align,
+    output logic o_location
+);
+
+logic [DICT_ENTRY * 4 - 1 : 0] no_match;
+logic [DICT_ENTRY - 1: 0] align;
+
+generate
+ genvar i;
+  for (i = 0; i < 16; i = i + 1) begin : gen_compare
+   word_comparator #(.INPUT_WORD(INPUT_WORD),
+                .COMPARE_WORD(DICT_WORD)) comparator_inst (
+                .i_input(i_input),
+                .i_dict(i_dict[(i+1)*DICT_WORD - 1 : i*DICT_WORD]),
+                .o_no_match(no_match[(i+1)*4 - 1: i*4])
+                .o_align(align[i])
+               );
+  end
+endgenerate
+
+
+endmodule

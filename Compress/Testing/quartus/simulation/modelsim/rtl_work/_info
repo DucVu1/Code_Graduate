@@ -1,0 +1,95 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Duc\A PLACE HOLDER\University\Code Graduate\Compress\Testing\quartus\simulation\modelsim
+vfifo_dict_tb
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I_9ZKBmARORI>cPomfHjkL3
+VTm5Cb:hWd5^LoVe7YlA`l1
+S1
+Z2 dC:\Users\Duc\A PLACE HOLDER\University\Code Graduate\Compress\Testing\quartus\simulation\modelsim
+w1741712506
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/fifio_dict_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/fifio_dict_tb.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-work work -O0
+!i10b 1
+!s100 J62>[bVdWVRIf5<c5JLQN1
+!s105 fifio_dict_tb_sv_unit
+!s85 0
+!s108 1741869366.323000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/fifio_dict_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/fifio_dict_tb.sv|
+!s101 -O0
+vpriority_encoder_64
+R1
+IzE[]=YYPHPB2L[QMFe:2g1
+VfcdKaMYlS2g]N=cjn]Zb42
+Z5 !s105 zzzz_zzzzx_comparator_with_priority_encoder_sv_unit
+S1
+R2
+Z6 w1741839310
+Z7 8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/src/zzzz_zzzzx_comparator_with_priority_encoder.sv
+Z8 FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/src/zzzz_zzzzx_comparator_with_priority_encoder.sv
+L0 51
+R3
+r1
+31
+Z9 !s108 1741869340.392000
+Z10 !s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/src/zzzz_zzzzx_comparator_with_priority_encoder.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/src|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/src/zzzz_zzzzx_comparator_with_priority_encoder.sv|
+Z12 o-sv -work work -O0
+Z13 !s92 -sv -work work {+incdir+C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/src} -O0
+!i10b 1
+!s100 MGoiQmF97P3@KCI7inlU?1
+!s85 0
+!s101 -O0
+vtb_zzzz_zzzx_comparator
+R1
+!i10b 1
+!s100 =<9?5jh[L7f=@>enYA?4g0
+ICdJ0jaCfgi1`FP2`Vg3Bd2
+V4Hn1GFXFLQ:?7I=ZQ=DMz3
+!s105 zzzz_zzzx_with_pe_tb_sv_unit
+S1
+R2
+w1741761365
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/zzzz_zzzx_with_pe_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/zzzz_zzzx_with_pe_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1741869798.684000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/zzzz_zzzx_with_pe_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/zzzz_zzzx_with_pe_tb.sv|
+!s101 -O0
+R4
+vzzzz_zzzx_comparator2
+R1
+IAQin@S@MbiHhi@?PjPEhP1
+Vi;gm_=oLP4ODOT>g9R_`<2
+R5
+S1
+R2
+R6
+R7
+R8
+L0 1
+R3
+r1
+31
+R9
+R10
+R11
+R12
+R13
+!i10b 1
+!s100 P^1a:FGZWKG[PZaPXYV9?2
+!s85 0
+!s101 -O0

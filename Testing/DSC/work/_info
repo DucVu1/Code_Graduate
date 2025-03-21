@@ -1,0 +1,65 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/Users/Duc/A PLACE HOLDER/QuestaSim/Capstone2/IPC/pipeline_with_cache_2612
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1739293303
+V:YhYZ0mf[i=@DdfdHRF[`0
+04 12 4 work dsc_cache_tb fast 0
+=1-a02919970ead-67ab8277-c9-6610
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.2c;57
+vDSC
+Z0 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+!s100 3gmCI@:[Q:3Wj33O<;mDG0
+ICELRM0C115oEe_9biacmm2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 DSC_sv_unit
+S1
+Z2 dC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC
+w1739293278
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/src/DSC.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/src/DSC.sv
+L0 1
+Z3 OL;L;10.2c;57
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/src/DSC.sv|
+Z4 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@d@s@c
+Z5 !s110 1739293301
+!s108 1739293301.568000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/src/DSC.sv|
+!i10b 1
+!s85 0
+!i111 0
+vdsc_cache_tb
+Z6 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+R5
+IANz@>9c`WmmzSjk2Yi^B41
+R1
+!s105 DSC_tb_sv_unit
+S1
+R2
+w1739293299
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/tb/DSC_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/tb/DSC_tb.sv
+L0 1
+R3
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/tb/DSC_tb.sv|
+R4
+!i10b 1
+!s100 mJ30AOXS4:e>3XS?ILidb1
+!s85 0
+!s108 1739293301.621000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/tb/DSC_tb.sv|
+!i111 0

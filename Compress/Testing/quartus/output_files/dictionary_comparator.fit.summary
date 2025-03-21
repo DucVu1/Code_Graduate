@@ -1,0 +1,16 @@
+Fitter Status : Failed - Tue Mar 11 19:53:32 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : dictionary_comparator
+Top-level Entity Name : fifo_dict
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 6,830 / 33,216 ( 21 % )
+    Total combinational functions : 2,734 / 33,216 ( 8 % )
+    Dedicated logic registers : 4,108 / 33,216 ( 12 % )
+Total registers : 4108
+Total pins : 553 / 475 ( 116 % )
+Total virtual pins : 0
+Total memory bits : 0 / 483,840 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

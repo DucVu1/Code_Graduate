@@ -1,0 +1,15 @@
+{C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/tb/DSC_tb.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/tb/DSC_tb.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module dsc_cache_tb
+
+Top level modules:
+	dsc_cache_tb
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/src/DSC.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Testing/DSC/src/DSC.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module DSC
+
+Top level modules:
+	DSC
+
+} {} {}}

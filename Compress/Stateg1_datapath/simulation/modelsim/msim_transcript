@@ -1,0 +1,175 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do matching_stage_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_decoder
+# 
+# Top level modules:
+# 	word_decoder
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_length_genetator
+# 
+# Top level modules:
+# 	word_length_genetator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_comparator
+# 
+# Top level modules:
+# 	word_comparator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max2_with_index
+# 
+# Top level modules:
+# 	max2_with_index
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max_selector
+# 
+# Top level modules:
+# 	max_selector
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matching_stage
+# 
+# Top level modules:
+# 	matching_stage
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/fifo_dict.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_dict
+# 
+# Top level modules:
+# 	fifo_dict
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_signal_generator
+# 
+# Top level modules:
+# 	control_signal_generator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module compare_value
+# 
+# Top level modules:
+# 	compare_value
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array4
+# 
+# Top level modules:
+# 	comparator_array4
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array2
+# 
+# Top level modules:
+# 	comparator_array2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array1
+# 
+# Top level modules:
+# 	comparator_array1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_matching_stage
+# 
+# Top level modules:
+# 	tb_matching_stage
+vsim -voptargs=+acc work.tb_matching_stage
+# vsim -voptargs=+acc work.tb_matching_stage 
+# Loading sv_std.std
+# Loading work.tb_matching_stage
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.control_signal_generator
+# Loading work.word_length_genetator
+# Loading work.comparator
+add wave -position insertpoint sim:/tb_matching_stage/*
+run -all
+# Dictionary preloaded.
+# --- Test Case 1 ---
+# [Pattern Check] First Word = 00000000, Second Word = 55aa55aa
+#   o_code1 = 000, o_length1 =  2
+#   o_code2 = 101, o_length2 = 34
+# [PASS] First word pattern matches.
+# [ERROR] Second word pattern mismatch: Expected code=010, length=12
+# [Dictionary Check] First Word = 00000000, Second Word = 55aa55aa
+#   o_location2 =  8, o_location4 =  0
+# [ERROR] Dictionary first word mismatch: Expected location =  5
+# [ERROR] Dictionary second word mismatch: Expected location =  7
+# --- Test Case 2 ---
+# [Pattern Check] First Word = ffffffff, Second Word = 12345678
+#   o_code1 = 001, o_length1 =  6
+#   o_code2 = 101, o_length2 = 34
+# [PASS] First word pattern matches.
+# [ERROR] Second word pattern mismatch: Expected code=100, length= 5
+# [Dictionary Check] First Word = ffffffff, Second Word = 12345678
+#   o_location2 =  9, o_location4 =  0
+# [ERROR] Dictionary first word mismatch: Expected location =  3
+# [ERROR] Dictionary second word mismatch: Expected location = 10
+# --- Test Case 3 ---
+# [Pattern Check] First Word = 000000a5, Second Word = facecafe
+#   o_code1 = 000, o_length1 =  2
+#   o_code2 = 101, o_length2 = 34
+# [ERROR] First word pattern mismatch: Expected code=010, length=12
+# [ERROR] Second word pattern mismatch: Expected code=011, length=16
+# [Dictionary Check] First Word = 000000a5, Second Word = facecafe
+#   o_location2 = 11, o_location4 =  0
+# [ERROR] Dictionary first word mismatch: Expected location =  8
+# [ERROR] Dictionary second word mismatch: Expected location = 12
+# All tests completed.
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv(184)
+#    Time: 175 ns  Iteration: 0  Instance: /tb_matching_stage
+# 1
+# Break in Module tb_matching_stage at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv line 184
+# Can't move the Now cursor.
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_fifo_dict
+# 
+# Top level modules:
+# 	tb_fifo_dict
+vsim -voptargs=+acc work.tb_fifo_dict
+# vsim -voptargs=+acc work.tb_fifo_dict 
+# Loading sv_std.std
+# Loading work.tb_fifo_dict
+# Loading work.fifo_dict
+add wave -position insertpoint sim:/tb_fifo_dict/*
+run -all
+# After single write: r_data = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, full = 0
+# After dual write: r_data = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, full = 0
+# After filling FIFO: r_data = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, full = 0
+# After wrap-around dual write: r_data = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, full = 0
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv(98)
+#    Time: 125 ns  Iteration: 0  Instance: /tb_fifo_dict
+# 1
+# Break in Module tb_fifo_dict at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv line 98
