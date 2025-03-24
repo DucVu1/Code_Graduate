@@ -1,0 +1,141 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do length_acummulator_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage2/Stage2/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/src/word_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_length_genetator
+# 
+# Top level modules:
+# 	word_length_genetator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage2/Stage2/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/src/length_generation.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_generation
+# 
+# Top level modules:
+# 	length_generation
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage2/Stage2/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/src/length_accumulator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_accumulator
+# 
+# Top level modules:
+# 	length_accumulator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage2/Stage2/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/src/total_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module total_length_generator
+# 
+# Top level modules:
+# 	total_length_generator
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_generation_tb
+# 
+# Top level modules:
+# 	length_generation_tb
+vsim -voptargs=+acc work.length_generation_tb
+# vsim -voptargs=+acc work.length_generation_tb 
+# Loading sv_std.std
+# Loading work.length_generation_tb
+# Loading work.length_generation
+# Loading work.length_accumulator
+# Loading work.total_length_generator
+# Loading work.word_length_genetator
+# ** Error: (vsim-3043) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv(53): Unresolved reference to 'tb_module'.
+# 
+#         Region: /length_generation_tb
+# Error loading design
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_generation_tb
+# 
+# Top level modules:
+# 	length_generation_tb
+vsim -voptargs=+acc work.length_generation_tb
+# vsim -voptargs=+acc work.length_generation_tb 
+# Loading sv_std.std
+# Loading work.length_generation_tb
+# Loading work.length_generation
+# Loading work.length_accumulator
+# Loading work.total_length_generator
+# Loading work.word_length_genetator
+add wave -position insertpoint sim:/length_generation_tb/*
+run -all
+# Time=0: i_type_matched2=0000, i_type_matched1=00, i_match_s=00, o_store_flag=0, o_shift_amount=  x, o_send_back=0
+# Time=15000: i_type_matched2=0000, i_type_matched1=00, i_match_s=00, o_store_flag=1, o_shift_amount=  4, o_send_back=0
+# Time=25000: i_type_matched2=1100, i_type_matched1=11, i_match_s=01, o_store_flag=0, o_shift_amount= 12, o_send_back=0
+# ** Error: Mismatch at time 35000: Expected o_shift_amount=  0, Got o_shift_amount= 12
+#    Time: 35 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=35000: i_type_matched2=1010, i_type_matched1=00, i_match_s=10, o_store_flag=0, o_shift_amount= 40, o_send_back=0
+# ** Error: Mismatch at time 45000: Expected o_shift_amount=  0, Got o_shift_amount= 40
+#    Time: 45 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=45000: i_type_matched2=0111, i_type_matched1=01, i_match_s=11, o_store_flag=0, o_shift_amount= 54, o_send_back=0
+# ** Error: Mismatch at time 55000: Expected o_shift_amount=  0, Got o_shift_amount= 54
+#    Time: 55 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=55000: i_type_matched2=0000, i_type_matched1=10, i_match_s=00, o_store_flag=1, o_shift_amount= 58, o_send_back=1
+# ** Error: Mismatch at time 65000: Expected o_store_flag=0, Got o_store_flag=1
+#    Time: 65 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 98
+# ** Error: Mismatch at time 65000: Expected o_shift_amount=  0, Got o_shift_amount= 58
+#    Time: 65 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# ** Error: Mismatch at time 65000: Expected o_send_back=0, Got o_send_back=1
+#    Time: 65 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 106
+# Time=65000: i_type_matched2=1111, i_type_matched1=11, i_match_s=11, o_store_flag=0, o_shift_amount= 62, o_send_back=0
+# ** Error: Mismatch at time 75000: Expected o_shift_amount=  0, Got o_shift_amount= 62
+#    Time: 75 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=75000: i_type_matched2=0100, i_type_matched1=01, i_match_s=01, o_store_flag=1, o_shift_amount= 24, o_send_back=0
+# ** Error: Mismatch at time 85000: Expected o_store_flag=0, Got o_store_flag=1
+#    Time: 85 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 98
+# ** Error: Mismatch at time 85000: Expected o_shift_amount=  0, Got o_shift_amount= 24
+#    Time: 85 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=85000: i_type_matched2=0011, i_type_matched1=01, i_match_s=01, o_store_flag=0, o_shift_amount= 60, o_send_back=0
+# ** Error: Mismatch at time 95000: Expected o_shift_amount=  0, Got o_shift_amount= 60
+#    Time: 95 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=95000: i_type_matched2=0101, i_type_matched1=10, i_match_s=01, o_store_flag=1, o_shift_amount= 32, o_send_back=1
+# ** Error: Mismatch at time 105000: Expected o_store_flag=0, Got o_store_flag=1
+#    Time: 105 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 98
+# ** Error: Mismatch at time 105000: Expected o_shift_amount=  0, Got o_shift_amount= 32
+#    Time: 105 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# ** Error: Mismatch at time 105000: Expected o_send_back=0, Got o_send_back=1
+#    Time: 105 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 106
+# Time=105000: i_type_matched2=1101, i_type_matched1=10, i_match_s=01, o_store_flag=0, o_shift_amount= 50, o_send_back=0
+# ** Error: Mismatch at time 115000: Expected o_shift_amount=  0, Got o_shift_amount= 50
+#    Time: 115 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=115000: i_type_matched2=1101, i_type_matched1=00, i_match_s=01, o_store_flag=1, o_shift_amount=  4, o_send_back=0
+# ** Error: Mismatch at time 125000: Expected o_store_flag=0, Got o_store_flag=1
+#    Time: 125 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 98
+# ** Error: Mismatch at time 125000: Expected o_shift_amount=  0, Got o_shift_amount=  4
+#    Time: 125 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=125000: i_type_matched2=0110, i_type_matched1=01, i_match_s=10, o_store_flag=0, o_shift_amount= 32, o_send_back=0
+# ** Error: Mismatch at time 135000: Expected o_shift_amount=  0, Got o_shift_amount= 32
+#    Time: 135 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=135000: i_type_matched2=0101, i_type_matched1=11, i_match_s=10, o_store_flag=0, o_shift_amount= 58, o_send_back=0
+# ** Error: Mismatch at time 145000: Expected o_shift_amount=  0, Got o_shift_amount= 58
+#    Time: 145 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=145000: i_type_matched2=1111, i_type_matched1=10, i_match_s=10, o_store_flag=1, o_shift_amount=  2, o_send_back=1
+# ** Error: Mismatch at time 155000: Expected o_store_flag=0, Got o_store_flag=1
+#    Time: 155 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 98
+# ** Error: Mismatch at time 155000: Expected o_shift_amount=  0, Got o_shift_amount=  2
+#    Time: 155 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# ** Error: Mismatch at time 155000: Expected o_send_back=0, Got o_send_back=1
+#    Time: 155 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 106
+# Time=155000: i_type_matched2=1000, i_type_matched1=01, i_match_s=00, o_store_flag=0, o_shift_amount= 52, o_send_back=0
+# ** Error: Mismatch at time 165000: Expected o_shift_amount=  0, Got o_shift_amount= 52
+#    Time: 165 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Time=165000: i_type_matched2=1101, i_type_matched1=01, i_match_s=01, o_store_flag=0, o_shift_amount= 60, o_send_back=0
+# ** Error: Mismatch at time 175000: Expected o_shift_amount=  0, Got o_shift_amount= 60
+#    Time: 175 ns  Scope: length_generation_tb.test_case File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv Line: 102
+# Test complete.
+# Time=175000: i_type_matched2=1101, i_type_matched1=01, i_match_s=01, o_store_flag=1, o_shift_amount=  4, o_send_back=0
+# Time=185000: i_type_matched2=1101, i_type_matched1=01, i_match_s=01, o_store_flag=0, o_shift_amount= 12, o_send_back=0
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv(79)
+#    Time: 195 ns  Iteration: 0  Instance: /length_generation_tb
+# 1
+# Break in Module length_generation_tb at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage2/Stage2/test/length_generation_tb.sv line 79

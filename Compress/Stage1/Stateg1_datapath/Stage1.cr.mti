@@ -1,0 +1,106 @@
+{C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator_array1
+
+Top level modules:
+	comparator_array1
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module word_decoder
+
+Top level modules:
+	word_decoder
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module max2_with_index
+
+Top level modules:
+	max2_with_index
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module word_length_genetator
+
+Top level modules:
+	word_length_genetator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module compare_value
+
+Top level modules:
+	compare_value
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module word_comparator
+
+Top level modules:
+	word_comparator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module matching_stage
+
+Top level modules:
+	matching_stage
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module max_selector
+
+Top level modules:
+	max_selector
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator_array2
+
+Top level modules:
+	comparator_array2
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_fifo_dict
+
+Top level modules:
+	tb_fifo_dict
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator_array4
+
+Top level modules:
+	comparator_array4
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_matching_stage
+
+Top level modules:
+	tb_matching_stage
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module control_signal_generator
+
+Top level modules:
+	control_signal_generator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/comparator_array2_tb.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/comparator_array2_tb.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_comparator_array2
+
+Top level modules:
+	tb_comparator_array2
+
+} {} {}}

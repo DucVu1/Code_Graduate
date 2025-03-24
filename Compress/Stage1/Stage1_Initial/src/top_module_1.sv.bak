@@ -1,0 +1,51 @@
+module TopModule (
+    input  logic [31:0]                 in_word,
+    input  logic [16*32-1:0]            dictionary_i, // 16 words of 32 bits = 512 bits total
+    output logic [5:0]                  dictionary_index, // Overall dictionary byte index (0 to 63)
+    output logic [7:0]                  matched_byte,     // The matched dictionary byte
+    output logic [11:0]                 out_code          // 12-bit output code
+);
+
+    // Wires from the comparator_core.
+    logic [63:0] cmp_vec;
+    logic match_zzzz;
+    logic msb24_match;
+    
+    // Instantiate the comparator core.
+    zzzz_zzzx_comparator2 #(
+        .WIDTH(32),
+        .WORDS(16),
+        .BYTE(8)
+    ) comp_core_inst (
+        .in_word(in_word),
+        .dictionary_i(dictionary_i),
+        .cmp_vec(cmp_vec),
+        .match_zzzz(match_zzzz),
+        .msb24_match(msb24_match)
+    );
+    
+    // Instantiate the priority encoder to get the dictionary index.
+    priority_encoder_64 pe_inst (
+        .vec(cmp_vec),
+        .index(dictionary_index)
+    );
+    
+    // Extract the matched byte using the dictionary_index.
+    // The dictionary is treated as 64 bytes; each byte is 8 bits.
+    assign matched_byte = dictionary_i[((dictionary_index+1)*8)-1 -: 8];
+
+    // Generate the 12-bit output code.
+    // - If in_word is all zero, output "00" (12'b0000_00000000).
+    // - Else if the "zzzx" condition holds (upper 24 bits are zero and at least one match),
+    //   output {4'b1101, matched_byte}.
+    // - Otherwise, output 12'b0.
+    always_comb begin
+        if (match_zzzz)
+            out_code = 12'b0000_00000000;
+        else if (msb24_match && (|cmp_vec))
+            out_code = {4'b1101, matched_byte};
+        else
+            out_code = 12'b0;
+    end
+
+endmodule

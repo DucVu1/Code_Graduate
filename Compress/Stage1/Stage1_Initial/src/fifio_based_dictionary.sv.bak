@@ -1,0 +1,50 @@
+module fifo_dict #(parameter ADDR_WIDTH = 3, DATA_WIDTH = 32, WORDS_PER_ENTRY = 16)(
+    input logic clk, reset, wr, lookup,
+    input logic [DATA_WIDTH-1:0] w_data,  // 32-bit input data
+    input logic [ADDR_WIDTH-1:0] lookup_index, // Lookup key (entry index)
+    output logic [WORDS_PER_ENTRY * DATA_WIDTH - 1:0] r_data, // 512-bit output data
+    output logic full, empty
+);
+    logic [ADDR_WIDTH - 1:0] w_addr, r_addr;
+    logic w_en;
+    logic [$clog2(WORDS_PER_ENTRY)-1:0] word_index;  // Track write position within an entry
+
+    assign w_en = ~full & wr; 
+
+    // Register file to store 64B entries
+    reg_file #(.ADDR_WIDTH(ADDR_WIDTH), .DATA_WIDTH(DATA_WIDTH), .WORDS_PER_ENTRY(WORDS_PER_ENTRY)) 
+        reg_file_inst (
+            .clk(clk), 
+            .w_en(w_en), 
+            .w_data(w_data), 
+            .w_addr(w_addr), 
+            .word_index(word_index),
+            .r_data(r_data), 
+            .r_addr(lookup ? lookup_index : r_addr) // Lookup or FIFO read
+        );
+
+    // FIFO Control for replacement and read/write pointers
+    fifo_ctrl #(.ADDR_WIDTH(ADDR_WIDTH)) 
+        ctrl_inst (
+            .clk(clk), 
+            .reset(reset), 
+            .wr(word_index == (WORDS_PER_ENTRY - 1) && wr),  // Only move FIFO when full entry is written
+            .rd(lookup ? 1'b0 : 1'b1), // Read only if not looking up
+            .full(full), 
+            .empty(empty), 
+            .w_addr(w_addr), 
+            .r_addr(r_addr)
+        );
+
+    // Track word position inside each 64B entry
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset)
+            word_index <= 0;
+        else if (wr) begin
+            if (word_index == (WORDS_PER_ENTRY - 1))
+                word_index <= 0;  // Reset when full entry is written
+            else
+                word_index <= word_index + 1;
+        end
+    end
+endmodule

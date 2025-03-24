@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/zzzz_zzzzx_comparator2.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/top_module_1.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/priority_encoder.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/comparator.sv}
+

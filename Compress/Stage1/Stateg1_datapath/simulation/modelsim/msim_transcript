@@ -1,0 +1,417 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do matching_stage_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_decoder
+# 
+# Top level modules:
+# 	word_decoder
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_length_genetator
+# 
+# Top level modules:
+# 	word_length_genetator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_comparator
+# 
+# Top level modules:
+# 	word_comparator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max2_with_index
+# 
+# Top level modules:
+# 	max2_with_index
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max_selector
+# 
+# Top level modules:
+# 	max_selector
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matching_stage
+# 
+# Top level modules:
+# 	matching_stage
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/fifo_dict.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_dict
+# -- Compiling module fifo_ptr_gen
+# -- Compiling module reg_file_dual
+# 
+# Top level modules:
+# 	fifo_dict
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_signal_generator
+# 
+# Top level modules:
+# 	control_signal_generator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module compare_value
+# 
+# Top level modules:
+# 	compare_value
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array4
+# 
+# Top level modules:
+# 	comparator_array4
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array2
+# 
+# Top level modules:
+# 	comparator_array2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array1
+# 
+# Top level modules:
+# 	comparator_array1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stateg1_datapath/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_matching_stage
+# 
+# Top level modules:
+# 	tb_matching_stage
+vsim -voptargs=+acc work.tb_matching_stage
+# vsim -voptargs=+acc work.tb_matching_stage 
+# Loading sv_std.std
+# Loading work.tb_matching_stage
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.control_signal_generator
+# Loading work.word_length_genetator
+# Loading work.comparator
+add wave -position insertpoint sim:/tb_matching_stage/*
+run -all
+# [Cycle 5000] word: 0000000000000000
+# [Cycle 5000] dictionary_data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# [Cycle 15000] word: 0000000000000000
+# [Cycle 15000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 25000] word: 0000000000000000
+# [Cycle 25000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 35000] word: 11223344aabbccdd
+# [Cycle 35000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 45000] word: 99aabbcc55667788
+# [Cycle 45000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 55000] word: 12345678ddeeff00
+# [Cycle 55000] dictionary_data: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011223344aabbccdd
+# [Cycle 65000] word: 0f0e0d0c9abcdef0
+# [Cycle 65000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000099aabbcc5566778811223344aabbccdd
+# [Cycle 75000] word: fedcba9887654321
+# [Cycle 75000] dictionary_data: 0000000000000000000000000000000000000000000000000000000000000000000000000000000012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 85000] word: 4455667700112233
+# [Cycle 85000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 95000] word: ccddeeff8899aabb
+# [Cycle 95000] dictionary_data: 000000000000000000000000000000000000000000000000fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 105000] word: 5060708010203040
+# [Cycle 105000] dictionary_data: 000000000000000000000000000000004455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# Dictionary preloaded.
+# [Cycle 115000] word: aabbccdd11223344
+# [Cycle 115000] dictionary_data: 0000000000000000ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 125000] word: aabbccdd11223344
+# [Cycle 125000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = 11223344, Second Word = aabbccdd
+# [ERROR] First word mismatch
+# [ERROR] Second word mismatch
+# [Cycle 135000] word: 5566778899aabbcc
+# [Cycle 135000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 145000] word: 5566778899aabbcc
+# [Cycle 145000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = 99aabbcc, Second Word = 55667788
+# [ERROR] Second word mismatch
+# [Cycle 155000] word: facecafedeadbeef
+# [Cycle 155000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 165000] word: facecafedeadbeef
+# [Cycle 165000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Test for non-matching words]
+# [PASS] No match found as expected.
+# All tests completed.
+# [Cycle 175000] word: facecafedeadbeef
+# [Cycle 175000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# [Cycle 185000] word: facecafedeadbeef
+# [Cycle 185000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv(141)
+#    Time: 195 ns  Iteration: 0  Instance: /tb_matching_stage
+# 1
+# Break in Module tb_matching_stage at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv line 141
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_matching_stage
+# 
+# Top level modules:
+# 	tb_matching_stage
+vsim -voptargs=+acc work.tb_matching_stage
+# vsim -voptargs=+acc work.tb_matching_stage 
+# Loading sv_std.std
+# Loading work.tb_matching_stage
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.control_signal_generator
+# Loading work.word_length_genetator
+# Loading work.comparator
+add wave -position insertpoint sim:/tb_matching_stage/*
+run -all
+# [Cycle 5000] word: 0000000000000000
+# [Cycle 5000] dictionary_data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# [Cycle 15000] word: 0000000000000000
+# [Cycle 15000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 25000] word: 0000000000000000
+# [Cycle 25000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 35000] word: 11223344aabbccdd
+# [Cycle 35000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 45000] word: 99aabbcc55667788
+# [Cycle 45000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 55000] word: 12345678ddeeff00
+# [Cycle 55000] dictionary_data: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011223344aabbccdd
+# [Cycle 65000] word: 0f0e0d0c9abcdef0
+# [Cycle 65000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000099aabbcc5566778811223344aabbccdd
+# [Cycle 75000] word: fedcba9887654321
+# [Cycle 75000] dictionary_data: 0000000000000000000000000000000000000000000000000000000000000000000000000000000012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 85000] word: 4455667700112233
+# [Cycle 85000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 95000] word: ccddeeff8899aabb
+# [Cycle 95000] dictionary_data: 000000000000000000000000000000000000000000000000fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 105000] word: 5060708010203040
+# [Cycle 105000] dictionary_data: 000000000000000000000000000000004455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# Dictionary preloaded.
+# [Cycle 115000] word: aabbccdd11223344
+# [Cycle 115000] dictionary_data: 0000000000000000ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 125000] word: aabbccdd11223344
+# [Cycle 125000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = 11223344, Second Word = aabbccdd
+# [ERROR] First word mismatch
+# [ERROR] Second word mismatch
+# [Dictionary Check] First Word = 11223344, Second Word = aabbccdd
+# [Cycle 135000] word: 5566778899aabbcc
+# [Cycle 135000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 145000] word: 5566778899aabbcc
+# [Cycle 145000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = 99aabbcc, Second Word = 55667788
+# [ERROR] Second word mismatch
+# [Dictionary Check] First Word = 99aabbcc, Second Word = 55667788
+# [Cycle 155000] word: facecafedeadbeef
+# [Cycle 155000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 165000] word: facecafedeadbeef
+# [Cycle 165000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Test for non-matching words]
+# [PASS] No match found as expected.
+# All tests completed.
+# [Cycle 175000] word: facecafedeadbeef
+# [Cycle 175000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# [Cycle 185000] word: facecafedeadbeef
+# [Cycle 185000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv(141)
+#    Time: 195 ns  Iteration: 0  Instance: /tb_matching_stage
+# 1
+# Break in Module tb_matching_stage at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv line 141
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_matching_stage
+# 
+# Top level modules:
+# 	tb_matching_stage
+vsim -voptargs=+acc work.tb_matching_stage
+# vsim -voptargs=+acc work.tb_matching_stage 
+# Loading sv_std.std
+# Loading work.tb_matching_stage
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.control_signal_generator
+# Loading work.word_length_genetator
+# Loading work.comparator
+add wave -position insertpoint sim:/tb_matching_stage/*
+run -all
+# [Cycle 5000] word: 0000000000000000
+# [Cycle 5000] dictionary_data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# [Cycle 15000] word: 0000000000000000
+# [Cycle 15000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 25000] word: 0000000000000000
+# [Cycle 25000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 35000] word: 11223344aabbccdd
+# [Cycle 35000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 45000] word: 99aabbcc55667788
+# [Cycle 45000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 55000] word: 12345678ddeeff00
+# [Cycle 55000] dictionary_data: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011223344aabbccdd
+# [Cycle 65000] word: 0f0e0d0c9abcdef0
+# [Cycle 65000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000099aabbcc5566778811223344aabbccdd
+# [Cycle 75000] word: fedcba9887654321
+# [Cycle 75000] dictionary_data: 0000000000000000000000000000000000000000000000000000000000000000000000000000000012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 85000] word: 4455667700112233
+# [Cycle 85000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 95000] word: ccddeeff8899aabb
+# [Cycle 95000] dictionary_data: 000000000000000000000000000000000000000000000000fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 105000] word: 5060708010203040
+# [Cycle 105000] dictionary_data: 000000000000000000000000000000004455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# Dictionary preloaded.
+# [Cycle 115000] word: aabbccdd11223344
+# [Cycle 115000] dictionary_data: 0000000000000000ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 125000] word: aabbccdd11223344
+# [Cycle 125000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = aabbccdd, Second Word = 11223344
+# [ERROR] First word mismatch
+# [ERROR] Second word mismatch
+# [Dictionary Check] First Word = 11223344, Second Word = aabbccdd
+# [Cycle 135000] word: 5566778899aabbcc
+# [Cycle 135000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 145000] word: 5566778899aabbcc
+# [Cycle 145000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = 55667788, Second Word = 99aabbcc
+# [ERROR] Second word mismatch
+# [Dictionary Check] First Word = 99aabbcc, Second Word = 55667788
+# [Cycle 155000] word: facecafedeadbeef
+# [Cycle 155000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 165000] word: facecafedeadbeef
+# [Cycle 165000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Test for non-matching words]
+# [PASS] No match found as expected.
+# All tests completed.
+# [Cycle 175000] word: facecafedeadbeef
+# [Cycle 175000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# [Cycle 185000] word: facecafedeadbeef
+# [Cycle 185000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv(141)
+#    Time: 195 ns  Iteration: 0  Instance: /tb_matching_stage
+# 1
+# Break in Module tb_matching_stage at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv line 141
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_matching_stage
+# 
+# Top level modules:
+# 	tb_matching_stage
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_matching_stage
+# 
+# Top level modules:
+# 	tb_matching_stage
+vsim -voptargs=+acc work.tb_matching_stage
+# vsim -voptargs=+acc work.tb_matching_stage 
+# Loading sv_std.std
+# Loading work.tb_matching_stage
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.control_signal_generator
+# Loading work.word_length_genetator
+# Loading work.comparator
+add wave -position insertpoint sim:/tb_matching_stage/*
+run -all
+# [Cycle 5000] word: 0000000000000000
+# [Cycle 5000] dictionary_data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# [Cycle 15000] word: 0000000000000000
+# [Cycle 15000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 25000] word: 0000000000000000
+# [Cycle 25000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 35000] word: 11223344aabbccdd
+# [Cycle 35000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 45000] word: 99aabbcc55667788
+# [Cycle 45000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# [Cycle 55000] word: 12345678ddeeff00
+# [Cycle 55000] dictionary_data: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011223344aabbccdd
+# [Cycle 65000] word: 0f0e0d0c9abcdef0
+# [Cycle 65000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000099aabbcc5566778811223344aabbccdd
+# [Cycle 75000] word: fedcba9887654321
+# [Cycle 75000] dictionary_data: 0000000000000000000000000000000000000000000000000000000000000000000000000000000012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 85000] word: 4455667700112233
+# [Cycle 85000] dictionary_data: 00000000000000000000000000000000000000000000000000000000000000000f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 95000] word: ccddeeff8899aabb
+# [Cycle 95000] dictionary_data: 000000000000000000000000000000000000000000000000fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 105000] word: 5060708010203040
+# [Cycle 105000] dictionary_data: 000000000000000000000000000000004455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# Dictionary preloaded.
+# [Cycle 115000] word: aabbccdd11223344
+# [Cycle 115000] dictionary_data: 0000000000000000ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 125000] word: aabbccdd11223344
+# [Cycle 125000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = aabbccdd, Second Word = 11223344
+# [ERROR] First word mismatch
+# [ERROR] Second word mismatch
+# [Dictionary Check] First Word = 11223344, Second Word = aabbccdd
+# [Cycle 135000] word: 5566778899aabbcc
+# [Cycle 135000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 145000] word: 5566778899aabbcc
+# [Cycle 145000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Pattern Check] First Word = 55667788, Second Word = 99aabbcc
+# [ERROR] Second word mismatch
+# [Dictionary Check] First Word = 99aabbcc, Second Word = 55667788
+# [Cycle 155000] word: facecafedeadbeef
+# [Cycle 155000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Cycle 165000] word: facecafedeadbeef
+# [Cycle 165000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc5566778811223344aabbccdd
+# [Test for non-matching words]
+# [PASS] No match found as expected.
+# All tests completed.
+# [Cycle 175000] word: facecafedeadbeef
+# [Cycle 175000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# [Cycle 185000] word: facecafedeadbeef
+# [Cycle 185000] dictionary_data: 5060708010203040ccddeeff8899aabb4455667700112233fedcba98876543210f0e0d0c9abcdef012345678ddeeff0099aabbcc55667788facecafedeadbeef
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv(141)
+#    Time: 195 ns  Iteration: 0  Instance: /tb_matching_stage
+# 1
+# Break in Module tb_matching_stage at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv line 141
