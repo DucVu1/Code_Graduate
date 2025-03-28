@@ -1,0 +1,1716 @@
+TimeQuest Timing Analyzer report for or_gate
+Tue Mar 25 23:53:24 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; or_gate                                                           ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++-------------------+-------------+--------+----+----+--------+
+; Input Port        ; Output Port ; RR     ; RF ; FR ; FF     ;
++-------------------+-------------+--------+----+----+--------+
+; i_first_word[0]   ; o_word[0]   ; 5.395  ;    ;    ; 5.395  ;
+; i_first_word[1]   ; o_word[1]   ; 9.324  ;    ;    ; 9.324  ;
+; i_first_word[2]   ; o_word[2]   ; 8.909  ;    ;    ; 8.909  ;
+; i_first_word[3]   ; o_word[3]   ; 8.847  ;    ;    ; 8.847  ;
+; i_first_word[4]   ; o_word[4]   ; 8.876  ;    ;    ; 8.876  ;
+; i_first_word[5]   ; o_word[5]   ; 9.383  ;    ;    ; 9.383  ;
+; i_first_word[6]   ; o_word[6]   ; 9.036  ;    ;    ; 9.036  ;
+; i_first_word[7]   ; o_word[7]   ; 9.222  ;    ;    ; 9.222  ;
+; i_first_word[8]   ; o_word[8]   ; 8.868  ;    ;    ; 8.868  ;
+; i_first_word[9]   ; o_word[9]   ; 8.563  ;    ;    ; 8.563  ;
+; i_first_word[10]  ; o_word[10]  ; 8.840  ;    ;    ; 8.840  ;
+; i_first_word[11]  ; o_word[11]  ; 9.168  ;    ;    ; 9.168  ;
+; i_first_word[12]  ; o_word[12]  ; 8.560  ;    ;    ; 8.560  ;
+; i_first_word[13]  ; o_word[13]  ; 8.563  ;    ;    ; 8.563  ;
+; i_first_word[14]  ; o_word[14]  ; 9.302  ;    ;    ; 9.302  ;
+; i_first_word[15]  ; o_word[15]  ; 8.851  ;    ;    ; 8.851  ;
+; i_first_word[16]  ; o_word[16]  ; 6.896  ;    ;    ; 6.896  ;
+; i_first_word[17]  ; o_word[17]  ; 9.151  ;    ;    ; 9.151  ;
+; i_first_word[18]  ; o_word[18]  ; 8.527  ;    ;    ; 8.527  ;
+; i_first_word[19]  ; o_word[19]  ; 9.424  ;    ;    ; 9.424  ;
+; i_first_word[20]  ; o_word[20]  ; 8.503  ;    ;    ; 8.503  ;
+; i_first_word[21]  ; o_word[21]  ; 8.828  ;    ;    ; 8.828  ;
+; i_first_word[22]  ; o_word[22]  ; 9.146  ;    ;    ; 9.146  ;
+; i_first_word[23]  ; o_word[23]  ; 9.129  ;    ;    ; 9.129  ;
+; i_first_word[24]  ; o_word[24]  ; 8.892  ;    ;    ; 8.892  ;
+; i_first_word[25]  ; o_word[25]  ; 8.821  ;    ;    ; 8.821  ;
+; i_first_word[26]  ; o_word[26]  ; 9.462  ;    ;    ; 9.462  ;
+; i_first_word[27]  ; o_word[27]  ; 8.562  ;    ;    ; 8.562  ;
+; i_first_word[28]  ; o_word[28]  ; 9.201  ;    ;    ; 9.201  ;
+; i_first_word[29]  ; o_word[29]  ; 9.172  ;    ;    ; 9.172  ;
+; i_first_word[30]  ; o_word[30]  ; 8.685  ;    ;    ; 8.685  ;
+; i_first_word[31]  ; o_word[31]  ; 8.884  ;    ;    ; 8.884  ;
+; i_first_word[32]  ; o_word[32]  ; 9.259  ;    ;    ; 9.259  ;
+; i_first_word[33]  ; o_word[33]  ; 8.867  ;    ;    ; 8.867  ;
+; i_first_word[34]  ; o_word[34]  ; 8.867  ;    ;    ; 8.867  ;
+; i_first_word[35]  ; o_word[35]  ; 9.051  ;    ;    ; 9.051  ;
+; i_first_word[36]  ; o_word[36]  ; 9.442  ;    ;    ; 9.442  ;
+; i_first_word[37]  ; o_word[37]  ; 8.802  ;    ;    ; 8.802  ;
+; i_first_word[38]  ; o_word[38]  ; 8.629  ;    ;    ; 8.629  ;
+; i_first_word[39]  ; o_word[39]  ; 9.144  ;    ;    ; 9.144  ;
+; i_first_word[40]  ; o_word[40]  ; 8.573  ;    ;    ; 8.573  ;
+; i_first_word[41]  ; o_word[41]  ; 8.658  ;    ;    ; 8.658  ;
+; i_first_word[42]  ; o_word[42]  ; 9.398  ;    ;    ; 9.398  ;
+; i_first_word[43]  ; o_word[43]  ; 9.273  ;    ;    ; 9.273  ;
+; i_first_word[44]  ; o_word[44]  ; 9.157  ;    ;    ; 9.157  ;
+; i_first_word[45]  ; o_word[45]  ; 8.874  ;    ;    ; 8.874  ;
+; i_first_word[46]  ; o_word[46]  ; 8.649  ;    ;    ; 8.649  ;
+; i_first_word[47]  ; o_word[47]  ; 8.827  ;    ;    ; 8.827  ;
+; i_first_word[48]  ; o_word[48]  ; 10.323 ;    ;    ; 10.323 ;
+; i_first_word[49]  ; o_word[49]  ; 9.135  ;    ;    ; 9.135  ;
+; i_first_word[50]  ; o_word[50]  ; 8.710  ;    ;    ; 8.710  ;
+; i_first_word[51]  ; o_word[51]  ; 8.965  ;    ;    ; 8.965  ;
+; i_first_word[52]  ; o_word[52]  ; 8.827  ;    ;    ; 8.827  ;
+; i_first_word[53]  ; o_word[53]  ; 9.455  ;    ;    ; 9.455  ;
+; i_first_word[54]  ; o_word[54]  ; 9.693  ;    ;    ; 9.693  ;
+; i_first_word[55]  ; o_word[55]  ; 9.119  ;    ;    ; 9.119  ;
+; i_first_word[56]  ; o_word[56]  ; 8.822  ;    ;    ; 8.822  ;
+; i_first_word[57]  ; o_word[57]  ; 9.133  ;    ;    ; 9.133  ;
+; i_first_word[58]  ; o_word[58]  ; 9.467  ;    ;    ; 9.467  ;
+; i_first_word[59]  ; o_word[59]  ; 8.710  ;    ;    ; 8.710  ;
+; i_first_word[60]  ; o_word[60]  ; 8.857  ;    ;    ; 8.857  ;
+; i_first_word[61]  ; o_word[61]  ; 9.203  ;    ;    ; 9.203  ;
+; i_first_word[62]  ; o_word[62]  ; 9.377  ;    ;    ; 9.377  ;
+; i_first_word[63]  ; o_word[63]  ; 5.287  ;    ;    ; 5.287  ;
+; i_first_word[64]  ; o_word[64]  ; 8.861  ;    ;    ; 8.861  ;
+; i_first_word[65]  ; o_word[65]  ; 9.390  ;    ;    ; 9.390  ;
+; i_first_word[66]  ; o_word[66]  ; 9.245  ;    ;    ; 9.245  ;
+; i_first_word[67]  ; o_word[67]  ; 9.248  ;    ;    ; 9.248  ;
+; i_reg_array[0]    ; o_word[0]   ; 5.120  ;    ;    ; 5.120  ;
+; i_reg_array[1]    ; o_word[1]   ; 9.081  ;    ;    ; 9.081  ;
+; i_reg_array[2]    ; o_word[2]   ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[3]    ; o_word[3]   ; 8.539  ;    ;    ; 8.539  ;
+; i_reg_array[4]    ; o_word[4]   ; 8.559  ;    ;    ; 8.559  ;
+; i_reg_array[5]    ; o_word[5]   ; 9.207  ;    ;    ; 9.207  ;
+; i_reg_array[6]    ; o_word[6]   ; 8.735  ;    ;    ; 8.735  ;
+; i_reg_array[7]    ; o_word[7]   ; 9.126  ;    ;    ; 9.126  ;
+; i_reg_array[8]    ; o_word[8]   ; 8.592  ;    ;    ; 8.592  ;
+; i_reg_array[9]    ; o_word[9]   ; 8.854  ;    ;    ; 8.854  ;
+; i_reg_array[10]   ; o_word[10]  ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[11]   ; o_word[11]  ; 9.277  ;    ;    ; 9.277  ;
+; i_reg_array[12]   ; o_word[12]  ; 8.837  ;    ;    ; 8.837  ;
+; i_reg_array[13]   ; o_word[13]  ; 8.868  ;    ;    ; 8.868  ;
+; i_reg_array[14]   ; o_word[14]  ; 9.454  ;    ;    ; 9.454  ;
+; i_reg_array[15]   ; o_word[15]  ; 5.202  ;    ;    ; 5.202  ;
+; i_reg_array[16]   ; o_word[16]  ; 9.216  ;    ;    ; 9.216  ;
+; i_reg_array[17]   ; o_word[17]  ; 9.255  ;    ;    ; 9.255  ;
+; i_reg_array[18]   ; o_word[18]  ; 8.852  ;    ;    ; 8.852  ;
+; i_reg_array[19]   ; o_word[19]  ; 9.128  ;    ;    ; 9.128  ;
+; i_reg_array[20]   ; o_word[20]  ; 8.829  ;    ;    ; 8.829  ;
+; i_reg_array[21]   ; o_word[21]  ; 9.213  ;    ;    ; 9.213  ;
+; i_reg_array[22]   ; o_word[22]  ; 9.421  ;    ;    ; 9.421  ;
+; i_reg_array[23]   ; o_word[23]  ; 9.243  ;    ;    ; 9.243  ;
+; i_reg_array[24]   ; o_word[24]  ; 8.569  ;    ;    ; 8.569  ;
+; i_reg_array[25]   ; o_word[25]  ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[26]   ; o_word[26]  ; 9.155  ;    ;    ; 9.155  ;
+; i_reg_array[27]   ; o_word[27]  ; 8.863  ;    ;    ; 8.863  ;
+; i_reg_array[28]   ; o_word[28]  ; 9.078  ;    ;    ; 9.078  ;
+; i_reg_array[29]   ; o_word[29]  ; 9.253  ;    ;    ; 9.253  ;
+; i_reg_array[30]   ; o_word[30]  ; 8.990  ;    ;    ; 8.990  ;
+; i_reg_array[31]   ; o_word[31]  ; 8.589  ;    ;    ; 8.589  ;
+; i_reg_array[32]   ; o_word[32]  ; 9.139  ;    ;    ; 9.139  ;
+; i_reg_array[33]   ; o_word[33]  ; 8.549  ;    ;    ; 8.549  ;
+; i_reg_array[34]   ; o_word[34]  ; 8.549  ;    ;    ; 8.549  ;
+; i_reg_array[35]   ; o_word[35]  ; 8.880  ;    ;    ; 8.880  ;
+; i_reg_array[36]   ; o_word[36]  ; 9.133  ;    ;    ; 9.133  ;
+; i_reg_array[37]   ; o_word[37]  ; 8.521  ;    ;    ; 8.521  ;
+; i_reg_array[38]   ; o_word[38]  ; 8.720  ;    ;    ; 8.720  ;
+; i_reg_array[39]   ; o_word[39]  ; 9.413  ;    ;    ; 9.413  ;
+; i_reg_array[40]   ; o_word[40]  ; 8.856  ;    ;    ; 8.856  ;
+; i_reg_array[41]   ; o_word[41]  ; 8.858  ;    ;    ; 8.858  ;
+; i_reg_array[42]   ; o_word[42]  ; 9.134  ;    ;    ; 9.134  ;
+; i_reg_array[43]   ; o_word[43]  ; 9.220  ;    ;    ; 9.220  ;
+; i_reg_array[44]   ; o_word[44]  ; 9.411  ;    ;    ; 9.411  ;
+; i_reg_array[45]   ; o_word[45]  ; 8.561  ;    ;    ; 8.561  ;
+; i_reg_array[46]   ; o_word[46]  ; 8.849  ;    ;    ; 8.849  ;
+; i_reg_array[47]   ; o_word[47]  ; 8.841  ;    ;    ; 8.841  ;
+; i_reg_array[48]   ; o_word[48]  ; 9.578  ;    ;    ; 9.578  ;
+; i_reg_array[49]   ; o_word[49]  ; 9.404  ;    ;    ; 9.404  ;
+; i_reg_array[50]   ; o_word[50]  ; 8.985  ;    ;    ; 8.985  ;
+; i_reg_array[51]   ; o_word[51]  ; 9.041  ;    ;    ; 9.041  ;
+; i_reg_array[52]   ; o_word[52]  ; 8.620  ;    ;    ; 8.620  ;
+; i_reg_array[53]   ; o_word[53]  ; 9.235  ;    ;    ; 9.235  ;
+; i_reg_array[54]   ; o_word[54]  ; 9.213  ;    ;    ; 9.213  ;
+; i_reg_array[55]   ; o_word[55]  ; 9.219  ;    ;    ; 9.219  ;
+; i_reg_array[56]   ; o_word[56]  ; 8.541  ;    ;    ; 8.541  ;
+; i_reg_array[57]   ; o_word[57]  ; 9.429  ;    ;    ; 9.429  ;
+; i_reg_array[58]   ; o_word[58]  ; 9.194  ;    ;    ; 9.194  ;
+; i_reg_array[59]   ; o_word[59]  ; 8.846  ;    ;    ; 8.846  ;
+; i_reg_array[60]   ; o_word[60]  ; 8.543  ;    ;    ; 8.543  ;
+; i_reg_array[61]   ; o_word[61]  ; 5.098  ;    ;    ; 5.098  ;
+; i_reg_array[62]   ; o_word[62]  ; 5.338  ;    ;    ; 5.338  ;
+; i_reg_array[63]   ; o_word[63]  ; 9.275  ;    ;    ; 9.275  ;
+; i_reg_array[64]   ; o_word[64]  ; 8.797  ;    ;    ; 8.797  ;
+; i_reg_array[65]   ; o_word[65]  ; 9.430  ;    ;    ; 9.430  ;
+; i_reg_array[66]   ; o_word[66]  ; 9.154  ;    ;    ; 9.154  ;
+; i_reg_array[67]   ; o_word[67]  ; 9.411  ;    ;    ; 9.411  ;
+; i_reg_array[68]   ; o_word[68]  ; 8.026  ;    ;    ; 8.026  ;
+; i_reg_array[69]   ; o_word[69]  ; 8.834  ;    ;    ; 8.834  ;
+; i_reg_array[70]   ; o_word[70]  ; 7.956  ;    ;    ; 7.956  ;
+; i_reg_array[71]   ; o_word[71]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[72]   ; o_word[72]  ; 7.954  ;    ;    ; 7.954  ;
+; i_reg_array[73]   ; o_word[73]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[74]   ; o_word[74]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[75]   ; o_word[75]  ; 8.834  ;    ;    ; 8.834  ;
+; i_reg_array[76]   ; o_word[76]  ; 8.787  ;    ;    ; 8.787  ;
+; i_reg_array[77]   ; o_word[77]  ; 8.843  ;    ;    ; 8.843  ;
+; i_reg_array[78]   ; o_word[78]  ; 7.984  ;    ;    ; 7.984  ;
+; i_reg_array[79]   ; o_word[79]  ; 8.906  ;    ;    ; 8.906  ;
+; i_reg_array[80]   ; o_word[80]  ; 8.926  ;    ;    ; 8.926  ;
+; i_reg_array[81]   ; o_word[81]  ; 8.809  ;    ;    ; 8.809  ;
+; i_reg_array[82]   ; o_word[82]  ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[83]   ; o_word[83]  ; 8.170  ;    ;    ; 8.170  ;
+; i_reg_array[84]   ; o_word[84]  ; 8.883  ;    ;    ; 8.883  ;
+; i_reg_array[85]   ; o_word[85]  ; 7.960  ;    ;    ; 7.960  ;
+; i_reg_array[86]   ; o_word[86]  ; 8.814  ;    ;    ; 8.814  ;
+; i_reg_array[87]   ; o_word[87]  ; 8.877  ;    ;    ; 8.877  ;
+; i_reg_array[88]   ; o_word[88]  ; 8.860  ;    ;    ; 8.860  ;
+; i_reg_array[89]   ; o_word[89]  ; 8.871  ;    ;    ; 8.871  ;
+; i_reg_array[90]   ; o_word[90]  ; 8.180  ;    ;    ; 8.180  ;
+; i_reg_array[91]   ; o_word[91]  ; 8.847  ;    ;    ; 8.847  ;
+; i_reg_array[92]   ; o_word[92]  ; 7.920  ;    ;    ; 7.920  ;
+; i_reg_array[93]   ; o_word[93]  ; 7.906  ;    ;    ; 7.906  ;
+; i_reg_array[94]   ; o_word[94]  ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[95]   ; o_word[95]  ; 8.826  ;    ;    ; 8.826  ;
+; i_reg_array[96]   ; o_word[96]  ; 8.765  ;    ;    ; 8.765  ;
+; i_reg_array[97]   ; o_word[97]  ; 7.904  ;    ;    ; 7.904  ;
+; i_reg_array[98]   ; o_word[98]  ; 8.926  ;    ;    ; 8.926  ;
+; i_reg_array[99]   ; o_word[99]  ; 8.083  ;    ;    ; 8.083  ;
+; i_reg_array[100]  ; o_word[100] ; 8.888  ;    ;    ; 8.888  ;
+; i_reg_array[101]  ; o_word[101] ; 8.839  ;    ;    ; 8.839  ;
+; i_reg_array[102]  ; o_word[102] ; 8.984  ;    ;    ; 8.984  ;
+; i_reg_array[103]  ; o_word[103] ; 7.964  ;    ;    ; 7.964  ;
+; i_reg_array[104]  ; o_word[104] ; 8.000  ;    ;    ; 8.000  ;
+; i_reg_array[105]  ; o_word[105] ; 7.990  ;    ;    ; 7.990  ;
+; i_reg_array[106]  ; o_word[106] ; 8.883  ;    ;    ; 8.883  ;
+; i_reg_array[107]  ; o_word[107] ; 8.863  ;    ;    ; 8.863  ;
+; i_reg_array[108]  ; o_word[108] ; 8.881  ;    ;    ; 8.881  ;
+; i_reg_array[109]  ; o_word[109] ; 8.935  ;    ;    ; 8.935  ;
+; i_reg_array[110]  ; o_word[110] ; 8.010  ;    ;    ; 8.010  ;
+; i_reg_array[111]  ; o_word[111] ; 7.980  ;    ;    ; 7.980  ;
+; i_reg_array[112]  ; o_word[112] ; 8.189  ;    ;    ; 8.189  ;
+; i_reg_array[113]  ; o_word[113] ; 7.996  ;    ;    ; 7.996  ;
+; i_reg_array[114]  ; o_word[114] ; 8.864  ;    ;    ; 8.864  ;
+; i_reg_array[115]  ; o_word[115] ; 8.893  ;    ;    ; 8.893  ;
+; i_reg_array[116]  ; o_word[116] ; 8.859  ;    ;    ; 8.859  ;
+; i_reg_array[117]  ; o_word[117] ; 8.809  ;    ;    ; 8.809  ;
+; i_reg_array[118]  ; o_word[118] ; 8.150  ;    ;    ; 8.150  ;
+; i_reg_array[119]  ; o_word[119] ; 8.610  ;    ;    ; 8.610  ;
+; i_reg_array[120]  ; o_word[120] ; 7.977  ;    ;    ; 7.977  ;
+; i_reg_array[121]  ; o_word[121] ; 8.588  ;    ;    ; 8.588  ;
+; i_reg_array[122]  ; o_word[122] ; 7.906  ;    ;    ; 7.906  ;
+; i_reg_array[123]  ; o_word[123] ; 8.925  ;    ;    ; 8.925  ;
+; i_reg_array[124]  ; o_word[124] ; 8.878  ;    ;    ; 8.878  ;
+; i_reg_array[125]  ; o_word[125] ; 8.801  ;    ;    ; 8.801  ;
+; i_reg_array[126]  ; o_word[126] ; 8.523  ;    ;    ; 8.523  ;
+; i_reg_array[127]  ; o_word[127] ; 7.960  ;    ;    ; 7.960  ;
+; i_reg_array[128]  ; o_word[128] ; 8.779  ;    ;    ; 8.779  ;
+; i_reg_array[129]  ; o_word[129] ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[130]  ; o_word[130] ; 8.864  ;    ;    ; 8.864  ;
+; i_reg_array[131]  ; o_word[131] ; 8.860  ;    ;    ; 8.860  ;
+; i_reg_array[132]  ; o_word[132] ; 7.956  ;    ;    ; 7.956  ;
+; i_reg_array[133]  ; o_word[133] ; 8.140  ;    ;    ; 8.140  ;
+; i_reg_array[134]  ; o_word[134] ; 8.942  ;    ;    ; 8.942  ;
+; i_reg_array[135]  ; o_word[135] ; 7.966  ;    ;    ; 7.966  ;
+; i_second_word[0]  ; o_word[34]  ; 8.660  ;    ;    ; 8.660  ;
+; i_second_word[1]  ; o_word[35]  ; 8.742  ;    ;    ; 8.742  ;
+; i_second_word[2]  ; o_word[36]  ; 9.411  ;    ;    ; 9.411  ;
+; i_second_word[3]  ; o_word[37]  ; 8.908  ;    ;    ; 8.908  ;
+; i_second_word[4]  ; o_word[38]  ; 8.927  ;    ;    ; 8.927  ;
+; i_second_word[5]  ; o_word[39]  ; 9.382  ;    ;    ; 9.382  ;
+; i_second_word[6]  ; o_word[40]  ; 8.874  ;    ;    ; 8.874  ;
+; i_second_word[7]  ; o_word[41]  ; 8.564  ;    ;    ; 8.564  ;
+; i_second_word[8]  ; o_word[42]  ; 9.228  ;    ;    ; 9.228  ;
+; i_second_word[9]  ; o_word[43]  ; 9.448  ;    ;    ; 9.448  ;
+; i_second_word[10] ; o_word[44]  ; 9.231  ;    ;    ; 9.231  ;
+; i_second_word[11] ; o_word[45]  ; 8.842  ;    ;    ; 8.842  ;
+; i_second_word[12] ; o_word[46]  ; 8.572  ;    ;    ; 8.572  ;
+; i_second_word[13] ; o_word[47]  ; 8.550  ;    ;    ; 8.550  ;
+; i_second_word[14] ; o_word[48]  ; 9.534  ;    ;    ; 9.534  ;
+; i_second_word[15] ; o_word[49]  ; 9.223  ;    ;    ; 9.223  ;
+; i_second_word[16] ; o_word[50]  ; 9.008  ;    ;    ; 9.008  ;
+; i_second_word[17] ; o_word[51]  ; 9.026  ;    ;    ; 9.026  ;
+; i_second_word[18] ; o_word[52]  ; 8.499  ;    ;    ; 8.499  ;
+; i_second_word[19] ; o_word[53]  ; 9.396  ;    ;    ; 9.396  ;
+; i_second_word[20] ; o_word[54]  ; 9.491  ;    ;    ; 9.491  ;
+; i_second_word[21] ; o_word[55]  ; 9.386  ;    ;    ; 9.386  ;
+; i_second_word[22] ; o_word[56]  ; 8.884  ;    ;    ; 8.884  ;
+; i_second_word[23] ; o_word[57]  ; 9.267  ;    ;    ; 9.267  ;
+; i_second_word[24] ; o_word[58]  ; 9.494  ;    ;    ; 9.494  ;
+; i_second_word[25] ; o_word[59]  ; 8.563  ;    ;    ; 8.563  ;
+; i_second_word[26] ; o_word[60]  ; 8.650  ;    ;    ; 8.650  ;
+; i_second_word[27] ; o_word[61]  ; 4.774  ;    ;    ; 4.774  ;
+; i_second_word[28] ; o_word[62]  ; 9.425  ;    ;    ; 9.425  ;
+; i_second_word[29] ; o_word[63]  ; 9.449  ;    ;    ; 9.449  ;
+; i_second_word[30] ; o_word[64]  ; 8.520  ;    ;    ; 8.520  ;
+; i_second_word[31] ; o_word[65]  ; 9.243  ;    ;    ; 9.243  ;
+; i_second_word[32] ; o_word[66]  ; 9.418  ;    ;    ; 9.418  ;
+; i_second_word[33] ; o_word[67]  ; 9.180  ;    ;    ; 9.180  ;
++-------------------+-------------+--------+----+----+--------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++-------------------+-------------+--------+----+----+--------+
+; Input Port        ; Output Port ; RR     ; RF ; FR ; FF     ;
++-------------------+-------------+--------+----+----+--------+
+; i_first_word[0]   ; o_word[0]   ; 5.395  ;    ;    ; 5.395  ;
+; i_first_word[1]   ; o_word[1]   ; 9.324  ;    ;    ; 9.324  ;
+; i_first_word[2]   ; o_word[2]   ; 8.909  ;    ;    ; 8.909  ;
+; i_first_word[3]   ; o_word[3]   ; 8.847  ;    ;    ; 8.847  ;
+; i_first_word[4]   ; o_word[4]   ; 8.876  ;    ;    ; 8.876  ;
+; i_first_word[5]   ; o_word[5]   ; 9.383  ;    ;    ; 9.383  ;
+; i_first_word[6]   ; o_word[6]   ; 9.036  ;    ;    ; 9.036  ;
+; i_first_word[7]   ; o_word[7]   ; 9.222  ;    ;    ; 9.222  ;
+; i_first_word[8]   ; o_word[8]   ; 8.868  ;    ;    ; 8.868  ;
+; i_first_word[9]   ; o_word[9]   ; 8.563  ;    ;    ; 8.563  ;
+; i_first_word[10]  ; o_word[10]  ; 8.840  ;    ;    ; 8.840  ;
+; i_first_word[11]  ; o_word[11]  ; 9.168  ;    ;    ; 9.168  ;
+; i_first_word[12]  ; o_word[12]  ; 8.560  ;    ;    ; 8.560  ;
+; i_first_word[13]  ; o_word[13]  ; 8.563  ;    ;    ; 8.563  ;
+; i_first_word[14]  ; o_word[14]  ; 9.302  ;    ;    ; 9.302  ;
+; i_first_word[15]  ; o_word[15]  ; 8.851  ;    ;    ; 8.851  ;
+; i_first_word[16]  ; o_word[16]  ; 6.896  ;    ;    ; 6.896  ;
+; i_first_word[17]  ; o_word[17]  ; 9.151  ;    ;    ; 9.151  ;
+; i_first_word[18]  ; o_word[18]  ; 8.527  ;    ;    ; 8.527  ;
+; i_first_word[19]  ; o_word[19]  ; 9.424  ;    ;    ; 9.424  ;
+; i_first_word[20]  ; o_word[20]  ; 8.503  ;    ;    ; 8.503  ;
+; i_first_word[21]  ; o_word[21]  ; 8.828  ;    ;    ; 8.828  ;
+; i_first_word[22]  ; o_word[22]  ; 9.146  ;    ;    ; 9.146  ;
+; i_first_word[23]  ; o_word[23]  ; 9.129  ;    ;    ; 9.129  ;
+; i_first_word[24]  ; o_word[24]  ; 8.892  ;    ;    ; 8.892  ;
+; i_first_word[25]  ; o_word[25]  ; 8.821  ;    ;    ; 8.821  ;
+; i_first_word[26]  ; o_word[26]  ; 9.462  ;    ;    ; 9.462  ;
+; i_first_word[27]  ; o_word[27]  ; 8.562  ;    ;    ; 8.562  ;
+; i_first_word[28]  ; o_word[28]  ; 9.201  ;    ;    ; 9.201  ;
+; i_first_word[29]  ; o_word[29]  ; 9.172  ;    ;    ; 9.172  ;
+; i_first_word[30]  ; o_word[30]  ; 8.685  ;    ;    ; 8.685  ;
+; i_first_word[31]  ; o_word[31]  ; 8.884  ;    ;    ; 8.884  ;
+; i_first_word[32]  ; o_word[32]  ; 9.259  ;    ;    ; 9.259  ;
+; i_first_word[33]  ; o_word[33]  ; 8.867  ;    ;    ; 8.867  ;
+; i_first_word[34]  ; o_word[34]  ; 8.867  ;    ;    ; 8.867  ;
+; i_first_word[35]  ; o_word[35]  ; 9.051  ;    ;    ; 9.051  ;
+; i_first_word[36]  ; o_word[36]  ; 9.442  ;    ;    ; 9.442  ;
+; i_first_word[37]  ; o_word[37]  ; 8.802  ;    ;    ; 8.802  ;
+; i_first_word[38]  ; o_word[38]  ; 8.629  ;    ;    ; 8.629  ;
+; i_first_word[39]  ; o_word[39]  ; 9.144  ;    ;    ; 9.144  ;
+; i_first_word[40]  ; o_word[40]  ; 8.573  ;    ;    ; 8.573  ;
+; i_first_word[41]  ; o_word[41]  ; 8.658  ;    ;    ; 8.658  ;
+; i_first_word[42]  ; o_word[42]  ; 9.398  ;    ;    ; 9.398  ;
+; i_first_word[43]  ; o_word[43]  ; 9.273  ;    ;    ; 9.273  ;
+; i_first_word[44]  ; o_word[44]  ; 9.157  ;    ;    ; 9.157  ;
+; i_first_word[45]  ; o_word[45]  ; 8.874  ;    ;    ; 8.874  ;
+; i_first_word[46]  ; o_word[46]  ; 8.649  ;    ;    ; 8.649  ;
+; i_first_word[47]  ; o_word[47]  ; 8.827  ;    ;    ; 8.827  ;
+; i_first_word[48]  ; o_word[48]  ; 10.323 ;    ;    ; 10.323 ;
+; i_first_word[49]  ; o_word[49]  ; 9.135  ;    ;    ; 9.135  ;
+; i_first_word[50]  ; o_word[50]  ; 8.710  ;    ;    ; 8.710  ;
+; i_first_word[51]  ; o_word[51]  ; 8.965  ;    ;    ; 8.965  ;
+; i_first_word[52]  ; o_word[52]  ; 8.827  ;    ;    ; 8.827  ;
+; i_first_word[53]  ; o_word[53]  ; 9.455  ;    ;    ; 9.455  ;
+; i_first_word[54]  ; o_word[54]  ; 9.693  ;    ;    ; 9.693  ;
+; i_first_word[55]  ; o_word[55]  ; 9.119  ;    ;    ; 9.119  ;
+; i_first_word[56]  ; o_word[56]  ; 8.822  ;    ;    ; 8.822  ;
+; i_first_word[57]  ; o_word[57]  ; 9.133  ;    ;    ; 9.133  ;
+; i_first_word[58]  ; o_word[58]  ; 9.467  ;    ;    ; 9.467  ;
+; i_first_word[59]  ; o_word[59]  ; 8.710  ;    ;    ; 8.710  ;
+; i_first_word[60]  ; o_word[60]  ; 8.857  ;    ;    ; 8.857  ;
+; i_first_word[61]  ; o_word[61]  ; 9.203  ;    ;    ; 9.203  ;
+; i_first_word[62]  ; o_word[62]  ; 9.377  ;    ;    ; 9.377  ;
+; i_first_word[63]  ; o_word[63]  ; 5.287  ;    ;    ; 5.287  ;
+; i_first_word[64]  ; o_word[64]  ; 8.861  ;    ;    ; 8.861  ;
+; i_first_word[65]  ; o_word[65]  ; 9.390  ;    ;    ; 9.390  ;
+; i_first_word[66]  ; o_word[66]  ; 9.245  ;    ;    ; 9.245  ;
+; i_first_word[67]  ; o_word[67]  ; 9.248  ;    ;    ; 9.248  ;
+; i_reg_array[0]    ; o_word[0]   ; 5.120  ;    ;    ; 5.120  ;
+; i_reg_array[1]    ; o_word[1]   ; 9.081  ;    ;    ; 9.081  ;
+; i_reg_array[2]    ; o_word[2]   ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[3]    ; o_word[3]   ; 8.539  ;    ;    ; 8.539  ;
+; i_reg_array[4]    ; o_word[4]   ; 8.559  ;    ;    ; 8.559  ;
+; i_reg_array[5]    ; o_word[5]   ; 9.207  ;    ;    ; 9.207  ;
+; i_reg_array[6]    ; o_word[6]   ; 8.735  ;    ;    ; 8.735  ;
+; i_reg_array[7]    ; o_word[7]   ; 9.126  ;    ;    ; 9.126  ;
+; i_reg_array[8]    ; o_word[8]   ; 8.592  ;    ;    ; 8.592  ;
+; i_reg_array[9]    ; o_word[9]   ; 8.854  ;    ;    ; 8.854  ;
+; i_reg_array[10]   ; o_word[10]  ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[11]   ; o_word[11]  ; 9.277  ;    ;    ; 9.277  ;
+; i_reg_array[12]   ; o_word[12]  ; 8.837  ;    ;    ; 8.837  ;
+; i_reg_array[13]   ; o_word[13]  ; 8.868  ;    ;    ; 8.868  ;
+; i_reg_array[14]   ; o_word[14]  ; 9.454  ;    ;    ; 9.454  ;
+; i_reg_array[15]   ; o_word[15]  ; 5.202  ;    ;    ; 5.202  ;
+; i_reg_array[16]   ; o_word[16]  ; 9.216  ;    ;    ; 9.216  ;
+; i_reg_array[17]   ; o_word[17]  ; 9.255  ;    ;    ; 9.255  ;
+; i_reg_array[18]   ; o_word[18]  ; 8.852  ;    ;    ; 8.852  ;
+; i_reg_array[19]   ; o_word[19]  ; 9.128  ;    ;    ; 9.128  ;
+; i_reg_array[20]   ; o_word[20]  ; 8.829  ;    ;    ; 8.829  ;
+; i_reg_array[21]   ; o_word[21]  ; 9.213  ;    ;    ; 9.213  ;
+; i_reg_array[22]   ; o_word[22]  ; 9.421  ;    ;    ; 9.421  ;
+; i_reg_array[23]   ; o_word[23]  ; 9.243  ;    ;    ; 9.243  ;
+; i_reg_array[24]   ; o_word[24]  ; 8.569  ;    ;    ; 8.569  ;
+; i_reg_array[25]   ; o_word[25]  ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[26]   ; o_word[26]  ; 9.155  ;    ;    ; 9.155  ;
+; i_reg_array[27]   ; o_word[27]  ; 8.863  ;    ;    ; 8.863  ;
+; i_reg_array[28]   ; o_word[28]  ; 9.078  ;    ;    ; 9.078  ;
+; i_reg_array[29]   ; o_word[29]  ; 9.253  ;    ;    ; 9.253  ;
+; i_reg_array[30]   ; o_word[30]  ; 8.990  ;    ;    ; 8.990  ;
+; i_reg_array[31]   ; o_word[31]  ; 8.589  ;    ;    ; 8.589  ;
+; i_reg_array[32]   ; o_word[32]  ; 9.139  ;    ;    ; 9.139  ;
+; i_reg_array[33]   ; o_word[33]  ; 8.549  ;    ;    ; 8.549  ;
+; i_reg_array[34]   ; o_word[34]  ; 8.549  ;    ;    ; 8.549  ;
+; i_reg_array[35]   ; o_word[35]  ; 8.880  ;    ;    ; 8.880  ;
+; i_reg_array[36]   ; o_word[36]  ; 9.133  ;    ;    ; 9.133  ;
+; i_reg_array[37]   ; o_word[37]  ; 8.521  ;    ;    ; 8.521  ;
+; i_reg_array[38]   ; o_word[38]  ; 8.720  ;    ;    ; 8.720  ;
+; i_reg_array[39]   ; o_word[39]  ; 9.413  ;    ;    ; 9.413  ;
+; i_reg_array[40]   ; o_word[40]  ; 8.856  ;    ;    ; 8.856  ;
+; i_reg_array[41]   ; o_word[41]  ; 8.858  ;    ;    ; 8.858  ;
+; i_reg_array[42]   ; o_word[42]  ; 9.134  ;    ;    ; 9.134  ;
+; i_reg_array[43]   ; o_word[43]  ; 9.220  ;    ;    ; 9.220  ;
+; i_reg_array[44]   ; o_word[44]  ; 9.411  ;    ;    ; 9.411  ;
+; i_reg_array[45]   ; o_word[45]  ; 8.561  ;    ;    ; 8.561  ;
+; i_reg_array[46]   ; o_word[46]  ; 8.849  ;    ;    ; 8.849  ;
+; i_reg_array[47]   ; o_word[47]  ; 8.841  ;    ;    ; 8.841  ;
+; i_reg_array[48]   ; o_word[48]  ; 9.578  ;    ;    ; 9.578  ;
+; i_reg_array[49]   ; o_word[49]  ; 9.404  ;    ;    ; 9.404  ;
+; i_reg_array[50]   ; o_word[50]  ; 8.985  ;    ;    ; 8.985  ;
+; i_reg_array[51]   ; o_word[51]  ; 9.041  ;    ;    ; 9.041  ;
+; i_reg_array[52]   ; o_word[52]  ; 8.620  ;    ;    ; 8.620  ;
+; i_reg_array[53]   ; o_word[53]  ; 9.235  ;    ;    ; 9.235  ;
+; i_reg_array[54]   ; o_word[54]  ; 9.213  ;    ;    ; 9.213  ;
+; i_reg_array[55]   ; o_word[55]  ; 9.219  ;    ;    ; 9.219  ;
+; i_reg_array[56]   ; o_word[56]  ; 8.541  ;    ;    ; 8.541  ;
+; i_reg_array[57]   ; o_word[57]  ; 9.429  ;    ;    ; 9.429  ;
+; i_reg_array[58]   ; o_word[58]  ; 9.194  ;    ;    ; 9.194  ;
+; i_reg_array[59]   ; o_word[59]  ; 8.846  ;    ;    ; 8.846  ;
+; i_reg_array[60]   ; o_word[60]  ; 8.543  ;    ;    ; 8.543  ;
+; i_reg_array[61]   ; o_word[61]  ; 5.098  ;    ;    ; 5.098  ;
+; i_reg_array[62]   ; o_word[62]  ; 5.338  ;    ;    ; 5.338  ;
+; i_reg_array[63]   ; o_word[63]  ; 9.275  ;    ;    ; 9.275  ;
+; i_reg_array[64]   ; o_word[64]  ; 8.797  ;    ;    ; 8.797  ;
+; i_reg_array[65]   ; o_word[65]  ; 9.430  ;    ;    ; 9.430  ;
+; i_reg_array[66]   ; o_word[66]  ; 9.154  ;    ;    ; 9.154  ;
+; i_reg_array[67]   ; o_word[67]  ; 9.411  ;    ;    ; 9.411  ;
+; i_reg_array[68]   ; o_word[68]  ; 8.026  ;    ;    ; 8.026  ;
+; i_reg_array[69]   ; o_word[69]  ; 8.834  ;    ;    ; 8.834  ;
+; i_reg_array[70]   ; o_word[70]  ; 7.956  ;    ;    ; 7.956  ;
+; i_reg_array[71]   ; o_word[71]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[72]   ; o_word[72]  ; 7.954  ;    ;    ; 7.954  ;
+; i_reg_array[73]   ; o_word[73]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[74]   ; o_word[74]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[75]   ; o_word[75]  ; 8.834  ;    ;    ; 8.834  ;
+; i_reg_array[76]   ; o_word[76]  ; 8.787  ;    ;    ; 8.787  ;
+; i_reg_array[77]   ; o_word[77]  ; 8.843  ;    ;    ; 8.843  ;
+; i_reg_array[78]   ; o_word[78]  ; 7.984  ;    ;    ; 7.984  ;
+; i_reg_array[79]   ; o_word[79]  ; 8.906  ;    ;    ; 8.906  ;
+; i_reg_array[80]   ; o_word[80]  ; 8.926  ;    ;    ; 8.926  ;
+; i_reg_array[81]   ; o_word[81]  ; 8.809  ;    ;    ; 8.809  ;
+; i_reg_array[82]   ; o_word[82]  ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[83]   ; o_word[83]  ; 8.170  ;    ;    ; 8.170  ;
+; i_reg_array[84]   ; o_word[84]  ; 8.883  ;    ;    ; 8.883  ;
+; i_reg_array[85]   ; o_word[85]  ; 7.960  ;    ;    ; 7.960  ;
+; i_reg_array[86]   ; o_word[86]  ; 8.814  ;    ;    ; 8.814  ;
+; i_reg_array[87]   ; o_word[87]  ; 8.877  ;    ;    ; 8.877  ;
+; i_reg_array[88]   ; o_word[88]  ; 8.860  ;    ;    ; 8.860  ;
+; i_reg_array[89]   ; o_word[89]  ; 8.871  ;    ;    ; 8.871  ;
+; i_reg_array[90]   ; o_word[90]  ; 8.180  ;    ;    ; 8.180  ;
+; i_reg_array[91]   ; o_word[91]  ; 8.847  ;    ;    ; 8.847  ;
+; i_reg_array[92]   ; o_word[92]  ; 7.920  ;    ;    ; 7.920  ;
+; i_reg_array[93]   ; o_word[93]  ; 7.906  ;    ;    ; 7.906  ;
+; i_reg_array[94]   ; o_word[94]  ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[95]   ; o_word[95]  ; 8.826  ;    ;    ; 8.826  ;
+; i_reg_array[96]   ; o_word[96]  ; 8.765  ;    ;    ; 8.765  ;
+; i_reg_array[97]   ; o_word[97]  ; 7.904  ;    ;    ; 7.904  ;
+; i_reg_array[98]   ; o_word[98]  ; 8.926  ;    ;    ; 8.926  ;
+; i_reg_array[99]   ; o_word[99]  ; 8.083  ;    ;    ; 8.083  ;
+; i_reg_array[100]  ; o_word[100] ; 8.888  ;    ;    ; 8.888  ;
+; i_reg_array[101]  ; o_word[101] ; 8.839  ;    ;    ; 8.839  ;
+; i_reg_array[102]  ; o_word[102] ; 8.984  ;    ;    ; 8.984  ;
+; i_reg_array[103]  ; o_word[103] ; 7.964  ;    ;    ; 7.964  ;
+; i_reg_array[104]  ; o_word[104] ; 8.000  ;    ;    ; 8.000  ;
+; i_reg_array[105]  ; o_word[105] ; 7.990  ;    ;    ; 7.990  ;
+; i_reg_array[106]  ; o_word[106] ; 8.883  ;    ;    ; 8.883  ;
+; i_reg_array[107]  ; o_word[107] ; 8.863  ;    ;    ; 8.863  ;
+; i_reg_array[108]  ; o_word[108] ; 8.881  ;    ;    ; 8.881  ;
+; i_reg_array[109]  ; o_word[109] ; 8.935  ;    ;    ; 8.935  ;
+; i_reg_array[110]  ; o_word[110] ; 8.010  ;    ;    ; 8.010  ;
+; i_reg_array[111]  ; o_word[111] ; 7.980  ;    ;    ; 7.980  ;
+; i_reg_array[112]  ; o_word[112] ; 8.189  ;    ;    ; 8.189  ;
+; i_reg_array[113]  ; o_word[113] ; 7.996  ;    ;    ; 7.996  ;
+; i_reg_array[114]  ; o_word[114] ; 8.864  ;    ;    ; 8.864  ;
+; i_reg_array[115]  ; o_word[115] ; 8.893  ;    ;    ; 8.893  ;
+; i_reg_array[116]  ; o_word[116] ; 8.859  ;    ;    ; 8.859  ;
+; i_reg_array[117]  ; o_word[117] ; 8.809  ;    ;    ; 8.809  ;
+; i_reg_array[118]  ; o_word[118] ; 8.150  ;    ;    ; 8.150  ;
+; i_reg_array[119]  ; o_word[119] ; 8.610  ;    ;    ; 8.610  ;
+; i_reg_array[120]  ; o_word[120] ; 7.977  ;    ;    ; 7.977  ;
+; i_reg_array[121]  ; o_word[121] ; 8.588  ;    ;    ; 8.588  ;
+; i_reg_array[122]  ; o_word[122] ; 7.906  ;    ;    ; 7.906  ;
+; i_reg_array[123]  ; o_word[123] ; 8.925  ;    ;    ; 8.925  ;
+; i_reg_array[124]  ; o_word[124] ; 8.878  ;    ;    ; 8.878  ;
+; i_reg_array[125]  ; o_word[125] ; 8.801  ;    ;    ; 8.801  ;
+; i_reg_array[126]  ; o_word[126] ; 8.523  ;    ;    ; 8.523  ;
+; i_reg_array[127]  ; o_word[127] ; 7.960  ;    ;    ; 7.960  ;
+; i_reg_array[128]  ; o_word[128] ; 8.779  ;    ;    ; 8.779  ;
+; i_reg_array[129]  ; o_word[129] ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[130]  ; o_word[130] ; 8.864  ;    ;    ; 8.864  ;
+; i_reg_array[131]  ; o_word[131] ; 8.860  ;    ;    ; 8.860  ;
+; i_reg_array[132]  ; o_word[132] ; 7.956  ;    ;    ; 7.956  ;
+; i_reg_array[133]  ; o_word[133] ; 8.140  ;    ;    ; 8.140  ;
+; i_reg_array[134]  ; o_word[134] ; 8.942  ;    ;    ; 8.942  ;
+; i_reg_array[135]  ; o_word[135] ; 7.966  ;    ;    ; 7.966  ;
+; i_second_word[0]  ; o_word[34]  ; 8.660  ;    ;    ; 8.660  ;
+; i_second_word[1]  ; o_word[35]  ; 8.742  ;    ;    ; 8.742  ;
+; i_second_word[2]  ; o_word[36]  ; 9.411  ;    ;    ; 9.411  ;
+; i_second_word[3]  ; o_word[37]  ; 8.908  ;    ;    ; 8.908  ;
+; i_second_word[4]  ; o_word[38]  ; 8.927  ;    ;    ; 8.927  ;
+; i_second_word[5]  ; o_word[39]  ; 9.382  ;    ;    ; 9.382  ;
+; i_second_word[6]  ; o_word[40]  ; 8.874  ;    ;    ; 8.874  ;
+; i_second_word[7]  ; o_word[41]  ; 8.564  ;    ;    ; 8.564  ;
+; i_second_word[8]  ; o_word[42]  ; 9.228  ;    ;    ; 9.228  ;
+; i_second_word[9]  ; o_word[43]  ; 9.448  ;    ;    ; 9.448  ;
+; i_second_word[10] ; o_word[44]  ; 9.231  ;    ;    ; 9.231  ;
+; i_second_word[11] ; o_word[45]  ; 8.842  ;    ;    ; 8.842  ;
+; i_second_word[12] ; o_word[46]  ; 8.572  ;    ;    ; 8.572  ;
+; i_second_word[13] ; o_word[47]  ; 8.550  ;    ;    ; 8.550  ;
+; i_second_word[14] ; o_word[48]  ; 9.534  ;    ;    ; 9.534  ;
+; i_second_word[15] ; o_word[49]  ; 9.223  ;    ;    ; 9.223  ;
+; i_second_word[16] ; o_word[50]  ; 9.008  ;    ;    ; 9.008  ;
+; i_second_word[17] ; o_word[51]  ; 9.026  ;    ;    ; 9.026  ;
+; i_second_word[18] ; o_word[52]  ; 8.499  ;    ;    ; 8.499  ;
+; i_second_word[19] ; o_word[53]  ; 9.396  ;    ;    ; 9.396  ;
+; i_second_word[20] ; o_word[54]  ; 9.491  ;    ;    ; 9.491  ;
+; i_second_word[21] ; o_word[55]  ; 9.386  ;    ;    ; 9.386  ;
+; i_second_word[22] ; o_word[56]  ; 8.884  ;    ;    ; 8.884  ;
+; i_second_word[23] ; o_word[57]  ; 9.267  ;    ;    ; 9.267  ;
+; i_second_word[24] ; o_word[58]  ; 9.494  ;    ;    ; 9.494  ;
+; i_second_word[25] ; o_word[59]  ; 8.563  ;    ;    ; 8.563  ;
+; i_second_word[26] ; o_word[60]  ; 8.650  ;    ;    ; 8.650  ;
+; i_second_word[27] ; o_word[61]  ; 4.774  ;    ;    ; 4.774  ;
+; i_second_word[28] ; o_word[62]  ; 9.425  ;    ;    ; 9.425  ;
+; i_second_word[29] ; o_word[63]  ; 9.449  ;    ;    ; 9.449  ;
+; i_second_word[30] ; o_word[64]  ; 8.520  ;    ;    ; 8.520  ;
+; i_second_word[31] ; o_word[65]  ; 9.243  ;    ;    ; 9.243  ;
+; i_second_word[32] ; o_word[66]  ; 9.418  ;    ;    ; 9.418  ;
+; i_second_word[33] ; o_word[67]  ; 9.180  ;    ;    ; 9.180  ;
++-------------------+-------------+--------+----+----+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++-------------------+-------------+-------+----+----+-------+
+; Input Port        ; Output Port ; RR    ; RF ; FR ; FF    ;
++-------------------+-------------+-------+----+----+-------+
+; i_first_word[0]   ; o_word[0]   ; 2.803 ;    ;    ; 2.803 ;
+; i_first_word[1]   ; o_word[1]   ; 5.260 ;    ;    ; 5.260 ;
+; i_first_word[2]   ; o_word[2]   ; 5.028 ;    ;    ; 5.028 ;
+; i_first_word[3]   ; o_word[3]   ; 4.974 ;    ;    ; 4.974 ;
+; i_first_word[4]   ; o_word[4]   ; 5.000 ;    ;    ; 5.000 ;
+; i_first_word[5]   ; o_word[5]   ; 5.223 ;    ;    ; 5.223 ;
+; i_first_word[6]   ; o_word[6]   ; 5.063 ;    ;    ; 5.063 ;
+; i_first_word[7]   ; o_word[7]   ; 5.171 ;    ;    ; 5.171 ;
+; i_first_word[8]   ; o_word[8]   ; 5.008 ;    ;    ; 5.008 ;
+; i_first_word[9]   ; o_word[9]   ; 4.869 ;    ;    ; 4.869 ;
+; i_first_word[10]  ; o_word[10]  ; 4.959 ;    ;    ; 4.959 ;
+; i_first_word[11]  ; o_word[11]  ; 5.166 ;    ;    ; 5.166 ;
+; i_first_word[12]  ; o_word[12]  ; 4.860 ;    ;    ; 4.860 ;
+; i_first_word[13]  ; o_word[13]  ; 4.861 ;    ;    ; 4.861 ;
+; i_first_word[14]  ; o_word[14]  ; 5.246 ;    ;    ; 5.246 ;
+; i_first_word[15]  ; o_word[15]  ; 4.973 ;    ;    ; 4.973 ;
+; i_first_word[16]  ; o_word[16]  ; 3.653 ;    ;    ; 3.653 ;
+; i_first_word[17]  ; o_word[17]  ; 5.173 ;    ;    ; 5.173 ;
+; i_first_word[18]  ; o_word[18]  ; 4.832 ;    ;    ; 4.832 ;
+; i_first_word[19]  ; o_word[19]  ; 5.243 ;    ;    ; 5.243 ;
+; i_first_word[20]  ; o_word[20]  ; 4.845 ;    ;    ; 4.845 ;
+; i_first_word[21]  ; o_word[21]  ; 5.055 ;    ;    ; 5.055 ;
+; i_first_word[22]  ; o_word[22]  ; 5.144 ;    ;    ; 5.144 ;
+; i_first_word[23]  ; o_word[23]  ; 5.153 ;    ;    ; 5.153 ;
+; i_first_word[24]  ; o_word[24]  ; 5.016 ;    ;    ; 5.016 ;
+; i_first_word[25]  ; o_word[25]  ; 4.972 ;    ;    ; 4.972 ;
+; i_first_word[26]  ; o_word[26]  ; 5.280 ;    ;    ; 5.280 ;
+; i_first_word[27]  ; o_word[27]  ; 4.865 ;    ;    ; 4.865 ;
+; i_first_word[28]  ; o_word[28]  ; 5.148 ;    ;    ; 5.148 ;
+; i_first_word[29]  ; o_word[29]  ; 5.164 ;    ;    ; 5.164 ;
+; i_first_word[30]  ; o_word[30]  ; 4.903 ;    ;    ; 4.903 ;
+; i_first_word[31]  ; o_word[31]  ; 5.009 ;    ;    ; 5.009 ;
+; i_first_word[32]  ; o_word[32]  ; 5.206 ;    ;    ; 5.206 ;
+; i_first_word[33]  ; o_word[33]  ; 4.994 ;    ;    ; 4.994 ;
+; i_first_word[34]  ; o_word[34]  ; 4.994 ;    ;    ; 4.994 ;
+; i_first_word[35]  ; o_word[35]  ; 5.101 ;    ;    ; 5.101 ;
+; i_first_word[36]  ; o_word[36]  ; 5.260 ;    ;    ; 5.260 ;
+; i_first_word[37]  ; o_word[37]  ; 4.945 ;    ;    ; 4.945 ;
+; i_first_word[38]  ; o_word[38]  ; 4.933 ;    ;    ; 4.933 ;
+; i_first_word[39]  ; o_word[39]  ; 5.136 ;    ;    ; 5.136 ;
+; i_first_word[40]  ; o_word[40]  ; 4.915 ;    ;    ; 4.915 ;
+; i_first_word[41]  ; o_word[41]  ; 4.910 ;    ;    ; 4.910 ;
+; i_first_word[42]  ; o_word[42]  ; 5.239 ;    ;    ; 5.239 ;
+; i_first_word[43]  ; o_word[43]  ; 5.225 ;    ;    ; 5.225 ;
+; i_first_word[44]  ; o_word[44]  ; 5.155 ;    ;    ; 5.155 ;
+; i_first_word[45]  ; o_word[45]  ; 4.999 ;    ;    ; 4.999 ;
+; i_first_word[46]  ; o_word[46]  ; 4.898 ;    ;    ; 4.898 ;
+; i_first_word[47]  ; o_word[47]  ; 4.968 ;    ;    ; 4.968 ;
+; i_first_word[48]  ; o_word[48]  ; 5.806 ;    ;    ; 5.806 ;
+; i_first_word[49]  ; o_word[49]  ; 5.132 ;    ;    ; 5.132 ;
+; i_first_word[50]  ; o_word[50]  ; 4.971 ;    ;    ; 4.971 ;
+; i_first_word[51]  ; o_word[51]  ; 5.068 ;    ;    ; 5.068 ;
+; i_first_word[52]  ; o_word[52]  ; 4.954 ;    ;    ; 4.954 ;
+; i_first_word[53]  ; o_word[53]  ; 5.277 ;    ;    ; 5.277 ;
+; i_first_word[54]  ; o_word[54]  ; 5.447 ;    ;    ; 5.447 ;
+; i_first_word[55]  ; o_word[55]  ; 5.117 ;    ;    ; 5.117 ;
+; i_first_word[56]  ; o_word[56]  ; 4.965 ;    ;    ; 4.965 ;
+; i_first_word[57]  ; o_word[57]  ; 5.131 ;    ;    ; 5.131 ;
+; i_first_word[58]  ; o_word[58]  ; 5.304 ;    ;    ; 5.304 ;
+; i_first_word[59]  ; o_word[59]  ; 4.964 ;    ;    ; 4.964 ;
+; i_first_word[60]  ; o_word[60]  ; 4.984 ;    ;    ; 4.984 ;
+; i_first_word[61]  ; o_word[61]  ; 5.156 ;    ;    ; 5.156 ;
+; i_first_word[62]  ; o_word[62]  ; 5.219 ;    ;    ; 5.219 ;
+; i_first_word[63]  ; o_word[63]  ; 2.803 ;    ;    ; 2.803 ;
+; i_first_word[64]  ; o_word[64]  ; 4.980 ;    ;    ; 4.980 ;
+; i_first_word[65]  ; o_word[65]  ; 5.210 ;    ;    ; 5.210 ;
+; i_first_word[66]  ; o_word[66]  ; 5.193 ;    ;    ; 5.193 ;
+; i_first_word[67]  ; o_word[67]  ; 5.201 ;    ;    ; 5.201 ;
+; i_reg_array[0]    ; o_word[0]   ; 2.684 ;    ;    ; 2.684 ;
+; i_reg_array[1]    ; o_word[1]   ; 5.146 ;    ;    ; 5.146 ;
+; i_reg_array[2]    ; o_word[2]   ; 4.893 ;    ;    ; 4.893 ;
+; i_reg_array[3]    ; o_word[3]   ; 4.843 ;    ;    ; 4.843 ;
+; i_reg_array[4]    ; o_word[4]   ; 4.863 ;    ;    ; 4.863 ;
+; i_reg_array[5]    ; o_word[5]   ; 5.156 ;    ;    ; 5.156 ;
+; i_reg_array[6]    ; o_word[6]   ; 4.940 ;    ;    ; 4.940 ;
+; i_reg_array[7]    ; o_word[7]   ; 5.124 ;    ;    ; 5.124 ;
+; i_reg_array[8]    ; o_word[8]   ; 4.891 ;    ;    ; 4.891 ;
+; i_reg_array[9]    ; o_word[9]   ; 4.979 ;    ;    ; 4.979 ;
+; i_reg_array[10]   ; o_word[10]  ; 4.861 ;    ;    ; 4.861 ;
+; i_reg_array[11]   ; o_word[11]  ; 5.225 ;    ;    ; 5.225 ;
+; i_reg_array[12]   ; o_word[12]  ; 4.978 ;    ;    ; 4.978 ;
+; i_reg_array[13]   ; o_word[13]  ; 5.009 ;    ;    ; 5.009 ;
+; i_reg_array[14]   ; o_word[14]  ; 5.293 ;    ;    ; 5.293 ;
+; i_reg_array[15]   ; o_word[15]  ; 2.706 ;    ;    ; 2.706 ;
+; i_reg_array[16]   ; o_word[16]  ; 5.167 ;    ;    ; 5.167 ;
+; i_reg_array[17]   ; o_word[17]  ; 5.206 ;    ;    ; 5.206 ;
+; i_reg_array[18]   ; o_word[18]  ; 4.978 ;    ;    ; 4.978 ;
+; i_reg_array[19]   ; o_word[19]  ; 5.126 ;    ;    ; 5.126 ;
+; i_reg_array[20]   ; o_word[20]  ; 4.976 ;    ;    ; 4.976 ;
+; i_reg_array[21]   ; o_word[21]  ; 5.224 ;    ;    ; 5.224 ;
+; i_reg_array[22]   ; o_word[22]  ; 5.261 ;    ;    ; 5.261 ;
+; i_reg_array[23]   ; o_word[23]  ; 5.196 ;    ;    ; 5.196 ;
+; i_reg_array[24]   ; o_word[24]  ; 4.876 ;    ;    ; 4.876 ;
+; i_reg_array[25]   ; o_word[25]  ; 4.861 ;    ;    ; 4.861 ;
+; i_reg_array[26]   ; o_word[26]  ; 5.154 ;    ;    ; 5.154 ;
+; i_reg_array[27]   ; o_word[27]  ; 4.988 ;    ;    ; 4.988 ;
+; i_reg_array[28]   ; o_word[28]  ; 5.103 ;    ;    ; 5.103 ;
+; i_reg_array[29]   ; o_word[29]  ; 5.205 ;    ;    ; 5.205 ;
+; i_reg_array[30]   ; o_word[30]  ; 5.029 ;    ;    ; 5.029 ;
+; i_reg_array[31]   ; o_word[31]  ; 4.893 ;    ;    ; 4.893 ;
+; i_reg_array[32]   ; o_word[32]  ; 5.136 ;    ;    ; 5.136 ;
+; i_reg_array[33]   ; o_word[33]  ; 4.853 ;    ;    ; 4.853 ;
+; i_reg_array[34]   ; o_word[34]  ; 4.853 ;    ;    ; 4.853 ;
+; i_reg_array[35]   ; o_word[35]  ; 5.037 ;    ;    ; 5.037 ;
+; i_reg_array[36]   ; o_word[36]  ; 5.125 ;    ;    ; 5.125 ;
+; i_reg_array[37]   ; o_word[37]  ; 4.823 ;    ;    ; 4.823 ;
+; i_reg_array[38]   ; o_word[38]  ; 4.976 ;    ;    ; 4.976 ;
+; i_reg_array[39]   ; o_word[39]  ; 5.231 ;    ;    ; 5.231 ;
+; i_reg_array[40]   ; o_word[40]  ; 5.001 ;    ;    ; 5.001 ;
+; i_reg_array[41]   ; o_word[41]  ; 4.979 ;    ;    ; 4.979 ;
+; i_reg_array[42]   ; o_word[42]  ; 5.134 ;    ;    ; 5.134 ;
+; i_reg_array[43]   ; o_word[43]  ; 5.210 ;    ;    ; 5.210 ;
+; i_reg_array[44]   ; o_word[44]  ; 5.251 ;    ;    ; 5.251 ;
+; i_reg_array[45]   ; o_word[45]  ; 4.863 ;    ;    ; 4.863 ;
+; i_reg_array[46]   ; o_word[46]  ; 4.968 ;    ;    ; 4.968 ;
+; i_reg_array[47]   ; o_word[47]  ; 4.960 ;    ;    ; 4.960 ;
+; i_reg_array[48]   ; o_word[48]  ; 5.368 ;    ;    ; 5.368 ;
+; i_reg_array[49]   ; o_word[49]  ; 5.244 ;    ;    ; 5.244 ;
+; i_reg_array[50]   ; o_word[50]  ; 5.089 ;    ;    ; 5.089 ;
+; i_reg_array[51]   ; o_word[51]  ; 5.099 ;    ;    ; 5.099 ;
+; i_reg_array[52]   ; o_word[52]  ; 4.876 ;    ;    ; 4.876 ;
+; i_reg_array[53]   ; o_word[53]  ; 5.183 ;    ;    ; 5.183 ;
+; i_reg_array[54]   ; o_word[54]  ; 5.205 ;    ;    ; 5.205 ;
+; i_reg_array[55]   ; o_word[55]  ; 5.167 ;    ;    ; 5.167 ;
+; i_reg_array[56]   ; o_word[56]  ; 4.843 ;    ;    ; 4.843 ;
+; i_reg_array[57]   ; o_word[57]  ; 5.263 ;    ;    ; 5.263 ;
+; i_reg_array[58]   ; o_word[58]  ; 5.186 ;    ;    ; 5.186 ;
+; i_reg_array[59]   ; o_word[59]  ; 4.991 ;    ;    ; 4.991 ;
+; i_reg_array[60]   ; o_word[60]  ; 4.849 ;    ;    ; 4.849 ;
+; i_reg_array[61]   ; o_word[61]  ; 2.633 ;    ;    ; 2.633 ;
+; i_reg_array[62]   ; o_word[62]  ; 2.779 ;    ;    ; 2.779 ;
+; i_reg_array[63]   ; o_word[63]  ; 5.218 ;    ;    ; 5.218 ;
+; i_reg_array[64]   ; o_word[64]  ; 4.938 ;    ;    ; 4.938 ;
+; i_reg_array[65]   ; o_word[65]  ; 5.270 ;    ;    ; 5.270 ;
+; i_reg_array[66]   ; o_word[66]  ; 5.147 ;    ;    ; 5.147 ;
+; i_reg_array[67]   ; o_word[67]  ; 5.251 ;    ;    ; 5.251 ;
+; i_reg_array[68]   ; o_word[68]  ; 4.672 ;    ;    ; 4.672 ;
+; i_reg_array[69]   ; o_word[69]  ; 5.035 ;    ;    ; 5.035 ;
+; i_reg_array[70]   ; o_word[70]  ; 4.610 ;    ;    ; 4.610 ;
+; i_reg_array[71]   ; o_word[71]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[72]   ; o_word[72]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[73]   ; o_word[73]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[74]   ; o_word[74]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[75]   ; o_word[75]  ; 5.034 ;    ;    ; 5.034 ;
+; i_reg_array[76]   ; o_word[76]  ; 4.999 ;    ;    ; 4.999 ;
+; i_reg_array[77]   ; o_word[77]  ; 5.043 ;    ;    ; 5.043 ;
+; i_reg_array[78]   ; o_word[78]  ; 4.642 ;    ;    ; 4.642 ;
+; i_reg_array[79]   ; o_word[79]  ; 5.072 ;    ;    ; 5.072 ;
+; i_reg_array[80]   ; o_word[80]  ; 5.094 ;    ;    ; 5.094 ;
+; i_reg_array[81]   ; o_word[81]  ; 5.012 ;    ;    ; 5.012 ;
+; i_reg_array[82]   ; o_word[82]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[83]   ; o_word[83]  ; 4.710 ;    ;    ; 4.710 ;
+; i_reg_array[84]   ; o_word[84]  ; 5.069 ;    ;    ; 5.069 ;
+; i_reg_array[85]   ; o_word[85]  ; 4.606 ;    ;    ; 4.606 ;
+; i_reg_array[86]   ; o_word[86]  ; 5.015 ;    ;    ; 5.015 ;
+; i_reg_array[87]   ; o_word[87]  ; 5.052 ;    ;    ; 5.052 ;
+; i_reg_array[88]   ; o_word[88]  ; 5.056 ;    ;    ; 5.056 ;
+; i_reg_array[89]   ; o_word[89]  ; 5.068 ;    ;    ; 5.068 ;
+; i_reg_array[90]   ; o_word[90]  ; 4.719 ;    ;    ; 4.719 ;
+; i_reg_array[91]   ; o_word[91]  ; 5.038 ;    ;    ; 5.038 ;
+; i_reg_array[92]   ; o_word[92]  ; 4.566 ;    ;    ; 4.566 ;
+; i_reg_array[93]   ; o_word[93]  ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[94]   ; o_word[94]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[95]   ; o_word[95]  ; 5.020 ;    ;    ; 5.020 ;
+; i_reg_array[96]   ; o_word[96]  ; 4.972 ;    ;    ; 4.972 ;
+; i_reg_array[97]   ; o_word[97]  ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[98]   ; o_word[98]  ; 5.094 ;    ;    ; 5.094 ;
+; i_reg_array[99]   ; o_word[99]  ; 4.700 ;    ;    ; 4.700 ;
+; i_reg_array[100]  ; o_word[100] ; 5.072 ;    ;    ; 5.072 ;
+; i_reg_array[101]  ; o_word[101] ; 5.036 ;    ;    ; 5.036 ;
+; i_reg_array[102]  ; o_word[102] ; 5.126 ;    ;    ; 5.126 ;
+; i_reg_array[103]  ; o_word[103] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[104]  ; o_word[104] ; 4.646 ;    ;    ; 4.646 ;
+; i_reg_array[105]  ; o_word[105] ; 4.636 ;    ;    ; 4.636 ;
+; i_reg_array[106]  ; o_word[106] ; 5.061 ;    ;    ; 5.061 ;
+; i_reg_array[107]  ; o_word[107] ; 5.056 ;    ;    ; 5.056 ;
+; i_reg_array[108]  ; o_word[108] ; 5.080 ;    ;    ; 5.080 ;
+; i_reg_array[109]  ; o_word[109] ; 5.112 ;    ;    ; 5.112 ;
+; i_reg_array[110]  ; o_word[110] ; 4.656 ;    ;    ; 4.656 ;
+; i_reg_array[111]  ; o_word[111] ; 4.626 ;    ;    ; 4.626 ;
+; i_reg_array[112]  ; o_word[112] ; 4.729 ;    ;    ; 4.729 ;
+; i_reg_array[113]  ; o_word[113] ; 4.642 ;    ;    ; 4.642 ;
+; i_reg_array[114]  ; o_word[114] ; 5.050 ;    ;    ; 5.050 ;
+; i_reg_array[115]  ; o_word[115] ; 5.082 ;    ;    ; 5.082 ;
+; i_reg_array[116]  ; o_word[116] ; 5.051 ;    ;    ; 5.051 ;
+; i_reg_array[117]  ; o_word[117] ; 5.000 ;    ;    ; 5.000 ;
+; i_reg_array[118]  ; o_word[118] ; 4.690 ;    ;    ; 4.690 ;
+; i_reg_array[119]  ; o_word[119] ; 4.932 ;    ;    ; 4.932 ;
+; i_reg_array[120]  ; o_word[120] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[121]  ; o_word[121] ; 4.906 ;    ;    ; 4.906 ;
+; i_reg_array[122]  ; o_word[122] ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[123]  ; o_word[123] ; 5.101 ;    ;    ; 5.101 ;
+; i_reg_array[124]  ; o_word[124] ; 5.068 ;    ;    ; 5.068 ;
+; i_reg_array[125]  ; o_word[125] ; 4.998 ;    ;    ; 4.998 ;
+; i_reg_array[126]  ; o_word[126] ; 4.855 ;    ;    ; 4.855 ;
+; i_reg_array[127]  ; o_word[127] ; 4.606 ;    ;    ; 4.606 ;
+; i_reg_array[128]  ; o_word[128] ; 4.987 ;    ;    ; 4.987 ;
+; i_reg_array[129]  ; o_word[129] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[130]  ; o_word[130] ; 5.050 ;    ;    ; 5.050 ;
+; i_reg_array[131]  ; o_word[131] ; 5.038 ;    ;    ; 5.038 ;
+; i_reg_array[132]  ; o_word[132] ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[133]  ; o_word[133] ; 4.680 ;    ;    ; 4.680 ;
+; i_reg_array[134]  ; o_word[134] ; 5.107 ;    ;    ; 5.107 ;
+; i_reg_array[135]  ; o_word[135] ; 4.620 ;    ;    ; 4.620 ;
+; i_second_word[0]  ; o_word[34]  ; 4.916 ;    ;    ; 4.916 ;
+; i_second_word[1]  ; o_word[35]  ; 4.950 ;    ;    ; 4.950 ;
+; i_second_word[2]  ; o_word[36]  ; 5.251 ;    ;    ; 5.251 ;
+; i_second_word[3]  ; o_word[37]  ; 5.005 ;    ;    ; 5.005 ;
+; i_second_word[4]  ; o_word[38]  ; 5.054 ;    ;    ; 5.054 ;
+; i_second_word[5]  ; o_word[39]  ; 5.222 ;    ;    ; 5.222 ;
+; i_second_word[6]  ; o_word[40]  ; 4.999 ;    ;    ; 4.999 ;
+; i_second_word[7]  ; o_word[41]  ; 4.866 ;    ;    ; 4.866 ;
+; i_second_word[8]  ; o_word[42]  ; 5.176 ;    ;    ; 5.176 ;
+; i_second_word[9]  ; o_word[43]  ; 5.289 ;    ;    ; 5.289 ;
+; i_second_word[10] ; o_word[44]  ; 5.183 ;    ;    ; 5.183 ;
+; i_second_word[11] ; o_word[45]  ; 4.985 ;    ;    ; 4.985 ;
+; i_second_word[12] ; o_word[46]  ; 4.871 ;    ;    ; 4.871 ;
+; i_second_word[13] ; o_word[47]  ; 4.850 ;    ;    ; 4.850 ;
+; i_second_word[14] ; o_word[48]  ; 5.347 ;    ;    ; 5.347 ;
+; i_second_word[15] ; o_word[49]  ; 5.172 ;    ;    ; 5.172 ;
+; i_second_word[16] ; o_word[50]  ; 5.122 ;    ;    ; 5.122 ;
+; i_second_word[17] ; o_word[51]  ; 5.108 ;    ;    ; 5.108 ;
+; i_second_word[18] ; o_word[52]  ; 4.803 ;    ;    ; 4.803 ;
+; i_second_word[19] ; o_word[53]  ; 5.260 ;    ;    ; 5.260 ;
+; i_second_word[20] ; o_word[54]  ; 5.310 ;    ;    ; 5.310 ;
+; i_second_word[21] ; o_word[55]  ; 5.250 ;    ;    ; 5.250 ;
+; i_second_word[22] ; o_word[56]  ; 5.009 ;    ;    ; 5.009 ;
+; i_second_word[23] ; o_word[57]  ; 5.215 ;    ;    ; 5.215 ;
+; i_second_word[24] ; o_word[58]  ; 5.312 ;    ;    ; 5.312 ;
+; i_second_word[25] ; o_word[59]  ; 4.905 ;    ;    ; 4.905 ;
+; i_second_word[26] ; o_word[60]  ; 4.906 ;    ;    ; 4.906 ;
+; i_second_word[27] ; o_word[61]  ; 2.502 ;    ;    ; 2.502 ;
+; i_second_word[28] ; o_word[62]  ; 5.244 ;    ;    ; 5.244 ;
+; i_second_word[29] ; o_word[63]  ; 5.283 ;    ;    ; 5.283 ;
+; i_second_word[30] ; o_word[64]  ; 4.820 ;    ;    ; 4.820 ;
+; i_second_word[31] ; o_word[65]  ; 5.192 ;    ;    ; 5.192 ;
+; i_second_word[32] ; o_word[66]  ; 5.259 ;    ;    ; 5.259 ;
+; i_second_word[33] ; o_word[67]  ; 5.169 ;    ;    ; 5.169 ;
++-------------------+-------------+-------+----+----+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------------+-------------+-------+----+----+-------+
+; Input Port        ; Output Port ; RR    ; RF ; FR ; FF    ;
++-------------------+-------------+-------+----+----+-------+
+; i_first_word[0]   ; o_word[0]   ; 2.803 ;    ;    ; 2.803 ;
+; i_first_word[1]   ; o_word[1]   ; 5.260 ;    ;    ; 5.260 ;
+; i_first_word[2]   ; o_word[2]   ; 5.028 ;    ;    ; 5.028 ;
+; i_first_word[3]   ; o_word[3]   ; 4.974 ;    ;    ; 4.974 ;
+; i_first_word[4]   ; o_word[4]   ; 5.000 ;    ;    ; 5.000 ;
+; i_first_word[5]   ; o_word[5]   ; 5.223 ;    ;    ; 5.223 ;
+; i_first_word[6]   ; o_word[6]   ; 5.063 ;    ;    ; 5.063 ;
+; i_first_word[7]   ; o_word[7]   ; 5.171 ;    ;    ; 5.171 ;
+; i_first_word[8]   ; o_word[8]   ; 5.008 ;    ;    ; 5.008 ;
+; i_first_word[9]   ; o_word[9]   ; 4.869 ;    ;    ; 4.869 ;
+; i_first_word[10]  ; o_word[10]  ; 4.959 ;    ;    ; 4.959 ;
+; i_first_word[11]  ; o_word[11]  ; 5.166 ;    ;    ; 5.166 ;
+; i_first_word[12]  ; o_word[12]  ; 4.860 ;    ;    ; 4.860 ;
+; i_first_word[13]  ; o_word[13]  ; 4.861 ;    ;    ; 4.861 ;
+; i_first_word[14]  ; o_word[14]  ; 5.246 ;    ;    ; 5.246 ;
+; i_first_word[15]  ; o_word[15]  ; 4.973 ;    ;    ; 4.973 ;
+; i_first_word[16]  ; o_word[16]  ; 3.653 ;    ;    ; 3.653 ;
+; i_first_word[17]  ; o_word[17]  ; 5.173 ;    ;    ; 5.173 ;
+; i_first_word[18]  ; o_word[18]  ; 4.832 ;    ;    ; 4.832 ;
+; i_first_word[19]  ; o_word[19]  ; 5.243 ;    ;    ; 5.243 ;
+; i_first_word[20]  ; o_word[20]  ; 4.845 ;    ;    ; 4.845 ;
+; i_first_word[21]  ; o_word[21]  ; 5.055 ;    ;    ; 5.055 ;
+; i_first_word[22]  ; o_word[22]  ; 5.144 ;    ;    ; 5.144 ;
+; i_first_word[23]  ; o_word[23]  ; 5.153 ;    ;    ; 5.153 ;
+; i_first_word[24]  ; o_word[24]  ; 5.016 ;    ;    ; 5.016 ;
+; i_first_word[25]  ; o_word[25]  ; 4.972 ;    ;    ; 4.972 ;
+; i_first_word[26]  ; o_word[26]  ; 5.280 ;    ;    ; 5.280 ;
+; i_first_word[27]  ; o_word[27]  ; 4.865 ;    ;    ; 4.865 ;
+; i_first_word[28]  ; o_word[28]  ; 5.148 ;    ;    ; 5.148 ;
+; i_first_word[29]  ; o_word[29]  ; 5.164 ;    ;    ; 5.164 ;
+; i_first_word[30]  ; o_word[30]  ; 4.903 ;    ;    ; 4.903 ;
+; i_first_word[31]  ; o_word[31]  ; 5.009 ;    ;    ; 5.009 ;
+; i_first_word[32]  ; o_word[32]  ; 5.206 ;    ;    ; 5.206 ;
+; i_first_word[33]  ; o_word[33]  ; 4.994 ;    ;    ; 4.994 ;
+; i_first_word[34]  ; o_word[34]  ; 4.994 ;    ;    ; 4.994 ;
+; i_first_word[35]  ; o_word[35]  ; 5.101 ;    ;    ; 5.101 ;
+; i_first_word[36]  ; o_word[36]  ; 5.260 ;    ;    ; 5.260 ;
+; i_first_word[37]  ; o_word[37]  ; 4.945 ;    ;    ; 4.945 ;
+; i_first_word[38]  ; o_word[38]  ; 4.933 ;    ;    ; 4.933 ;
+; i_first_word[39]  ; o_word[39]  ; 5.136 ;    ;    ; 5.136 ;
+; i_first_word[40]  ; o_word[40]  ; 4.915 ;    ;    ; 4.915 ;
+; i_first_word[41]  ; o_word[41]  ; 4.910 ;    ;    ; 4.910 ;
+; i_first_word[42]  ; o_word[42]  ; 5.239 ;    ;    ; 5.239 ;
+; i_first_word[43]  ; o_word[43]  ; 5.225 ;    ;    ; 5.225 ;
+; i_first_word[44]  ; o_word[44]  ; 5.155 ;    ;    ; 5.155 ;
+; i_first_word[45]  ; o_word[45]  ; 4.999 ;    ;    ; 4.999 ;
+; i_first_word[46]  ; o_word[46]  ; 4.898 ;    ;    ; 4.898 ;
+; i_first_word[47]  ; o_word[47]  ; 4.968 ;    ;    ; 4.968 ;
+; i_first_word[48]  ; o_word[48]  ; 5.806 ;    ;    ; 5.806 ;
+; i_first_word[49]  ; o_word[49]  ; 5.132 ;    ;    ; 5.132 ;
+; i_first_word[50]  ; o_word[50]  ; 4.971 ;    ;    ; 4.971 ;
+; i_first_word[51]  ; o_word[51]  ; 5.068 ;    ;    ; 5.068 ;
+; i_first_word[52]  ; o_word[52]  ; 4.954 ;    ;    ; 4.954 ;
+; i_first_word[53]  ; o_word[53]  ; 5.277 ;    ;    ; 5.277 ;
+; i_first_word[54]  ; o_word[54]  ; 5.447 ;    ;    ; 5.447 ;
+; i_first_word[55]  ; o_word[55]  ; 5.117 ;    ;    ; 5.117 ;
+; i_first_word[56]  ; o_word[56]  ; 4.965 ;    ;    ; 4.965 ;
+; i_first_word[57]  ; o_word[57]  ; 5.131 ;    ;    ; 5.131 ;
+; i_first_word[58]  ; o_word[58]  ; 5.304 ;    ;    ; 5.304 ;
+; i_first_word[59]  ; o_word[59]  ; 4.964 ;    ;    ; 4.964 ;
+; i_first_word[60]  ; o_word[60]  ; 4.984 ;    ;    ; 4.984 ;
+; i_first_word[61]  ; o_word[61]  ; 5.156 ;    ;    ; 5.156 ;
+; i_first_word[62]  ; o_word[62]  ; 5.219 ;    ;    ; 5.219 ;
+; i_first_word[63]  ; o_word[63]  ; 2.803 ;    ;    ; 2.803 ;
+; i_first_word[64]  ; o_word[64]  ; 4.980 ;    ;    ; 4.980 ;
+; i_first_word[65]  ; o_word[65]  ; 5.210 ;    ;    ; 5.210 ;
+; i_first_word[66]  ; o_word[66]  ; 5.193 ;    ;    ; 5.193 ;
+; i_first_word[67]  ; o_word[67]  ; 5.201 ;    ;    ; 5.201 ;
+; i_reg_array[0]    ; o_word[0]   ; 2.684 ;    ;    ; 2.684 ;
+; i_reg_array[1]    ; o_word[1]   ; 5.146 ;    ;    ; 5.146 ;
+; i_reg_array[2]    ; o_word[2]   ; 4.893 ;    ;    ; 4.893 ;
+; i_reg_array[3]    ; o_word[3]   ; 4.843 ;    ;    ; 4.843 ;
+; i_reg_array[4]    ; o_word[4]   ; 4.863 ;    ;    ; 4.863 ;
+; i_reg_array[5]    ; o_word[5]   ; 5.156 ;    ;    ; 5.156 ;
+; i_reg_array[6]    ; o_word[6]   ; 4.940 ;    ;    ; 4.940 ;
+; i_reg_array[7]    ; o_word[7]   ; 5.124 ;    ;    ; 5.124 ;
+; i_reg_array[8]    ; o_word[8]   ; 4.891 ;    ;    ; 4.891 ;
+; i_reg_array[9]    ; o_word[9]   ; 4.979 ;    ;    ; 4.979 ;
+; i_reg_array[10]   ; o_word[10]  ; 4.861 ;    ;    ; 4.861 ;
+; i_reg_array[11]   ; o_word[11]  ; 5.225 ;    ;    ; 5.225 ;
+; i_reg_array[12]   ; o_word[12]  ; 4.978 ;    ;    ; 4.978 ;
+; i_reg_array[13]   ; o_word[13]  ; 5.009 ;    ;    ; 5.009 ;
+; i_reg_array[14]   ; o_word[14]  ; 5.293 ;    ;    ; 5.293 ;
+; i_reg_array[15]   ; o_word[15]  ; 2.706 ;    ;    ; 2.706 ;
+; i_reg_array[16]   ; o_word[16]  ; 5.167 ;    ;    ; 5.167 ;
+; i_reg_array[17]   ; o_word[17]  ; 5.206 ;    ;    ; 5.206 ;
+; i_reg_array[18]   ; o_word[18]  ; 4.978 ;    ;    ; 4.978 ;
+; i_reg_array[19]   ; o_word[19]  ; 5.126 ;    ;    ; 5.126 ;
+; i_reg_array[20]   ; o_word[20]  ; 4.976 ;    ;    ; 4.976 ;
+; i_reg_array[21]   ; o_word[21]  ; 5.224 ;    ;    ; 5.224 ;
+; i_reg_array[22]   ; o_word[22]  ; 5.261 ;    ;    ; 5.261 ;
+; i_reg_array[23]   ; o_word[23]  ; 5.196 ;    ;    ; 5.196 ;
+; i_reg_array[24]   ; o_word[24]  ; 4.876 ;    ;    ; 4.876 ;
+; i_reg_array[25]   ; o_word[25]  ; 4.861 ;    ;    ; 4.861 ;
+; i_reg_array[26]   ; o_word[26]  ; 5.154 ;    ;    ; 5.154 ;
+; i_reg_array[27]   ; o_word[27]  ; 4.988 ;    ;    ; 4.988 ;
+; i_reg_array[28]   ; o_word[28]  ; 5.103 ;    ;    ; 5.103 ;
+; i_reg_array[29]   ; o_word[29]  ; 5.205 ;    ;    ; 5.205 ;
+; i_reg_array[30]   ; o_word[30]  ; 5.029 ;    ;    ; 5.029 ;
+; i_reg_array[31]   ; o_word[31]  ; 4.893 ;    ;    ; 4.893 ;
+; i_reg_array[32]   ; o_word[32]  ; 5.136 ;    ;    ; 5.136 ;
+; i_reg_array[33]   ; o_word[33]  ; 4.853 ;    ;    ; 4.853 ;
+; i_reg_array[34]   ; o_word[34]  ; 4.853 ;    ;    ; 4.853 ;
+; i_reg_array[35]   ; o_word[35]  ; 5.037 ;    ;    ; 5.037 ;
+; i_reg_array[36]   ; o_word[36]  ; 5.125 ;    ;    ; 5.125 ;
+; i_reg_array[37]   ; o_word[37]  ; 4.823 ;    ;    ; 4.823 ;
+; i_reg_array[38]   ; o_word[38]  ; 4.976 ;    ;    ; 4.976 ;
+; i_reg_array[39]   ; o_word[39]  ; 5.231 ;    ;    ; 5.231 ;
+; i_reg_array[40]   ; o_word[40]  ; 5.001 ;    ;    ; 5.001 ;
+; i_reg_array[41]   ; o_word[41]  ; 4.979 ;    ;    ; 4.979 ;
+; i_reg_array[42]   ; o_word[42]  ; 5.134 ;    ;    ; 5.134 ;
+; i_reg_array[43]   ; o_word[43]  ; 5.210 ;    ;    ; 5.210 ;
+; i_reg_array[44]   ; o_word[44]  ; 5.251 ;    ;    ; 5.251 ;
+; i_reg_array[45]   ; o_word[45]  ; 4.863 ;    ;    ; 4.863 ;
+; i_reg_array[46]   ; o_word[46]  ; 4.968 ;    ;    ; 4.968 ;
+; i_reg_array[47]   ; o_word[47]  ; 4.960 ;    ;    ; 4.960 ;
+; i_reg_array[48]   ; o_word[48]  ; 5.368 ;    ;    ; 5.368 ;
+; i_reg_array[49]   ; o_word[49]  ; 5.244 ;    ;    ; 5.244 ;
+; i_reg_array[50]   ; o_word[50]  ; 5.089 ;    ;    ; 5.089 ;
+; i_reg_array[51]   ; o_word[51]  ; 5.099 ;    ;    ; 5.099 ;
+; i_reg_array[52]   ; o_word[52]  ; 4.876 ;    ;    ; 4.876 ;
+; i_reg_array[53]   ; o_word[53]  ; 5.183 ;    ;    ; 5.183 ;
+; i_reg_array[54]   ; o_word[54]  ; 5.205 ;    ;    ; 5.205 ;
+; i_reg_array[55]   ; o_word[55]  ; 5.167 ;    ;    ; 5.167 ;
+; i_reg_array[56]   ; o_word[56]  ; 4.843 ;    ;    ; 4.843 ;
+; i_reg_array[57]   ; o_word[57]  ; 5.263 ;    ;    ; 5.263 ;
+; i_reg_array[58]   ; o_word[58]  ; 5.186 ;    ;    ; 5.186 ;
+; i_reg_array[59]   ; o_word[59]  ; 4.991 ;    ;    ; 4.991 ;
+; i_reg_array[60]   ; o_word[60]  ; 4.849 ;    ;    ; 4.849 ;
+; i_reg_array[61]   ; o_word[61]  ; 2.633 ;    ;    ; 2.633 ;
+; i_reg_array[62]   ; o_word[62]  ; 2.779 ;    ;    ; 2.779 ;
+; i_reg_array[63]   ; o_word[63]  ; 5.218 ;    ;    ; 5.218 ;
+; i_reg_array[64]   ; o_word[64]  ; 4.938 ;    ;    ; 4.938 ;
+; i_reg_array[65]   ; o_word[65]  ; 5.270 ;    ;    ; 5.270 ;
+; i_reg_array[66]   ; o_word[66]  ; 5.147 ;    ;    ; 5.147 ;
+; i_reg_array[67]   ; o_word[67]  ; 5.251 ;    ;    ; 5.251 ;
+; i_reg_array[68]   ; o_word[68]  ; 4.672 ;    ;    ; 4.672 ;
+; i_reg_array[69]   ; o_word[69]  ; 5.035 ;    ;    ; 5.035 ;
+; i_reg_array[70]   ; o_word[70]  ; 4.610 ;    ;    ; 4.610 ;
+; i_reg_array[71]   ; o_word[71]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[72]   ; o_word[72]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[73]   ; o_word[73]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[74]   ; o_word[74]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[75]   ; o_word[75]  ; 5.034 ;    ;    ; 5.034 ;
+; i_reg_array[76]   ; o_word[76]  ; 4.999 ;    ;    ; 4.999 ;
+; i_reg_array[77]   ; o_word[77]  ; 5.043 ;    ;    ; 5.043 ;
+; i_reg_array[78]   ; o_word[78]  ; 4.642 ;    ;    ; 4.642 ;
+; i_reg_array[79]   ; o_word[79]  ; 5.072 ;    ;    ; 5.072 ;
+; i_reg_array[80]   ; o_word[80]  ; 5.094 ;    ;    ; 5.094 ;
+; i_reg_array[81]   ; o_word[81]  ; 5.012 ;    ;    ; 5.012 ;
+; i_reg_array[82]   ; o_word[82]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[83]   ; o_word[83]  ; 4.710 ;    ;    ; 4.710 ;
+; i_reg_array[84]   ; o_word[84]  ; 5.069 ;    ;    ; 5.069 ;
+; i_reg_array[85]   ; o_word[85]  ; 4.606 ;    ;    ; 4.606 ;
+; i_reg_array[86]   ; o_word[86]  ; 5.015 ;    ;    ; 5.015 ;
+; i_reg_array[87]   ; o_word[87]  ; 5.052 ;    ;    ; 5.052 ;
+; i_reg_array[88]   ; o_word[88]  ; 5.056 ;    ;    ; 5.056 ;
+; i_reg_array[89]   ; o_word[89]  ; 5.068 ;    ;    ; 5.068 ;
+; i_reg_array[90]   ; o_word[90]  ; 4.719 ;    ;    ; 4.719 ;
+; i_reg_array[91]   ; o_word[91]  ; 5.038 ;    ;    ; 5.038 ;
+; i_reg_array[92]   ; o_word[92]  ; 4.566 ;    ;    ; 4.566 ;
+; i_reg_array[93]   ; o_word[93]  ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[94]   ; o_word[94]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[95]   ; o_word[95]  ; 5.020 ;    ;    ; 5.020 ;
+; i_reg_array[96]   ; o_word[96]  ; 4.972 ;    ;    ; 4.972 ;
+; i_reg_array[97]   ; o_word[97]  ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[98]   ; o_word[98]  ; 5.094 ;    ;    ; 5.094 ;
+; i_reg_array[99]   ; o_word[99]  ; 4.700 ;    ;    ; 4.700 ;
+; i_reg_array[100]  ; o_word[100] ; 5.072 ;    ;    ; 5.072 ;
+; i_reg_array[101]  ; o_word[101] ; 5.036 ;    ;    ; 5.036 ;
+; i_reg_array[102]  ; o_word[102] ; 5.126 ;    ;    ; 5.126 ;
+; i_reg_array[103]  ; o_word[103] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[104]  ; o_word[104] ; 4.646 ;    ;    ; 4.646 ;
+; i_reg_array[105]  ; o_word[105] ; 4.636 ;    ;    ; 4.636 ;
+; i_reg_array[106]  ; o_word[106] ; 5.061 ;    ;    ; 5.061 ;
+; i_reg_array[107]  ; o_word[107] ; 5.056 ;    ;    ; 5.056 ;
+; i_reg_array[108]  ; o_word[108] ; 5.080 ;    ;    ; 5.080 ;
+; i_reg_array[109]  ; o_word[109] ; 5.112 ;    ;    ; 5.112 ;
+; i_reg_array[110]  ; o_word[110] ; 4.656 ;    ;    ; 4.656 ;
+; i_reg_array[111]  ; o_word[111] ; 4.626 ;    ;    ; 4.626 ;
+; i_reg_array[112]  ; o_word[112] ; 4.729 ;    ;    ; 4.729 ;
+; i_reg_array[113]  ; o_word[113] ; 4.642 ;    ;    ; 4.642 ;
+; i_reg_array[114]  ; o_word[114] ; 5.050 ;    ;    ; 5.050 ;
+; i_reg_array[115]  ; o_word[115] ; 5.082 ;    ;    ; 5.082 ;
+; i_reg_array[116]  ; o_word[116] ; 5.051 ;    ;    ; 5.051 ;
+; i_reg_array[117]  ; o_word[117] ; 5.000 ;    ;    ; 5.000 ;
+; i_reg_array[118]  ; o_word[118] ; 4.690 ;    ;    ; 4.690 ;
+; i_reg_array[119]  ; o_word[119] ; 4.932 ;    ;    ; 4.932 ;
+; i_reg_array[120]  ; o_word[120] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[121]  ; o_word[121] ; 4.906 ;    ;    ; 4.906 ;
+; i_reg_array[122]  ; o_word[122] ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[123]  ; o_word[123] ; 5.101 ;    ;    ; 5.101 ;
+; i_reg_array[124]  ; o_word[124] ; 5.068 ;    ;    ; 5.068 ;
+; i_reg_array[125]  ; o_word[125] ; 4.998 ;    ;    ; 4.998 ;
+; i_reg_array[126]  ; o_word[126] ; 4.855 ;    ;    ; 4.855 ;
+; i_reg_array[127]  ; o_word[127] ; 4.606 ;    ;    ; 4.606 ;
+; i_reg_array[128]  ; o_word[128] ; 4.987 ;    ;    ; 4.987 ;
+; i_reg_array[129]  ; o_word[129] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[130]  ; o_word[130] ; 5.050 ;    ;    ; 5.050 ;
+; i_reg_array[131]  ; o_word[131] ; 5.038 ;    ;    ; 5.038 ;
+; i_reg_array[132]  ; o_word[132] ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[133]  ; o_word[133] ; 4.680 ;    ;    ; 4.680 ;
+; i_reg_array[134]  ; o_word[134] ; 5.107 ;    ;    ; 5.107 ;
+; i_reg_array[135]  ; o_word[135] ; 4.620 ;    ;    ; 4.620 ;
+; i_second_word[0]  ; o_word[34]  ; 4.916 ;    ;    ; 4.916 ;
+; i_second_word[1]  ; o_word[35]  ; 4.950 ;    ;    ; 4.950 ;
+; i_second_word[2]  ; o_word[36]  ; 5.251 ;    ;    ; 5.251 ;
+; i_second_word[3]  ; o_word[37]  ; 5.005 ;    ;    ; 5.005 ;
+; i_second_word[4]  ; o_word[38]  ; 5.054 ;    ;    ; 5.054 ;
+; i_second_word[5]  ; o_word[39]  ; 5.222 ;    ;    ; 5.222 ;
+; i_second_word[6]  ; o_word[40]  ; 4.999 ;    ;    ; 4.999 ;
+; i_second_word[7]  ; o_word[41]  ; 4.866 ;    ;    ; 4.866 ;
+; i_second_word[8]  ; o_word[42]  ; 5.176 ;    ;    ; 5.176 ;
+; i_second_word[9]  ; o_word[43]  ; 5.289 ;    ;    ; 5.289 ;
+; i_second_word[10] ; o_word[44]  ; 5.183 ;    ;    ; 5.183 ;
+; i_second_word[11] ; o_word[45]  ; 4.985 ;    ;    ; 4.985 ;
+; i_second_word[12] ; o_word[46]  ; 4.871 ;    ;    ; 4.871 ;
+; i_second_word[13] ; o_word[47]  ; 4.850 ;    ;    ; 4.850 ;
+; i_second_word[14] ; o_word[48]  ; 5.347 ;    ;    ; 5.347 ;
+; i_second_word[15] ; o_word[49]  ; 5.172 ;    ;    ; 5.172 ;
+; i_second_word[16] ; o_word[50]  ; 5.122 ;    ;    ; 5.122 ;
+; i_second_word[17] ; o_word[51]  ; 5.108 ;    ;    ; 5.108 ;
+; i_second_word[18] ; o_word[52]  ; 4.803 ;    ;    ; 4.803 ;
+; i_second_word[19] ; o_word[53]  ; 5.260 ;    ;    ; 5.260 ;
+; i_second_word[20] ; o_word[54]  ; 5.310 ;    ;    ; 5.310 ;
+; i_second_word[21] ; o_word[55]  ; 5.250 ;    ;    ; 5.250 ;
+; i_second_word[22] ; o_word[56]  ; 5.009 ;    ;    ; 5.009 ;
+; i_second_word[23] ; o_word[57]  ; 5.215 ;    ;    ; 5.215 ;
+; i_second_word[24] ; o_word[58]  ; 5.312 ;    ;    ; 5.312 ;
+; i_second_word[25] ; o_word[59]  ; 4.905 ;    ;    ; 4.905 ;
+; i_second_word[26] ; o_word[60]  ; 4.906 ;    ;    ; 4.906 ;
+; i_second_word[27] ; o_word[61]  ; 2.502 ;    ;    ; 2.502 ;
+; i_second_word[28] ; o_word[62]  ; 5.244 ;    ;    ; 5.244 ;
+; i_second_word[29] ; o_word[63]  ; 5.283 ;    ;    ; 5.283 ;
+; i_second_word[30] ; o_word[64]  ; 4.820 ;    ;    ; 4.820 ;
+; i_second_word[31] ; o_word[65]  ; 5.192 ;    ;    ; 5.192 ;
+; i_second_word[32] ; o_word[66]  ; 5.259 ;    ;    ; 5.259 ;
+; i_second_word[33] ; o_word[67]  ; 5.169 ;    ;    ; 5.169 ;
++-------------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------+
+; Progagation Delay                                           ;
++-------------------+-------------+--------+----+----+--------+
+; Input Port        ; Output Port ; RR     ; RF ; FR ; FF     ;
++-------------------+-------------+--------+----+----+--------+
+; i_first_word[0]   ; o_word[0]   ; 5.395  ;    ;    ; 5.395  ;
+; i_first_word[1]   ; o_word[1]   ; 9.324  ;    ;    ; 9.324  ;
+; i_first_word[2]   ; o_word[2]   ; 8.909  ;    ;    ; 8.909  ;
+; i_first_word[3]   ; o_word[3]   ; 8.847  ;    ;    ; 8.847  ;
+; i_first_word[4]   ; o_word[4]   ; 8.876  ;    ;    ; 8.876  ;
+; i_first_word[5]   ; o_word[5]   ; 9.383  ;    ;    ; 9.383  ;
+; i_first_word[6]   ; o_word[6]   ; 9.036  ;    ;    ; 9.036  ;
+; i_first_word[7]   ; o_word[7]   ; 9.222  ;    ;    ; 9.222  ;
+; i_first_word[8]   ; o_word[8]   ; 8.868  ;    ;    ; 8.868  ;
+; i_first_word[9]   ; o_word[9]   ; 8.563  ;    ;    ; 8.563  ;
+; i_first_word[10]  ; o_word[10]  ; 8.840  ;    ;    ; 8.840  ;
+; i_first_word[11]  ; o_word[11]  ; 9.168  ;    ;    ; 9.168  ;
+; i_first_word[12]  ; o_word[12]  ; 8.560  ;    ;    ; 8.560  ;
+; i_first_word[13]  ; o_word[13]  ; 8.563  ;    ;    ; 8.563  ;
+; i_first_word[14]  ; o_word[14]  ; 9.302  ;    ;    ; 9.302  ;
+; i_first_word[15]  ; o_word[15]  ; 8.851  ;    ;    ; 8.851  ;
+; i_first_word[16]  ; o_word[16]  ; 6.896  ;    ;    ; 6.896  ;
+; i_first_word[17]  ; o_word[17]  ; 9.151  ;    ;    ; 9.151  ;
+; i_first_word[18]  ; o_word[18]  ; 8.527  ;    ;    ; 8.527  ;
+; i_first_word[19]  ; o_word[19]  ; 9.424  ;    ;    ; 9.424  ;
+; i_first_word[20]  ; o_word[20]  ; 8.503  ;    ;    ; 8.503  ;
+; i_first_word[21]  ; o_word[21]  ; 8.828  ;    ;    ; 8.828  ;
+; i_first_word[22]  ; o_word[22]  ; 9.146  ;    ;    ; 9.146  ;
+; i_first_word[23]  ; o_word[23]  ; 9.129  ;    ;    ; 9.129  ;
+; i_first_word[24]  ; o_word[24]  ; 8.892  ;    ;    ; 8.892  ;
+; i_first_word[25]  ; o_word[25]  ; 8.821  ;    ;    ; 8.821  ;
+; i_first_word[26]  ; o_word[26]  ; 9.462  ;    ;    ; 9.462  ;
+; i_first_word[27]  ; o_word[27]  ; 8.562  ;    ;    ; 8.562  ;
+; i_first_word[28]  ; o_word[28]  ; 9.201  ;    ;    ; 9.201  ;
+; i_first_word[29]  ; o_word[29]  ; 9.172  ;    ;    ; 9.172  ;
+; i_first_word[30]  ; o_word[30]  ; 8.685  ;    ;    ; 8.685  ;
+; i_first_word[31]  ; o_word[31]  ; 8.884  ;    ;    ; 8.884  ;
+; i_first_word[32]  ; o_word[32]  ; 9.259  ;    ;    ; 9.259  ;
+; i_first_word[33]  ; o_word[33]  ; 8.867  ;    ;    ; 8.867  ;
+; i_first_word[34]  ; o_word[34]  ; 8.867  ;    ;    ; 8.867  ;
+; i_first_word[35]  ; o_word[35]  ; 9.051  ;    ;    ; 9.051  ;
+; i_first_word[36]  ; o_word[36]  ; 9.442  ;    ;    ; 9.442  ;
+; i_first_word[37]  ; o_word[37]  ; 8.802  ;    ;    ; 8.802  ;
+; i_first_word[38]  ; o_word[38]  ; 8.629  ;    ;    ; 8.629  ;
+; i_first_word[39]  ; o_word[39]  ; 9.144  ;    ;    ; 9.144  ;
+; i_first_word[40]  ; o_word[40]  ; 8.573  ;    ;    ; 8.573  ;
+; i_first_word[41]  ; o_word[41]  ; 8.658  ;    ;    ; 8.658  ;
+; i_first_word[42]  ; o_word[42]  ; 9.398  ;    ;    ; 9.398  ;
+; i_first_word[43]  ; o_word[43]  ; 9.273  ;    ;    ; 9.273  ;
+; i_first_word[44]  ; o_word[44]  ; 9.157  ;    ;    ; 9.157  ;
+; i_first_word[45]  ; o_word[45]  ; 8.874  ;    ;    ; 8.874  ;
+; i_first_word[46]  ; o_word[46]  ; 8.649  ;    ;    ; 8.649  ;
+; i_first_word[47]  ; o_word[47]  ; 8.827  ;    ;    ; 8.827  ;
+; i_first_word[48]  ; o_word[48]  ; 10.323 ;    ;    ; 10.323 ;
+; i_first_word[49]  ; o_word[49]  ; 9.135  ;    ;    ; 9.135  ;
+; i_first_word[50]  ; o_word[50]  ; 8.710  ;    ;    ; 8.710  ;
+; i_first_word[51]  ; o_word[51]  ; 8.965  ;    ;    ; 8.965  ;
+; i_first_word[52]  ; o_word[52]  ; 8.827  ;    ;    ; 8.827  ;
+; i_first_word[53]  ; o_word[53]  ; 9.455  ;    ;    ; 9.455  ;
+; i_first_word[54]  ; o_word[54]  ; 9.693  ;    ;    ; 9.693  ;
+; i_first_word[55]  ; o_word[55]  ; 9.119  ;    ;    ; 9.119  ;
+; i_first_word[56]  ; o_word[56]  ; 8.822  ;    ;    ; 8.822  ;
+; i_first_word[57]  ; o_word[57]  ; 9.133  ;    ;    ; 9.133  ;
+; i_first_word[58]  ; o_word[58]  ; 9.467  ;    ;    ; 9.467  ;
+; i_first_word[59]  ; o_word[59]  ; 8.710  ;    ;    ; 8.710  ;
+; i_first_word[60]  ; o_word[60]  ; 8.857  ;    ;    ; 8.857  ;
+; i_first_word[61]  ; o_word[61]  ; 9.203  ;    ;    ; 9.203  ;
+; i_first_word[62]  ; o_word[62]  ; 9.377  ;    ;    ; 9.377  ;
+; i_first_word[63]  ; o_word[63]  ; 5.287  ;    ;    ; 5.287  ;
+; i_first_word[64]  ; o_word[64]  ; 8.861  ;    ;    ; 8.861  ;
+; i_first_word[65]  ; o_word[65]  ; 9.390  ;    ;    ; 9.390  ;
+; i_first_word[66]  ; o_word[66]  ; 9.245  ;    ;    ; 9.245  ;
+; i_first_word[67]  ; o_word[67]  ; 9.248  ;    ;    ; 9.248  ;
+; i_reg_array[0]    ; o_word[0]   ; 5.120  ;    ;    ; 5.120  ;
+; i_reg_array[1]    ; o_word[1]   ; 9.081  ;    ;    ; 9.081  ;
+; i_reg_array[2]    ; o_word[2]   ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[3]    ; o_word[3]   ; 8.539  ;    ;    ; 8.539  ;
+; i_reg_array[4]    ; o_word[4]   ; 8.559  ;    ;    ; 8.559  ;
+; i_reg_array[5]    ; o_word[5]   ; 9.207  ;    ;    ; 9.207  ;
+; i_reg_array[6]    ; o_word[6]   ; 8.735  ;    ;    ; 8.735  ;
+; i_reg_array[7]    ; o_word[7]   ; 9.126  ;    ;    ; 9.126  ;
+; i_reg_array[8]    ; o_word[8]   ; 8.592  ;    ;    ; 8.592  ;
+; i_reg_array[9]    ; o_word[9]   ; 8.854  ;    ;    ; 8.854  ;
+; i_reg_array[10]   ; o_word[10]  ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[11]   ; o_word[11]  ; 9.277  ;    ;    ; 9.277  ;
+; i_reg_array[12]   ; o_word[12]  ; 8.837  ;    ;    ; 8.837  ;
+; i_reg_array[13]   ; o_word[13]  ; 8.868  ;    ;    ; 8.868  ;
+; i_reg_array[14]   ; o_word[14]  ; 9.454  ;    ;    ; 9.454  ;
+; i_reg_array[15]   ; o_word[15]  ; 5.202  ;    ;    ; 5.202  ;
+; i_reg_array[16]   ; o_word[16]  ; 9.216  ;    ;    ; 9.216  ;
+; i_reg_array[17]   ; o_word[17]  ; 9.255  ;    ;    ; 9.255  ;
+; i_reg_array[18]   ; o_word[18]  ; 8.852  ;    ;    ; 8.852  ;
+; i_reg_array[19]   ; o_word[19]  ; 9.128  ;    ;    ; 9.128  ;
+; i_reg_array[20]   ; o_word[20]  ; 8.829  ;    ;    ; 8.829  ;
+; i_reg_array[21]   ; o_word[21]  ; 9.213  ;    ;    ; 9.213  ;
+; i_reg_array[22]   ; o_word[22]  ; 9.421  ;    ;    ; 9.421  ;
+; i_reg_array[23]   ; o_word[23]  ; 9.243  ;    ;    ; 9.243  ;
+; i_reg_array[24]   ; o_word[24]  ; 8.569  ;    ;    ; 8.569  ;
+; i_reg_array[25]   ; o_word[25]  ; 8.562  ;    ;    ; 8.562  ;
+; i_reg_array[26]   ; o_word[26]  ; 9.155  ;    ;    ; 9.155  ;
+; i_reg_array[27]   ; o_word[27]  ; 8.863  ;    ;    ; 8.863  ;
+; i_reg_array[28]   ; o_word[28]  ; 9.078  ;    ;    ; 9.078  ;
+; i_reg_array[29]   ; o_word[29]  ; 9.253  ;    ;    ; 9.253  ;
+; i_reg_array[30]   ; o_word[30]  ; 8.990  ;    ;    ; 8.990  ;
+; i_reg_array[31]   ; o_word[31]  ; 8.589  ;    ;    ; 8.589  ;
+; i_reg_array[32]   ; o_word[32]  ; 9.139  ;    ;    ; 9.139  ;
+; i_reg_array[33]   ; o_word[33]  ; 8.549  ;    ;    ; 8.549  ;
+; i_reg_array[34]   ; o_word[34]  ; 8.549  ;    ;    ; 8.549  ;
+; i_reg_array[35]   ; o_word[35]  ; 8.880  ;    ;    ; 8.880  ;
+; i_reg_array[36]   ; o_word[36]  ; 9.133  ;    ;    ; 9.133  ;
+; i_reg_array[37]   ; o_word[37]  ; 8.521  ;    ;    ; 8.521  ;
+; i_reg_array[38]   ; o_word[38]  ; 8.720  ;    ;    ; 8.720  ;
+; i_reg_array[39]   ; o_word[39]  ; 9.413  ;    ;    ; 9.413  ;
+; i_reg_array[40]   ; o_word[40]  ; 8.856  ;    ;    ; 8.856  ;
+; i_reg_array[41]   ; o_word[41]  ; 8.858  ;    ;    ; 8.858  ;
+; i_reg_array[42]   ; o_word[42]  ; 9.134  ;    ;    ; 9.134  ;
+; i_reg_array[43]   ; o_word[43]  ; 9.220  ;    ;    ; 9.220  ;
+; i_reg_array[44]   ; o_word[44]  ; 9.411  ;    ;    ; 9.411  ;
+; i_reg_array[45]   ; o_word[45]  ; 8.561  ;    ;    ; 8.561  ;
+; i_reg_array[46]   ; o_word[46]  ; 8.849  ;    ;    ; 8.849  ;
+; i_reg_array[47]   ; o_word[47]  ; 8.841  ;    ;    ; 8.841  ;
+; i_reg_array[48]   ; o_word[48]  ; 9.578  ;    ;    ; 9.578  ;
+; i_reg_array[49]   ; o_word[49]  ; 9.404  ;    ;    ; 9.404  ;
+; i_reg_array[50]   ; o_word[50]  ; 8.985  ;    ;    ; 8.985  ;
+; i_reg_array[51]   ; o_word[51]  ; 9.041  ;    ;    ; 9.041  ;
+; i_reg_array[52]   ; o_word[52]  ; 8.620  ;    ;    ; 8.620  ;
+; i_reg_array[53]   ; o_word[53]  ; 9.235  ;    ;    ; 9.235  ;
+; i_reg_array[54]   ; o_word[54]  ; 9.213  ;    ;    ; 9.213  ;
+; i_reg_array[55]   ; o_word[55]  ; 9.219  ;    ;    ; 9.219  ;
+; i_reg_array[56]   ; o_word[56]  ; 8.541  ;    ;    ; 8.541  ;
+; i_reg_array[57]   ; o_word[57]  ; 9.429  ;    ;    ; 9.429  ;
+; i_reg_array[58]   ; o_word[58]  ; 9.194  ;    ;    ; 9.194  ;
+; i_reg_array[59]   ; o_word[59]  ; 8.846  ;    ;    ; 8.846  ;
+; i_reg_array[60]   ; o_word[60]  ; 8.543  ;    ;    ; 8.543  ;
+; i_reg_array[61]   ; o_word[61]  ; 5.098  ;    ;    ; 5.098  ;
+; i_reg_array[62]   ; o_word[62]  ; 5.338  ;    ;    ; 5.338  ;
+; i_reg_array[63]   ; o_word[63]  ; 9.275  ;    ;    ; 9.275  ;
+; i_reg_array[64]   ; o_word[64]  ; 8.797  ;    ;    ; 8.797  ;
+; i_reg_array[65]   ; o_word[65]  ; 9.430  ;    ;    ; 9.430  ;
+; i_reg_array[66]   ; o_word[66]  ; 9.154  ;    ;    ; 9.154  ;
+; i_reg_array[67]   ; o_word[67]  ; 9.411  ;    ;    ; 9.411  ;
+; i_reg_array[68]   ; o_word[68]  ; 8.026  ;    ;    ; 8.026  ;
+; i_reg_array[69]   ; o_word[69]  ; 8.834  ;    ;    ; 8.834  ;
+; i_reg_array[70]   ; o_word[70]  ; 7.956  ;    ;    ; 7.956  ;
+; i_reg_array[71]   ; o_word[71]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[72]   ; o_word[72]  ; 7.954  ;    ;    ; 7.954  ;
+; i_reg_array[73]   ; o_word[73]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[74]   ; o_word[74]  ; 7.970  ;    ;    ; 7.970  ;
+; i_reg_array[75]   ; o_word[75]  ; 8.834  ;    ;    ; 8.834  ;
+; i_reg_array[76]   ; o_word[76]  ; 8.787  ;    ;    ; 8.787  ;
+; i_reg_array[77]   ; o_word[77]  ; 8.843  ;    ;    ; 8.843  ;
+; i_reg_array[78]   ; o_word[78]  ; 7.984  ;    ;    ; 7.984  ;
+; i_reg_array[79]   ; o_word[79]  ; 8.906  ;    ;    ; 8.906  ;
+; i_reg_array[80]   ; o_word[80]  ; 8.926  ;    ;    ; 8.926  ;
+; i_reg_array[81]   ; o_word[81]  ; 8.809  ;    ;    ; 8.809  ;
+; i_reg_array[82]   ; o_word[82]  ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[83]   ; o_word[83]  ; 8.170  ;    ;    ; 8.170  ;
+; i_reg_array[84]   ; o_word[84]  ; 8.883  ;    ;    ; 8.883  ;
+; i_reg_array[85]   ; o_word[85]  ; 7.960  ;    ;    ; 7.960  ;
+; i_reg_array[86]   ; o_word[86]  ; 8.814  ;    ;    ; 8.814  ;
+; i_reg_array[87]   ; o_word[87]  ; 8.877  ;    ;    ; 8.877  ;
+; i_reg_array[88]   ; o_word[88]  ; 8.860  ;    ;    ; 8.860  ;
+; i_reg_array[89]   ; o_word[89]  ; 8.871  ;    ;    ; 8.871  ;
+; i_reg_array[90]   ; o_word[90]  ; 8.180  ;    ;    ; 8.180  ;
+; i_reg_array[91]   ; o_word[91]  ; 8.847  ;    ;    ; 8.847  ;
+; i_reg_array[92]   ; o_word[92]  ; 7.920  ;    ;    ; 7.920  ;
+; i_reg_array[93]   ; o_word[93]  ; 7.906  ;    ;    ; 7.906  ;
+; i_reg_array[94]   ; o_word[94]  ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[95]   ; o_word[95]  ; 8.826  ;    ;    ; 8.826  ;
+; i_reg_array[96]   ; o_word[96]  ; 8.765  ;    ;    ; 8.765  ;
+; i_reg_array[97]   ; o_word[97]  ; 7.904  ;    ;    ; 7.904  ;
+; i_reg_array[98]   ; o_word[98]  ; 8.926  ;    ;    ; 8.926  ;
+; i_reg_array[99]   ; o_word[99]  ; 8.083  ;    ;    ; 8.083  ;
+; i_reg_array[100]  ; o_word[100] ; 8.888  ;    ;    ; 8.888  ;
+; i_reg_array[101]  ; o_word[101] ; 8.839  ;    ;    ; 8.839  ;
+; i_reg_array[102]  ; o_word[102] ; 8.984  ;    ;    ; 8.984  ;
+; i_reg_array[103]  ; o_word[103] ; 7.964  ;    ;    ; 7.964  ;
+; i_reg_array[104]  ; o_word[104] ; 8.000  ;    ;    ; 8.000  ;
+; i_reg_array[105]  ; o_word[105] ; 7.990  ;    ;    ; 7.990  ;
+; i_reg_array[106]  ; o_word[106] ; 8.883  ;    ;    ; 8.883  ;
+; i_reg_array[107]  ; o_word[107] ; 8.863  ;    ;    ; 8.863  ;
+; i_reg_array[108]  ; o_word[108] ; 8.881  ;    ;    ; 8.881  ;
+; i_reg_array[109]  ; o_word[109] ; 8.935  ;    ;    ; 8.935  ;
+; i_reg_array[110]  ; o_word[110] ; 8.010  ;    ;    ; 8.010  ;
+; i_reg_array[111]  ; o_word[111] ; 7.980  ;    ;    ; 7.980  ;
+; i_reg_array[112]  ; o_word[112] ; 8.189  ;    ;    ; 8.189  ;
+; i_reg_array[113]  ; o_word[113] ; 7.996  ;    ;    ; 7.996  ;
+; i_reg_array[114]  ; o_word[114] ; 8.864  ;    ;    ; 8.864  ;
+; i_reg_array[115]  ; o_word[115] ; 8.893  ;    ;    ; 8.893  ;
+; i_reg_array[116]  ; o_word[116] ; 8.859  ;    ;    ; 8.859  ;
+; i_reg_array[117]  ; o_word[117] ; 8.809  ;    ;    ; 8.809  ;
+; i_reg_array[118]  ; o_word[118] ; 8.150  ;    ;    ; 8.150  ;
+; i_reg_array[119]  ; o_word[119] ; 8.610  ;    ;    ; 8.610  ;
+; i_reg_array[120]  ; o_word[120] ; 7.977  ;    ;    ; 7.977  ;
+; i_reg_array[121]  ; o_word[121] ; 8.588  ;    ;    ; 8.588  ;
+; i_reg_array[122]  ; o_word[122] ; 7.906  ;    ;    ; 7.906  ;
+; i_reg_array[123]  ; o_word[123] ; 8.925  ;    ;    ; 8.925  ;
+; i_reg_array[124]  ; o_word[124] ; 8.878  ;    ;    ; 8.878  ;
+; i_reg_array[125]  ; o_word[125] ; 8.801  ;    ;    ; 8.801  ;
+; i_reg_array[126]  ; o_word[126] ; 8.523  ;    ;    ; 8.523  ;
+; i_reg_array[127]  ; o_word[127] ; 7.960  ;    ;    ; 7.960  ;
+; i_reg_array[128]  ; o_word[128] ; 8.779  ;    ;    ; 8.779  ;
+; i_reg_array[129]  ; o_word[129] ; 7.966  ;    ;    ; 7.966  ;
+; i_reg_array[130]  ; o_word[130] ; 8.864  ;    ;    ; 8.864  ;
+; i_reg_array[131]  ; o_word[131] ; 8.860  ;    ;    ; 8.860  ;
+; i_reg_array[132]  ; o_word[132] ; 7.956  ;    ;    ; 7.956  ;
+; i_reg_array[133]  ; o_word[133] ; 8.140  ;    ;    ; 8.140  ;
+; i_reg_array[134]  ; o_word[134] ; 8.942  ;    ;    ; 8.942  ;
+; i_reg_array[135]  ; o_word[135] ; 7.966  ;    ;    ; 7.966  ;
+; i_second_word[0]  ; o_word[34]  ; 8.660  ;    ;    ; 8.660  ;
+; i_second_word[1]  ; o_word[35]  ; 8.742  ;    ;    ; 8.742  ;
+; i_second_word[2]  ; o_word[36]  ; 9.411  ;    ;    ; 9.411  ;
+; i_second_word[3]  ; o_word[37]  ; 8.908  ;    ;    ; 8.908  ;
+; i_second_word[4]  ; o_word[38]  ; 8.927  ;    ;    ; 8.927  ;
+; i_second_word[5]  ; o_word[39]  ; 9.382  ;    ;    ; 9.382  ;
+; i_second_word[6]  ; o_word[40]  ; 8.874  ;    ;    ; 8.874  ;
+; i_second_word[7]  ; o_word[41]  ; 8.564  ;    ;    ; 8.564  ;
+; i_second_word[8]  ; o_word[42]  ; 9.228  ;    ;    ; 9.228  ;
+; i_second_word[9]  ; o_word[43]  ; 9.448  ;    ;    ; 9.448  ;
+; i_second_word[10] ; o_word[44]  ; 9.231  ;    ;    ; 9.231  ;
+; i_second_word[11] ; o_word[45]  ; 8.842  ;    ;    ; 8.842  ;
+; i_second_word[12] ; o_word[46]  ; 8.572  ;    ;    ; 8.572  ;
+; i_second_word[13] ; o_word[47]  ; 8.550  ;    ;    ; 8.550  ;
+; i_second_word[14] ; o_word[48]  ; 9.534  ;    ;    ; 9.534  ;
+; i_second_word[15] ; o_word[49]  ; 9.223  ;    ;    ; 9.223  ;
+; i_second_word[16] ; o_word[50]  ; 9.008  ;    ;    ; 9.008  ;
+; i_second_word[17] ; o_word[51]  ; 9.026  ;    ;    ; 9.026  ;
+; i_second_word[18] ; o_word[52]  ; 8.499  ;    ;    ; 8.499  ;
+; i_second_word[19] ; o_word[53]  ; 9.396  ;    ;    ; 9.396  ;
+; i_second_word[20] ; o_word[54]  ; 9.491  ;    ;    ; 9.491  ;
+; i_second_word[21] ; o_word[55]  ; 9.386  ;    ;    ; 9.386  ;
+; i_second_word[22] ; o_word[56]  ; 8.884  ;    ;    ; 8.884  ;
+; i_second_word[23] ; o_word[57]  ; 9.267  ;    ;    ; 9.267  ;
+; i_second_word[24] ; o_word[58]  ; 9.494  ;    ;    ; 9.494  ;
+; i_second_word[25] ; o_word[59]  ; 8.563  ;    ;    ; 8.563  ;
+; i_second_word[26] ; o_word[60]  ; 8.650  ;    ;    ; 8.650  ;
+; i_second_word[27] ; o_word[61]  ; 4.774  ;    ;    ; 4.774  ;
+; i_second_word[28] ; o_word[62]  ; 9.425  ;    ;    ; 9.425  ;
+; i_second_word[29] ; o_word[63]  ; 9.449  ;    ;    ; 9.449  ;
+; i_second_word[30] ; o_word[64]  ; 8.520  ;    ;    ; 8.520  ;
+; i_second_word[31] ; o_word[65]  ; 9.243  ;    ;    ; 9.243  ;
+; i_second_word[32] ; o_word[66]  ; 9.418  ;    ;    ; 9.418  ;
+; i_second_word[33] ; o_word[67]  ; 9.180  ;    ;    ; 9.180  ;
++-------------------+-------------+--------+----+----+--------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++-------------------+-------------+-------+----+----+-------+
+; Input Port        ; Output Port ; RR    ; RF ; FR ; FF    ;
++-------------------+-------------+-------+----+----+-------+
+; i_first_word[0]   ; o_word[0]   ; 2.803 ;    ;    ; 2.803 ;
+; i_first_word[1]   ; o_word[1]   ; 5.260 ;    ;    ; 5.260 ;
+; i_first_word[2]   ; o_word[2]   ; 5.028 ;    ;    ; 5.028 ;
+; i_first_word[3]   ; o_word[3]   ; 4.974 ;    ;    ; 4.974 ;
+; i_first_word[4]   ; o_word[4]   ; 5.000 ;    ;    ; 5.000 ;
+; i_first_word[5]   ; o_word[5]   ; 5.223 ;    ;    ; 5.223 ;
+; i_first_word[6]   ; o_word[6]   ; 5.063 ;    ;    ; 5.063 ;
+; i_first_word[7]   ; o_word[7]   ; 5.171 ;    ;    ; 5.171 ;
+; i_first_word[8]   ; o_word[8]   ; 5.008 ;    ;    ; 5.008 ;
+; i_first_word[9]   ; o_word[9]   ; 4.869 ;    ;    ; 4.869 ;
+; i_first_word[10]  ; o_word[10]  ; 4.959 ;    ;    ; 4.959 ;
+; i_first_word[11]  ; o_word[11]  ; 5.166 ;    ;    ; 5.166 ;
+; i_first_word[12]  ; o_word[12]  ; 4.860 ;    ;    ; 4.860 ;
+; i_first_word[13]  ; o_word[13]  ; 4.861 ;    ;    ; 4.861 ;
+; i_first_word[14]  ; o_word[14]  ; 5.246 ;    ;    ; 5.246 ;
+; i_first_word[15]  ; o_word[15]  ; 4.973 ;    ;    ; 4.973 ;
+; i_first_word[16]  ; o_word[16]  ; 3.653 ;    ;    ; 3.653 ;
+; i_first_word[17]  ; o_word[17]  ; 5.173 ;    ;    ; 5.173 ;
+; i_first_word[18]  ; o_word[18]  ; 4.832 ;    ;    ; 4.832 ;
+; i_first_word[19]  ; o_word[19]  ; 5.243 ;    ;    ; 5.243 ;
+; i_first_word[20]  ; o_word[20]  ; 4.845 ;    ;    ; 4.845 ;
+; i_first_word[21]  ; o_word[21]  ; 5.055 ;    ;    ; 5.055 ;
+; i_first_word[22]  ; o_word[22]  ; 5.144 ;    ;    ; 5.144 ;
+; i_first_word[23]  ; o_word[23]  ; 5.153 ;    ;    ; 5.153 ;
+; i_first_word[24]  ; o_word[24]  ; 5.016 ;    ;    ; 5.016 ;
+; i_first_word[25]  ; o_word[25]  ; 4.972 ;    ;    ; 4.972 ;
+; i_first_word[26]  ; o_word[26]  ; 5.280 ;    ;    ; 5.280 ;
+; i_first_word[27]  ; o_word[27]  ; 4.865 ;    ;    ; 4.865 ;
+; i_first_word[28]  ; o_word[28]  ; 5.148 ;    ;    ; 5.148 ;
+; i_first_word[29]  ; o_word[29]  ; 5.164 ;    ;    ; 5.164 ;
+; i_first_word[30]  ; o_word[30]  ; 4.903 ;    ;    ; 4.903 ;
+; i_first_word[31]  ; o_word[31]  ; 5.009 ;    ;    ; 5.009 ;
+; i_first_word[32]  ; o_word[32]  ; 5.206 ;    ;    ; 5.206 ;
+; i_first_word[33]  ; o_word[33]  ; 4.994 ;    ;    ; 4.994 ;
+; i_first_word[34]  ; o_word[34]  ; 4.994 ;    ;    ; 4.994 ;
+; i_first_word[35]  ; o_word[35]  ; 5.101 ;    ;    ; 5.101 ;
+; i_first_word[36]  ; o_word[36]  ; 5.260 ;    ;    ; 5.260 ;
+; i_first_word[37]  ; o_word[37]  ; 4.945 ;    ;    ; 4.945 ;
+; i_first_word[38]  ; o_word[38]  ; 4.933 ;    ;    ; 4.933 ;
+; i_first_word[39]  ; o_word[39]  ; 5.136 ;    ;    ; 5.136 ;
+; i_first_word[40]  ; o_word[40]  ; 4.915 ;    ;    ; 4.915 ;
+; i_first_word[41]  ; o_word[41]  ; 4.910 ;    ;    ; 4.910 ;
+; i_first_word[42]  ; o_word[42]  ; 5.239 ;    ;    ; 5.239 ;
+; i_first_word[43]  ; o_word[43]  ; 5.225 ;    ;    ; 5.225 ;
+; i_first_word[44]  ; o_word[44]  ; 5.155 ;    ;    ; 5.155 ;
+; i_first_word[45]  ; o_word[45]  ; 4.999 ;    ;    ; 4.999 ;
+; i_first_word[46]  ; o_word[46]  ; 4.898 ;    ;    ; 4.898 ;
+; i_first_word[47]  ; o_word[47]  ; 4.968 ;    ;    ; 4.968 ;
+; i_first_word[48]  ; o_word[48]  ; 5.806 ;    ;    ; 5.806 ;
+; i_first_word[49]  ; o_word[49]  ; 5.132 ;    ;    ; 5.132 ;
+; i_first_word[50]  ; o_word[50]  ; 4.971 ;    ;    ; 4.971 ;
+; i_first_word[51]  ; o_word[51]  ; 5.068 ;    ;    ; 5.068 ;
+; i_first_word[52]  ; o_word[52]  ; 4.954 ;    ;    ; 4.954 ;
+; i_first_word[53]  ; o_word[53]  ; 5.277 ;    ;    ; 5.277 ;
+; i_first_word[54]  ; o_word[54]  ; 5.447 ;    ;    ; 5.447 ;
+; i_first_word[55]  ; o_word[55]  ; 5.117 ;    ;    ; 5.117 ;
+; i_first_word[56]  ; o_word[56]  ; 4.965 ;    ;    ; 4.965 ;
+; i_first_word[57]  ; o_word[57]  ; 5.131 ;    ;    ; 5.131 ;
+; i_first_word[58]  ; o_word[58]  ; 5.304 ;    ;    ; 5.304 ;
+; i_first_word[59]  ; o_word[59]  ; 4.964 ;    ;    ; 4.964 ;
+; i_first_word[60]  ; o_word[60]  ; 4.984 ;    ;    ; 4.984 ;
+; i_first_word[61]  ; o_word[61]  ; 5.156 ;    ;    ; 5.156 ;
+; i_first_word[62]  ; o_word[62]  ; 5.219 ;    ;    ; 5.219 ;
+; i_first_word[63]  ; o_word[63]  ; 2.803 ;    ;    ; 2.803 ;
+; i_first_word[64]  ; o_word[64]  ; 4.980 ;    ;    ; 4.980 ;
+; i_first_word[65]  ; o_word[65]  ; 5.210 ;    ;    ; 5.210 ;
+; i_first_word[66]  ; o_word[66]  ; 5.193 ;    ;    ; 5.193 ;
+; i_first_word[67]  ; o_word[67]  ; 5.201 ;    ;    ; 5.201 ;
+; i_reg_array[0]    ; o_word[0]   ; 2.684 ;    ;    ; 2.684 ;
+; i_reg_array[1]    ; o_word[1]   ; 5.146 ;    ;    ; 5.146 ;
+; i_reg_array[2]    ; o_word[2]   ; 4.893 ;    ;    ; 4.893 ;
+; i_reg_array[3]    ; o_word[3]   ; 4.843 ;    ;    ; 4.843 ;
+; i_reg_array[4]    ; o_word[4]   ; 4.863 ;    ;    ; 4.863 ;
+; i_reg_array[5]    ; o_word[5]   ; 5.156 ;    ;    ; 5.156 ;
+; i_reg_array[6]    ; o_word[6]   ; 4.940 ;    ;    ; 4.940 ;
+; i_reg_array[7]    ; o_word[7]   ; 5.124 ;    ;    ; 5.124 ;
+; i_reg_array[8]    ; o_word[8]   ; 4.891 ;    ;    ; 4.891 ;
+; i_reg_array[9]    ; o_word[9]   ; 4.979 ;    ;    ; 4.979 ;
+; i_reg_array[10]   ; o_word[10]  ; 4.861 ;    ;    ; 4.861 ;
+; i_reg_array[11]   ; o_word[11]  ; 5.225 ;    ;    ; 5.225 ;
+; i_reg_array[12]   ; o_word[12]  ; 4.978 ;    ;    ; 4.978 ;
+; i_reg_array[13]   ; o_word[13]  ; 5.009 ;    ;    ; 5.009 ;
+; i_reg_array[14]   ; o_word[14]  ; 5.293 ;    ;    ; 5.293 ;
+; i_reg_array[15]   ; o_word[15]  ; 2.706 ;    ;    ; 2.706 ;
+; i_reg_array[16]   ; o_word[16]  ; 5.167 ;    ;    ; 5.167 ;
+; i_reg_array[17]   ; o_word[17]  ; 5.206 ;    ;    ; 5.206 ;
+; i_reg_array[18]   ; o_word[18]  ; 4.978 ;    ;    ; 4.978 ;
+; i_reg_array[19]   ; o_word[19]  ; 5.126 ;    ;    ; 5.126 ;
+; i_reg_array[20]   ; o_word[20]  ; 4.976 ;    ;    ; 4.976 ;
+; i_reg_array[21]   ; o_word[21]  ; 5.224 ;    ;    ; 5.224 ;
+; i_reg_array[22]   ; o_word[22]  ; 5.261 ;    ;    ; 5.261 ;
+; i_reg_array[23]   ; o_word[23]  ; 5.196 ;    ;    ; 5.196 ;
+; i_reg_array[24]   ; o_word[24]  ; 4.876 ;    ;    ; 4.876 ;
+; i_reg_array[25]   ; o_word[25]  ; 4.861 ;    ;    ; 4.861 ;
+; i_reg_array[26]   ; o_word[26]  ; 5.154 ;    ;    ; 5.154 ;
+; i_reg_array[27]   ; o_word[27]  ; 4.988 ;    ;    ; 4.988 ;
+; i_reg_array[28]   ; o_word[28]  ; 5.103 ;    ;    ; 5.103 ;
+; i_reg_array[29]   ; o_word[29]  ; 5.205 ;    ;    ; 5.205 ;
+; i_reg_array[30]   ; o_word[30]  ; 5.029 ;    ;    ; 5.029 ;
+; i_reg_array[31]   ; o_word[31]  ; 4.893 ;    ;    ; 4.893 ;
+; i_reg_array[32]   ; o_word[32]  ; 5.136 ;    ;    ; 5.136 ;
+; i_reg_array[33]   ; o_word[33]  ; 4.853 ;    ;    ; 4.853 ;
+; i_reg_array[34]   ; o_word[34]  ; 4.853 ;    ;    ; 4.853 ;
+; i_reg_array[35]   ; o_word[35]  ; 5.037 ;    ;    ; 5.037 ;
+; i_reg_array[36]   ; o_word[36]  ; 5.125 ;    ;    ; 5.125 ;
+; i_reg_array[37]   ; o_word[37]  ; 4.823 ;    ;    ; 4.823 ;
+; i_reg_array[38]   ; o_word[38]  ; 4.976 ;    ;    ; 4.976 ;
+; i_reg_array[39]   ; o_word[39]  ; 5.231 ;    ;    ; 5.231 ;
+; i_reg_array[40]   ; o_word[40]  ; 5.001 ;    ;    ; 5.001 ;
+; i_reg_array[41]   ; o_word[41]  ; 4.979 ;    ;    ; 4.979 ;
+; i_reg_array[42]   ; o_word[42]  ; 5.134 ;    ;    ; 5.134 ;
+; i_reg_array[43]   ; o_word[43]  ; 5.210 ;    ;    ; 5.210 ;
+; i_reg_array[44]   ; o_word[44]  ; 5.251 ;    ;    ; 5.251 ;
+; i_reg_array[45]   ; o_word[45]  ; 4.863 ;    ;    ; 4.863 ;
+; i_reg_array[46]   ; o_word[46]  ; 4.968 ;    ;    ; 4.968 ;
+; i_reg_array[47]   ; o_word[47]  ; 4.960 ;    ;    ; 4.960 ;
+; i_reg_array[48]   ; o_word[48]  ; 5.368 ;    ;    ; 5.368 ;
+; i_reg_array[49]   ; o_word[49]  ; 5.244 ;    ;    ; 5.244 ;
+; i_reg_array[50]   ; o_word[50]  ; 5.089 ;    ;    ; 5.089 ;
+; i_reg_array[51]   ; o_word[51]  ; 5.099 ;    ;    ; 5.099 ;
+; i_reg_array[52]   ; o_word[52]  ; 4.876 ;    ;    ; 4.876 ;
+; i_reg_array[53]   ; o_word[53]  ; 5.183 ;    ;    ; 5.183 ;
+; i_reg_array[54]   ; o_word[54]  ; 5.205 ;    ;    ; 5.205 ;
+; i_reg_array[55]   ; o_word[55]  ; 5.167 ;    ;    ; 5.167 ;
+; i_reg_array[56]   ; o_word[56]  ; 4.843 ;    ;    ; 4.843 ;
+; i_reg_array[57]   ; o_word[57]  ; 5.263 ;    ;    ; 5.263 ;
+; i_reg_array[58]   ; o_word[58]  ; 5.186 ;    ;    ; 5.186 ;
+; i_reg_array[59]   ; o_word[59]  ; 4.991 ;    ;    ; 4.991 ;
+; i_reg_array[60]   ; o_word[60]  ; 4.849 ;    ;    ; 4.849 ;
+; i_reg_array[61]   ; o_word[61]  ; 2.633 ;    ;    ; 2.633 ;
+; i_reg_array[62]   ; o_word[62]  ; 2.779 ;    ;    ; 2.779 ;
+; i_reg_array[63]   ; o_word[63]  ; 5.218 ;    ;    ; 5.218 ;
+; i_reg_array[64]   ; o_word[64]  ; 4.938 ;    ;    ; 4.938 ;
+; i_reg_array[65]   ; o_word[65]  ; 5.270 ;    ;    ; 5.270 ;
+; i_reg_array[66]   ; o_word[66]  ; 5.147 ;    ;    ; 5.147 ;
+; i_reg_array[67]   ; o_word[67]  ; 5.251 ;    ;    ; 5.251 ;
+; i_reg_array[68]   ; o_word[68]  ; 4.672 ;    ;    ; 4.672 ;
+; i_reg_array[69]   ; o_word[69]  ; 5.035 ;    ;    ; 5.035 ;
+; i_reg_array[70]   ; o_word[70]  ; 4.610 ;    ;    ; 4.610 ;
+; i_reg_array[71]   ; o_word[71]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[72]   ; o_word[72]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[73]   ; o_word[73]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[74]   ; o_word[74]  ; 4.616 ;    ;    ; 4.616 ;
+; i_reg_array[75]   ; o_word[75]  ; 5.034 ;    ;    ; 5.034 ;
+; i_reg_array[76]   ; o_word[76]  ; 4.999 ;    ;    ; 4.999 ;
+; i_reg_array[77]   ; o_word[77]  ; 5.043 ;    ;    ; 5.043 ;
+; i_reg_array[78]   ; o_word[78]  ; 4.642 ;    ;    ; 4.642 ;
+; i_reg_array[79]   ; o_word[79]  ; 5.072 ;    ;    ; 5.072 ;
+; i_reg_array[80]   ; o_word[80]  ; 5.094 ;    ;    ; 5.094 ;
+; i_reg_array[81]   ; o_word[81]  ; 5.012 ;    ;    ; 5.012 ;
+; i_reg_array[82]   ; o_word[82]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[83]   ; o_word[83]  ; 4.710 ;    ;    ; 4.710 ;
+; i_reg_array[84]   ; o_word[84]  ; 5.069 ;    ;    ; 5.069 ;
+; i_reg_array[85]   ; o_word[85]  ; 4.606 ;    ;    ; 4.606 ;
+; i_reg_array[86]   ; o_word[86]  ; 5.015 ;    ;    ; 5.015 ;
+; i_reg_array[87]   ; o_word[87]  ; 5.052 ;    ;    ; 5.052 ;
+; i_reg_array[88]   ; o_word[88]  ; 5.056 ;    ;    ; 5.056 ;
+; i_reg_array[89]   ; o_word[89]  ; 5.068 ;    ;    ; 5.068 ;
+; i_reg_array[90]   ; o_word[90]  ; 4.719 ;    ;    ; 4.719 ;
+; i_reg_array[91]   ; o_word[91]  ; 5.038 ;    ;    ; 5.038 ;
+; i_reg_array[92]   ; o_word[92]  ; 4.566 ;    ;    ; 4.566 ;
+; i_reg_array[93]   ; o_word[93]  ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[94]   ; o_word[94]  ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[95]   ; o_word[95]  ; 5.020 ;    ;    ; 5.020 ;
+; i_reg_array[96]   ; o_word[96]  ; 4.972 ;    ;    ; 4.972 ;
+; i_reg_array[97]   ; o_word[97]  ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[98]   ; o_word[98]  ; 5.094 ;    ;    ; 5.094 ;
+; i_reg_array[99]   ; o_word[99]  ; 4.700 ;    ;    ; 4.700 ;
+; i_reg_array[100]  ; o_word[100] ; 5.072 ;    ;    ; 5.072 ;
+; i_reg_array[101]  ; o_word[101] ; 5.036 ;    ;    ; 5.036 ;
+; i_reg_array[102]  ; o_word[102] ; 5.126 ;    ;    ; 5.126 ;
+; i_reg_array[103]  ; o_word[103] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[104]  ; o_word[104] ; 4.646 ;    ;    ; 4.646 ;
+; i_reg_array[105]  ; o_word[105] ; 4.636 ;    ;    ; 4.636 ;
+; i_reg_array[106]  ; o_word[106] ; 5.061 ;    ;    ; 5.061 ;
+; i_reg_array[107]  ; o_word[107] ; 5.056 ;    ;    ; 5.056 ;
+; i_reg_array[108]  ; o_word[108] ; 5.080 ;    ;    ; 5.080 ;
+; i_reg_array[109]  ; o_word[109] ; 5.112 ;    ;    ; 5.112 ;
+; i_reg_array[110]  ; o_word[110] ; 4.656 ;    ;    ; 4.656 ;
+; i_reg_array[111]  ; o_word[111] ; 4.626 ;    ;    ; 4.626 ;
+; i_reg_array[112]  ; o_word[112] ; 4.729 ;    ;    ; 4.729 ;
+; i_reg_array[113]  ; o_word[113] ; 4.642 ;    ;    ; 4.642 ;
+; i_reg_array[114]  ; o_word[114] ; 5.050 ;    ;    ; 5.050 ;
+; i_reg_array[115]  ; o_word[115] ; 5.082 ;    ;    ; 5.082 ;
+; i_reg_array[116]  ; o_word[116] ; 5.051 ;    ;    ; 5.051 ;
+; i_reg_array[117]  ; o_word[117] ; 5.000 ;    ;    ; 5.000 ;
+; i_reg_array[118]  ; o_word[118] ; 4.690 ;    ;    ; 4.690 ;
+; i_reg_array[119]  ; o_word[119] ; 4.932 ;    ;    ; 4.932 ;
+; i_reg_array[120]  ; o_word[120] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[121]  ; o_word[121] ; 4.906 ;    ;    ; 4.906 ;
+; i_reg_array[122]  ; o_word[122] ; 4.562 ;    ;    ; 4.562 ;
+; i_reg_array[123]  ; o_word[123] ; 5.101 ;    ;    ; 5.101 ;
+; i_reg_array[124]  ; o_word[124] ; 5.068 ;    ;    ; 5.068 ;
+; i_reg_array[125]  ; o_word[125] ; 4.998 ;    ;    ; 4.998 ;
+; i_reg_array[126]  ; o_word[126] ; 4.855 ;    ;    ; 4.855 ;
+; i_reg_array[127]  ; o_word[127] ; 4.606 ;    ;    ; 4.606 ;
+; i_reg_array[128]  ; o_word[128] ; 4.987 ;    ;    ; 4.987 ;
+; i_reg_array[129]  ; o_word[129] ; 4.622 ;    ;    ; 4.622 ;
+; i_reg_array[130]  ; o_word[130] ; 5.050 ;    ;    ; 5.050 ;
+; i_reg_array[131]  ; o_word[131] ; 5.038 ;    ;    ; 5.038 ;
+; i_reg_array[132]  ; o_word[132] ; 4.612 ;    ;    ; 4.612 ;
+; i_reg_array[133]  ; o_word[133] ; 4.680 ;    ;    ; 4.680 ;
+; i_reg_array[134]  ; o_word[134] ; 5.107 ;    ;    ; 5.107 ;
+; i_reg_array[135]  ; o_word[135] ; 4.620 ;    ;    ; 4.620 ;
+; i_second_word[0]  ; o_word[34]  ; 4.916 ;    ;    ; 4.916 ;
+; i_second_word[1]  ; o_word[35]  ; 4.950 ;    ;    ; 4.950 ;
+; i_second_word[2]  ; o_word[36]  ; 5.251 ;    ;    ; 5.251 ;
+; i_second_word[3]  ; o_word[37]  ; 5.005 ;    ;    ; 5.005 ;
+; i_second_word[4]  ; o_word[38]  ; 5.054 ;    ;    ; 5.054 ;
+; i_second_word[5]  ; o_word[39]  ; 5.222 ;    ;    ; 5.222 ;
+; i_second_word[6]  ; o_word[40]  ; 4.999 ;    ;    ; 4.999 ;
+; i_second_word[7]  ; o_word[41]  ; 4.866 ;    ;    ; 4.866 ;
+; i_second_word[8]  ; o_word[42]  ; 5.176 ;    ;    ; 5.176 ;
+; i_second_word[9]  ; o_word[43]  ; 5.289 ;    ;    ; 5.289 ;
+; i_second_word[10] ; o_word[44]  ; 5.183 ;    ;    ; 5.183 ;
+; i_second_word[11] ; o_word[45]  ; 4.985 ;    ;    ; 4.985 ;
+; i_second_word[12] ; o_word[46]  ; 4.871 ;    ;    ; 4.871 ;
+; i_second_word[13] ; o_word[47]  ; 4.850 ;    ;    ; 4.850 ;
+; i_second_word[14] ; o_word[48]  ; 5.347 ;    ;    ; 5.347 ;
+; i_second_word[15] ; o_word[49]  ; 5.172 ;    ;    ; 5.172 ;
+; i_second_word[16] ; o_word[50]  ; 5.122 ;    ;    ; 5.122 ;
+; i_second_word[17] ; o_word[51]  ; 5.108 ;    ;    ; 5.108 ;
+; i_second_word[18] ; o_word[52]  ; 4.803 ;    ;    ; 4.803 ;
+; i_second_word[19] ; o_word[53]  ; 5.260 ;    ;    ; 5.260 ;
+; i_second_word[20] ; o_word[54]  ; 5.310 ;    ;    ; 5.310 ;
+; i_second_word[21] ; o_word[55]  ; 5.250 ;    ;    ; 5.250 ;
+; i_second_word[22] ; o_word[56]  ; 5.009 ;    ;    ; 5.009 ;
+; i_second_word[23] ; o_word[57]  ; 5.215 ;    ;    ; 5.215 ;
+; i_second_word[24] ; o_word[58]  ; 5.312 ;    ;    ; 5.312 ;
+; i_second_word[25] ; o_word[59]  ; 4.905 ;    ;    ; 4.905 ;
+; i_second_word[26] ; o_word[60]  ; 4.906 ;    ;    ; 4.906 ;
+; i_second_word[27] ; o_word[61]  ; 2.502 ;    ;    ; 2.502 ;
+; i_second_word[28] ; o_word[62]  ; 5.244 ;    ;    ; 5.244 ;
+; i_second_word[29] ; o_word[63]  ; 5.283 ;    ;    ; 5.283 ;
+; i_second_word[30] ; o_word[64]  ; 4.820 ;    ;    ; 4.820 ;
+; i_second_word[31] ; o_word[65]  ; 5.192 ;    ;    ; 5.192 ;
+; i_second_word[32] ; o_word[66]  ; 5.259 ;    ;    ; 5.259 ;
+; i_second_word[33] ; o_word[67]  ; 5.169 ;    ;    ; 5.169 ;
++-------------------+-------------+-------+----+----+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 238   ; 238  ;
+; Unconstrained Input Port Paths  ; 238   ; 238  ;
+; Unconstrained Output Ports      ; 136   ; 136  ;
+; Unconstrained Output Port Paths ; 238   ; 238  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Mar 25 23:53:23 2025
+Info: Command: quartus_sta or_gate -c or_gate
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'or_gate.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4553 megabytes
+    Info: Processing ended: Tue Mar 25 23:53:24 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

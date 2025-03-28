@@ -10,10 +10,9 @@ module code_concatenator #(
   output logic [TOTAL_BITS-1:0]                o_compressed_word
 );
 
-//logic [DATA_WIDTH -1:0] dict_word;
+logic [DATA_WIDTH -1:0] dict_word;
 
-//assign dict_word = i_dict[i_dict_idx * DATA_WIDTH +: DATA_WIDTH];
-
+assign dict_word = i_dict[((i_dict_idx + 1)*DATA_WIDTH)-1 : i_dict_idx * DATA_WIDTH];
 
 logic [TOTAL_BITS-1:0] temp;
 

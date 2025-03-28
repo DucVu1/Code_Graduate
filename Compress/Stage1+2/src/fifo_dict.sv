@@ -91,10 +91,10 @@ if (~i_reset) begin
   regs2[i] <= 32'd0;
 end end else begin
  if(wr & wr2) begin
-  regs2[wr_addr] <= w_data_real2;
-  regs1[wr_addr] <= w_data_real;
- end else if (wr) regs1[wr_addr] <= w_data_real;
- else if (wr2) regs2[wr_addr] <= w_data_real2;
+  regs2[wr_addr] <= w_data2;
+  regs1[wr_addr] <= w_data;
+ end else if (wr) regs1[wr_addr] <= w_data;
+ else if (wr2) regs2[wr_addr] <= w_data2;
  else begin
   regs2[wr_addr] <=  regs2[wr_addr];
   regs1[wr_addr] <=  regs1[wr_addr];
@@ -102,8 +102,8 @@ end end else begin
 end
 end
 
-always_ff @(posedge clk_i) begin
-   o_data <= {regs2[SIZE-1], regs1[SIZE-1], regs2[SIZE-2], regs1[SIZE-2],
+always_ff @(*) begin
+   o_data = {regs2[SIZE-1], regs1[SIZE-1], regs2[SIZE-2], regs1[SIZE-2],
                  regs2[SIZE-3], regs1[SIZE-3], regs2[SIZE-4], regs1[SIZE-4],
                  regs2[SIZE-5], regs1[SIZE-5], regs2[SIZE-6], regs1[SIZE-6],
                  regs2[SIZE-7], regs1[SIZE-7], regs2[0], regs1[0]};

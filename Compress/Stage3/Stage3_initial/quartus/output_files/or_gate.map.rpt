@@ -1,0 +1,1033 @@
+Analysis & Synthesis report for or_gate
+Thu Mar 27 15:53:04 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |packing_and_shifting
+ 10. Parameter Settings for User Entity Instance: code_concatenator:code_concatenator1
+ 11. Parameter Settings for User Entity Instance: code_concatenator:code_concatenator2
+ 12. Parameter Settings for User Entity Instance: barrel_shifter_1:barrel_shifter1
+ 13. Parameter Settings for User Entity Instance: or_gate:or_gate
+ 14. Parameter Settings for User Entity Instance: barrel_shifter_2:barrel_shifter_2
+ 15. Parameter Settings for User Entity Instance: barrel_shifter_3:barrel_shifter_3
+ 16. Port Connectivity Checks: "barrel_shifter_3:barrel_shifter_3"
+ 17. Port Connectivity Checks: "or_gate:or_gate"
+ 18. Port Connectivity Checks: "barrel_shifter_1:barrel_shifter1"
+ 19. Port Connectivity Checks: "code_concatenator:code_concatenator2"
+ 20. Port Connectivity Checks: "code_concatenator:code_concatenator1"
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Mar 27 15:53:04 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; or_gate                                         ;
+; Top-level Entity Name              ; packing_and_shifting                            ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 611                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                          ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Option                                                                     ; Setting              ; Default Value      ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6         ;                    ;
+; Top-level entity name                                                      ; packing_and_shifting ; or_gate            ;
+; Family name                                                                ; Cyclone II           ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                  ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                 ;
+; Enable compact report table                                                ; Off                  ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                ;
+; Preserve fewer node names                                                  ; On                   ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                 ; Auto               ;
+; Safe State Machine                                                         ; Off                  ; Off                ;
+; Extract Verilog State Machines                                             ; On                   ; On                 ;
+; Extract VHDL State Machines                                                ; On                   ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                 ;
+; Parallel Synthesis                                                         ; On                   ; On                 ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                   ; On                 ;
+; Power-Up Don't Care                                                        ; On                   ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                ;
+; Remove Duplicate Registers                                                 ; On                   ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                ;
+; Optimization Technique                                                     ; Balanced             ; Balanced           ;
+; Carry Chain Length                                                         ; 70                   ; 70                 ;
+; Auto Carry Chains                                                          ; On                   ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                ;
+; Auto ROM Replacement                                                       ; On                   ; On                 ;
+; Auto RAM Replacement                                                       ; On                   ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                 ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                  ; Off                ;
+; Report Parameter Settings                                                  ; On                   ; On                 ;
+; Report Source Assignments                                                  ; On                   ; On                 ;
+; Report Connectivity Checks                                                 ; On                   ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation   ; Normal compilation ;
+; HDL message level                                                          ; Level2               ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                ;
+; Clock MUX Protection                                                       ; On                   ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                ;
+; Block Design Naming                                                        ; Auto                 ; Auto               ;
+; SDC constraint protection                                                  ; Off                  ; Off                ;
+; Synthesis Effort                                                           ; Auto                 ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                 ;
+; Synthesis Seed                                                             ; 1                    ; 1                  ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; ../src/packing_and_shifting.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/packing_and_shifting.sv ;         ;
+; ../src/code_concatenator.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/code_concatenator.sv    ;         ;
+; ../src/barrel_shifter_3.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/barrel_shifter_3.sv     ;         ;
+; ../src/barrel_shifter_2.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/barrel_shifter_2.sv     ;         ;
+; ../src/barrel_shifter_1.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/barrel_shifter_1.sv     ;         ;
+; ../src/or_gate.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/or_gate.sv              ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 611   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+; |packing_and_shifting      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 611  ; 0            ; |packing_and_shifting ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |packing_and_shifting ;
++-----------------------+-------+------------------------------------------------------+
+; Parameter Name        ; Value ; Type                                                 ;
++-----------------------+-------+------------------------------------------------------+
+; TOTAL_WIDTH           ; 136   ; Signed Integer                                       ;
+; TOTAL_BITS_COMPRESSED ; 34    ; Signed Integer                                       ;
+; CACHE_LINE            ; 64    ; Signed Integer                                       ;
+; WORD_WIDTH            ; 32    ; Signed Integer                                       ;
+; SHIFT_WIDTH           ; 68    ; Signed Integer                                       ;
+; WORD2_LENGTH          ; 6     ; Signed Integer                                       ;
+; TOTAL_LENGTH          ; 7     ; Signed Integer                                       ;
+; DICT_WORD             ; 16    ; Signed Integer                                       ;
+; OUT_SHIFT_BIT         ; 7     ; Signed Integer                                       ;
++-----------------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: code_concatenator:code_concatenator1 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                           ;
+; TOTAL_BITS     ; 34    ; Signed Integer                                           ;
+; TOTAL_WORDS    ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: code_concatenator:code_concatenator2 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                           ;
+; TOTAL_BITS     ; 34    ; Signed Integer                                           ;
+; TOTAL_WORDS    ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barrel_shifter_1:barrel_shifter1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 68    ; Signed Integer                                       ;
+; SHIFT_BIT      ; 6     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: or_gate:or_gate ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; I_WIDTH1       ; 68    ; Signed Integer                      ;
+; I_WIDTH2       ; 34    ; Signed Integer                      ;
+; TOTAL_WIDTH    ; 136   ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barrel_shifter_2:barrel_shifter_2 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; TOTAL_LENGTH   ; 7     ; Signed Integer                                        ;
+; WIDTH          ; 136   ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barrel_shifter_3:barrel_shifter_3 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; TOTAL_LENGTH   ; 7     ; Signed Integer                                        ;
+; WIDTH          ; 136   ; Signed Integer                                        ;
+; O_WIDTH        ; 64    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter_3:barrel_shifter_3"                                                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_word ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "or_gate:or_gate"             ;
++-------------+-------+----------+------------------------+
+; Port        ; Type  ; Severity ; Details                ;
++-------------+-------+----------+------------------------+
+; i_reg_array ; Input ; Info     ; Explicitly unconnected ;
++-------------+-------+----------+------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barrel_shifter_1:barrel_shifter1"                                                                                                                     ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                          ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; data       ; Input ; Warning  ; Input port expression (34 bits) is smaller than the input port (68 bits) it drives.  Extra input bit(s) "data[67..34]" will be connected to GND. ;
+; type_shift ; Input ; Info     ; Stuck at GND                                                                                                                                     ;
++------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "code_concatenator:code_concatenator2"                                                                                                                     ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                  ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i_dict ; Input ; Warning  ; Input port expression (512 bits) is smaller than the input port (1088 bits) it drives.  Extra input bit(s) "i_dict[1087..512]" will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "code_concatenator:code_concatenator1"                                                                                                                     ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                  ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i_dict ; Input ; Warning  ; Input port expression (512 bits) is smaller than the input port (1088 bits) it drives.  Extra input bit(s) "i_dict[1087..512]" will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Mar 27 15:53:03 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off or_gate -c or_gate
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/register_array.sv
+    Info (12023): Found entity 1: register_array
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/packing_and_shifting.sv
+    Info (12023): Found entity 1: packing_and_shifting
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/mux2_1.sv
+    Info (12023): Found entity 1: mux2_1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/code_concatenator.sv
+    Info (12023): Found entity 1: code_concatenator
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/barrel_shifter_left_34.sv
+    Info (12023): Found entity 1: barrel_shifter_left_34
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/barrel_shifter_3.sv
+    Info (12023): Found entity 1: barrel_shifter_3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/barrel_shifter_2.sv
+    Info (12023): Found entity 1: barrel_shifter_2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/barrel_shifter_1.sv
+    Info (12023): Found entity 1: barrel_shifter_1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/compress/stage3/stage3_initial/src/or_gate.sv
+    Info (12023): Found entity 1: or_gate
+Info (12127): Elaborating entity "packing_and_shifting" for the top level hierarchy
+Info (12128): Elaborating entity "code_concatenator" for hierarchy "code_concatenator:code_concatenator1"
+Info (12128): Elaborating entity "barrel_shifter_1" for hierarchy "barrel_shifter_1:barrel_shifter1"
+Info (12128): Elaborating entity "or_gate" for hierarchy "or_gate:or_gate"
+Info (12128): Elaborating entity "barrel_shifter_2" for hierarchy "barrel_shifter_2:barrel_shifter_2"
+Info (12128): Elaborating entity "barrel_shifter_3" for hierarchy "barrel_shifter_3:barrel_shifter_3"
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 611 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "i_clk"
+    Warning (15610): No output dependent on input pin "i_code1[0]"
+    Warning (15610): No output dependent on input pin "i_code1[1]"
+    Warning (15610): No output dependent on input pin "i_code1[2]"
+    Warning (15610): No output dependent on input pin "i_code2[0]"
+    Warning (15610): No output dependent on input pin "i_code2[1]"
+    Warning (15610): No output dependent on input pin "i_code2[2]"
+    Warning (15610): No output dependent on input pin "i_total_length[0]"
+    Warning (15610): No output dependent on input pin "i_total_length[1]"
+    Warning (15610): No output dependent on input pin "i_total_length[2]"
+    Warning (15610): No output dependent on input pin "i_total_length[3]"
+    Warning (15610): No output dependent on input pin "i_total_length[4]"
+    Warning (15610): No output dependent on input pin "i_total_length[5]"
+    Warning (15610): No output dependent on input pin "i_total_length[6]"
+    Warning (15610): No output dependent on input pin "i_out_shift[0]"
+    Warning (15610): No output dependent on input pin "i_out_shift[1]"
+    Warning (15610): No output dependent on input pin "i_out_shift[2]"
+    Warning (15610): No output dependent on input pin "i_out_shift[3]"
+    Warning (15610): No output dependent on input pin "i_out_shift[4]"
+    Warning (15610): No output dependent on input pin "i_out_shift[5]"
+    Warning (15610): No output dependent on input pin "i_out_shift[6]"
+    Warning (15610): No output dependent on input pin "i_word2_length[0]"
+    Warning (15610): No output dependent on input pin "i_word2_length[1]"
+    Warning (15610): No output dependent on input pin "i_word2_length[2]"
+    Warning (15610): No output dependent on input pin "i_word2_length[3]"
+    Warning (15610): No output dependent on input pin "i_word2_length[4]"
+    Warning (15610): No output dependent on input pin "i_word2_length[5]"
+    Warning (15610): No output dependent on input pin "i_word1[0]"
+    Warning (15610): No output dependent on input pin "i_word1[1]"
+    Warning (15610): No output dependent on input pin "i_word1[2]"
+    Warning (15610): No output dependent on input pin "i_word1[3]"
+    Warning (15610): No output dependent on input pin "i_word1[4]"
+    Warning (15610): No output dependent on input pin "i_word1[5]"
+    Warning (15610): No output dependent on input pin "i_word1[6]"
+    Warning (15610): No output dependent on input pin "i_word1[7]"
+    Warning (15610): No output dependent on input pin "i_word1[8]"
+    Warning (15610): No output dependent on input pin "i_word1[9]"
+    Warning (15610): No output dependent on input pin "i_word1[10]"
+    Warning (15610): No output dependent on input pin "i_word1[11]"
+    Warning (15610): No output dependent on input pin "i_word1[12]"
+    Warning (15610): No output dependent on input pin "i_word1[13]"
+    Warning (15610): No output dependent on input pin "i_word1[14]"
+    Warning (15610): No output dependent on input pin "i_word1[15]"
+    Warning (15610): No output dependent on input pin "i_word1[16]"
+    Warning (15610): No output dependent on input pin "i_word1[17]"
+    Warning (15610): No output dependent on input pin "i_word1[18]"
+    Warning (15610): No output dependent on input pin "i_word1[19]"
+    Warning (15610): No output dependent on input pin "i_word1[20]"
+    Warning (15610): No output dependent on input pin "i_word1[21]"
+    Warning (15610): No output dependent on input pin "i_word1[22]"
+    Warning (15610): No output dependent on input pin "i_word1[23]"
+    Warning (15610): No output dependent on input pin "i_word1[24]"
+    Warning (15610): No output dependent on input pin "i_word1[25]"
+    Warning (15610): No output dependent on input pin "i_word1[26]"
+    Warning (15610): No output dependent on input pin "i_word1[27]"
+    Warning (15610): No output dependent on input pin "i_word1[28]"
+    Warning (15610): No output dependent on input pin "i_word1[29]"
+    Warning (15610): No output dependent on input pin "i_word1[30]"
+    Warning (15610): No output dependent on input pin "i_word1[31]"
+    Warning (15610): No output dependent on input pin "i_word2[0]"
+    Warning (15610): No output dependent on input pin "i_word2[1]"
+    Warning (15610): No output dependent on input pin "i_word2[2]"
+    Warning (15610): No output dependent on input pin "i_word2[3]"
+    Warning (15610): No output dependent on input pin "i_word2[4]"
+    Warning (15610): No output dependent on input pin "i_word2[5]"
+    Warning (15610): No output dependent on input pin "i_word2[6]"
+    Warning (15610): No output dependent on input pin "i_word2[7]"
+    Warning (15610): No output dependent on input pin "i_word2[8]"
+    Warning (15610): No output dependent on input pin "i_word2[9]"
+    Warning (15610): No output dependent on input pin "i_word2[10]"
+    Warning (15610): No output dependent on input pin "i_word2[11]"
+    Warning (15610): No output dependent on input pin "i_word2[12]"
+    Warning (15610): No output dependent on input pin "i_word2[13]"
+    Warning (15610): No output dependent on input pin "i_word2[14]"
+    Warning (15610): No output dependent on input pin "i_word2[15]"
+    Warning (15610): No output dependent on input pin "i_word2[16]"
+    Warning (15610): No output dependent on input pin "i_word2[17]"
+    Warning (15610): No output dependent on input pin "i_word2[18]"
+    Warning (15610): No output dependent on input pin "i_word2[19]"
+    Warning (15610): No output dependent on input pin "i_word2[20]"
+    Warning (15610): No output dependent on input pin "i_word2[21]"
+    Warning (15610): No output dependent on input pin "i_word2[22]"
+    Warning (15610): No output dependent on input pin "i_word2[23]"
+    Warning (15610): No output dependent on input pin "i_word2[24]"
+    Warning (15610): No output dependent on input pin "i_word2[25]"
+    Warning (15610): No output dependent on input pin "i_word2[26]"
+    Warning (15610): No output dependent on input pin "i_word2[27]"
+    Warning (15610): No output dependent on input pin "i_word2[28]"
+    Warning (15610): No output dependent on input pin "i_word2[29]"
+    Warning (15610): No output dependent on input pin "i_word2[30]"
+    Warning (15610): No output dependent on input pin "i_word2[31]"
+    Warning (15610): No output dependent on input pin "i_dict[0]"
+    Warning (15610): No output dependent on input pin "i_dict[1]"
+    Warning (15610): No output dependent on input pin "i_dict[2]"
+    Warning (15610): No output dependent on input pin "i_dict[3]"
+    Warning (15610): No output dependent on input pin "i_dict[4]"
+    Warning (15610): No output dependent on input pin "i_dict[5]"
+    Warning (15610): No output dependent on input pin "i_dict[6]"
+    Warning (15610): No output dependent on input pin "i_dict[7]"
+    Warning (15610): No output dependent on input pin "i_dict[8]"
+    Warning (15610): No output dependent on input pin "i_dict[9]"
+    Warning (15610): No output dependent on input pin "i_dict[10]"
+    Warning (15610): No output dependent on input pin "i_dict[11]"
+    Warning (15610): No output dependent on input pin "i_dict[12]"
+    Warning (15610): No output dependent on input pin "i_dict[13]"
+    Warning (15610): No output dependent on input pin "i_dict[14]"
+    Warning (15610): No output dependent on input pin "i_dict[15]"
+    Warning (15610): No output dependent on input pin "i_dict[16]"
+    Warning (15610): No output dependent on input pin "i_dict[17]"
+    Warning (15610): No output dependent on input pin "i_dict[18]"
+    Warning (15610): No output dependent on input pin "i_dict[19]"
+    Warning (15610): No output dependent on input pin "i_dict[20]"
+    Warning (15610): No output dependent on input pin "i_dict[21]"
+    Warning (15610): No output dependent on input pin "i_dict[22]"
+    Warning (15610): No output dependent on input pin "i_dict[23]"
+    Warning (15610): No output dependent on input pin "i_dict[24]"
+    Warning (15610): No output dependent on input pin "i_dict[25]"
+    Warning (15610): No output dependent on input pin "i_dict[26]"
+    Warning (15610): No output dependent on input pin "i_dict[27]"
+    Warning (15610): No output dependent on input pin "i_dict[28]"
+    Warning (15610): No output dependent on input pin "i_dict[29]"
+    Warning (15610): No output dependent on input pin "i_dict[30]"
+    Warning (15610): No output dependent on input pin "i_dict[31]"
+    Warning (15610): No output dependent on input pin "i_dict[32]"
+    Warning (15610): No output dependent on input pin "i_dict[33]"
+    Warning (15610): No output dependent on input pin "i_dict[34]"
+    Warning (15610): No output dependent on input pin "i_dict[35]"
+    Warning (15610): No output dependent on input pin "i_dict[36]"
+    Warning (15610): No output dependent on input pin "i_dict[37]"
+    Warning (15610): No output dependent on input pin "i_dict[38]"
+    Warning (15610): No output dependent on input pin "i_dict[39]"
+    Warning (15610): No output dependent on input pin "i_dict[40]"
+    Warning (15610): No output dependent on input pin "i_dict[41]"
+    Warning (15610): No output dependent on input pin "i_dict[42]"
+    Warning (15610): No output dependent on input pin "i_dict[43]"
+    Warning (15610): No output dependent on input pin "i_dict[44]"
+    Warning (15610): No output dependent on input pin "i_dict[45]"
+    Warning (15610): No output dependent on input pin "i_dict[46]"
+    Warning (15610): No output dependent on input pin "i_dict[47]"
+    Warning (15610): No output dependent on input pin "i_dict[48]"
+    Warning (15610): No output dependent on input pin "i_dict[49]"
+    Warning (15610): No output dependent on input pin "i_dict[50]"
+    Warning (15610): No output dependent on input pin "i_dict[51]"
+    Warning (15610): No output dependent on input pin "i_dict[52]"
+    Warning (15610): No output dependent on input pin "i_dict[53]"
+    Warning (15610): No output dependent on input pin "i_dict[54]"
+    Warning (15610): No output dependent on input pin "i_dict[55]"
+    Warning (15610): No output dependent on input pin "i_dict[56]"
+    Warning (15610): No output dependent on input pin "i_dict[57]"
+    Warning (15610): No output dependent on input pin "i_dict[58]"
+    Warning (15610): No output dependent on input pin "i_dict[59]"
+    Warning (15610): No output dependent on input pin "i_dict[60]"
+    Warning (15610): No output dependent on input pin "i_dict[61]"
+    Warning (15610): No output dependent on input pin "i_dict[62]"
+    Warning (15610): No output dependent on input pin "i_dict[63]"
+    Warning (15610): No output dependent on input pin "i_dict[64]"
+    Warning (15610): No output dependent on input pin "i_dict[65]"
+    Warning (15610): No output dependent on input pin "i_dict[66]"
+    Warning (15610): No output dependent on input pin "i_dict[67]"
+    Warning (15610): No output dependent on input pin "i_dict[68]"
+    Warning (15610): No output dependent on input pin "i_dict[69]"
+    Warning (15610): No output dependent on input pin "i_dict[70]"
+    Warning (15610): No output dependent on input pin "i_dict[71]"
+    Warning (15610): No output dependent on input pin "i_dict[72]"
+    Warning (15610): No output dependent on input pin "i_dict[73]"
+    Warning (15610): No output dependent on input pin "i_dict[74]"
+    Warning (15610): No output dependent on input pin "i_dict[75]"
+    Warning (15610): No output dependent on input pin "i_dict[76]"
+    Warning (15610): No output dependent on input pin "i_dict[77]"
+    Warning (15610): No output dependent on input pin "i_dict[78]"
+    Warning (15610): No output dependent on input pin "i_dict[79]"
+    Warning (15610): No output dependent on input pin "i_dict[80]"
+    Warning (15610): No output dependent on input pin "i_dict[81]"
+    Warning (15610): No output dependent on input pin "i_dict[82]"
+    Warning (15610): No output dependent on input pin "i_dict[83]"
+    Warning (15610): No output dependent on input pin "i_dict[84]"
+    Warning (15610): No output dependent on input pin "i_dict[85]"
+    Warning (15610): No output dependent on input pin "i_dict[86]"
+    Warning (15610): No output dependent on input pin "i_dict[87]"
+    Warning (15610): No output dependent on input pin "i_dict[88]"
+    Warning (15610): No output dependent on input pin "i_dict[89]"
+    Warning (15610): No output dependent on input pin "i_dict[90]"
+    Warning (15610): No output dependent on input pin "i_dict[91]"
+    Warning (15610): No output dependent on input pin "i_dict[92]"
+    Warning (15610): No output dependent on input pin "i_dict[93]"
+    Warning (15610): No output dependent on input pin "i_dict[94]"
+    Warning (15610): No output dependent on input pin "i_dict[95]"
+    Warning (15610): No output dependent on input pin "i_dict[96]"
+    Warning (15610): No output dependent on input pin "i_dict[97]"
+    Warning (15610): No output dependent on input pin "i_dict[98]"
+    Warning (15610): No output dependent on input pin "i_dict[99]"
+    Warning (15610): No output dependent on input pin "i_dict[100]"
+    Warning (15610): No output dependent on input pin "i_dict[101]"
+    Warning (15610): No output dependent on input pin "i_dict[102]"
+    Warning (15610): No output dependent on input pin "i_dict[103]"
+    Warning (15610): No output dependent on input pin "i_dict[104]"
+    Warning (15610): No output dependent on input pin "i_dict[105]"
+    Warning (15610): No output dependent on input pin "i_dict[106]"
+    Warning (15610): No output dependent on input pin "i_dict[107]"
+    Warning (15610): No output dependent on input pin "i_dict[108]"
+    Warning (15610): No output dependent on input pin "i_dict[109]"
+    Warning (15610): No output dependent on input pin "i_dict[110]"
+    Warning (15610): No output dependent on input pin "i_dict[111]"
+    Warning (15610): No output dependent on input pin "i_dict[112]"
+    Warning (15610): No output dependent on input pin "i_dict[113]"
+    Warning (15610): No output dependent on input pin "i_dict[114]"
+    Warning (15610): No output dependent on input pin "i_dict[115]"
+    Warning (15610): No output dependent on input pin "i_dict[116]"
+    Warning (15610): No output dependent on input pin "i_dict[117]"
+    Warning (15610): No output dependent on input pin "i_dict[118]"
+    Warning (15610): No output dependent on input pin "i_dict[119]"
+    Warning (15610): No output dependent on input pin "i_dict[120]"
+    Warning (15610): No output dependent on input pin "i_dict[121]"
+    Warning (15610): No output dependent on input pin "i_dict[122]"
+    Warning (15610): No output dependent on input pin "i_dict[123]"
+    Warning (15610): No output dependent on input pin "i_dict[124]"
+    Warning (15610): No output dependent on input pin "i_dict[125]"
+    Warning (15610): No output dependent on input pin "i_dict[126]"
+    Warning (15610): No output dependent on input pin "i_dict[127]"
+    Warning (15610): No output dependent on input pin "i_dict[128]"
+    Warning (15610): No output dependent on input pin "i_dict[129]"
+    Warning (15610): No output dependent on input pin "i_dict[130]"
+    Warning (15610): No output dependent on input pin "i_dict[131]"
+    Warning (15610): No output dependent on input pin "i_dict[132]"
+    Warning (15610): No output dependent on input pin "i_dict[133]"
+    Warning (15610): No output dependent on input pin "i_dict[134]"
+    Warning (15610): No output dependent on input pin "i_dict[135]"
+    Warning (15610): No output dependent on input pin "i_dict[136]"
+    Warning (15610): No output dependent on input pin "i_dict[137]"
+    Warning (15610): No output dependent on input pin "i_dict[138]"
+    Warning (15610): No output dependent on input pin "i_dict[139]"
+    Warning (15610): No output dependent on input pin "i_dict[140]"
+    Warning (15610): No output dependent on input pin "i_dict[141]"
+    Warning (15610): No output dependent on input pin "i_dict[142]"
+    Warning (15610): No output dependent on input pin "i_dict[143]"
+    Warning (15610): No output dependent on input pin "i_dict[144]"
+    Warning (15610): No output dependent on input pin "i_dict[145]"
+    Warning (15610): No output dependent on input pin "i_dict[146]"
+    Warning (15610): No output dependent on input pin "i_dict[147]"
+    Warning (15610): No output dependent on input pin "i_dict[148]"
+    Warning (15610): No output dependent on input pin "i_dict[149]"
+    Warning (15610): No output dependent on input pin "i_dict[150]"
+    Warning (15610): No output dependent on input pin "i_dict[151]"
+    Warning (15610): No output dependent on input pin "i_dict[152]"
+    Warning (15610): No output dependent on input pin "i_dict[153]"
+    Warning (15610): No output dependent on input pin "i_dict[154]"
+    Warning (15610): No output dependent on input pin "i_dict[155]"
+    Warning (15610): No output dependent on input pin "i_dict[156]"
+    Warning (15610): No output dependent on input pin "i_dict[157]"
+    Warning (15610): No output dependent on input pin "i_dict[158]"
+    Warning (15610): No output dependent on input pin "i_dict[159]"
+    Warning (15610): No output dependent on input pin "i_dict[160]"
+    Warning (15610): No output dependent on input pin "i_dict[161]"
+    Warning (15610): No output dependent on input pin "i_dict[162]"
+    Warning (15610): No output dependent on input pin "i_dict[163]"
+    Warning (15610): No output dependent on input pin "i_dict[164]"
+    Warning (15610): No output dependent on input pin "i_dict[165]"
+    Warning (15610): No output dependent on input pin "i_dict[166]"
+    Warning (15610): No output dependent on input pin "i_dict[167]"
+    Warning (15610): No output dependent on input pin "i_dict[168]"
+    Warning (15610): No output dependent on input pin "i_dict[169]"
+    Warning (15610): No output dependent on input pin "i_dict[170]"
+    Warning (15610): No output dependent on input pin "i_dict[171]"
+    Warning (15610): No output dependent on input pin "i_dict[172]"
+    Warning (15610): No output dependent on input pin "i_dict[173]"
+    Warning (15610): No output dependent on input pin "i_dict[174]"
+    Warning (15610): No output dependent on input pin "i_dict[175]"
+    Warning (15610): No output dependent on input pin "i_dict[176]"
+    Warning (15610): No output dependent on input pin "i_dict[177]"
+    Warning (15610): No output dependent on input pin "i_dict[178]"
+    Warning (15610): No output dependent on input pin "i_dict[179]"
+    Warning (15610): No output dependent on input pin "i_dict[180]"
+    Warning (15610): No output dependent on input pin "i_dict[181]"
+    Warning (15610): No output dependent on input pin "i_dict[182]"
+    Warning (15610): No output dependent on input pin "i_dict[183]"
+    Warning (15610): No output dependent on input pin "i_dict[184]"
+    Warning (15610): No output dependent on input pin "i_dict[185]"
+    Warning (15610): No output dependent on input pin "i_dict[186]"
+    Warning (15610): No output dependent on input pin "i_dict[187]"
+    Warning (15610): No output dependent on input pin "i_dict[188]"
+    Warning (15610): No output dependent on input pin "i_dict[189]"
+    Warning (15610): No output dependent on input pin "i_dict[190]"
+    Warning (15610): No output dependent on input pin "i_dict[191]"
+    Warning (15610): No output dependent on input pin "i_dict[192]"
+    Warning (15610): No output dependent on input pin "i_dict[193]"
+    Warning (15610): No output dependent on input pin "i_dict[194]"
+    Warning (15610): No output dependent on input pin "i_dict[195]"
+    Warning (15610): No output dependent on input pin "i_dict[196]"
+    Warning (15610): No output dependent on input pin "i_dict[197]"
+    Warning (15610): No output dependent on input pin "i_dict[198]"
+    Warning (15610): No output dependent on input pin "i_dict[199]"
+    Warning (15610): No output dependent on input pin "i_dict[200]"
+    Warning (15610): No output dependent on input pin "i_dict[201]"
+    Warning (15610): No output dependent on input pin "i_dict[202]"
+    Warning (15610): No output dependent on input pin "i_dict[203]"
+    Warning (15610): No output dependent on input pin "i_dict[204]"
+    Warning (15610): No output dependent on input pin "i_dict[205]"
+    Warning (15610): No output dependent on input pin "i_dict[206]"
+    Warning (15610): No output dependent on input pin "i_dict[207]"
+    Warning (15610): No output dependent on input pin "i_dict[208]"
+    Warning (15610): No output dependent on input pin "i_dict[209]"
+    Warning (15610): No output dependent on input pin "i_dict[210]"
+    Warning (15610): No output dependent on input pin "i_dict[211]"
+    Warning (15610): No output dependent on input pin "i_dict[212]"
+    Warning (15610): No output dependent on input pin "i_dict[213]"
+    Warning (15610): No output dependent on input pin "i_dict[214]"
+    Warning (15610): No output dependent on input pin "i_dict[215]"
+    Warning (15610): No output dependent on input pin "i_dict[216]"
+    Warning (15610): No output dependent on input pin "i_dict[217]"
+    Warning (15610): No output dependent on input pin "i_dict[218]"
+    Warning (15610): No output dependent on input pin "i_dict[219]"
+    Warning (15610): No output dependent on input pin "i_dict[220]"
+    Warning (15610): No output dependent on input pin "i_dict[221]"
+    Warning (15610): No output dependent on input pin "i_dict[222]"
+    Warning (15610): No output dependent on input pin "i_dict[223]"
+    Warning (15610): No output dependent on input pin "i_dict[224]"
+    Warning (15610): No output dependent on input pin "i_dict[225]"
+    Warning (15610): No output dependent on input pin "i_dict[226]"
+    Warning (15610): No output dependent on input pin "i_dict[227]"
+    Warning (15610): No output dependent on input pin "i_dict[228]"
+    Warning (15610): No output dependent on input pin "i_dict[229]"
+    Warning (15610): No output dependent on input pin "i_dict[230]"
+    Warning (15610): No output dependent on input pin "i_dict[231]"
+    Warning (15610): No output dependent on input pin "i_dict[232]"
+    Warning (15610): No output dependent on input pin "i_dict[233]"
+    Warning (15610): No output dependent on input pin "i_dict[234]"
+    Warning (15610): No output dependent on input pin "i_dict[235]"
+    Warning (15610): No output dependent on input pin "i_dict[236]"
+    Warning (15610): No output dependent on input pin "i_dict[237]"
+    Warning (15610): No output dependent on input pin "i_dict[238]"
+    Warning (15610): No output dependent on input pin "i_dict[239]"
+    Warning (15610): No output dependent on input pin "i_dict[240]"
+    Warning (15610): No output dependent on input pin "i_dict[241]"
+    Warning (15610): No output dependent on input pin "i_dict[242]"
+    Warning (15610): No output dependent on input pin "i_dict[243]"
+    Warning (15610): No output dependent on input pin "i_dict[244]"
+    Warning (15610): No output dependent on input pin "i_dict[245]"
+    Warning (15610): No output dependent on input pin "i_dict[246]"
+    Warning (15610): No output dependent on input pin "i_dict[247]"
+    Warning (15610): No output dependent on input pin "i_dict[248]"
+    Warning (15610): No output dependent on input pin "i_dict[249]"
+    Warning (15610): No output dependent on input pin "i_dict[250]"
+    Warning (15610): No output dependent on input pin "i_dict[251]"
+    Warning (15610): No output dependent on input pin "i_dict[252]"
+    Warning (15610): No output dependent on input pin "i_dict[253]"
+    Warning (15610): No output dependent on input pin "i_dict[254]"
+    Warning (15610): No output dependent on input pin "i_dict[255]"
+    Warning (15610): No output dependent on input pin "i_dict[256]"
+    Warning (15610): No output dependent on input pin "i_dict[257]"
+    Warning (15610): No output dependent on input pin "i_dict[258]"
+    Warning (15610): No output dependent on input pin "i_dict[259]"
+    Warning (15610): No output dependent on input pin "i_dict[260]"
+    Warning (15610): No output dependent on input pin "i_dict[261]"
+    Warning (15610): No output dependent on input pin "i_dict[262]"
+    Warning (15610): No output dependent on input pin "i_dict[263]"
+    Warning (15610): No output dependent on input pin "i_dict[264]"
+    Warning (15610): No output dependent on input pin "i_dict[265]"
+    Warning (15610): No output dependent on input pin "i_dict[266]"
+    Warning (15610): No output dependent on input pin "i_dict[267]"
+    Warning (15610): No output dependent on input pin "i_dict[268]"
+    Warning (15610): No output dependent on input pin "i_dict[269]"
+    Warning (15610): No output dependent on input pin "i_dict[270]"
+    Warning (15610): No output dependent on input pin "i_dict[271]"
+    Warning (15610): No output dependent on input pin "i_dict[272]"
+    Warning (15610): No output dependent on input pin "i_dict[273]"
+    Warning (15610): No output dependent on input pin "i_dict[274]"
+    Warning (15610): No output dependent on input pin "i_dict[275]"
+    Warning (15610): No output dependent on input pin "i_dict[276]"
+    Warning (15610): No output dependent on input pin "i_dict[277]"
+    Warning (15610): No output dependent on input pin "i_dict[278]"
+    Warning (15610): No output dependent on input pin "i_dict[279]"
+    Warning (15610): No output dependent on input pin "i_dict[280]"
+    Warning (15610): No output dependent on input pin "i_dict[281]"
+    Warning (15610): No output dependent on input pin "i_dict[282]"
+    Warning (15610): No output dependent on input pin "i_dict[283]"
+    Warning (15610): No output dependent on input pin "i_dict[284]"
+    Warning (15610): No output dependent on input pin "i_dict[285]"
+    Warning (15610): No output dependent on input pin "i_dict[286]"
+    Warning (15610): No output dependent on input pin "i_dict[287]"
+    Warning (15610): No output dependent on input pin "i_dict[288]"
+    Warning (15610): No output dependent on input pin "i_dict[289]"
+    Warning (15610): No output dependent on input pin "i_dict[290]"
+    Warning (15610): No output dependent on input pin "i_dict[291]"
+    Warning (15610): No output dependent on input pin "i_dict[292]"
+    Warning (15610): No output dependent on input pin "i_dict[293]"
+    Warning (15610): No output dependent on input pin "i_dict[294]"
+    Warning (15610): No output dependent on input pin "i_dict[295]"
+    Warning (15610): No output dependent on input pin "i_dict[296]"
+    Warning (15610): No output dependent on input pin "i_dict[297]"
+    Warning (15610): No output dependent on input pin "i_dict[298]"
+    Warning (15610): No output dependent on input pin "i_dict[299]"
+    Warning (15610): No output dependent on input pin "i_dict[300]"
+    Warning (15610): No output dependent on input pin "i_dict[301]"
+    Warning (15610): No output dependent on input pin "i_dict[302]"
+    Warning (15610): No output dependent on input pin "i_dict[303]"
+    Warning (15610): No output dependent on input pin "i_dict[304]"
+    Warning (15610): No output dependent on input pin "i_dict[305]"
+    Warning (15610): No output dependent on input pin "i_dict[306]"
+    Warning (15610): No output dependent on input pin "i_dict[307]"
+    Warning (15610): No output dependent on input pin "i_dict[308]"
+    Warning (15610): No output dependent on input pin "i_dict[309]"
+    Warning (15610): No output dependent on input pin "i_dict[310]"
+    Warning (15610): No output dependent on input pin "i_dict[311]"
+    Warning (15610): No output dependent on input pin "i_dict[312]"
+    Warning (15610): No output dependent on input pin "i_dict[313]"
+    Warning (15610): No output dependent on input pin "i_dict[314]"
+    Warning (15610): No output dependent on input pin "i_dict[315]"
+    Warning (15610): No output dependent on input pin "i_dict[316]"
+    Warning (15610): No output dependent on input pin "i_dict[317]"
+    Warning (15610): No output dependent on input pin "i_dict[318]"
+    Warning (15610): No output dependent on input pin "i_dict[319]"
+    Warning (15610): No output dependent on input pin "i_dict[320]"
+    Warning (15610): No output dependent on input pin "i_dict[321]"
+    Warning (15610): No output dependent on input pin "i_dict[322]"
+    Warning (15610): No output dependent on input pin "i_dict[323]"
+    Warning (15610): No output dependent on input pin "i_dict[324]"
+    Warning (15610): No output dependent on input pin "i_dict[325]"
+    Warning (15610): No output dependent on input pin "i_dict[326]"
+    Warning (15610): No output dependent on input pin "i_dict[327]"
+    Warning (15610): No output dependent on input pin "i_dict[328]"
+    Warning (15610): No output dependent on input pin "i_dict[329]"
+    Warning (15610): No output dependent on input pin "i_dict[330]"
+    Warning (15610): No output dependent on input pin "i_dict[331]"
+    Warning (15610): No output dependent on input pin "i_dict[332]"
+    Warning (15610): No output dependent on input pin "i_dict[333]"
+    Warning (15610): No output dependent on input pin "i_dict[334]"
+    Warning (15610): No output dependent on input pin "i_dict[335]"
+    Warning (15610): No output dependent on input pin "i_dict[336]"
+    Warning (15610): No output dependent on input pin "i_dict[337]"
+    Warning (15610): No output dependent on input pin "i_dict[338]"
+    Warning (15610): No output dependent on input pin "i_dict[339]"
+    Warning (15610): No output dependent on input pin "i_dict[340]"
+    Warning (15610): No output dependent on input pin "i_dict[341]"
+    Warning (15610): No output dependent on input pin "i_dict[342]"
+    Warning (15610): No output dependent on input pin "i_dict[343]"
+    Warning (15610): No output dependent on input pin "i_dict[344]"
+    Warning (15610): No output dependent on input pin "i_dict[345]"
+    Warning (15610): No output dependent on input pin "i_dict[346]"
+    Warning (15610): No output dependent on input pin "i_dict[347]"
+    Warning (15610): No output dependent on input pin "i_dict[348]"
+    Warning (15610): No output dependent on input pin "i_dict[349]"
+    Warning (15610): No output dependent on input pin "i_dict[350]"
+    Warning (15610): No output dependent on input pin "i_dict[351]"
+    Warning (15610): No output dependent on input pin "i_dict[352]"
+    Warning (15610): No output dependent on input pin "i_dict[353]"
+    Warning (15610): No output dependent on input pin "i_dict[354]"
+    Warning (15610): No output dependent on input pin "i_dict[355]"
+    Warning (15610): No output dependent on input pin "i_dict[356]"
+    Warning (15610): No output dependent on input pin "i_dict[357]"
+    Warning (15610): No output dependent on input pin "i_dict[358]"
+    Warning (15610): No output dependent on input pin "i_dict[359]"
+    Warning (15610): No output dependent on input pin "i_dict[360]"
+    Warning (15610): No output dependent on input pin "i_dict[361]"
+    Warning (15610): No output dependent on input pin "i_dict[362]"
+    Warning (15610): No output dependent on input pin "i_dict[363]"
+    Warning (15610): No output dependent on input pin "i_dict[364]"
+    Warning (15610): No output dependent on input pin "i_dict[365]"
+    Warning (15610): No output dependent on input pin "i_dict[366]"
+    Warning (15610): No output dependent on input pin "i_dict[367]"
+    Warning (15610): No output dependent on input pin "i_dict[368]"
+    Warning (15610): No output dependent on input pin "i_dict[369]"
+    Warning (15610): No output dependent on input pin "i_dict[370]"
+    Warning (15610): No output dependent on input pin "i_dict[371]"
+    Warning (15610): No output dependent on input pin "i_dict[372]"
+    Warning (15610): No output dependent on input pin "i_dict[373]"
+    Warning (15610): No output dependent on input pin "i_dict[374]"
+    Warning (15610): No output dependent on input pin "i_dict[375]"
+    Warning (15610): No output dependent on input pin "i_dict[376]"
+    Warning (15610): No output dependent on input pin "i_dict[377]"
+    Warning (15610): No output dependent on input pin "i_dict[378]"
+    Warning (15610): No output dependent on input pin "i_dict[379]"
+    Warning (15610): No output dependent on input pin "i_dict[380]"
+    Warning (15610): No output dependent on input pin "i_dict[381]"
+    Warning (15610): No output dependent on input pin "i_dict[382]"
+    Warning (15610): No output dependent on input pin "i_dict[383]"
+    Warning (15610): No output dependent on input pin "i_dict[384]"
+    Warning (15610): No output dependent on input pin "i_dict[385]"
+    Warning (15610): No output dependent on input pin "i_dict[386]"
+    Warning (15610): No output dependent on input pin "i_dict[387]"
+    Warning (15610): No output dependent on input pin "i_dict[388]"
+    Warning (15610): No output dependent on input pin "i_dict[389]"
+    Warning (15610): No output dependent on input pin "i_dict[390]"
+    Warning (15610): No output dependent on input pin "i_dict[391]"
+    Warning (15610): No output dependent on input pin "i_dict[392]"
+    Warning (15610): No output dependent on input pin "i_dict[393]"
+    Warning (15610): No output dependent on input pin "i_dict[394]"
+    Warning (15610): No output dependent on input pin "i_dict[395]"
+    Warning (15610): No output dependent on input pin "i_dict[396]"
+    Warning (15610): No output dependent on input pin "i_dict[397]"
+    Warning (15610): No output dependent on input pin "i_dict[398]"
+    Warning (15610): No output dependent on input pin "i_dict[399]"
+    Warning (15610): No output dependent on input pin "i_dict[400]"
+    Warning (15610): No output dependent on input pin "i_dict[401]"
+    Warning (15610): No output dependent on input pin "i_dict[402]"
+    Warning (15610): No output dependent on input pin "i_dict[403]"
+    Warning (15610): No output dependent on input pin "i_dict[404]"
+    Warning (15610): No output dependent on input pin "i_dict[405]"
+    Warning (15610): No output dependent on input pin "i_dict[406]"
+    Warning (15610): No output dependent on input pin "i_dict[407]"
+    Warning (15610): No output dependent on input pin "i_dict[408]"
+    Warning (15610): No output dependent on input pin "i_dict[409]"
+    Warning (15610): No output dependent on input pin "i_dict[410]"
+    Warning (15610): No output dependent on input pin "i_dict[411]"
+    Warning (15610): No output dependent on input pin "i_dict[412]"
+    Warning (15610): No output dependent on input pin "i_dict[413]"
+    Warning (15610): No output dependent on input pin "i_dict[414]"
+    Warning (15610): No output dependent on input pin "i_dict[415]"
+    Warning (15610): No output dependent on input pin "i_dict[416]"
+    Warning (15610): No output dependent on input pin "i_dict[417]"
+    Warning (15610): No output dependent on input pin "i_dict[418]"
+    Warning (15610): No output dependent on input pin "i_dict[419]"
+    Warning (15610): No output dependent on input pin "i_dict[420]"
+    Warning (15610): No output dependent on input pin "i_dict[421]"
+    Warning (15610): No output dependent on input pin "i_dict[422]"
+    Warning (15610): No output dependent on input pin "i_dict[423]"
+    Warning (15610): No output dependent on input pin "i_dict[424]"
+    Warning (15610): No output dependent on input pin "i_dict[425]"
+    Warning (15610): No output dependent on input pin "i_dict[426]"
+    Warning (15610): No output dependent on input pin "i_dict[427]"
+    Warning (15610): No output dependent on input pin "i_dict[428]"
+    Warning (15610): No output dependent on input pin "i_dict[429]"
+    Warning (15610): No output dependent on input pin "i_dict[430]"
+    Warning (15610): No output dependent on input pin "i_dict[431]"
+    Warning (15610): No output dependent on input pin "i_dict[432]"
+    Warning (15610): No output dependent on input pin "i_dict[433]"
+    Warning (15610): No output dependent on input pin "i_dict[434]"
+    Warning (15610): No output dependent on input pin "i_dict[435]"
+    Warning (15610): No output dependent on input pin "i_dict[436]"
+    Warning (15610): No output dependent on input pin "i_dict[437]"
+    Warning (15610): No output dependent on input pin "i_dict[438]"
+    Warning (15610): No output dependent on input pin "i_dict[439]"
+    Warning (15610): No output dependent on input pin "i_dict[440]"
+    Warning (15610): No output dependent on input pin "i_dict[441]"
+    Warning (15610): No output dependent on input pin "i_dict[442]"
+    Warning (15610): No output dependent on input pin "i_dict[443]"
+    Warning (15610): No output dependent on input pin "i_dict[444]"
+    Warning (15610): No output dependent on input pin "i_dict[445]"
+    Warning (15610): No output dependent on input pin "i_dict[446]"
+    Warning (15610): No output dependent on input pin "i_dict[447]"
+    Warning (15610): No output dependent on input pin "i_dict[448]"
+    Warning (15610): No output dependent on input pin "i_dict[449]"
+    Warning (15610): No output dependent on input pin "i_dict[450]"
+    Warning (15610): No output dependent on input pin "i_dict[451]"
+    Warning (15610): No output dependent on input pin "i_dict[452]"
+    Warning (15610): No output dependent on input pin "i_dict[453]"
+    Warning (15610): No output dependent on input pin "i_dict[454]"
+    Warning (15610): No output dependent on input pin "i_dict[455]"
+    Warning (15610): No output dependent on input pin "i_dict[456]"
+    Warning (15610): No output dependent on input pin "i_dict[457]"
+    Warning (15610): No output dependent on input pin "i_dict[458]"
+    Warning (15610): No output dependent on input pin "i_dict[459]"
+    Warning (15610): No output dependent on input pin "i_dict[460]"
+    Warning (15610): No output dependent on input pin "i_dict[461]"
+    Warning (15610): No output dependent on input pin "i_dict[462]"
+    Warning (15610): No output dependent on input pin "i_dict[463]"
+    Warning (15610): No output dependent on input pin "i_dict[464]"
+    Warning (15610): No output dependent on input pin "i_dict[465]"
+    Warning (15610): No output dependent on input pin "i_dict[466]"
+    Warning (15610): No output dependent on input pin "i_dict[467]"
+    Warning (15610): No output dependent on input pin "i_dict[468]"
+    Warning (15610): No output dependent on input pin "i_dict[469]"
+    Warning (15610): No output dependent on input pin "i_dict[470]"
+    Warning (15610): No output dependent on input pin "i_dict[471]"
+    Warning (15610): No output dependent on input pin "i_dict[472]"
+    Warning (15610): No output dependent on input pin "i_dict[473]"
+    Warning (15610): No output dependent on input pin "i_dict[474]"
+    Warning (15610): No output dependent on input pin "i_dict[475]"
+    Warning (15610): No output dependent on input pin "i_dict[476]"
+    Warning (15610): No output dependent on input pin "i_dict[477]"
+    Warning (15610): No output dependent on input pin "i_dict[478]"
+    Warning (15610): No output dependent on input pin "i_dict[479]"
+    Warning (15610): No output dependent on input pin "i_dict[480]"
+    Warning (15610): No output dependent on input pin "i_dict[481]"
+    Warning (15610): No output dependent on input pin "i_dict[482]"
+    Warning (15610): No output dependent on input pin "i_dict[483]"
+    Warning (15610): No output dependent on input pin "i_dict[484]"
+    Warning (15610): No output dependent on input pin "i_dict[485]"
+    Warning (15610): No output dependent on input pin "i_dict[486]"
+    Warning (15610): No output dependent on input pin "i_dict[487]"
+    Warning (15610): No output dependent on input pin "i_dict[488]"
+    Warning (15610): No output dependent on input pin "i_dict[489]"
+    Warning (15610): No output dependent on input pin "i_dict[490]"
+    Warning (15610): No output dependent on input pin "i_dict[491]"
+    Warning (15610): No output dependent on input pin "i_dict[492]"
+    Warning (15610): No output dependent on input pin "i_dict[493]"
+    Warning (15610): No output dependent on input pin "i_dict[494]"
+    Warning (15610): No output dependent on input pin "i_dict[495]"
+    Warning (15610): No output dependent on input pin "i_dict[496]"
+    Warning (15610): No output dependent on input pin "i_dict[497]"
+    Warning (15610): No output dependent on input pin "i_dict[498]"
+    Warning (15610): No output dependent on input pin "i_dict[499]"
+    Warning (15610): No output dependent on input pin "i_dict[500]"
+    Warning (15610): No output dependent on input pin "i_dict[501]"
+    Warning (15610): No output dependent on input pin "i_dict[502]"
+    Warning (15610): No output dependent on input pin "i_dict[503]"
+    Warning (15610): No output dependent on input pin "i_dict[504]"
+    Warning (15610): No output dependent on input pin "i_dict[505]"
+    Warning (15610): No output dependent on input pin "i_dict[506]"
+    Warning (15610): No output dependent on input pin "i_dict[507]"
+    Warning (15610): No output dependent on input pin "i_dict[508]"
+    Warning (15610): No output dependent on input pin "i_dict[509]"
+    Warning (15610): No output dependent on input pin "i_dict[510]"
+    Warning (15610): No output dependent on input pin "i_dict[511]"
+    Warning (15610): No output dependent on input pin "i_idx1[0]"
+    Warning (15610): No output dependent on input pin "i_idx1[1]"
+    Warning (15610): No output dependent on input pin "i_idx1[2]"
+    Warning (15610): No output dependent on input pin "i_idx1[3]"
+    Warning (15610): No output dependent on input pin "i_idx2[0]"
+    Warning (15610): No output dependent on input pin "i_idx2[1]"
+    Warning (15610): No output dependent on input pin "i_idx2[2]"
+    Warning (15610): No output dependent on input pin "i_idx2[3]"
+Info (21057): Implemented 611 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 611 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 614 warnings
+    Info: Peak virtual memory: 4609 megabytes
+    Info: Processing ended: Thu Mar 27 15:53:04 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,36 @@
+module barrel_shifter_3 #(
+    parameter TOTAL_LENGTH = 7,
+    parameter WIDTH = 136,
+    parameter O_WIDTH = 64
+) (
+    input logic [WIDTH - 1 :0]        i_word,
+    input logic [TOTAL_LENGTH - 1 :0] i_amt,
+    input logic [O_WIDTH - 1 :0] o_word
+);
+
+    logic [WIDTH -1 :0] s0;
+    logic [WIDTH -1 :0] s1;    
+    logic [WIDTH -1 :0] s2;
+    logic [WIDTH -1 :0] s3;
+    logic [WIDTH -1 :0] s4;
+    logic [WIDTH -1 :0] s5;
+    logic [WIDTH -1 :0] s6;
+
+    //stage 0, shift 0 or 1 bit
+    assign s0 = amt[0]? {data[WIDTH - 2 : 0], 1'b0} :data ;
+    //stage 1, shift 0 or 2 bits
+    assign s1 = amt[1]? {s0[WIDTH - 3 : 0], 2'b00} : s0 ;
+    //stage 2, shift 0 or 4 bits
+    assign s2 = amt[2]? {s1[WIDTH - 5 : 0], 4'h0} : s1;
+    //stage 3, shift 0 or 8 bits
+    assign s3 = amt[3]? {s2[WIDTH - 9 : 0], 8'h0} : s2;
+    //stage 4, shift 0 or 16 bits
+    assign s4 = amt[4]? {s3[WIDTH - 17 : 0], 16'h0} :s3;
+    //stage 5, shift 0 or 32 bits
+    assign s5 = amt[5]? {s4[WIDTH - 33 : 0], 32'h0} : s4;
+    //stage 6, shift 0 or 64 bits
+    assign s6 = amt[6]? {s5[WIDTH - 65 : 0], 64'h0} : s5;
+
+    assign o_word = s6[WIDTH -1 : 72];
+
+endmodule

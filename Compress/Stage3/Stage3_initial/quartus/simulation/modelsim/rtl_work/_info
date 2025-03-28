@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Duc\A PLACE HOLDER\GitHub\Code Graduate\Code_Graduate\Compress\Stage3\Stage3_initial\quartus\simulation\modelsim
+vor_gate
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IOgR:><oSOROoBkok_6Snd0
+V;9o8nbMjEidO_Kj=Vkk_[3
+S1
+Z2 dC:\Users\Duc\A PLACE HOLDER\GitHub\Code Graduate\Code_Graduate\Compress\Stage3\Stage3_initial\quartus\simulation\modelsim
+w1742921833
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/or_gate.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/or_gate.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+o-sv -work work -O0
+!i10b 1
+!s100 OnF_Wk]01[k2^T82h?<nb1
+!s105 or_gate_sv_unit
+!s85 0
+!s108 1742921851.454000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/or_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/or_gate.sv|
+!s101 -O0
+!s92 -sv -work work {+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src} -O0
+vor_gate_tb
+R1
+!i10b 1
+!s100 QgnWM72Oa3X2RF4oAPE;Z3
+Id6F42?XGDkkln;405i<@R0
+VmXkgE59cS^Uj974<IfhHg1
+!s105 or_gate_tb_sv_unit
+S1
+R2
+w1742920803
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1742921858.763000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv|
+!s101 -O0
+o-work work -O0
