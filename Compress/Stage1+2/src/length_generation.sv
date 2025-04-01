@@ -7,17 +7,21 @@ module length_generation #(parameter CACHE_LINE = 128, WORD_SIZE = 64)
  input  logic [1:0]   i_match_s,
  output logic         o_store_flag,  
  output logic [6:0]   o_shift_amount,
- output logic         o_send_back 
+ output logic         o_send_back ,
+ output logic [2:0]   o_encoded1,
+ output logic [2:0]   o_encoded2,
+ output logic [5:0]   o_length1,
+ output logic [5:0]   o_length2,
+ output logic [6:0]   o_total_length,
+ output logic         o_fill_flag,   // Determines whether to select the padded signal
+ output logic         o_output_flag, // Raised when there are 128 compressed bits in Reg2
+ output logic         o_fill_ctrl,   
+ output logic         o_stop_flag    // Raised when the number of compressed bits exceeds 128
 );
 
 logic [1:0] i_type_matched21, i_type_matched22;
 logic       i_type_matched11, i_type_matched12;
 logic       i_match_s1, i_match_s2;
-logic [5:0] o_length1;
-logic [5:0] o_length2;
-logic [6:0] total_length;
-logic [2:0] o_encoded1;
-logic [2:0] o_encoded2;
 
 assign i_type_matched21 = i_type_matched2[1:0];
 assign i_type_matched22 = i_type_matched2[3:2];
@@ -32,16 +36,20 @@ length_accumulator #(
 ) length_accumulator (
 .i_clk(i_clk),
 .i_reset(i_reset),      
-.i_total_length(total_length), 
+.i_total_length(o_total_length), 
 .o_store_flag(o_store_flag),  
 .o_shift_amount(o_shift_amount),
-.o_send_back(o_send_back) 
+.o_send_back(o_send_back),
+.o_fill_flag(o_fill_flag),   // Determines whether to select the padded signal
+.o_output_flag(o_output_flag), // Raised when there are 128 compressed bits in Reg2
+.o_fill_ctrl(o_fill_ctrl),   
+.o_stop_flag(o_stop_flag)    // Raised when the number of compressed bits exceeds 128 
 );
 
 total_length_generator total_length_generator(
 .i_word1_length(o_length1),
 .i_word2_length(o_length2),
-.o_total_length(total_length)
+.o_total_length(o_total_length)
 );
 
 word_length_genetator word_length_generator1(

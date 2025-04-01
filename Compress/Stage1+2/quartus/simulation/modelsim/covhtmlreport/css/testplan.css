@@ -1,0 +1,231 @@
+table, th {
+	border-width:     1px;
+	border-style:     solid;
+}
+
+table td {
+    /* default td is invisible, so we should undo that for any other td class */
+    width:            20px;
+    border-width:     0;
+    border-style:     none;
+}
+
+th {
+	font-weight:      bold;
+}
+
+th.odd {
+	background-color: #80CCCC;
+}
+
+th.even {
+	background-color: #90CCCC;
+}
+
+td.odd {
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+    background-color: #EEEEEE;
+}
+
+td.exclOdd {
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+    background-color: #EEEEEE;
+    color:gray;
+}
+
+td.cntrodd { /* odd - center text alignment */
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+    background-color: #EEEEEE;
+    text-align:       center;
+}
+
+td.even {
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+    background-color: #FAFAFA;
+}
+
+td.exclEven {
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+    background-color: #FAFAFA;
+    color: gray;
+}
+
+td.cntreven { /* even - center text alignment */
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+    background-color: #FAFAFA;
+    text-align:       center;
+}
+
+td.exclcntreven { /* even - center text alignment */
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+    background-color: #FAFAFA;
+    text-align:       center;
+    color:gray;
+}
+
+td.bgRed {
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+	color:            white;
+	background-color: red;
+	font-weight:      bold;
+	text-align:       center;
+}
+
+td.bgYellow {
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+	color:            black;
+	background-color: yellow;
+	font-weight:      bold;
+	text-align:       center;
+}
+
+td.bgGreen {
+    width:            auto;
+    border-width:     1px;
+    border-style:     solid;
+    
+	color:            white;
+	background-color: green;
+	font-weight:      bold;
+	text-align:       center;
+}
+
+table.noborder {
+    border-style:     none;
+}
+
+div.pageHeaderDiv {
+	position: fixed;
+	background-color: black;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+td.tgTdO { /* tagged item td odd */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_odd.gif);
+}
+
+td.exclTgTdO { /* excluded tagged item td odd */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_odd.gif);
+	color: gray;
+}
+
+td.tgTdE { /* tagged item td even */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_even.gif);
+}
+
+td.exclTgTdE { /* excluded tagged item td even */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_even.gif);
+	color: gray;
+}
+
+td.tgTdCntrO { /* tagged item td odd - Center text alignment */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_odd.gif);
+	text-align: center;
+}
+
+td.exclTgTdCntrO { /* excluded tagged item td odd - Center text alignment */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_odd.gif);
+	text-align: center;
+	color: gray;
+}
+
+td.tgTdCntrE { /* tagged item td even - Center text alignment */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_even.gif);
+	text-align: center;
+}
+
+td.exclTgTdCntrE { /* excluded tagged item td even - Center text alignment */
+    width: auto;
+	border: 2px solid #9ac1c9;
+	background: url(../images/linkbg_even.gif);
+	text-align: center;
+	color: gray;
+}
+
+div.tpD { /* tpItem Div */
+	display:inline;
+}
+
+div.btnD { /* button Div */
+	cursor:pointer;
+	display:inline;
+	vertical-align:middle;
+}
+
+div.dimBtnD { /* dimmed button Div */
+	display:inline;
+	vertical-align:middle;
+}
+
+textarea.evenTxtBox {
+	border:0;
+	background-color:#FAFAFA;
+	font-family:Serif;
+}
+
+textarea.exclEvenTxtBox {
+	border:0;
+	background-color:#FAFAFA;
+	font-family:Serif;
+	color:gray;
+}
+
+textarea.oddTxtBox {
+	border:0;
+	background-color:#EEEEEE;
+	font-family:Serif;
+}
+
+textarea.exclOddTxtBox {
+	border:0;
+	background-color:#EEEEEE;
+	font-family:Serif;
+	color:gray;
+}
+
+tr.fpTr { /* full path tr */
+	display:none;
+}

@@ -7,14 +7,14 @@ module length_generation #(parameter CACHE_LINE = 128, WORD_SIZE = 64)
  input  logic [1:0]   i_match_s,
  output logic         o_store_flag,  
  output logic [6:0]   o_shift_amount,
- output logic         o_send_back 
+ output logic         o_send_back,
+ output logic [5:0]   o_length2
 );
 
 logic [1:0] i_type_matched21, i_type_matched22;
 logic       i_type_matched11, i_type_matched12;
 logic       i_match_s1, i_match_s2;
 logic [5:0] o_length1;
-logic [5:0] o_length2;
 logic [6:0] total_length;
 logic [2:0] o_encoded1;
 logic [2:0] o_encoded2;

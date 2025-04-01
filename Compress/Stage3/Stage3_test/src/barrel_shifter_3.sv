@@ -1,11 +1,11 @@
 module barrel_shifter_3 #(
     parameter TOTAL_LENGTH = 7,
     parameter WIDTH = 136,
-    parameter O_WIDTH = 64
+    parameter O_WIDTH = 128
 ) (
     input logic [WIDTH - 1 :0]        i_word,
     input logic [TOTAL_LENGTH - 1 :0] i_amt,
-    output logic [O_WIDTH - 1 :0] o_word
+    output logic [O_WIDTH - 1 :0]     o_word
 );
 
     logic [WIDTH -1 :0] s0;
@@ -31,6 +31,6 @@ module barrel_shifter_3 #(
     //stage 6, shift 0 or 64 bits
     assign s6 = i_amt[6]? {s5[WIDTH - 65 : 0], 64'h0} : s5;
 
-    assign o_word = s6[WIDTH -1 : 72];
+    assign o_word = s6[WIDTH -1 : 8];
 
 endmodule

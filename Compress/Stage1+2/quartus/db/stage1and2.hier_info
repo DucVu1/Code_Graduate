@@ -1,6 +1,6 @@
 |stage1and2
-i_clk => i_clk.IN2
-i_reset => i_reset.IN2
+i_clk => i_clk.IN3
+i_reset => i_reset.IN3
 i_word[0] => i_word[0].IN1
 i_word[1] => i_word[1].IN1
 i_word[2] => i_word[2].IN1
@@ -586,6 +586,35 @@ dictionary_data[508] <= matching_stage:stage1.dictionary_data
 dictionary_data[509] <= matching_stage:stage1.dictionary_data
 dictionary_data[510] <= matching_stage:stage1.dictionary_data
 dictionary_data[511] <= matching_stage:stage1.dictionary_data
+o_encoded1[0] <= length_generation:stage2.o_encoded1
+o_encoded1[1] <= length_generation:stage2.o_encoded1
+o_encoded1[2] <= length_generation:stage2.o_encoded1
+o_encoded2[0] <= length_generation:stage2.o_encoded2
+o_encoded2[1] <= length_generation:stage2.o_encoded2
+o_encoded2[2] <= length_generation:stage2.o_encoded2
+o_length1[0] <= length_generation:stage2.o_length1
+o_length1[1] <= length_generation:stage2.o_length1
+o_length1[2] <= length_generation:stage2.o_length1
+o_length1[3] <= length_generation:stage2.o_length1
+o_length1[4] <= length_generation:stage2.o_length1
+o_length1[5] <= length_generation:stage2.o_length1
+o_length2[0] <= length_generation:stage2.o_length2
+o_length2[1] <= length_generation:stage2.o_length2
+o_length2[2] <= length_generation:stage2.o_length2
+o_length2[3] <= length_generation:stage2.o_length2
+o_length2[4] <= length_generation:stage2.o_length2
+o_length2[5] <= length_generation:stage2.o_length2
+o_total_length[0] <= length_generation:stage2.o_total_length
+o_total_length[1] <= length_generation:stage2.o_total_length
+o_total_length[2] <= length_generation:stage2.o_total_length
+o_total_length[3] <= length_generation:stage2.o_total_length
+o_total_length[4] <= length_generation:stage2.o_total_length
+o_total_length[5] <= length_generation:stage2.o_total_length
+o_total_length[6] <= length_generation:stage2.o_total_length
+o_fill_flag <= length_generation:stage2.o_fill_flag
+o_output_flag <= length_generation:stage2.o_output_flag
+o_fill_ctrl <= length_generation:stage2.o_fill_ctrl
+o_stop_flag <= length_generation:stage2.o_stop_flag
 
 
 |stage1and2|matching_stage:stage1
@@ -13623,6 +13652,41 @@ o_wr_control[0] <= o_wr_control.DB_MAX_OUTPUT_PORT_TYPE
 o_wr_control[1] <= o_wr_control.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|stage1and2|matching_length_reg:pipeline_reg
+i_clk => o_match_s[0]~reg0.CLK
+i_clk => o_match_s[1]~reg0.CLK
+i_clk => o_type_matched2[0]~reg0.CLK
+i_clk => o_type_matched2[1]~reg0.CLK
+i_clk => o_type_matched2[2]~reg0.CLK
+i_clk => o_type_matched2[3]~reg0.CLK
+i_clk => o_type_matched1[0]~reg0.CLK
+i_clk => o_type_matched1[1]~reg0.CLK
+i_reset => o_type_matched1.OUTPUTSELECT
+i_reset => o_type_matched1.OUTPUTSELECT
+i_reset => o_type_matched2.OUTPUTSELECT
+i_reset => o_type_matched2.OUTPUTSELECT
+i_reset => o_type_matched2.OUTPUTSELECT
+i_reset => o_type_matched2.OUTPUTSELECT
+i_reset => o_match_s.OUTPUTSELECT
+i_reset => o_match_s.OUTPUTSELECT
+i_type_matched2[0] => o_type_matched2.DATAA
+i_type_matched2[1] => o_type_matched2.DATAA
+i_type_matched2[2] => o_type_matched2.DATAA
+i_type_matched2[3] => o_type_matched2.DATAA
+i_type_matched1[0] => o_type_matched1.DATAA
+i_type_matched1[1] => o_type_matched1.DATAA
+i_match_s[0] => o_match_s.DATAA
+i_match_s[1] => o_match_s.DATAA
+o_type_matched2[0] <= o_type_matched2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_type_matched2[1] <= o_type_matched2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_type_matched2[2] <= o_type_matched2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_type_matched2[3] <= o_type_matched2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_type_matched1[0] <= o_type_matched1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_type_matched1[1] <= o_type_matched1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_match_s[0] <= o_match_s[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_match_s[1] <= o_match_s[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |stage1and2|length_generation:stage2
 i_clk => i_clk.IN1
 i_reset => i_reset.IN1
@@ -13643,6 +13707,35 @@ o_shift_amount[4] <= length_accumulator:length_accumulator.o_shift_amount
 o_shift_amount[5] <= length_accumulator:length_accumulator.o_shift_amount
 o_shift_amount[6] <= length_accumulator:length_accumulator.o_shift_amount
 o_send_back <= length_accumulator:length_accumulator.o_send_back
+o_encoded1[0] <= word_length_genetator:word_length_generator1.o_encoded
+o_encoded1[1] <= word_length_genetator:word_length_generator1.o_encoded
+o_encoded1[2] <= word_length_genetator:word_length_generator1.o_encoded
+o_encoded2[0] <= word_length_genetator:word_length_generator2.o_encoded
+o_encoded2[1] <= word_length_genetator:word_length_generator2.o_encoded
+o_encoded2[2] <= word_length_genetator:word_length_generator2.o_encoded
+o_length1[0] <= o_length1[0].DB_MAX_OUTPUT_PORT_TYPE
+o_length1[1] <= o_length1[1].DB_MAX_OUTPUT_PORT_TYPE
+o_length1[2] <= o_length1[2].DB_MAX_OUTPUT_PORT_TYPE
+o_length1[3] <= o_length1[3].DB_MAX_OUTPUT_PORT_TYPE
+o_length1[4] <= o_length1[4].DB_MAX_OUTPUT_PORT_TYPE
+o_length1[5] <= o_length1[5].DB_MAX_OUTPUT_PORT_TYPE
+o_length2[0] <= o_length2[0].DB_MAX_OUTPUT_PORT_TYPE
+o_length2[1] <= o_length2[1].DB_MAX_OUTPUT_PORT_TYPE
+o_length2[2] <= o_length2[2].DB_MAX_OUTPUT_PORT_TYPE
+o_length2[3] <= o_length2[3].DB_MAX_OUTPUT_PORT_TYPE
+o_length2[4] <= o_length2[4].DB_MAX_OUTPUT_PORT_TYPE
+o_length2[5] <= o_length2[5].DB_MAX_OUTPUT_PORT_TYPE
+o_total_length[0] <= o_total_length[0].DB_MAX_OUTPUT_PORT_TYPE
+o_total_length[1] <= o_total_length[1].DB_MAX_OUTPUT_PORT_TYPE
+o_total_length[2] <= o_total_length[2].DB_MAX_OUTPUT_PORT_TYPE
+o_total_length[3] <= o_total_length[3].DB_MAX_OUTPUT_PORT_TYPE
+o_total_length[4] <= o_total_length[4].DB_MAX_OUTPUT_PORT_TYPE
+o_total_length[5] <= o_total_length[5].DB_MAX_OUTPUT_PORT_TYPE
+o_total_length[6] <= o_total_length[6].DB_MAX_OUTPUT_PORT_TYPE
+o_fill_flag <= length_accumulator:length_accumulator.o_fill_flag
+o_output_flag <= length_accumulator:length_accumulator.o_output_flag
+o_fill_ctrl <= length_accumulator:length_accumulator.o_fill_ctrl
+o_stop_flag <= length_accumulator:length_accumulator.o_stop_flag
 
 
 |stage1and2|length_generation:stage2|length_accumulator:length_accumulator
@@ -13701,8 +13794,13 @@ o_shift_amount[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 o_shift_amount[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 o_shift_amount[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 o_shift_amount[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-o_shift_amount[6] <= o_shift_amount.DB_MAX_OUTPUT_PORT_TYPE
+o_shift_amount[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_shift_amount[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 o_send_back <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+o_fill_flag <= LessThan3.DB_MAX_OUTPUT_PORT_TYPE
+o_output_flag <= LessThan2.DB_MAX_OUTPUT_PORT_TYPE
+o_fill_ctrl <= o_fill_ctrl.DB_MAX_OUTPUT_PORT_TYPE
+o_stop_flag <= LessThan5.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |stage1and2|length_generation:stage2|total_length_generator:total_length_generator

@@ -1,8 +1,7 @@
 `timescale 1ns / 1ps
 
 module tb_stage1and2;
-  // Parameters matching the DUT (stage1and2) parameters.
-  parameter WIDTH      = 64;   // Two 32-bit words in one 64-bit input
+  parameter WIDTH      = 64;   
   parameter DICT_ENTRY = 16;
   parameter DICT_WORD  = 32;
   parameter WORD       = 32;
@@ -19,8 +18,16 @@ module tb_stage1and2;
   logic [6:0]         o_shift_amount;
   logic               o_send_back;
   logic [511:0]       dictionary_data;
+  logic [2:0]         o_encoded1;
+  logic [2:0]         o_encoded2;
+  logic [5:0]         o_length1;
+  logic [5:0]         o_length2;
+  logic [6:0]         o_total_length;
+  logic               o_fill_flag;  // Determines whether to select the padded signal
+  logic               o_output_flag; // Raised when there are 128 compressed bits in Reg2
+  logic               o_fill_ctrl;   
+  logic               o_stop_flag;   // Raised when the number of compressed bits exceeds 128
   
-  // Local dictionary memory array for lookup (simulate preloaded dictionary)
   logic [DICT_ENTRY-1:0][DATA_WIDTH-1:0] dict_mem;
   int dict_index = 0;
   
@@ -38,49 +45,37 @@ module tb_stage1and2;
     .o_store_flag(o_store_flag),
     .o_shift_amount(o_shift_amount),
     .o_send_back(o_send_back),
-    .dictionary_data(dictionary_data)
+    .dictionary_data(dictionary_data),
+    .o_encoded1(o_encoded1),
+    .o_encoded2(o_encoded2),
+    .o_length1(o_length1),
+    .o_length2(o_length2),
+    .o_total_length(o_total_length),
+    .o_fill_flag(o_fill_flag),   // Determines whether to select the padded signal
+    .o_output_flag(o_output_flag), // Raised when there are 128 compressed bits in Reg2
+    .o_fill_ctrl(o_fill_ctrl),   
+    .o_stop_flag(o_stop_flag)     // Raised when the number of compressed bits exceeds 128 
   );
-  
-  // Clock generation: 10 ns period.
+
   initial begin
     i_clk = 0;
     forever #5 i_clk = ~i_clk;
   end
   
-  // Dump waveforms for debugging.
   initial begin
     $dumpfile("tb_stage1and2.vcd");
     $dumpvars(0, tb_stage1and2);
   end
-    // Task: Initialize the dictionary.
-  task init_dictionary();
+
+ task update_fifo_dictionary(input logic [DATA_WIDTH-1:0] word);
     begin
-      preload_fifo_dict(32'hAABBCCDD, 32'h11223344);  // words 0 & 1
-      preload_fifo_dict(32'h55667788, 32'h99AABBCC);  // words 2 & 3
-      preload_fifo_dict(32'hDDEEFF00, 32'h12345678);  // words 4 & 5
-      preload_fifo_dict(32'h9ABCDEF0, 32'h0F0E0D0C);  // words 6 & 7
-      preload_fifo_dict(32'h87654321, 32'hFEDCBA98);  // words 8 & 9
-      preload_fifo_dict(32'h00112233, 32'h44556677);  // words 10 & 11
-      preload_fifo_dict(32'h8899AABB, 32'hCCDDEEFF);  // words 12 & 13
-      preload_fifo_dict(32'h10203040, 32'h50607080);  // words 14 & 15
+      dict_mem[dict_index] = word;
+      $display("[FIFO Update] New word %h inserted at index %0d", word, dict_index);
+      dict_index = (dict_index + 1) % DICT_ENTRY;
     end
   endtask
-  
-  // Task: Preload dictionary word pair
-  task preload_fifo_dict(input logic [DATA_WIDTH-1:0] word0, input logic [DATA_WIDTH-1:0] word1);
-    begin
-      i_word <= {word1, word0};
-      dict_mem[dict_index]   = word0;
-      dict_mem[dict_index+1] = word1;
-      dict_index += 2;
-      #10;
-    end
-  endtask
-  // ---------------------------
-  // Task: init_dictionary
-  // Preloads the dictionary in the DUT by driving i_word with known pairs.
-  // Also stores the words in a local array for later checking.
-  // ---------------------------
+
+
   task init_dictionary();
     begin
       preload_word(32'hAABBCCDD, 32'h11223344); // dictionary words 0 & 1
@@ -95,14 +90,9 @@ module tb_stage1and2;
     end
   endtask
   
-  // ---------------------------
-  // Task: preload_word
-  // Drives i_word with a pair of words to preload the dictionary.
-  // Also updates the local dict_mem array.
-  // ---------------------------
   task preload_word(input logic [DATA_WIDTH-1:0] word0, input logic [DATA_WIDTH-1:0] word1);
     begin
-      i_word = {word1, word0}; // Lower word is word0, upper word is word1
+      i_word <= {word1, word0}; // Lower word is word0, upper word is word1
       dict_mem[dict_index]   = word0;
       dict_mem[dict_index+1] = word1;
       dict_index += 2;
@@ -110,118 +100,94 @@ module tb_stage1and2;
     end
   endtask
   
-  // ---------------------------
-  // Task: check_pattern_zz
-  // Checks the case when the pattern is "zzzz" or "zzzx".
-  // For example, if a word is all zeros, it's "zzzz" (expected compressed length = 2, code = 000).
-  // You can update the expected values to match your design.
-  // ---------------------------
-  task check_pattern_zz(input [31:0] first_word, input [31:0] second_word);
-    logic [6:0] exp_length1, exp_length2;
-    logic [2:0] exp_code1, exp_code2;
-    begin
-      // If a word is all zero, we treat it as pattern "zzzz"
-      if (first_word == 32'd0) begin
-        exp_length1 = 7'd2;
-        exp_code1   = 3'b000;
-      end else begin
-        // If not all zero but nearly, we can treat it as "zzzx"
-        exp_length1 = 7'd12;
-        exp_code1   = 3'b010;
-      end
-      
-      if (second_word == 32'd0) begin
-        exp_length2 = 7'd2;
-        exp_code2   = 3'b000;
-      end else begin
-        exp_length2 = 7'd12;
-        exp_code2   = 3'b010;
-      end
-      
-      $display("[Pattern Check: zzzz/zzzx] First Word = %h, Second Word = %h", first_word, second_word);
-      if ((o_code1 !== exp_code1) || (o_length1 !== exp_length1))
-        $display("[ERROR] First word mismatch: Expected code=%b, length=%d; Got code=%b, length=%d",
-                 exp_code1, exp_length1, o_code1, o_length1);
-      else
-        $display("[PASS] First word pattern OK.");
-      
-      if ((o_code2 !== exp_code2) || (o_length2 !== exp_length2))
-        $display("[ERROR] Second word mismatch: Expected code=%b, length=%d; Got code=%b, length=%d",
-                 exp_code2, exp_length2, o_code2, o_length2);
-      else
-        $display("[PASS] Second word pattern OK.");
-    end
-  endtask
-  
-  // ---------------------------
-  // Task: check_pattern_other
-  // Checks cases when the words are not all zeros.
-  // For example, if a word exactly matches a dictionary entry, we treat it as "mmmm"
-  // (expected length = 6, code = 001), otherwise "xxxx" (expected length = 34, code = 101).
-  // ---------------------------
-  task check_pattern_other(input [31:0] first_word, input [31:0] second_word);
+task check_pattern(input [31:0] first_word, input [31:0] second_word);
     logic [6:0] exp_length1, exp_length2;
     logic [2:0] exp_code1, exp_code2;
     integer j;
     logic found1, found2;
-    begin
-      found1 = 0;
-      found2 = 0;
-      // Check first word against dictionary
-      for (j = 0; j < DICT_ENTRY; j = j + 1) begin
-        if (dict_mem[j] == first_word) begin
-          found1 = 1;
-          break;
+    
+    // Check first word
+    if (first_word == 32'd0) begin // zzzz
+        exp_length1 = 7'd2;
+        exp_code1   = 3'b000;
+    end else if (first_word[31:8] == 24'd0) begin
+        exp_length1 = 7'd12;
+        exp_code1   = 3'b010;
+    end else begin
+        found1 = 0;
+        for (j = 0; j < DICT_ENTRY; j = j + 1) begin
+            if (dict_mem[j] == first_word) begin // mmmm
+                found1 = 1;
+                exp_length1 = 7'd6;
+                exp_code1   = 3'b001;
+                break;
+            end else if (dict_mem[j][31:8] == first_word[31:8]) begin  // mmmx
+                exp_length1 = 7'd16;
+                exp_code1   = 3'b011;
+                found1 = 1;
+            end else if (dict_mem[j][31:16] == first_word[31:16]) begin // mmxx
+                exp_length1 = 7'd24;
+                exp_code1   = 3'b100;
+                found1 = 1;
+            end
         end
-      end
-      if (found1) begin
-        exp_length1 = 7'd6;
-        exp_code1   = 3'b001;
-      end else begin
-        exp_length1 = 7'd34;
-        exp_code1   = 3'b101;
-      end
-      
-      // Check second word against dictionary
-      for (j = 0; j < DICT_ENTRY; j = j + 1) begin
-        if (dict_mem[j] == second_word) begin
-          found2 = 1;
-          break;
+        if (!found1) begin
+            exp_length1 = 7'd34;
+            exp_code1   = 3'b101;
+            update_fifo_dictionary(first_word);
         end
-      end
-      if (found2) begin
-        exp_length2 = 7'd6;
-        exp_code2   = 3'b001;
-      end else begin
-        exp_length2 = 7'd34;
-        exp_code2   = 3'b101;
-      end
-      
-      $display("[Pattern Check: Other] First Word = %h, Second Word = %h", first_word, second_word);
-      if ((o_code1 !== exp_code1) || (o_length1 !== exp_length1))
-        $display("[ERROR] First word mismatch: Expected code=%b, length=%d; Got code=%b, length=%d",
-                 exp_code1, exp_length1, o_code1, o_length1);
-      else
-        $display("[PASS] First word pattern OK.");
-      
-      if ((o_code2 !== exp_code2) || (o_length2 !== exp_length2))
-        $display("[ERROR] Second word mismatch: Expected code=%b, length=%d; Got code=%b, length=%d",
-                 exp_code2, exp_length2, o_code2, o_length2);
-      else
-        $display("[PASS] Second word pattern OK.");
     end
-  endtask
-  
-  // ---------------------------
-  // Task: check_length
-  // Checks the control signals from the length generation stage:
-  // o_store_flag, o_shift_amount, and o_send_back.
-  // (You need to update these expected values based on your design.)
-  // ---------------------------
+    
+    // Check second word
+    if (second_word == 32'd0) begin
+        exp_length2 = 7'd2;
+        exp_code2   = 3'b000;
+    end else if (second_word[31:8] == 24'd0) begin
+        exp_length2 = 7'd12;
+        exp_code2   = 3'b010;
+    end else begin
+        found2 = 0;
+        for (j = 0; j < DICT_ENTRY; j = j + 1) begin
+            if (dict_mem[j] == second_word) begin // mmmm
+                found2 = 1;
+                exp_length2 = 7'd6;
+                exp_code2   = 3'b001;
+                break;
+            end else if (dict_mem[j][31:8] == second_word[31:8]) begin  // mmmx
+                exp_length2 = 7'd16;
+                exp_code2   = 3'b011;
+                found2 = 1;
+            end else if (dict_mem[j][31:16] == second_word[31:16]) begin // mmxx
+                exp_length2 = 7'd24;
+                exp_code2   = 3'b100;
+                found2 = 1;
+            end
+        end
+        if (!found2) begin
+            exp_length2 = 7'd34;
+            exp_code2   = 3'b101;
+            update_fifo_dictionary(second_word);
+        end
+    end
+    
+    // Display results
+    $display("[Pattern Check] First Word = %h, Second Word = %h", first_word, second_word);
+    if ((o_encoded1 !== exp_code1) || (o_length1 !== exp_length1))
+        $display("[ERROR] First word mismatch: Expected code=%b, length=%d; Got code=%b, length=%d",
+                 exp_code1, exp_length1, o_encoded1, o_length1);
+    else
+        $display("[PASS] First word pattern OK.");
+    
+    if ((o_encoded2 !== exp_code2) || (o_length2 !== exp_length2))
+        $display("[ERROR] Second word mismatch: Expected code=%b, length=%d; Got code=%b, length=%d",
+                 exp_code2, exp_length2, o_encoded2, o_length2);
+    else
+        $display("[PASS] Second word pattern OK.");
+endtask
+
   task check_length(input logic exp_store_flag, input logic [6:0] exp_shift_amount, input logic exp_send_back);
     begin
-      $display("[Length Check] store_flag=%b, shift_amount=%d, send_back=%b", 
-               o_store_flag, o_shift_amount, o_send_back);
+      $display("[Length Check] store_flag=%b, shift_amount=%d, send_back=%b", o_store_flag, o_shift_amount, o_send_back);
       if (o_store_flag !== exp_store_flag)
         $display("[ERROR] store_flag mismatch: Expected %b, Got %b", exp_store_flag, o_store_flag);
       if (o_shift_amount !== exp_shift_amount)
@@ -237,40 +203,33 @@ module tb_stage1and2;
   initial begin
     $dumpfile("tb_stage1and2.vcd");
     $dumpvars(0, tb_stage1and2);
-    
-    // Reset sequence (active-low reset)
-    i_reset = 0;  // Assert reset
+
+    i_reset = 0; 
     i_word = 64'd0;
     #15;
-    i_reset = 1;  // Release reset
+    i_reset = 1; 
     #10;
     
     // Initialize dictionary by preloading known words.
     init_dictionary();
     
-    // Test Case 1: Use dictionary match for both words.
-    // For example, first word = 0xAABBCCDD, second word = 0x11223344
-    // (Both are in the dictionary per init_dictionary.)
-    i_word = {32'h11223344, 32'hAABBCCDD};
+    i_word <= {32'h11223344, 32'hAABBCCDD};
     #20;
     $display("Test Case 1: Dictionary Match");
-    // Expect pattern "mmmm": length = 6, code = 001 for both words.
-    check_pattern_other(32'hAABBCCDD, 32'h11223344);
-    check_length(0, 7'd?, 0); // Replace 7'd? with expected shift amount based on your length generation logic.
+    check_pattern(32'hAABBCCDD, 32'h11223344);
+    check_length(0, 7'd?, 0); 
     
-    // Test Case 2: Use "zzzz" pattern (all zeros)
-    i_word = {32'h00000000, 32'h00000000};
+    i_word <= {32'h00000000, 32'h00000000};
     #20;
     $display("Test Case 2: ZZZZ Pattern");
-    check_pattern_zz(32'h00000000, 32'h00000000);
-    check_length(0, 7'd?, 0); // Expected shift amount, etc.
-    
-    // Test Case 3: Non-matching words ("xxxx" pattern)
-    i_word = {32'hDEADBEEF, 32'hFACECAFE};
+    check_pattern(32'h00000000, 32'h00000000);
+    check_length(0, 7'd?, 0); 
+  
+    i_word <= {32'hDEADBEEF, 32'hFACECAFE};
     #20;
     $display("Test Case 3: Non-Matching Pattern");
-    check_pattern_other(32'hDEADBEEF, 32'hFACECAFE);
-    check_length(1, 7'd?, 0); // For example, if store_flag is asserted when partial length exceeds 64 bits.
+    check_pattern(32'hDEADBEEF, 32'hFACECAFE);
+    check_length(1, 7'd?, 0);
     
     $display("All tests completed.");
     #20;

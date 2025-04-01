@@ -10,8 +10,12 @@ entity length_accumulator is
         i_reset         : in     vl_logic;
         i_total_length  : in     vl_logic_vector(6 downto 0);
         o_store_flag    : out    vl_logic;
-        o_shift_amount  : out    vl_logic_vector(6 downto 0);
-        o_send_back     : out    vl_logic
+        o_shift_amount  : out    vl_logic_vector(7 downto 0);
+        o_send_back     : out    vl_logic;
+        o_fill_flag     : out    vl_logic;
+        o_output_flag   : out    vl_logic;
+        o_fill_ctrl     : out    vl_logic;
+        o_stop_flag     : out    vl_logic
     );
     attribute mti_svvh_generic_type : integer;
     attribute mti_svvh_generic_type of CACHE_LINE : constant is 1;

@@ -11,6 +11,12 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_length_reg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matching_length_reg
+# 
+# Top level modules:
+# 	matching_length_reg
 # vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_length_generator.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module word_length_genetator
@@ -119,20 +125,136 @@
 vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module tb_stage1and2
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(122): (vlog-2730) Undefined variable: 'o_code1'.
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(122): (vlog-2730) Undefined variable: 'o_length1'.
+# Top level modules:
+# 	tb_stage1and2
+vsim -voptargs=+acc work.tb_stage1and2
+# vsim -voptargs=+acc work.tb_stage1and2 
+# Loading sv_std.std
+# Loading work.tb_stage1and2
+# Loading work.stage1and2
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.control_signal_generator
+# Loading work.matching_length_reg
+# Loading work.length_generation
+# Loading work.length_accumulator
+# Loading work.total_length_generator
+# Loading work.word_length_genetator
+# Loading work.comparator
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_generation.sv(47): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'o_shift_amount'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_accumulator.sv(9).
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(128): (vlog-2730) Undefined variable: 'o_code2'.
+#         Region: /tb_stage1and2/uut/stage2/length_accumulator
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/tb_stage1and2/*
+run -all
+# ** Error: (vsim-PLI-3110) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(204): $dumpfile : This task can be called only once. Please use $fdumpfile()
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(128): (vlog-2730) Undefined variable: 'o_length2'.
+# for multiple files.
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(181): (vlog-2730) Undefined variable: 'o_code1'.
+#         Region: /tb_stage1and2
+# Dictionary preloaded.
+# Test Case 1: Dictionary Match
+# [Pattern Check] First Word = aabbccdd, Second Word = 11223344
+# [PASS] First word pattern OK.
+# [PASS] Second word pattern OK.
+# [Length Check] store_flag=0, shift_amount= 56, send_back=0
+# [ERROR] shift_amount mismatch: Expected   z, Got  56
+# Test Case 2: ZZZZ Pattern
+# [Pattern Check] First Word = 00000000, Second Word = 00000000
+# [PASS] First word pattern OK.
+# [PASS] Second word pattern OK.
+# [Length Check] store_flag=0, shift_amount=  8, send_back=0
+# [ERROR] shift_amount mismatch: Expected   z, Got   8
+# Test Case 3: Non-Matching Pattern
+# [FIFO Update] New word deadbeef inserted at index 16
+# [FIFO Update] New word facecafe inserted at index 1
+# [Pattern Check] First Word = deadbeef, Second Word = facecafe
+# [ERROR] First word mismatch: Expected code=101, length= 34; Got code=000, length= 2
+# [ERROR] Second word mismatch: Expected code=101, length= 34; Got code=000, length= 2
+# [Length Check] store_flag=0, shift_amount= 12, send_back=0
+# [ERROR] store_flag mismatch: Expected 1, Got 0
+# [ERROR] shift_amount mismatch: Expected   z, Got  12
+# All tests completed.
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(236)
+#    Time: 170 ns  Iteration: 0  Instance: /tb_stage1and2
+# 1
+# Break in Module tb_stage1and2 at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv line 236
+coverage report -html -htmldir covhtmlreport -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_stage1and2
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(181): (vlog-2730) Undefined variable: 'o_length1'.
+# Top level modules:
+# 	tb_stage1and2
+vsim -voptargs=+acc work.tb_stage1and2
+# vsim -voptargs=+acc work.tb_stage1and2 
+# Loading sv_std.std
+# Loading work.tb_stage1and2
+# Loading work.stage1and2
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.control_signal_generator
+# Loading work.matching_length_reg
+# Loading work.length_generation
+# Loading work.length_accumulator
+# Loading work.total_length_generator
+# Loading work.word_length_genetator
+# Loading work.comparator
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_generation.sv(47): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'o_shift_amount'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_accumulator.sv(9).
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(187): (vlog-2730) Undefined variable: 'o_code2'.
+#         Region: /tb_stage1and2/uut/stage2/length_accumulator
+add wave -position insertpoint sim:/tb_stage1and2/*
+run -all
+# ** Error: (vsim-PLI-3110) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(204): $dumpfile : This task can be called only once. Please use $fdumpfile()
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(187): (vlog-2730) Undefined variable: 'o_length2'.
+# for multiple files.
 # 
-# ** Error: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(261): 'init_dictionary' already exists; must not be redefined as a task.
+#         Region: /tb_stage1and2
+# Dictionary preloaded.
+# Test Case 1: Dictionary Match
+# [Pattern Check] First Word = aabbccdd, Second Word = 11223344
+# [PASS] First word pattern OK.
+# [PASS] Second word pattern OK.
+# [Length Check] store_flag=0, shift_amount= 56, send_back=0
+# [ERROR] shift_amount mismatch: Expected   z, Got  56
+# Test Case 2: ZZZZ Pattern
+# [Pattern Check] First Word = 00000000, Second Word = 00000000
+# [PASS] First word pattern OK.
+# [PASS] Second word pattern OK.
+# [Length Check] store_flag=0, shift_amount=  8, send_back=0
+# [ERROR] shift_amount mismatch: Expected   z, Got   8
+# Test Case 3: Non-Matching Pattern
+# [FIFO Update] New word deadbeef inserted at index 16
+# [FIFO Update] New word facecafe inserted at index 1
+# [Pattern Check] First Word = deadbeef, Second Word = facecafe
+# [PASS] First word pattern OK.
+# [PASS] Second word pattern OK.
+# [Length Check] store_flag=1, shift_amount= 80, send_back=0
+# [ERROR] shift_amount mismatch: Expected   z, Got  80
+# All tests completed.
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv(236)
+#    Time: 185 ns  Iteration: 0  Instance: /tb_stage1and2
+# 1
+# Break in Module tb_stage1and2 at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv line 236
