@@ -53,6 +53,7 @@ total_length_generator total_length_generator(
 );
 
 word_length_genetator word_length_generator1(
+.i_reset(i_reset),
 .i_type_matched1(i_type_matched11),
 .i_match_s1(i_match_s1),
 .i_type_matched2(i_type_matched21),
@@ -61,6 +62,7 @@ word_length_genetator word_length_generator1(
 );
 
 word_length_genetator word_length_generator2(
+.i_reset(i_reset),
 .i_type_matched1(i_type_matched12),
 .i_match_s1(i_match_s2),
 .i_type_matched2(i_type_matched22),

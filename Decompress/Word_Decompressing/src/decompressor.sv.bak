@@ -1,0 +1,122 @@
+module decompressor #(
+ parameter WIDTH_DATA_IN = 128,
+ parameter INPUT_LENGTH = 9,
+ parameter WORD  = 16,
+ parameter WIDTH = 32,
+ parameter I_WORD = 196,
+ parameter I_WORD2 = 34,
+ parameter LENGTH_CODE = 2,
+ parameter LENGTH = 6,
+ parameter REMAIN_LENGTH = 8,
+ parameter RESULT_LENGTH = 7
+) 
+(
+ input  logic                         i_clk,
+ input  logic                         i_reset,
+ input  logic                         i_update,
+ input  logic [WIDTH_DATA_IN - 1 : 0] i_data,
+ output logic [WIDTH_DATA_IN - 1 : 0] o_data
+);
+logic [LENGTH_CODE - 1 : 0]  o_first_code;
+logic [LENGTH_CODE - 1 : 0]  o_first_code;
+logic [LENGTH_CODE - 1 : 0]  o_first_code_bak;
+logic [LENGTH_CODE - 1 : 0]  o_second_code;
+logic [LENGTH_CODE - 1 : 0]  o_second_code_bak;
+logic [I_WORD2 - 1 : 0]      i_compressed_word1, i_compressed_word2;
+logic [$clog2(WORD) - 1 :0]  o_idx1, o_idx2;
+logic [LENGTH - 1 : 0]       o_first_length, o_second_length;
+logic [WORD * WIDTH - 1 :0]  dictionary_data;
+logic [WIDTH - 1 : 0]        first_word;
+logic [RESULT_LENGTH - 1 : 0]o_remain_length;
+logic [RESULT_LENGTH - 1 : 0]o_len_r;
+logic [LENGTH_CODE - 1 : 0]  ctrl_signal;
+
+unpacker (
+ .WIDTH(WIDTH_DATA_IN),
+ .CODE(LENGTH_CODE),
+ .WORD(WORD),
+ .LENGTH(LENGTH)
+) unpacker
+(
+ .i_clk(i_clk),
+ .i_reset(i_reset),
+ .i_update(i_update),
+ .i_data(i_data),
+ .o_first_code(o_first_code),
+ .o_first_code_bak(o_first_code_bak),
+ .o_idx1(o_idx1),
+ .o_second_code(o_second_code),
+ .o_second_code_bak(o_second_code_bak),
+ .o_idx2(o_idx2),
+ .o_first_length(o_first_length),
+ .o_second_length(o_second_length),
+ .o_remain_length(o_remain_length)
+);
+
+control_signal_generator control_signal_gen (
+ .i_first_code(o_first_code),
+ .i_first_code_bak(o_first_code_bak),
+ .i_second_code(o_second_code),
+ .i_second_code_bak(o_second_code_bak),
+ .ctrl_signal(ctrl_signal)
+);  
+
+fifo_dict #(.DATA_WIDTH(WIDTH),
+            .TOTAL_WORDS(WORD)
+) dictionary 
+(
+ .i_clk(i_clk),
+ .i_reset(i_reset),
+ .wr(ctrl_signal[0]),
+ .wr2(ctrl_signal[1]),
+ .w_data(first_word),
+ .w_data2(second_word),
+ .o_data(dictionary_data)
+);
+
+decoder #(
+ .CODES(LENGTH_CODE),
+ .WORD(WORD),
+ .WIDTH(WIDTH),
+ .I_WORD(I_WORD),
+ .I_WORD2(I_WORD2)
+) decoder1
+(
+ .i_codes(o_first_code),
+ .i_codes_bak(o_first_code_bak),
+ .i_word(i_compressed_word1), //assume, evertime we input a 34 bit compressed word
+ .i_idx(o_idx1),
+ .i_dict(dictionary_data),
+ .o_word(first_word)
+);
+
+decoder #(
+ .CODES(LENGTH_CODE),
+ .WORD(WORD),
+ .WIDTH(WIDTH),
+ .I_WORD(I_WORD),
+ .I_WORD2(I_WORD2)
+) decoder2
+(
+ .i_codes(o_second_code),
+ .i_codes_bak(o_second_code_bak),
+ .i_word(i_compressed_word2), //assume, evertime we input a 34 bit compressed word
+ .i_idx(o_idx2),
+ .i_dict(dictionary_data),
+ .o_word(second_word)
+);
+
+three_input_carry_save_adder #(
+ .WORD_LENGTH(LENGTH),
+ .REMAIN_LENGTH(REMAIN_LENGTH),
+ .RESULT_LENGTH(RESULT_LENGTH)
+)
+(
+ .i_first_len(o_first_length),
+ .i_second_len(o_second_length),
+ .i_remain_len(o_remain_length), // number of remaining bits in reg_array1
+ .o_len_r(o_len_r)
+);
+
+
+endmodule

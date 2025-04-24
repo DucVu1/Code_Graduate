@@ -1,7 +1,7 @@
 module comparator_array2#(parameter INPUT_WORD = 32, DICT_ENTRY = 16, DICT_WORD = 32)(
     input  logic [INPUT_WORD - 1 : 0]              i_input,
     input  logic [INPUT_WORD * DICT_ENTRY - 1 : 0] i_dict,
-    output logic [1:0]                             o_type_matched,
+    output logic [1:0]                             o_type_matched, //11 = full word, 10 = 3 byte, 01 = 2 byte
     output logic                                   o_align,
     output logic [$clog2(DICT_ENTRY) - 1 : 0]      o_location
 );
@@ -9,6 +9,7 @@ localparam WIDTH_MATCH_BYTE = 2;
 
 logic [DICT_ENTRY * 2 - 1 : 0] no_match;
 logic [DICT_ENTRY - 1: 0] align;
+
 //logic [1:0]               max_val;
  
 generate

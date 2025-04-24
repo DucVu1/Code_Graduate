@@ -68,15 +68,14 @@ code_concatenator #(
 .o_compressed_word(o_compressed_word2)
 );
 
-//shift right
+//shift left
 barrel_shifter_1 #(
 .WIDTH(TOTAL_BITS_COMPRESSED * 2),
 .SHIFT_BIT(WORD2_LENGTH) 
 ) barrel_shifter1 (
- .data({o_compressed_word1, 34'd0}),
- .type_shift(1'b0),
- .amt(i_word2_length),
- .out(o_shifted)
+ .i_word({34'd0, o_compressed_word2}),
+ .i_amt(i_word2_length),
+ .o_word(o_shifted)
 );
 
 or_gate #(
@@ -85,8 +84,8 @@ or_gate #(
 .TOTAL_WIDTH(TOTAL_WIDTH)
 ) or_gate (
 .i_first_word(o_shifted),
-.i_second_word(o_compressed_word2),
-.i_reg_array(o_reg_array1),
+.i_second_word(o_compressed_word1),
+.i_reg_array(o_barrel2_shifted),
 .o_word(o_or_gate)
 );
 
@@ -96,20 +95,12 @@ register_array #(
 (
  .i_clk(i_clk),
  .i_reset(i_reset),
- .i_word(o_barrel2_shifted),
+ .i_word(o_or_gate), //o_barrel2_shifted
  .o_word(o_reg_array1)
 );
 
-//shift_left
-barrel_shifter_2 #(
- .TOTAL_LENGTH(TOTAL_LENGTH),
- .WIDTH(TOTAL_WIDTH)
-) barrel_shifter_2 (
- .i_word(o_or_gate),
- .i_amt(i_total_length),
- .o_word(o_barrel2_shifted)
-);
 
+//shift-left
 barrel_shifter_3 #(
  .TOTAL_LENGTH(OUT_SHIFT_BIT),
  .WIDTH(TOTAL_WIDTH),
@@ -120,25 +111,44 @@ barrel_shifter_3 #(
  .o_word(o_barrel3_shifted)
 );
 
+//shift_left
+barrel_shifter_2 #(
+ .TOTAL_LENGTH(TOTAL_LENGTH),
+ .WIDTH(TOTAL_WIDTH)
+) barrel_shifter_2 (
+ .i_word(o_reg_array1),
+ .i_amt(i_total_length),
+ .o_word(o_barrel2_shifted)
+);
 assign shifted_and_or = o_barrel3_shifted | o_reg_array2;
 
 mux2_1#(
  .N(CACHE_LINE * 2)
 ) multiplexer_array1
 (
- .i_a(shifted_and_or),
- .i_b(o_reg_array2),
- .i_option(i_store_flag),
+ .i_a(o_reg_array2),
+ .i_b(shifted_and_or),
+ .i_option(i_store_flag), //if there is new 64 bit
  .o_word(o_mux_array1)
 );
 
-register_array #(
- .TOTAL_WIDTH(CACHE_LINE * 2)
-) reg_array2
-(
+// register_array #(
+//  .TOTAL_WIDTH(CACHE_LINE * 2)
+// ) reg_array2
+// (
+//  .i_clk(i_clk),
+//  .i_reset(i_reset),
+//  .i_word(o_mux_array1),
+//  .o_word(o_reg_array2)
+// );
+
+reg_array2 #(
+    .TOTAL_WIDTH(CACHE_LINE * 2)
+)reg_array2(
  .i_clk(i_clk),
  .i_reset(i_reset),
- .i_word(o_mux_array1),
+ .i_enable(i_store_flag),
+ .i_word(o_barrel3_shifted[127:64]),
  .o_word(o_reg_array2)
 );
 
@@ -146,11 +156,11 @@ latch_module #(
  .WIDTH(CACHE_LINE * 2)
 ) latch_module
 (
-    .i_clk(i_clk),
-    .i_reset(i_reset),
-    .i_enable(i_output_flag),
-    .i_word(o_reg_array2),
-    .o_word(o_latch)
+.i_clk(i_clk),
+.i_reset(i_reset),
+.i_enable(i_output_flag),
+.i_word(o_reg_array2),
+.o_word(o_latch)
 );
 
 mux2_1#(
@@ -158,8 +168,8 @@ mux2_1#(
 ) multiplexer_array3
 (
  .i_a(o_reg_array2),
- .i_b(o_latch), //fill_data
- .i_option(i_fill_flag),
+ .i_b(128'd0), //fill_data
+ .i_option(i_fill_flag), //selecte between raw compressed or padding data
  .o_word(o_mux_array3)
 );
 
@@ -168,8 +178,8 @@ mux2_1#(
 ) multiplexer_array2
 (
  .i_a(o_mux_array3),
- .i_b(128'd0), //fill_data
- .i_option(i_stop_flag),
+ .i_b(i_backup_buffer), //backup_buffer
+ .i_option(i_stop_flag), //select between compressed or no compressed bit
  .o_word(o_mux_array2)
 );
 

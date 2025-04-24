@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Decompress/Word_Decompressing/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/unpacker.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Decompress/Word_Decompressing/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/length_generator.sv}
+

@@ -38,7 +38,7 @@ case (i_code)
         temp = {2'b01, i_word}; 
     end
     default: begin
-        temp = {TOTAL_BITS{1'b1}};
+        temp = {TOTAL_BITS{1'b0}};
     end
 endcase
 end

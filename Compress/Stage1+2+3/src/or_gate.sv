@@ -11,6 +11,6 @@ module or_gate #(
 );
 
 assign o_word = {i_reg_array[TOTAL_WIDTH-1:68], 
-                         ({i_second_word | i_first_word[67:34], i_first_word[33:0]} | i_reg_array[67:0])};
+                         ({i_first_word[67:34], i_second_word | i_first_word[33:0]} | i_reg_array[67:0])};
 
 endmodule

@@ -1,0 +1,37 @@
+module decoder #(
+    parameter CODES = 2,
+    parameter WORD  = 16,
+    parameter WIDTH = 32,
+    parameter I_WORD = 196,
+    parameter I_WORD2 = 34
+
+)(
+    input  logic [CODES - 1 : 0]        i_codes,
+    input  logic [CODES - 1 : 0]        i_codes_bak,
+    input  logic [I_WORD2 - 1 : 0]      i_word, //assume, evertime we input a 34 bit compressed word
+    input  logic [$clog2(WORD) - 1: 0]  i_idx,
+    input  logic [WORD * WIDTH - 1 : 0] i_dict,
+    output logic [WIDTH - 1 : 0]        o_word
+);
+logic [WIDTH - 1 : 0] temp_data;
+assign temp_data = i_dict[i_idx * WIDTH +: WIDTH];
+
+always_comb begin
+ case(i_codes)
+  2'b00: o_word = 32'd0;
+  2'b01: o_word = i_word2;
+  2'b10: o_word = temp_data;
+  2'b11: begin
+    case(i_codes_bak)
+     2'b00: o_word = {16'd0, i_word[15:0]};
+     2'b01: o_word = {24'd0, i_word[7:0]};
+     2'b10: o_word = {temp_data[WIDTH -  1 : 8], i_word[7:0]}
+     2'b11: o_word = i_word;
+    endcase
+  end
+ endcase
+end
+
+
+
+endmodule

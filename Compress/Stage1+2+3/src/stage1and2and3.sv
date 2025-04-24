@@ -36,9 +36,43 @@ module stage1and2and3 #(
  logic               i_stop_flag, o_stop_flag;    // Raised when the number of compressed bits exceeds 128
  logic [WIDTH - 1:0] i_reg_word, o_word;
  logic [DICT_WORD - 1 : 0] i_word1, i_word2;
+ logic [CACHE_LINE - 1 :0] o_backup_buffer3;
+ logic [WIDTH - 1 :0] o_backup_buffer2;
+ logic [WIDTH - 1 :0] o_backup_buffer;
 
  assign i_word1 = o_word[31:0];
  assign i_word2 = o_word[63:32];
+
+register_array #(
+ .TOTAL_WIDTH(WIDTH)
+) pipeline_reg_for_backup_buffer1
+(
+ .i_clk(i_clk),
+ .i_reset(i_reset),
+ .i_word(i_word),
+ .o_word(o_backup_buffer)
+);
+
+register_array #(
+ .TOTAL_WIDTH(WIDTH)
+) pipeline_reg_for_backup_buffer2
+(
+ .i_clk(i_clk),
+ .i_reset(i_reset),
+ .i_word(o_backup_buffer),
+ .o_word(o_backup_buffer2)
+);
+
+backup_buffer #(
+ .WIDTH(CACHE_LINE),
+ .WORD_WIDTH(WIDTH)
+) backup_buffer
+(
+ .i_clk(i_clk),
+ .i_reset(i_reset),
+ .i_word(o_backup_buffer),
+ .o_backup_buffer(o_backup_buffer3)
+);
 
 stage1and2#(
  .WIDTH(WIDTH),
@@ -130,10 +164,10 @@ packing_and_shifting #(
  .i_code2(o_encoded2),
  .i_total_length(o_total_length),
  .i_out_shift(o_shift_amount),
- .i_word2_length(o_length2),
+ .i_word2_length(o_length1),
  .i_word1(i_word1),
  .i_word2(i_word2),
- .i_backup_buffer(128'd0),
+ .i_backup_buffer(o_backup_buffer3),
  .i_idx1(o_location2),
  .i_idx2(o_location4),
  .o_mux_array2(o_mux_array2)

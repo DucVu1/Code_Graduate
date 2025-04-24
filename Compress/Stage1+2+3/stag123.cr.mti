@@ -1,11 +1,4 @@
-{C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/barrel_shifter_3.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/barrel_shifter_3.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module barrel_shifter_3
-
-Top level modules:
-	barrel_shifter_3
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array1.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array1.sv}
+{C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array1.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array1.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module comparator_array1
 
@@ -49,19 +42,19 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	max2_with_index
 
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/compare_value.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/compare_value.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module compare_value
-
-Top level modules:
-	compare_value
-
 } {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/code_concatenator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/code_concatenator.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module code_concatenator
 
 Top level modules:
 	code_concatenator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/compare_value.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/compare_value.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module compare_value
+
+Top level modules:
+	compare_value
 
 } {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/word_length_generator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/word_length_generator.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -91,40 +84,12 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	barrel_shifter_2
 
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_stage.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_stage.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module matching_stage
-
-Top level modules:
-	matching_stage
-
 } {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/max_selector.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/max_selector.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module max_selector
 
 Top level modules:
 	max_selector
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array2.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array2.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module comparator_array2
-
-Top level modules:
-	comparator_array2
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2and3.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2and3.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module stage1and2and3
-
-Top level modules:
-	stage1and2and3
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/or_gate.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/or_gate.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module or_gate
-
-Top level modules:
-	or_gate
 
 } {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_length_reg.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_length_reg.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -133,26 +98,12 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	matching_length_reg
 
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_accumulator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_accumulator.sv}
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/or_gate.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/or_gate.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module length_accumulator
+-- Compiling module or_gate
 
 Top level modules:
-	length_accumulator
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module packing_and_shifting
-
-Top level modules:
-	packing_and_shifting
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module stage1and2
-
-Top level modules:
-	stage1and2
+	or_gate
 
 } {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array4.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array4.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -160,13 +111,6 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	comparator_array4
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_packing_reg.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_packing_reg.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module length_packing_reg
-
-Top level modules:
-	length_packing_reg
 
 } {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/total_length_generator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/total_length_generator.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -202,12 +146,5 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	barrel_shifter_left_34
-
-} {} {}} {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_generation.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_generation.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module length_generation
-
-Top level modules:
-	length_generation
 
 } {} {}}

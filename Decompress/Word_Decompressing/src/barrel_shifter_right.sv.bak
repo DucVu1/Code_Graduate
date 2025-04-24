@@ -1,0 +1,36 @@
+module barrel_shifter_right #(parameter WIDTH = 196)(
+    input  logic [WIDTH-1:0] i_data,
+    input  logic [7:0]       i_amt,        
+    output logic [WIDTH-1:0] o_data
+); 
+    logic [WIDTH-1:0] s[0:8]; // 9 wires: input + 8 stages
+
+    assign s[0] = i_data;
+
+    // Stage 0: shift by 1
+    assign s[1] = i_amt[0] ? {{1'b0}, s[0][WIDTH-1:1]} : s[0];
+
+    // Stage 1: shift by 2
+    assign s[2] = i_amt[1] ? {{2{1'b0}}, s[1][WIDTH-1:2]} : s[1];
+
+    // Stage 2: shift by 4
+    assign s[3] = i_amt[2] ? {{4{1'b0}}, s[2][WIDTH-1:4]} : s[2];
+
+    // Stage 3: shift by 8
+    assign s[4] = i_amt[3] ? {{8{1'b0}}, s[3][WIDTH-1:8]}: s[3];
+
+    // Stage 4: shift by 16
+    assign s[5] = i_amt[4] ? {{16{1'b0}}, s[4][WIDTH-1:16]} : s[4];
+
+    // Stage 5: shift by 32
+    assign s[6] = i_amt[5] ? {{32{1'b0}}, s[5][WIDTH-1:32]} : s[5];
+
+    // Stage 6: shift by 64
+    assign s[7] = i_amt[6] ? {{64{1'b0}}, s[6][WIDTH-1:64]} : s[6];
+
+    // Stage 7: shift by 128
+    assign s[8] = i_amt[7] ? {{128{1'b0}}, s[7][WIDTH-1:128]} : s[7];
+
+    assign o_data = s[8];
+
+endmodule

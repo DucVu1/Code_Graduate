@@ -6,10 +6,9 @@ entity barrel_shifter_1 is
         SHIFT_BIT       : integer := 6
     );
     port(
-        data            : in     vl_logic_vector;
-        type_shift      : in     vl_logic;
-        amt             : in     vl_logic_vector;
-        \out\           : out    vl_logic_vector
+        i_word          : in     vl_logic_vector;
+        i_amt           : in     vl_logic_vector;
+        o_word          : out    vl_logic_vector
     );
     attribute mti_svvh_generic_type : integer;
     attribute mti_svvh_generic_type of WIDTH : constant is 1;
