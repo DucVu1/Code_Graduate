@@ -19,7 +19,8 @@ module length_accumulator #(
 
 logic [7:0] sum_partial_reg;  
 logic [7:0] sum_total_reg;  
-
+logic [7:0] sum64_reg;
+logic [7:0] next_sum64;
 logic [7:0] next_sum_partial;
 logic [7:0] next_sum_total;
 
@@ -27,9 +28,11 @@ always_comb begin
   if(~i_reset) begin
       next_sum_partial = 0;
       next_sum_total   = 0;
+      next_sum64 = 0;
   end else begin
     next_sum_partial = sum_partial_reg + i_total_length;
     next_sum_total   = sum_total_reg   + i_total_length;
+    next_sum64 = sum64_reg + i_total_length;
   end
 end
 
@@ -37,16 +40,23 @@ always_ff @(posedge i_clk or negedge i_reset) begin
   if (~i_reset) begin
     sum_partial_reg <= 0;
     sum_total_reg   <= 0;
+    sum64_reg <=0;
   end else begin
-    if (o_store_flag) sum_partial_reg <= next_sum_partial - next_sum_partial;
-    else sum_partial_reg <= next_sum_partial;
+    if (o_store_flag) begin
+      sum_partial_reg <= next_sum_partial - next_sum_partial;
+      sum64_reg <= next_sum64 - next_sum64;
+    end
+    else begin 
+      sum_partial_reg <= next_sum_partial;
+      sum64_reg <= next_sum64;
+    end
     if (o_stop_flag)  sum_total_reg <= next_sum_total - next_sum_total;
     else sum_total_reg   <= next_sum_total;
   end
 end
 
 always_comb begin
-  o_store_flag   = (next_sum_partial >= WORD_SIZE) ? 1'b1 : 1'b0;
+  o_store_flag   = (sum64_reg >= WORD_SIZE) ? 1'b1 : 1'b0;
   o_shift_amount = sum_total_reg;
   
   // When the total number of compressed bits reaches 128, output flag is raised.

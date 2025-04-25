@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Apr 24 15:26:59 2025
+Analysis & Synthesis Status : Successful - Fri Apr 25 15:33:49 2025
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : stage1and2and3
 Top-level Entity Name : stage1and2and3
 Family : Cyclone II
-Total logic elements : 4,024
-    Total combinational functions : 3,241
-    Dedicated logic registers : 1,102
-Total registers : 1102
+Total logic elements : 3,938
+    Total combinational functions : 3,156
+    Dedicated logic registers : 1,096
+Total registers : 1096
 Total pins : 706
 Total virtual pins : 0
 Total memory bits : 0

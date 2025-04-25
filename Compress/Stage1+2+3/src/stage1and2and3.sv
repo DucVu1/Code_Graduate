@@ -16,7 +16,7 @@ module stage1and2and3 #(
  input  logic                     i_reset,
  input  logic [WIDTH - 1:0]       i_word,
  output logic [CACHE_LINE - 1 :0] o_mux_array2,
- output logic [DICT_WORD * DICT_ENTRY - 1 :0] dictionary_data
+output logic [DICT_WORD * DICT_ENTRY - 1 :0] dictionary_data
 );
 
  logic               i_store_flag, o_store_flag; 

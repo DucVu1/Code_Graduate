@@ -156,69 +156,6 @@ run -all
 # [35000 ns] word check passed.
 # code: 01, code_bak: 00
 # Word_in_tb:  00000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 00123456789abcdeffedcba987654321
-# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
-# First
-# ** Warning: (vsim-PLI-8496) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(165): $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
-# 
-# ** Fatal: [45000 ns] code mismatch: expected 01, got 00
-#    Time: 45 ns  Scope: decompressor_tb.check_word File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv Line: 165
-# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(165)
-#    Time: 45 ns  Iteration: 1  Instance: /decompressor_tb
-# 1
-# Break in Task check_word at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv line 165
-vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module decompressor_tb
-# ** Warning: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(287): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# 
-# Top level modules:
-# 	decompressor_tb
-vsim work.decompressor_tb
-# vsim work.decompressor_tb 
-# Loading sv_std.std
-# Loading work.decompressor_tb
-# Loading work.decompressor
-# Loading work.unpacker
-# Loading work.length_generator
-# Loading work.control_signal_generator
-# Loading work.fifo_dict
-# Loading work.fifo_ptr_gen
-# Loading work.reg_file_dual
-# Loading work.decoder
-# Loading work.reg_out
-# Loading work.latch_module
-# Loading work.three_input_carry_save_adder
-# Loading work.comparator
-# Loading work.mux2_1
-# Loading work.barrel_shifter_d2
-# Loading work.or_gate_d
-# Loading work.barrel_shifter_right
-# Loading work.register_array
-add wave -position insertpoint sim:/decompressor_tb/*
-run -all
-# code: 00, code_bak: 00
-# Word_in_tb:  00000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 0123456789abcdeffedcba9876543210
-# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
-# First
-# [35000 ns] code check passed.
-# [35000 ns] code_bak check passed.
-# [35000 ns] index check passed.
-# [35000 ns] length check passed.
-# code: 00
-# [35000 ns] word check passed.
-# code: 00, code_bak: 00
-# Word_in_tb:  00000000010010001101000101011001111000100110101011110011011110111111111110110111001011101010011000011101100101010000110010000100 , HEX: 0048d159e26af37bffb72ea61d950c84
-# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
-# Second
-# [35000 ns] code check passed.
-# [35000 ns] code_bak check passed.
-# [35000 ns] index check passed.
-# [35000 ns] length check passed.
-# code: 00
-# [35000 ns] word check passed.
-# code: 01, code_bak: 00
-# Word_in_tb:  00000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 00123456789abcdeffedcba987654321
 # Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 0000000000000000000123456789abcdeffedcba987654321
 # First
 # [45000 ns] code check passed.

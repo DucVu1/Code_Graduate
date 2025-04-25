@@ -49,7 +49,7 @@ logic [$clog2(WIDTH_DATA_IN)-1:0]    o_total_length_n;
 logic [I_WORD - 1 : 0]       i_decoder2;
 logic mux2_sel;
 assign mux2_sel = i_update | o_comp_signal;
-assign i_decoder2 = reg_array1_out >> o_first_length;
+//assign i_decoder2 = reg_array1_out >> o_first_length;
 
 unpacker #(
  .WIDTH(WIDTH_DATA_IN), //128 i_data, log o_remain_length/total_length
@@ -123,7 +123,7 @@ decoder #(
 (
  .i_codes(o_second_code),
  .i_codes_bak(o_second_code_bak),
- .i_word(i_decoder2), 
+ .i_word(i_decoder), 
  .i_idx(o_idx2),
  .i_dict(dictionary_data),
  .o_word(second_word)

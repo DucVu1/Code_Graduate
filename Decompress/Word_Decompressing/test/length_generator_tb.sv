@@ -101,7 +101,6 @@ module tb_length_generator;
       $display("🎉 All test cases passed!");
     else
       $display("❌ Some test cases failed. Check above logs.");
-
     $stop;
   end
 

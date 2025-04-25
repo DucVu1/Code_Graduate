@@ -319,7 +319,7 @@ task track_compression(input [6:0] exp_length1, input [6:0] exp_length2);
   end
 endtask
 logic [127:0] current_compressed_word_g;
-logic toggle;
+logic toggle = 0;
 task predict_final_compressor_output(
   input  logic [DATA_WIDTH - 1 : 0] i_word1,
   input  logic [DATA_WIDTH - 1 : 0] i_word2,
@@ -357,7 +357,8 @@ task predict_final_compressor_output(
       $fdisplay(log_file,"current_compressed_word_g: %h", current_compressed_word_g);
       $fdisplay(log_file,"comp_word1: %h", comp_word1);
       $fdisplay(log_file,"comp_word2: %h", comp_word2);
-      if(compressed_bit_exp == 7'd64  || compressed_bit_exp == 7'd128) begin
+      if(compressed_bit_exp == 8'd64  || compressed_bit_exp >= 8'd128) begin
+        $fdisplay(log_file,"In");
         if(toggle) accumulator_g[63:0] = current_compressed_word_g[63:0];
         else accumulator_g[127:64] = current_compressed_word_g[63:0];
         toggle = ~toggle; 

@@ -1,5 +1,5 @@
 Flow report for matching_stage
-Sun Mar 23 01:30:09 2025
+Fri Apr 25 02:06:47 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 23 01:30:09 2025           ;
+; Flow Status                        ; Successful - Fri Apr 25 02:06:47 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; matching_stage                                  ;
 ; Top-level Entity Name              ; matching_stage                                  ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 1,992                                           ;
-;     Total combinational functions  ; 1,480                                           ;
-;     Dedicated logic registers      ; 579                                             ;
-; Total registers                    ; 579                                             ;
+; Total logic elements               ; 999                                             ;
+;     Total combinational functions  ; 983                                             ;
+;     Dedicated logic registers      ; 35                                              ;
+; Total registers                    ; 35                                              ;
 ; Total pins                         ; 629                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/23/2025 01:29:59 ;
+; Start date & time ; 04/25/2025 02:06:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; matching_stage      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 163699398055278.174266819911944       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 163699398055278.174552160211516       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
@@ -95,8 +95,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4610 MB             ; 00:00:11                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4608 MB             ; 00:00:06                           ;
+; Total                ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

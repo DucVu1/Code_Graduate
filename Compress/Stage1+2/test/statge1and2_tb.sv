@@ -217,19 +217,19 @@ endtask
     #20;
     $display("Test Case 1: Dictionary Match");
     check_pattern(32'hAABBCCDD, 32'h11223344);
-    check_length(0, 7'd?, 0); 
+    check_length(0, 7'd8, 0); 
     
     i_word <= {32'h00000000, 32'h00000000};
     #20;
     $display("Test Case 2: ZZZZ Pattern");
     check_pattern(32'h00000000, 32'h00000000);
-    check_length(0, 7'd?, 0); 
+    check_length(0, 7'd8, 0); 
   
     i_word <= {32'hDEADBEEF, 32'hFACECAFE};
     #20;
     $display("Test Case 3: Non-Matching Pattern");
     check_pattern(32'hDEADBEEF, 32'hFACECAFE);
-    check_length(1, 7'd?, 0);
+    check_length(1, 7'd8, 0);
     
     $display("All tests completed.");
     #20;

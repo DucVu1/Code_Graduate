@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Apr 18 17:23:41 2025
+Fitter Status : Successful - Fri Apr 25 01:49:30 2025
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : decoder
-Top-level Entity Name : reg_out
+Top-level Entity Name : decompressor
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 130 / 33,216 ( < 1 % )
-    Total combinational functions : 130 / 33,216 ( < 1 % )
-    Dedicated logic registers : 129 / 33,216 ( < 1 % )
-Total registers : 129
-Total pins : 195 / 475 ( 41 % )
+Total logic elements : 6,181 / 33,216 ( 19 % )
+    Total combinational functions : 5,759 / 33,216 ( 17 % )
+    Dedicated logic registers : 1,174 / 33,216 ( 4 % )
+Total registers : 1174
+Total pins : 261 / 475 ( 55 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )

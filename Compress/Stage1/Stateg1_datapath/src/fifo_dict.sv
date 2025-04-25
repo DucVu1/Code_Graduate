@@ -82,7 +82,7 @@ module reg_file_dual #(
 );
 logic [DATA_N-1:0] regs1 [0:SIZE-1];
 logic [DATA_N-1:0] regs2 [0:SIZE-1];
-//logic [DATA_N-1:0] w_data_real, w_data_real2; 
+logic [DATA_N-1:0] w_data_real, w_data_real2; 
 
 always_ff @(posedge clk_i) begin
 if (~i_reset) begin

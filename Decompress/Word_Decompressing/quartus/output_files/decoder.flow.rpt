@@ -1,5 +1,5 @@
 Flow report for decoder
-Tue Apr 22 16:59:03 2025
+Fri Apr 25 01:57:10 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 22 16:59:03 2025           ;
+; Flow Status                        ; Successful - Fri Apr 25 01:57:09 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; decoder                                         ;
 ; Top-level Entity Name              ; decompressor                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 6,391                                           ;
-;     Total combinational functions  ; 5,759                                           ;
-;     Dedicated logic registers      ; 1,174                                           ;
-; Total registers                    ; 1174                                            ;
+; Total logic elements               ; 5,999                                           ;
+;     Total combinational functions  ; 5,388                                           ;
+;     Dedicated logic registers      ; 1,150                                           ;
+; Total registers                    ; 1150                                            ;
 ; Total pins                         ; 261                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/22/2025 16:58:52 ;
+; Start date & time ; 04/25/2025 01:56:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; decoder             ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+--------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name  ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 163699398055278.174531593217852       ; --            ; --           ; --             ;
+; COMPILER_SIGNATURE_ID               ; 163699398055278.174552101827300       ; --            ; --           ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                     ; --            ; --           ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)       ; <None>        ; --           ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --           ; --             ;
