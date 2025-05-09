@@ -1,0 +1,28 @@
+module zzzz_zzzx_comparator #(
+    parameter N     = 32,   // Dictionary entry width in bits
+    parameter WORDS = 16    // Number of dictionary entries
+)(
+    input  logic [31:0]              in_word,
+    input  logic [WORDS*N - 1 : 0]   dictionary_i,
+
+    output logic                     match_zzzz,
+    output logic                     match_zzzx
+);
+logic          MSB_24_match;
+logic [63 : 0] compare_vec;
+
+assign match_zzzz = ~(|in_word);
+assign MSB_24_match = ~(|in_word[32:8]);
+
+generate
+    genvar i;
+    for (i = 0; i < WORDS * 4; i = i + 1) begin : generate_64bit_adder
+        comparator #(.N(WIDTH))comparator(.input_i(in_word[8:0]),
+		                                  .compare_value_i(dictionary_i[(i+1)*8 - 1: i*8]),
+										  .match_o(compare_vec[i]));
+    end
+endgenerate
+
+assign 
+
+endmodule

@@ -1,0 +1,15 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/word_decoder.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/word_comparator.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/max2_with_index.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/max_selector.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/compare_value.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/comparator_array2.sv}
+vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/comparator.sv}
+

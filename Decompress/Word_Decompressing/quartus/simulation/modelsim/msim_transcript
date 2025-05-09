@@ -111,8 +111,8 @@ vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Gra
 # 
 # Top level modules:
 # 	decompressor_tb
-vsim -voptargs=+acc work.decompressor_tb
-# vsim -voptargs=+acc work.decompressor_tb 
+vsim work.decompressor_tb
+# vsim work.decompressor_tb 
 # Loading sv_std.std
 # Loading work.decompressor_tb
 # Loading work.decompressor
@@ -132,6 +132,331 @@ vsim -voptargs=+acc work.decompressor_tb
 # Loading work.or_gate_d
 # Loading work.barrel_shifter_right
 # Loading work.register_array
+# ** Warning: (vsim-3017) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/decompressor.sv(87): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /decompressor_tb/dut/unpacker
+# ** Warning: (vsim-3722) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/decompressor.sv(87): [TFMPC] - Missing connection for port 'i_comp_flag'.
+# 
+add wave -position insertpoint sim:/decompressor_tb/*
+run -all
+# code: 00, code_bak: 00
+# Word_in_tb:  00000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 0123456789abcdeffedcba9876543210
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
+# First
+# [35000 ns] code check passed.
+# [35000 ns] code_bak check passed.
+# [35000 ns] index check passed.
+# [35000 ns] length check passed.
+# code: 00
+# [35000 ns] word check passed.
+# code: 00, code_bak: 00
+# Word_in_tb:  00000000010010001101000101011001111000100110101011110011011110111111111110110111001011101010011000011101100101010000110010000100 , HEX: 0048d159e26af37bffb72ea61d950c84
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
+# Second
+# [35000 ns] code check passed.
+# [35000 ns] code_bak check passed.
+# [35000 ns] index check passed.
+# [35000 ns] length check passed.
+# code: 00
+# [35000 ns] word check passed.
+# code: 01, code_bak: 00
+# Word_in_tb:  00000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 00123456789abcdeffedcba987654321
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 0000000000000000000123456789abcdeffedcba987654321
+# First
+# [45000 ns] code check passed.
+# [45000 ns] code_bak check passed.
+# [45000 ns] index check passed.
+# [45000 ns] length check passed.
+# code: 01
+# [45000 ns] word check passed.
+# code: 10, code_bak: 00
+# Word_in_tb:  00000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011101010 , HEX: 0000000000048d159e26af37bffb72ea
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 0000000000000000000123456789abcdeffedcba987654321
+# Second
+# [45000 ns] code check passed.
+# [45000 ns] code_bak check passed.
+# [45000 ns] index check passed.
+# [45000 ns] length check passed.
+# code: 10
+# [45000 ns] word check passed.
+# code: 11, code_bak: 10
+# Word_in_tb:  00000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 000000000000123456789abcdeffedcb
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 00000000000000000000000000000123456789abcdeffedcb
+# First
+# [55000 ns] code check passed.
+# [55000 ns] code_bak check passed.
+# [55000 ns] index check passed.
+# [55000 ns] length check passed.
+# code: 11
+# [55000 ns] word check passed.
+# code: 11, code_bak: 11
+# Word_in_tb:  00000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111 , HEX: 0000000000000000123456789abcdeff
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 00000000000000000000000000000123456789abcdeffedcb
+# Second
+# [55000 ns] code check passed.
+# [55000 ns] code_bak check passed.
+# [55000 ns] index check passed.
+# [55000 ns] length check passed.
+# code: 11
+# [55000 ns] word check passed.
+# code: 00, code_bak: 00
+# Word_in_tb:  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000 , HEX: 00000000000000000000000012345678
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 , HEX: 0000000000000000000000000000000000000000000000000
+# First
+# [85000 ns] code check passed.
+# [85000 ns] code_bak check passed.
+# ** Warning: (vsim-PLI-8496) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(173): $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+# 
+# ** Fatal: [85000 ns] idx mismatch: expected 14, got 0
+#    Time: 85 ns  Scope: decompressor_tb.check_word File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv Line: 173
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(173)
+#    Time: 85 ns  Iteration: 1  Instance: /decompressor_tb
+# 1
+# Break in Task check_word at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv line 173
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/unpacker.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module unpacker
+# 
+# Top level modules:
+# 	unpacker
+vsim work.decompressor_tb
+# vsim work.decompressor_tb 
+# Loading sv_std.std
+# Loading work.decompressor_tb
+# Loading work.decompressor
+# Loading work.unpacker
+# Loading work.length_generator
+# Loading work.control_signal_generator
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.decoder
+# Loading work.reg_out
+# Loading work.latch_module
+# Loading work.three_input_carry_save_adder
+# Loading work.comparator
+# Loading work.mux2_1
+# Loading work.barrel_shifter_d2
+# Loading work.or_gate_d
+# Loading work.barrel_shifter_right
+# Loading work.register_array
+# ** Warning: (vsim-3017) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/decompressor.sv(87): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /decompressor_tb/dut/unpacker
+# ** Warning: (vsim-3722) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/decompressor.sv(87): [TFMPC] - Missing connection for port 'i_comp_flag'.
+# 
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/decompressor_tb/*
+run -all
+# code: 00, code_bak: 00
+# Word_in_tb:  00000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 0123456789abcdeffedcba9876543210
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
+# First
+# [35000 ns] code check passed.
+# [35000 ns] code_bak check passed.
+# [35000 ns] index check passed.
+# [35000 ns] length check passed.
+# code: 00
+# [35000 ns] word check passed.
+# code: 00, code_bak: 00
+# Word_in_tb:  00000000010010001101000101011001111000100110101011110011011110111111111110110111001011101010011000011101100101010000110010000100 , HEX: 0048d159e26af37bffb72ea61d950c84
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
+# Second
+# [35000 ns] code check passed.
+# [35000 ns] code_bak check passed.
+# [35000 ns] index check passed.
+# [35000 ns] length check passed.
+# code: 00
+# [35000 ns] word check passed.
+# code: 01, code_bak: 00
+# Word_in_tb:  00000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 00123456789abcdeffedcba987654321
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 0000000000000000000123456789abcdeffedcba987654321
+# First
+# [45000 ns] code check passed.
+# [45000 ns] code_bak check passed.
+# [45000 ns] index check passed.
+# [45000 ns] length check passed.
+# code: 01
+# [45000 ns] word check passed.
+# code: 10, code_bak: 00
+# Word_in_tb:  00000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011101010 , HEX: 0000000000048d159e26af37bffb72ea
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 0000000000000000000123456789abcdeffedcba987654321
+# Second
+# [45000 ns] code check passed.
+# [45000 ns] code_bak check passed.
+# [45000 ns] index check passed.
+# [45000 ns] length check passed.
+# code: 10
+# [45000 ns] word check passed.
+# code: 11, code_bak: 10
+# Word_in_tb:  00000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 000000000000123456789abcdeffedcb
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 00000000000000000000000000000123456789abcdeffedcb
+# First
+# [55000 ns] code check passed.
+# [55000 ns] code_bak check passed.
+# [55000 ns] index check passed.
+# [55000 ns] length check passed.
+# code: 11
+# [55000 ns] word check passed.
+# code: 11, code_bak: 11
+# Word_in_tb:  00000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111 , HEX: 0000000000000000123456789abcdeff
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 00000000000000000000000000000123456789abcdeffedcb
+# Second
+# [55000 ns] code check passed.
+# [55000 ns] code_bak check passed.
+# [55000 ns] index check passed.
+# [55000 ns] length check passed.
+# code: 11
+# [55000 ns] word check passed.
+# code: 00, code_bak: 00
+# Word_in_tb:  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000 , HEX: 00000000000000000000000012345678
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 , HEX: 0000000000000000000000000000000000000000000000000
+# First
+# [85000 ns] code check passed.
+# [85000 ns] code_bak check passed.
+# ** Warning: (vsim-PLI-8496) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(173): $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+# 
+# ** Fatal: [85000 ns] idx mismatch: expected 14, got 0
+#    Time: 85 ns  Scope: decompressor_tb.check_word File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv Line: 173
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(173)
+#    Time: 85 ns  Iteration: 1  Instance: /decompressor_tb
+# 1
+# Break in Task check_word at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv line 173
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/unpacker.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module unpacker
+# 
+# Top level modules:
+# 	unpacker
+vsim work.decompressor_tb
+# vsim work.decompressor_tb 
+# Loading sv_std.std
+# Loading work.decompressor_tb
+# Loading work.decompressor
+# Loading work.unpacker
+# Loading work.length_generator
+# Loading work.control_signal_generator
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.decoder
+# Loading work.reg_out
+# Loading work.latch_module
+# Loading work.three_input_carry_save_adder
+# Loading work.comparator
+# Loading work.mux2_1
+# Loading work.barrel_shifter_d2
+# Loading work.or_gate_d
+# Loading work.barrel_shifter_right
+# Loading work.register_array
+# ** Warning: (vsim-3017) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/decompressor.sv(87): [TFMPC] - Too few port connections. Expected 17, found 16.
+# 
+#         Region: /decompressor_tb/dut/unpacker
+# ** Warning: (vsim-3722) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/decompressor.sv(87): [TFMPC] - Missing connection for port 'i_comp_flag'.
+# 
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/decompressor_tb/*
+run -all
+# code: 00, code_bak: 00
+# Word_in_tb:  00000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 0123456789abcdeffedcba9876543210
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
+# First
+# [35000 ns] code check passed.
+# [35000 ns] code_bak check passed.
+# [35000 ns] index check passed.
+# [35000 ns] length check passed.
+# code: 00
+# [35000 ns] word check passed.
+# code: 00, code_bak: 00
+# Word_in_tb:  00000000010010001101000101011001111000100110101011110011011110111111111110110111001011101010011000011101100101010000110010000100 , HEX: 0048d159e26af37bffb72ea61d950c84
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110010101000011001000010000 , HEX: 000000000000000000123456789abcdeffedcba9876543210
+# Second
+# [35000 ns] code check passed.
+# [35000 ns] code_bak check passed.
+# [35000 ns] index check passed.
+# [35000 ns] length check passed.
+# code: 00
+# [35000 ns] word check passed.
+# code: 01, code_bak: 00
+# Word_in_tb:  00000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 00123456789abcdeffedcba987654321
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 0000000000000000000123456789abcdeffedcba987654321
+# First
+# [45000 ns] code check passed.
+# [45000 ns] code_bak check passed.
+# [45000 ns] index check passed.
+# [45000 ns] length check passed.
+# code: 01
+# [45000 ns] word check passed.
+# code: 10, code_bak: 00
+# Word_in_tb:  00000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011101010 , HEX: 0000000000048d159e26af37bffb72ea
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111011001010100001100100001 , HEX: 0000000000000000000123456789abcdeffedcba987654321
+# Second
+# [45000 ns] code check passed.
+# [45000 ns] code_bak check passed.
+# [45000 ns] index check passed.
+# [45000 ns] length check passed.
+# code: 10
+# [45000 ns] word check passed.
+# code: 11, code_bak: 10
+# Word_in_tb:  00000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 000000000000123456789abcdeffedcb
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 00000000000000000000000000000123456789abcdeffedcb
+# First
+# [55000 ns] code check passed.
+# [55000 ns] code_bak check passed.
+# [55000 ns] index check passed.
+# [55000 ns] length check passed.
+# code: 11
+# [55000 ns] word check passed.
+# code: 11, code_bak: 11
+# Word_in_tb:  00000000000000000000000000000000000000000000000000000000000000000001001000110100010101100111100010011010101111001101111011111111 , HEX: 0000000000000000123456789abcdeff
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000100110101011110011011110111111111110110111001011 , HEX: 00000000000000000000000000000123456789abcdeffedcb
+# Second
+# [55000 ns] code check passed.
+# [55000 ns] code_bak check passed.
+# [55000 ns] index check passed.
+# [55000 ns] length check passed.
+# code: 11
+# [55000 ns] word check passed.
+# code: 00, code_bak: 00
+# Word_in_tb:  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010001101000101011001111000 , HEX: 00000000000000000000000012345678
+# Word_in_dut: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001001000110100010101101111111010111111101111101111111111111111111111111111101110111111100001110110010101000011 , HEX: 000000000000000000000123456febfbefffffffbbf876543
+# First
+# ** Warning: (vsim-PLI-8496) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(165): $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+# 
+# ** Fatal: [85000 ns] code mismatch: expected 00, got 11
+#    Time: 85 ns  Scope: decompressor_tb.check_word File: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv Line: 165
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv(165)
+#    Time: 85 ns  Iteration: 1  Instance: /decompressor_tb
+# 1
+# Break in Task check_word at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/test/decompressor_tb.sv line 165
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/src/unpacker.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module unpacker
+# 
+# Top level modules:
+# 	unpacker
+vsim work.decompressor_tb
+# vsim work.decompressor_tb 
+# Loading sv_std.std
+# Loading work.decompressor_tb
+# Loading work.decompressor
+# Loading work.unpacker
+# Loading work.length_generator
+# Loading work.control_signal_generator
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.decoder
+# Loading work.reg_out
+# Loading work.latch_module
+# Loading work.three_input_carry_save_adder
+# Loading work.comparator
+# Loading work.mux2_1
+# Loading work.barrel_shifter_d2
+# Loading work.or_gate_d
+# Loading work.barrel_shifter_right
+# Loading work.register_array
+# WARNING: No extended dataflow license exists
 add wave -position insertpoint sim:/decompressor_tb/*
 run -all
 # code: 00, code_bak: 00

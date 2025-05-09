@@ -1,0 +1,63 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do dictionary_comparator_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Testing/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/src/zzzz_zzzzx_comparator_with_priority_encoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module zzzz_zzzx_comparator2
+# -- Compiling module priority_encoder_64
+# 
+# Top level modules:
+# 	zzzz_zzzx_comparator2
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/fifio_dict_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_dict_tb
+# 
+# Top level modules:
+# 	fifo_dict_tb
+vsim -voptargs=+acc work.fifo_dict_tb
+# vsim -voptargs=+acc work.fifo_dict_tb 
+# Loading sv_std.std
+# Loading work.fifo_dict_tb
+# ** Error: (vsim-3033) C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/fifio_dict_tb.sv(24): Instantiation of 'fifo_dict' failed. The design unit was not found.
+# 
+#         Region: /fifo_dict_tb
+#         Searched libraries:
+#             C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/quartus/simulation/modelsim/rtl_work
+# Error loading design
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/zzzz_zzzx_with_pe_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_zzzz_zzzx_comparator
+# 
+# Top level modules:
+# 	tb_zzzz_zzzx_comparator
+vsim -voptargs=+acc work.tb_zzzz_zzzx_comparator
+# vsim -voptargs=+acc work.tb_zzzz_zzzx_comparator 
+# Loading sv_std.std
+# Loading work.tb_zzzz_zzzx_comparator
+# Loading work.zzzz_zzzx_comparator2
+# Loading work.priority_encoder_64
+add wave -position insertpoint sim:/tb_zzzz_zzzx_comparator/*
+run -all
+# Starting testbench for zzzz_zzzx_comparator
+# Test 1: in_word = 0
+#   out_code = 000000000000, dictionary_index = 0, matched_byte = 0
+# Test 2: in_word = 0000000a (zzzx condition)
+#   out_code = 110100001010, dictionary_index = 10, matched_byte = 10
+# Test 3: in_word = ff00000a (non-zzzx)
+#   out_code = 000000000000, dictionary_index = 10, matched_byte = 10
+# Test 4: in_word = 0000002d (zzzx condition)
+#   out_code = 110100101101, dictionary_index = 45, matched_byte = 45
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/zzzz_zzzx_with_pe_tb.sv(81)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_zzzz_zzzx_comparator
+# 1
+# Break in Module tb_zzzz_zzzx_comparator at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Testing/tb/zzzz_zzzx_with_pe_tb.sv line 81

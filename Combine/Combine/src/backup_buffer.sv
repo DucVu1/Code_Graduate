@@ -1,0 +1,31 @@
+module backup_buffer#(
+ parameter WIDTH = 128,
+ parameter WORD_WIDTH = 64
+)
+(
+ input logic                      i_clk,
+ input logic                      i_reset,
+ input logic  [WORD_WIDTH - 1:0]  i_word,
+ output logic [WIDTH - 1:0]       o_backup_buffer
+);
+
+logic counter;
+
+always_ff @(posedge i_clk, negedge i_reset) begin
+ if(~i_reset) begin
+    o_backup_buffer <= 128'd0;
+    counter <= 1'b0;
+ end else begin
+    if(counter)  begin
+     o_backup_buffer[WORD_WIDTH - 1:0] <= i_word;
+     counter <= 1'b0; 
+    end else begin 
+     o_backup_buffer[WIDTH - 1 : WORD_WIDTH] <= i_word;
+     counter <= 1'b1;
+    end
+ end
+end
+
+
+
+endmodule

@@ -1,0 +1,38 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do max_selector_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Design/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/fifo_dict.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_dict
+# 
+# Top level modules:
+# 	fifo_dict
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/fifo_dict_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_fifo_dict
+# 
+# Top level modules:
+# 	tb_fifo_dict
+vsim -voptargs=+acc work.tb_fifo_dict
+# vsim -voptargs=+acc work.tb_fifo_dict 
+# Loading sv_std.std
+# Loading work.tb_fifo_dict
+# Loading work.fifo_dict
+add wave -position insertpoint sim:/tb_fifo_dict/*
+run -all
+# FIFO r_data = 9744e495ad18eec7e15f9083fb88f2038bf294901dfefff2d8e3eb55b09cf134217f728095acb397334aa6f408d7115e6c2948db24a0b6508a9a14bbc194175c
+# FIFO full = 0
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/fifo_dict_tb.sv(52)
+#    Time: 175 ns  Iteration: 0  Instance: /tb_fifo_dict
+# 1
+# Break in Module tb_fifo_dict at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/fifo_dict_tb.sv line 52

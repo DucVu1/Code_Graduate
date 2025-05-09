@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 06 10:40:16 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : compressor_decompressor
+Top-level Entity Name : compressor_decompressor
+Family : Cyclone II
+Total logic elements : 9,235
+    Total combinational functions : 8,258
+    Dedicated logic registers : 1,823
+Total registers : 1823
+Total pins : 456
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

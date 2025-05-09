@@ -1,0 +1,742 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		3.3V
+ --					Bank 2:		3.3V
+ --					Bank 3:		3.3V
+ --					Bank 4:		3.3V
+ --					Bank 5:		3.3V
+ --					Bank 6:		3.3V
+ --					Bank 7:		3.3V
+ --					Bank 8:		3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "or_gate"  ASSIGNED TO AN: EP2C35F672C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A2        : gnd    :                   :         :           :                
+VCCIO3                       : A3        : power  :                   : 3.3V    : 3         :                
+i_first_word[58]             : A4        : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[54]                   : A5        : output : 3.3-V LVTTL       :         : 3         : N              
+i_second_word[20]            : A6        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : A7        :        :                   :         : 3         :                
+o_word[119]                  : A8        : output : 3.3-V LVTTL       :         : 3         : N              
+o_word[98]                   : A9        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : A10       :        :                   :         : 3         :                
+VCCIO3                       : A11       : power  :                   : 3.3V    : 3         :                
+GND                          : A12       : gnd    :                   :         :           :                
+GND+                         : A13       :        :                   :         : 4         :                
+o_word[57]                   : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+GND                          : A15       : gnd    :                   :         :           :                
+VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
+i_second_word[2]             : A17       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[81]              : A18       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_first_word[53]             : A19       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_first_word[29]             : A20       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[89]                   : A21       : output : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[124]             : A22       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[1]                    : A23       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : A24       : power  :                   : 3.3V    : 4         :                
+GND                          : A25       : gnd    :                   :         :           :                
+GND*                         : AA1       :        :                   :         : 1         :                
+GND*                         : AA2       :        :                   :         : 1         :                
+i_reg_array[2]               : AA3       : input  : 3.3-V LVTTL       :         : 1         : N              
+i_first_word[2]              : AA4       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AA5       :        :                   :         : 1         :                
+i_first_word[51]             : AA6       : input  : 3.3-V LVTTL       :         : 1         : N              
+o_word[51]                   : AA7       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCA_PLL1                    : AA8       : power  :                   : 1.2V    :           :                
+i_reg_array[66]              : AA9       : input  : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[126]             : AA10      : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[102]                  : AA11      : output : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[125]             : AA12      : input  : 3.3-V LVTTL       :         : 8         : N              
+i_first_word[42]             : AA13      : input  : 3.3-V LVTTL       :         : 7         : N              
+i_first_word[5]              : AA14      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AA15      :        :                   :         : 7         :                
+i_reg_array[95]              : AA16      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AA17      :        :                   :         : 7         :                
+GND*                         : AA18      :        :                   :         : 7         :                
+VCCA_PLL4                    : AA19      : power  :                   : 1.2V    :           :                
+o_word[109]                  : AA20      : output : 3.3-V LVTTL       :         : 7         : N              
+GND_PLL4                     : AA21      : gnd    :                   :         :           :                
+VCCIO6                       : AA22      : power  :                   : 3.3V    : 6         :                
+GND*                         : AA23      :        :                   :         : 6         :                
+i_reg_array[18]              : AA24      : input  : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[103]             : AA25      : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AA26      :        :                   :         : 6         :                
+o_word[83]                   : AB1       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AB2       :        :                   :         : 1         :                
+GND*                         : AB3       :        :                   :         : 1         :                
+i_reg_array[68]              : AB4       : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : AB5       : power  :                   : 3.3V    : 1         :                
+VCCIO8                       : AB6       : power  :                   : 3.3V    : 8         :                
+GND                          : AB7       : gnd    :                   :         :           :                
+i_first_word[66]             : AB8       : input  : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : AB9       : power  :                   : 3.3V    : 8         :                
+o_word[126]                  : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AB11      : gnd    :                   :         :           :                
+o_word[131]                  : AB12      : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : AB13      : power  :                   : 3.3V    : 8         :                
+VCCIO7                       : AB14      : power  :                   : 3.3V    : 7         :                
+GND*                         : AB15      :        :                   :         : 7         :                
+GND                          : AB16      : gnd    :                   :         :           :                
+VCCIO7                       : AB17      : power  :                   : 3.3V    : 7         :                
+o_word[96]                   : AB18      : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : AB19      : gnd    :                   :         :           :                
+i_first_word[43]             : AB20      : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[115]                  : AB21      : output : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : AB22      : power  :                   : 3.3V    : 7         :                
+i_reg_array[129]             : AB23      : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[129]                  : AB24      : output : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[31]              : AB25      : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[31]                   : AB26      : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AC1       :        :                   :         : 1         :                
+o_word[2]                    : AC2       : output : 3.3-V LVTTL       :         : 1         : N              
+i_second_word[17]            : AC3       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND                          : AC4       : gnd    :                   :         :           :                
+i_reg_array[51]              : AC5       : input  : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[14]              : AC6       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AC7       :        :                   :         : 8         :                
+o_word[66]                   : AC8       : output : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[130]             : AC9       : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[67]                   : AC10      : output : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[67]              : AC11      : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[79]                   : AC12      : output : 3.3-V LVTTL       :         : 8         : N              
+GND+                         : AC13      :        :                   :         : 8         :                
+i_second_word[8]             : AC14      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AC15      :        :                   :         : 7         :                
+i_reg_array[19]              : AC16      : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[95]                   : AC17      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AC18      :        :                   :         : 7         :                
+o_word[32]                   : AC19      : output : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[84]              : AC20      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AC21      :        :                   :         : 7         :                
+GND*                         : AC22      :        :                   :         : 7         :                
+i_first_word[21]             : AC23      : input  : 3.3-V LVTTL       :         : 6         : N              
+NC                           : AC24      :        :                   :         :           :                
+GND*                         : AC25      :        :                   :         : 6         :                
+GND*                         : AC26      :        :                   :         : 6         :                
+VCCIO1                       : AD1       : power  :                   : 3.3V    : 1         :                
+GND*                         : AD2       :        :                   :         : 1         :                
+GND*                         : AD3       :        :                   :         : 1         :                
+i_reg_array[123]             : AD4       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AD5       :        :                   :         : 8         :                
+i_reg_array[116]             : AD6       : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[116]                  : AD7       : output : 3.3-V LVTTL       :         : 8         : N              
+i_second_word[32]            : AD8       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AD9       : gnd    :                   :         :           :                
+GND*                         : AD10      :        :                   :         : 8         :                
+GND*                         : AD11      :        :                   :         : 8         :                
+i_second_word[29]            : AD12      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND+                         : AD13      :        :                   :         : 8         :                
+GND                          : AD14      : gnd    :                   :         :           :                
+o_word[42]                   : AD15      : output : 3.3-V LVTTL       :         : 7         : N              
+o_word[19]                   : AD16      : output : 3.3-V LVTTL       :         : 7         : N              
+o_word[22]                   : AD17      : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : AD18      : gnd    :                   :         :           :                
+i_reg_array[32]              : AD19      : input  : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : AD20      : power  :                   : 3.3V    : 7         :                
+i_reg_array[100]             : AD21      : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[100]                  : AD22      : output : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[108]             : AD23      : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[78]                   : AD24      : output : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[21]              : AD25      : input  : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : AD26      : power  :                   : 3.3V    : 6         :                
+GND                          : AE1       : gnd    :                   :         :           :                
+o_word[68]                   : AE2       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : AE3       :        :                   :         : 1         :                
+o_word[14]                   : AE4       : output : 3.3-V LVTTL       :         : 8         : N              
+o_word[123]                  : AE5       : output : 3.3-V LVTTL       :         : 8         : N              
+o_word[88]                   : AE6       : output : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[87]              : AE7       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AE8       :        :                   :         : 8         :                
+i_first_word[67]             : AE9       : input  : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[131]             : AE10      : input  : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[114]             : AE11      : input  : 3.3-V LVTTL       :         : 8         : N              
+i_second_word[28]            : AE12      : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[63]                   : AE13      : output : 3.3-V LVTTL       :         : 8         : N              
+i_first_word[63]             : AE14      : input  : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[42]              : AE15      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AE16      :        :                   :         : 7         :                
+GND*                         : AE17      :        :                   :         : 7         :                
+i_reg_array[22]              : AE18      : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[75]                   : AE19      : output : 3.3-V LVTTL       :         : 7         : N              
+o_word[84]                   : AE20      : output : 3.3-V LVTTL       :         : 7         : N              
+i_second_word[9]             : AE21      : input  : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[69]              : AE22      : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[21]                   : AE23      : output : 3.3-V LVTTL       :         : 7         : N              
+~LVDS150p/nCEO~              : AE24      : output : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[78]              : AE25      : input  : 3.3-V LVTTL       :         : 6         : N              
+GND                          : AE26      : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+VCCIO8                       : AF3       : power  :                   : 3.3V    : 8         :                
+i_first_word[14]             : AF4       : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[11]                   : AF5       : output : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[88]              : AF6       : input  : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[102]             : AF7       : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[77]                   : AF8       : output : 3.3-V LVTTL       :         : 8         : N              
+i_second_word[33]            : AF9       : input  : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[79]              : AF10      : input  : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : AF11      : power  :                   : 3.3V    : 8         :                
+GND                          : AF12      : gnd    :                   :         :           :                
+i_reg_array[63]              : AF13      : input  : 3.3-V LVTTL       :         : 8         : N              
+i_reg_array[62]              : AF14      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND                          : AF15      : gnd    :                   :         :           :                
+VCCIO7                       : AF16      : power  :                   : 3.3V    : 7         :                
+i_reg_array[86]              : AF17      : input  : 3.3-V LVTTL       :         : 7         : N              
+i_first_word[22]             : AF18      : input  : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[75]              : AF19      : input  : 3.3-V LVTTL       :         : 7         : N              
+i_first_word[32]             : AF20      : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[43]                   : AF21      : output : 3.3-V LVTTL       :         : 7         : N              
+o_word[108]                  : AF22      : output : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[115]             : AF23      : input  : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : AF24      : power  :                   : 3.3V    : 7         :                
+GND                          : AF25      : gnd    :                   :         :           :                
+GND                          : B1        : gnd    :                   :         :           :                
+i_first_word[35]             : B2        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[35]              : B3        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_second_word[24]            : B4        : input  : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[54]              : B5        : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[17]                   : B6        : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[134]             : B7        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B8        :        :                   :         : 3         :                
+i_reg_array[98]              : B9        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B10       :        :                   :         : 3         :                
+i_first_word[23]             : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[0]                    : B12       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : B13       :        :                   :         : 4         :                
+GND*                         : B14       :        :                   :         : 4         :                
+o_word[48]                   : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+i_second_word[14]            : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_first_word[36]             : B17       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[91]                   : B18       : output : 3.3-V LVTTL       :         : 4         : N              
+i_second_word[19]            : B19       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[29]              : B20       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[124]                  : B21       : output : 3.3-V LVTTL       :         : 4         : N              
+i_first_word[1]              : B22       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[89]              : B23       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_second_word[4]             : B24       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[38]              : B25       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND                          : B26       : gnd    :                   :         :           :                
+VCCIO2                       : C1        : power  :                   : 3.3V    : 2         :                
+i_second_word[16]            : C2        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[35]                   : C3        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : C4        :        :                   :         : 3         :                
+o_word[58]                   : C5        : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[58]              : C6        : input  : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[55]              : C7        : input  : 3.3-V LVTTL       :         : 3         : N              
+i_first_word[44]             : C8        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : C9        :        :                   :         : 3         :                
+i_reg_array[106]             : C10       : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[23]                   : C11       : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[23]              : C12       : input  : 3.3-V LVTTL       :         : 3         : N              
+i_first_word[0]              : C13       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND                          : C14       : gnd    :                   :         :           :                
+o_word[76]                   : C15       : output : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[76]              : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[81]                   : C17       : output : 3.3-V LVTTL       :         : 4         : N              
+GND                          : C18       : gnd    :                   :         :           :                
+i_reg_array[53]              : C19       : input  : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
+o_word[101]                  : C21       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C22       :        :                   :         : 4         :                
+GND*                         : C23       :        :                   :         : 4         :                
+o_word[38]                   : C24       : output : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[38]             : C25       : input  : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : C26       : power  :                   : 3.3V    : 5         :                
+i_reg_array[13]              : D1        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[54]             : D2        : input  : 3.3-V LVTTL       :         : 2         : N              
+~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D3        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND                          : D4        : gnd    :                   :         :           :                
+i_first_word[17]             : D5        : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[134]                  : D6        : output : 3.3-V LVTTL       :         : 3         : N              
+i_first_word[55]             : D7        : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[44]                   : D8        : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[119]             : D9        : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[106]                  : D10       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D11       :        :                   :         : 3         :                
+o_word[49]                   : D12       : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[0]               : D13       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D14       :        :                   :         : 4         :                
+i_reg_array[7]               : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[7]                    : D16       : output : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[91]              : D17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D18       :        :                   :         : 4         :                
+o_word[53]                   : D19       : output : 3.3-V LVTTL       :         : 4         : N              
+o_word[26]                   : D20       : output : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[101]             : D21       : input  : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : D22       : power  :                   : 3.3V    : 4         :                
+o_word[70]                   : D23       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : D24       : gnd    :                   :         :           :                
+GND*                         : D25       :        :                   :         : 5         :                
+o_word[59]                   : D26       : output : 3.3-V LVTTL       :         : 5         : N              
+o_word[8]                    : E1        : output : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[104]             : E2        : input  : 3.3-V LVTTL       :         : 2         : N              
+~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E3        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND_PLL3                     : E4        : gnd    :                   :         :           :                
+i_second_word[1]             : E5        : input  : 3.3-V LVTTL       :         : 2         : N              
+VCCIO3                       : E6        : power  :                   : 3.3V    : 3         :                
+GND                          : E7        : gnd    :                   :         :           :                
+o_word[117]                  : E8        : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : E9        : power  :                   : 3.3V    : 3         :                
+i_reg_array[39]              : E10       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND                          : E11       : gnd    :                   :         :           :                
+i_first_word[49]             : E12       : input  : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : E13       : power  :                   : 3.3V    : 3         :                
+VCCIO4                       : E14       : power  :                   : 3.3V    : 4         :                
+i_first_word[7]              : E15       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND                          : E16       : gnd    :                   :         :           :                
+VCCIO4                       : E17       : power  :                   : 3.3V    : 4         :                
+i_reg_array[128]             : E18       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND                          : E19       : gnd    :                   :         :           :                
+o_word[29]                   : E20       : output : 3.3-V LVTTL       :         : 4         : N              
+GND_PLL2                     : E21       : gnd    :                   :         :           :                
+i_reg_array[70]              : E22       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[20]              : E23       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[20]             : E24       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_second_word[25]            : E25       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[59]             : E26       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[112]                  : F1        : output : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[110]             : F2        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[13]                   : F3        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : F4        :        :                   :         : 2         :                
+VCCIO2                       : F5        : power  :                   : 3.3V    : 2         :                
+o_word[50]                   : F6        : output : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[13]             : F7        : input  : 3.3-V LVTTL       :         : 2         : N              
+GNDA_PLL3                    : F8        : gnd    :                   :         :           :                
+o_word[55]                   : F9        : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[44]              : F10       : input  : 3.3-V LVTTL       :         : 3         : N              
+i_second_word[5]             : F11       : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[65]                   : F12       : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[48]              : F13       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_first_word[57]             : F14       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[28]              : F15       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[28]                   : F16       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : F17       :        :                   :         : 4         :                
+GND*                         : F18       :        :                   :         : 4         :                
+GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
+GND*                         : F20       :        :                   :         : 5         :                
+i_reg_array[1]               : F21       : input  : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : F22       : power  :                   : 3.3V    : 5         :                
+i_second_word[0]             : F23       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[34]             : F24       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[132]             : F25       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[72]              : F26       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[110]                  : G1        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : G2        :        :                   :         : 2         :                
+i_first_word[64]             : G3        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[104]                  : G4        : output : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[50]              : G5        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[50]             : G6        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND_PLL3                     : G7        : gnd    :                   :         :           :                
+VCCA_PLL3                    : G8        : power  :                   : 1.2V    :           :                
+i_reg_array[117]             : G9        : input  : 3.3-V LVTTL       :         : 3         : N              
+i_second_word[10]            : G10       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : G11       :        :                   :         : 3         :                
+i_first_word[65]             : G12       : input  : 3.3-V LVTTL       :         : 3         : N              
+i_second_word[23]            : G13       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[57]              : G14       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : G15       :        :                   :         : 4         :                
+i_first_word[28]             : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[121]             : G17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : G18       :        :                   :         : 4         :                
+VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
+GND_PLL2                     : G20       : gnd    :                   :         :           :                
+i_reg_array[122]             : G21       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[20]                   : G22       : output : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[33]             : G23       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[33]                   : G24       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : G25       :        :                   :         : 5         :                
+o_word[24]                   : G26       : output : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[90]              : H1        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[90]                   : H2        : output : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[112]             : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[111]                  : H4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : H5        : gnd    :                   :         :           :                
+GND*                         : H6        :        :                   :         : 2         :                
+VCCD_PLL3                    : H7        : power  :                   : 1.2V    :           :                
+i_second_word[21]            : H8        : input  : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : H9        : power  :                   : 3.3V    : 3         :                
+i_reg_array[16]              : H10       : input  : 3.3-V LVTTL       :         : 3         : N              
+o_word[39]                   : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+i_first_word[39]             : H12       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND                          : H13       : gnd    :                   :         :           :                
+GND                          : H14       : gnd    :                   :         :           :                
+i_reg_array[36]              : H15       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[36]                   : H16       : output : 3.3-V LVTTL       :         : 4         : N              
+o_word[121]                  : H17       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
+i_first_word[40]             : H19       : input  : 3.3-V LVTTL       :         : 5         : N              
+VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
+o_word[122]                  : H21       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : H22       : gnd    :                   :         :           :                
+i_first_word[24]             : H23       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[24]              : H24       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[40]              : H25       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : H26       :        :                   :         : 5         :                
+o_word[12]                   : J1        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : J2        :        :                   :         : 2         :                
+GND*                         : J3        :        :                   :         : 2         :                
+i_reg_array[111]             : J4        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[92]              : J5        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[64]                   : J6        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : J7        :        :                   :         : 2         :                
+o_word[92]                   : J8        : output : 3.3-V LVTTL       :         : 2         : N              
+o_word[16]                   : J9        : output : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[65]              : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
+i_second_word[31]            : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
+i_second_word[15]            : J13       : input  : 3.3-V LVTTL       :         : 3         : N              
+i_reg_array[49]              : J14       : input  : 3.3-V LVTTL       :         : 3         : N              
+VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
+i_first_word[26]             : J16       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[128]                  : J17       : output : 3.3-V LVTTL       :         : 4         : N              
+i_reg_array[80]              : J18       : input  : 3.3-V LVTTL       :         : 4         : N              
+VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
+o_word[34]                   : J20       : output : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[34]              : J21       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[59]              : J22       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[40]                   : J23       : output : 3.3-V LVTTL       :         : 5         : N              
+i_second_word[6]             : J24       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : J25       :        :                   :         : 5         :                
+GND*                         : J26       :        :                   :         : 5         :                
+i_reg_array[105]             : K1        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[25]             : K2        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[12]             : K3        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[12]              : K4        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[8]               : K5        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[8]              : K6        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_second_word[30]            : K7        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[64]              : K8        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[17]              : K9        : input  : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+VCCINT                       : K12       : power  :                   : 1.2V    :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+VCCINT                       : K14       : power  :                   : 1.2V    :           :                
+VCCINT                       : K15       : power  :                   : 1.2V    :           :                
+i_reg_array[26]              : K16       : input  : 3.3-V LVTTL       :         : 4         : N              
+o_word[80]                   : K17       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : K18       :        :                   :         : 5         :                
+GND*                         : K19       :        :                   :         : 5         :                
+GND                          : K20       : gnd    :                   :         :           :                
+i_reg_array[135]             : K21       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[33]              : K22       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[135]                  : K23       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : K24       :        :                   :         : 5         :                
+i_reg_array[27]              : K25       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[27]             : K26       : input  : 3.3-V LVTTL       :         : 5         : N              
+VCCIO2                       : L1        : power  :                   : 3.3V    : 2         :                
+i_reg_array[10]              : L2        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[118]                  : L3        : output : 3.3-V LVTTL       :         : 2         : N              
+o_word[25]                   : L4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : L5        : gnd    :                   :         :           :                
+i_reg_array[118]             : L6        : input  : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[10]             : L7        : input  : 3.3-V LVTTL       :         : 2         : N              
+TMS                          : L8        : input  :                   :         : 2         :                
+o_word[10]                   : L9        : output : 3.3-V LVTTL       :         : 2         : N              
+i_reg_array[41]              : L10       : input  : 3.3-V LVTTL       :         : 2         : N              
+VCCINT                       : L11       : power  :                   : 1.2V    :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+GND                          : L14       : gnd    :                   :         :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+VCCINT                       : L17       : power  :                   : 1.2V    :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+o_word[93]                   : L19       : output : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[97]              : L20       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[97]                   : L21       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : L22       : gnd    :                   :         :           :                
+i_reg_array[93]              : L23       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : L24       :        :                   :         : 5         :                
+GND*                         : L25       :        :                   :         : 5         :                
+VCCIO5                       : L26       : power  :                   : 3.3V    : 5         :                
+GND                          : M1        : gnd    :                   :         :           :                
+i_second_word[7]             : M2        : input  : 3.3-V LVTTL       :         : 2         : N              
+o_word[41]                   : M3        : output : 3.3-V LVTTL       :         : 2         : N              
+i_first_word[41]             : M4        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : M5        :        :                   :         : 2         :                
+TCK                          : M6        : input  :                   :         : 2         :                
+TDO                          : M7        : output :                   :         : 2         :                
+TDI                          : M8        : input  :                   :         : 2         :                
+VCCIO2                       : M9        : power  :                   : 3.3V    : 2         :                
+VCCINT                       : M10       : power  :                   : 1.2V    :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+GND                          : M15       : gnd    :                   :         :           :                
+VCCINT                       : M16       : power  :                   : 1.2V    :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+VCCIO5                       : M18       : power  :                   : 3.3V    : 5         :                
+o_word[56]                   : M19       : output : 3.3-V LVTTL       :         : 5         : N              
+i_second_word[22]            : M20       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[56]              : M21       : input  : 3.3-V LVTTL       :         : 5         : N              
+o_word[27]                   : M22       : output : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[61]             : M23       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[60]             : M24       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_second_word[26]            : M25       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND                          : M26       : gnd    :                   :         :           :                
+GND+                         : N1        :        :                   :         : 2         :                
+GND+                         : N2        :        :                   :         : 2         :                
+DATA0                        : N3        : input  :                   :         : 2         :                
+nCE                          : N4        :        :                   :         : 2         :                
+VCCIO2                       : N5        : power  :                   : 3.3V    : 2         :                
+DCLK                         : N6        :        :                   :         : 2         :                
+nCONFIG                      : N7        :        :                   :         : 2         :                
+GND                          : N8        : gnd    :                   :         :           :                
+i_reg_array[25]              : N9        : input  : 3.3-V LVTTL       :         : 2         : N              
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCCINT                       : N17       : power  :                   : 1.2V    :           :                
+o_word[132]                  : N18       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : N19       : gnd    :                   :         :           :                
+i_first_word[56]             : N20       : input  : 3.3-V LVTTL       :         : 5         : N              
+NC                           : N21       :        :                   :         :           :                
+VCCIO5                       : N22       : power  :                   : 3.3V    : 5         :                
+o_word[60]                   : N23       : output : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[60]              : N24       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_first_word[16]             : N25       : input  : 3.3-V LVTTL       :         : 5         : N              
+i_reg_array[15]              : N26       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND+                         : P1        :        :                   :         : 1         :                
+GND+                         : P2        :        :                   :         : 1         :                
+o_word[94]                   : P3        : output : 3.3-V LVTTL       :         : 1         : N              
+i_reg_array[133]             : P4        : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : P5        : power  :                   : 3.3V    : 1         :                
+i_first_word[46]             : P6        : input  : 3.3-V LVTTL       :         : 1         : N              
+i_reg_array[46]              : P7        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND                          : P8        : gnd    :                   :         :           :                
+o_word[105]                  : P9        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
+GND                          : P11       : gnd    :                   :         :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+GND                          : P13       : gnd    :                   :         :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+i_first_word[4]              : P17       : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[72]                   : P18       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : P19       : gnd    :                   :         :           :                
+MSEL0                        : P20       :        :                   :         : 6         :                
+MSEL1                        : P21       :        :                   :         : 6         :                
+VCCIO6                       : P22       : power  :                   : 3.3V    : 6         :                
+o_word[61]                   : P23       : output : 3.3-V LVTTL       :         : 6         : N              
+o_word[6]                    : P24       : output : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[61]              : P25       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_second_word[27]            : P26       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND                          : R1        : gnd    :                   :         :           :                
+o_word[133]                  : R2        : output : 3.3-V LVTTL       :         : 1         : N              
+i_reg_array[94]              : R3        : input  : 3.3-V LVTTL       :         : 1         : N              
+i_reg_array[47]              : R4        : input  : 3.3-V LVTTL       :         : 1         : N              
+o_word[47]                   : R5        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R6        :        :                   :         : 1         :                
+GND*                         : R7        :        :                   :         : 1         :                
+o_word[82]                   : R8        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : R9        : power  :                   : 3.3V    : 1         :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+VCCINT                       : R11       : power  :                   : 1.2V    :           :                
+GND                          : R12       : gnd    :                   :         :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+i_second_word[3]             : R17       : input  : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : R18       : power  :                   : 3.3V    : 6         :                
+o_word[15]                   : R19       : output : 3.3-V LVTTL       :         : 6         : N              
+o_word[37]                   : R20       : output : 3.3-V LVTTL       :         : 6         : N              
+GND                          : R21       : gnd    :                   :         :           :                
+nSTATUS                      : R22       :        :                   :         : 6         :                
+CONF_DONE                    : R23       :        :                   :         : 6         :                
+i_reg_array[6]               : R24       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_first_word[6]              : R25       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND                          : R26       : gnd    :                   :         :           :                
+VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
+i_second_word[12]            : T2        : input  : 3.3-V LVTTL       :         : 1         : N              
+o_word[46]                   : T3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T4        :        :                   :         : 1         :                
+GND                          : T5        : gnd    :                   :         :           :                
+GND*                         : T6        :        :                   :         : 1         :                
+GND*                         : T7        :        :                   :         : 1         :                
+i_reg_array[82]              : T8        : input  : 3.3-V LVTTL       :         : 1         : N              
+i_second_word[13]            : T9        : input  : 3.3-V LVTTL       :         : 1         : N              
+i_first_word[47]             : T10       : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+GND                          : T15       : gnd    :                   :         :           :                
+VCCINT                       : T16       : power  :                   : 1.2V    :           :                
+i_reg_array[52]              : T17       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_first_word[52]             : T18       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_first_word[15]             : T19       : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[52]                   : T20       : output : 3.3-V LVTTL       :         : 6         : N              
+i_second_word[18]            : T21       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_first_word[37]             : T22       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[37]              : T23       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[4]               : T24       : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[4]                    : T25       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
+o_word[74]                   : U1        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U2        :        :                   :         : 1         :                
+o_word[71]                   : U3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U4        :        :                   :         : 1         :                
+i_reg_array[127]             : U5        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U6        :        :                   :         : 1         :                
+i_reg_array[113]             : U7        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND                          : U8        : gnd    :                   :         :           :                
+i_reg_array[74]              : U9        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U10       :        :                   :         : 1         :                
+VCCINT                       : U11       : power  :                   : 1.2V    :           :                
+o_word[125]                  : U12       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCINT                       : U13       : power  :                   : 1.2V    :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+VCCINT                       : U15       : power  :                   : 1.2V    :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+i_reg_array[109]             : U17       : input  : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[43]              : U18       : input  : 3.3-V LVTTL       :         : 7         : N              
+GND                          : U19       : gnd    :                   :         :           :                
+o_word[30]                   : U20       : output : 3.3-V LVTTL       :         : 6         : N              
+o_word[120]                  : U21       : output : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[3]               : U22       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_second_word[11]            : U23       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[45]              : U24       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_first_word[45]             : U25       : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[45]                   : U26       : output : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[71]              : V1        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : V2        :        :                   :         : 1         :                
+o_word[73]                   : V3        : output : 3.3-V LVTTL       :         : 1         : N              
+i_reg_array[73]              : V4        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : V5        :        :                   :         : 1         :                
+GND*                         : V6        :        :                   :         : 1         :                
+GND*                         : V7        :        :                   :         : 1         :                
+VCCIO1                       : V8        : power  :                   : 3.3V    : 1         :                
+i_reg_array[11]              : V9        : input  : 3.3-V LVTTL       :         : 8         : N              
+i_first_word[11]             : V10       : input  : 3.3-V LVTTL       :         : 8         : N              
+i_first_word[62]             : V11       : input  : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : V12       : power  :                   : 3.3V    : 8         :                
+o_word[114]                  : V13       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : V14       :        :                   :         : 8         :                
+VCCIO7                       : V15       : power  :                   : 3.3V    : 7         :                
+VCCINT                       : V16       : power  :                   : 1.2V    :           :                
+GND*                         : V17       :        :                   :         : 7         :                
+o_word[69]                   : V18       : output : 3.3-V LVTTL       :         : 7         : N              
+VCCIO6                       : V19       : power  :                   : 3.3V    : 6         :                
+o_word[99]                   : V20       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : V21       :        :                   :         : 6         :                
+GND*                         : V22       :        :                   :         : 6         :                
+i_reg_array[9]               : V23       : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[9]                    : V24       : output : 3.3-V LVTTL       :         : 6         : N              
+i_first_word[30]             : V25       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[30]              : V26       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : W1        :        :                   :         : 1         :                
+o_word[113]                  : W2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : W3        :        :                   :         : 1         :                
+o_word[127]                  : W4        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : W5        : gnd    :                   :         :           :                
+i_reg_array[83]              : W6        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND_PLL1                     : W7        : gnd    :                   :         :           :                
+o_word[107]                  : W8        : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : W9        : power  :                   : 3.3V    : 8         :                
+GND*                         : W10       :        :                   :         : 8         :                
+i_reg_array[77]              : W11       : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[130]                  : W12       : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : W13       : gnd    :                   :         :           :                
+GND                          : W14       : gnd    :                   :         :           :                
+i_first_word[19]             : W15       : input  : 3.3-V LVTTL       :         : 7         : N              
+o_word[86]                   : W16       : output : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[96]              : W17       : input  : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : W18       : power  :                   : 3.3V    : 7         :                
+GND*                         : W19       :        :                   :         : 7         :                
+GND_PLL4                     : W20       : gnd    :                   :         :           :                
+i_first_word[18]             : W21       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND                          : W22       : gnd    :                   :         :           :                
+i_first_word[3]              : W23       : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[3]                    : W24       : output : 3.3-V LVTTL       :         : 6         : N              
+i_first_word[9]              : W25       : input  : 3.3-V LVTTL       :         : 6         : N              
+i_reg_array[120]             : W26       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : Y1        :        :                   :         : 1         :                
+NC                           : Y2        :        :                   :         :           :                
+i_reg_array[85]              : Y3        : input  : 3.3-V LVTTL       :         : 1         : N              
+o_word[85]                   : Y4        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : Y5        :        :                   :         : 1         :                
+GND_PLL1                     : Y6        : gnd    :                   :         :           :                
+VCCD_PLL1                    : Y7        : power  :                   : 1.2V    :           :                
+GNDA_PLL1                    : Y8        : gnd    :                   :         :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+i_reg_array[107]             : Y10       : input  : 3.3-V LVTTL       :         : 8         : N              
+o_word[87]                   : Y11       : output : 3.3-V LVTTL       :         : 8         : N              
+o_word[62]                   : Y12       : output : 3.3-V LVTTL       :         : 8         : N              
+o_word[5]                    : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
+i_reg_array[5]               : Y14       : input  : 3.3-V LVTTL       :         : 7         : N              
+i_first_word[48]             : Y15       : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : Y16       :        :                   :         : 7         :                
+GND                          : Y17       : gnd    :                   :         :           :                
+GND*                         : Y18       :        :                   :         : 7         :                
+GNDA_PLL4                    : Y19       : gnd    :                   :         :           :                
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+i_reg_array[99]              : Y21       : input  : 3.3-V LVTTL       :         : 6         : N              
+o_word[18]                   : Y22       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : Y23       :        :                   :         : 6         :                
+i_first_word[31]             : Y24       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : Y25       :        :                   :         : 6         :                
+o_word[103]                  : Y26       : output : 3.3-V LVTTL       :         : 6         : N              

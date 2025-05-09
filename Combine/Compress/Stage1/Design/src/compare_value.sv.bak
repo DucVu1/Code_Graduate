@@ -1,0 +1,19 @@
+module compare_value#(parameter WIDTH = 3)(
+    input  logic [WIDTH - 1:0] i_a,
+    input  logic [WIDTH - 1:0] i_b,
+    output logic       o_a_gt_b,
+    output logic       o_equal
+);
+    // Compute equality bits for the most significant bits.
+    logic [WIDTH -1:0] eq;
+    //assign eq[3] = ~(i_a[3] ^ i_b[3]);
+    assign eq[2] = ~(i_a[2] ^ i_b[2]);
+    assign eq[1] = ~(i_a[1] ^ i_b[1]);
+    assign eq[0] = ~(i_a[0] ^ i_b[0]);
+    assign o_equal = &eq;
+
+    assign o_a_gt_b = o_equal ? 1'b0 : (i_a[2] & ~i_b[2]) |
+                                       (eq[2] & i_a[1] & ~i_b[1]) |
+                                       (eq[2] & eq[1] & i_a[0] & ~i_b[0]) //|
+                                       //(eq[3] & eq[2] & eq[1] & i_a[0] & ~i_b[0]);
+endmodule

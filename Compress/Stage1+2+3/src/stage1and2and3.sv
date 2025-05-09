@@ -16,11 +16,16 @@ module stage1and2and3 #(
  input  logic                     i_reset,
  input  logic [WIDTH - 1:0]       i_word,
  output logic [CACHE_LINE - 1 :0] o_mux_array2,
-output logic [DICT_WORD * DICT_ENTRY - 1 :0] dictionary_data
+ output logic                     o_finish_final//,
+ //output logic [DICT_WORD * DICT_ENTRY - 1 :0] dictionary_data
 );
-
+ logic [DICT_WORD * DICT_ENTRY - 1 :0] dictionary_data;
+ logic               i_finish_final;
+ logic               i_push_flag, o_push_flag;
+ logic               o_done_flag, i_done_flag;
  logic               i_store_flag, o_store_flag; 
  logic [7:0]         i_shift_amount, o_shift_amount;
+ logic [7:0]         i_push_amount, o_push_amount;
  logic [3:0]         i_location2, i_location4;
  logic [3:0]         o_location2, o_location4;
  logic               i_send_back,o_send_back;
@@ -99,8 +104,12 @@ stage1and2#(
  .o_fill_ctrl(i_fill_ctrl),   
  .o_stop_flag(i_stop_flag),    // Raised when the number of compressed bits exceeds 128
  .o_word(i_reg_word),
+ .o_done_flag(i_done_flag),
+ .o_push_flag(i_push_flag),
+ .o_finish_final(i_finish_final),
  .o_location2(i_location2),
  .o_location4(i_location4)
+ //.o_push_amount(i_push_amount)
 );
 
 
@@ -111,6 +120,8 @@ length_packing_reg #(
  .i_reset(i_reset),
  .i_store_flag(i_store_flag),  
  .i_shift_amount(i_shift_amount),
+ .i_done_flag(i_done_flag),
+ .i_finish_final(i_finish_final),
 //  .i_send_back(i_send_back),
  .i_encoded1(i_encoded1),
  .i_encoded2(i_encoded2),
@@ -119,18 +130,22 @@ length_packing_reg #(
  .i_location2(i_location2),
  .i_location4(i_location4),
  .i_total_length(i_total_length),
+ //.i_push_amount(i_push_amount),
  .i_fill_flag(i_fill_flag),   // Determines whether to select the padded signal
  .i_output_flag(i_output_flag), // Raised when there are 128 compressed bits in Reg2
  .i_fill_ctrl(i_fill_ctrl),   
+ .i_push_flag(i_push_flag),
  .i_stop_flag(i_stop_flag),    // Raised when the number of compressed bits exceeds 128
  .i_word(i_reg_word),
  .o_store_flag(o_store_flag),  
  .o_shift_amount(o_shift_amount),
 //  .o_send_back(o_send_back),
+ .o_done_flag(o_done_flag),
  .o_encoded1(o_encoded1),
  .o_encoded2(o_encoded2),
  .o_length1(o_length1),
  .o_length2(o_length2),
+ //.o_push_amount(o_push_amount), 
  .o_location2(o_location2),
  .o_location4(o_location4),
  .o_total_length(o_total_length),
@@ -138,6 +153,8 @@ length_packing_reg #(
  .o_output_flag(o_output_flag), // Raised when there are 128 compressed bits in Reg2
  .o_fill_ctrl(o_fill_ctrl),   
  .o_stop_flag(o_stop_flag),    // Raised when the number of compressed bits exceeds 128
+ .o_finish_final(o_finish_final),
+ .o_push_flag(o_push_flag),
  .o_word(o_word)
 );
 
@@ -158,6 +175,8 @@ packing_and_shifting #(
  .i_reset(i_reset),
  .i_store_flag(o_store_flag),
  .i_output_flag(o_output_flag),
+ .i_push_flag(o_push_flag),
+ //.i_push_amount(o_push_amount),
  .i_fill_flag(o_fill_flag),
  .i_stop_flag(o_stop_flag), //number of compressed bits has exceed the uncompressed line size
  .i_code1(o_encoded1),
@@ -174,7 +193,37 @@ packing_and_shifting #(
 
 );
  
+// packing_and_shifting #(
+//  .TOTAL_WIDTH(TOTAL_WIDTH) ,
+//  .TOTAL_BITS_COMPRESSED(TOTAL_BITS_COMPRESSED),
+//  .CACHE_LINE(WIDTH),
+//  .WORD_WIDTH(DICT_WORD),
+//  .SHIFT_WIDTH(TOTAL_BITS_COMPRESSED*2) ,
+//  .WORD2_LENGTH(WORD2_LENGTH),
+//  .TOTAL_LENGTH (TOTAL_LENGTH),
+//  .DICT_WORD(DICT_WORD2),
+//  .OUT_SHIFT_BIT(OUT_SHIFT_BIT)
+// ) stage3
+// (
+//  .i_clk(i_clk),
+//  .i_reset(i_reset),
+//  .i_store_flag(i_store_flag),
+//  .i_output_flag(i_output_flag),
+//  .i_fill_flag(i_fill_flag),
+//  .i_stop_flag(i_stop_flag), //number of compressed bits has exceed the uncompressed line size
+//  .i_code1(i_encoded1),
+//  .i_code2(i_encoded2),
+//  .i_total_length(i_total_length),
+//  .i_out_shift(i_shift_amount),
+//  .i_word2_length(i_length1),
+//  .i_word1(i_word1),
+//  .i_word2(i_word2),
+//  .i_backup_buffer(o_backup_buffer3),
+//  .i_idx1(i_location2),
+//  .i_idx2(i_location4),
+//  .o_mux_array2(o_mux_array2)
 
+// );
 
 
 

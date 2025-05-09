@@ -1,0 +1,487 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Duc\A PLACE HOLDER\GitHub\Code Graduate\Code_Graduate\Compress\Stage1+2\quartus\simulation\modelsim
+vcomparator
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I7IWeoBjcEHJD9aOOl3Lfb0
+VY=0^iK0bfQg1JNaf;<mb:2
+S1
+Z2 dC:\Users\Duc\A PLACE HOLDER\GitHub\Code Graduate\Code_Graduate\Compress\Stage1+2\quartus\simulation\modelsim
+w1741871903
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src} -O0
+!i10b 1
+!s100 `6CEWDEbKbFDeA>zm0Gh82
+!s105 comparator_sv_unit
+!s85 0
+!s108 1745522064.553000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator.sv|
+!s101 -O0
+vcomparator_array1
+R1
+I[fJFeHOL7A`zL3f]VL>_j3
+V79n:bgSdV:bX`iEM95fo93
+S1
+R2
+w1743080491
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array1.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array1.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 N]dVza9fDXWBP@KW;dlhf3
+!s105 comparator_array1_sv_unit
+!s85 0
+!s108 1745522064.470000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array1.sv|
+!s101 -O0
+vcomparator_array2
+R1
+ImOM[^Ydg]9=zl07^Yfk5O0
+V8O66gL1X=Hi832;?l;ElQ0
+S1
+R2
+w1742273715
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array2.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 57]E:Y0fS<k7<:_BzoG6P1
+!s105 comparator_array2_sv_unit
+!s85 0
+!s108 1745522064.385000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array2.sv|
+!s101 -O0
+vcomparator_array4
+R1
+IU62GJ<_jOehg8LKd_<ia_2
+VAFZ9LCfoXcc26;CUDh40L0
+S1
+R2
+w1742510826
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array4.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 KAOiZJNzNj3>]lXDH_TZ12
+!s105 comparator_array4_sv_unit
+!s85 0
+!s108 1745522064.295000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/comparator_array4.sv|
+!s101 -O0
+vcompare_value
+R1
+IfHAOHdhm0YmAIh?QQYf^h3
+Vc2g3G:6N:03hL=JA[ddCT1
+S1
+R2
+w1742270128
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/compare_value.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/compare_value.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 2l>1Foh=o3jS[[MN4U6KV1
+!s105 compare_value_sv_unit
+!s85 0
+!s108 1745522064.208000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/compare_value.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/compare_value.sv|
+!s101 -O0
+vcontrol_signal_generator
+R1
+I_nTWY7WZ^gk`YPcSEXlMJ3
+VMNL[QjnMP4z;1jEm9WNUQ1
+S1
+R2
+w1742508362
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/control_signal_generator.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/control_signal_generator.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 a?Yagd?7]GbnDzmMRRVjc0
+!s105 control_signal_generator_sv_unit
+!s85 0
+!s108 1745522064.125000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/control_signal_generator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/control_signal_generator.sv|
+!s101 -O0
+vfifo_dict
+R1
+I4LYnmFd`:?TA_9F1m1LdG0
+V1Dg26W6>BU:_;bk8laW>32
+Z6 !s105 fifo_dict_sv_unit
+S1
+R2
+Z7 w1743083917
+Z8 8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/fifo_dict.sv
+Z9 FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/fifo_dict.sv
+L0 1
+R3
+r1
+31
+Z10 !s108 1745522064.026000
+Z11 !s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/fifo_dict.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/fifo_dict.sv|
+R4
+R5
+!i10b 1
+!s100 8[1`F^8Bg3a@jKIb<I5nU3
+!s85 0
+!s101 -O0
+vfifo_ptr_gen
+R1
+IeTJhdBaeHKD3I1N6A9lGd3
+V]?Z4^m>BDUQneeKO[eZhb2
+R6
+S1
+R2
+R7
+R8
+R9
+L0 40
+R3
+r1
+31
+R10
+R11
+R12
+R4
+R5
+!i10b 1
+!s100 [6]]_le07jfo3c_Ajzh`N0
+!s85 0
+!s101 -O0
+vlength_accumulator
+R1
+I^ZBhQnmjKPQJ8cR2bWe_;1
+VUWVZ@D7CZZ_LFe@5JW]C^1
+S1
+R2
+w1743231171
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_accumulator.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_accumulator.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 :@A>VEi6EQg^jE[]kN54;3
+!s105 length_accumulator_sv_unit
+!s85 0
+!s108 1745522063.939000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_accumulator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_accumulator.sv|
+!s101 -O0
+vlength_generation
+R1
+IM13ZW^WF@7JKUFX6A2o>Q1
+V21g4ncTXQCPaL2kAN36b<2
+S1
+R2
+w1743186941
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_generation.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_generation.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 <c9:XggO3?2TN`KPe2HRP1
+!s105 length_generation_sv_unit
+!s85 0
+!s108 1745522063.861000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_generation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/length_generation.sv|
+!s101 -O0
+vmatching_length_reg
+R1
+IH^ONJ]4W<:aadMd9]T;PR2
+V[UW?=7Ql=W>z:lm?;KZaa1
+S1
+R2
+w1743234589
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_length_reg.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_length_reg.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 Fl0X>S]iiMBYm[Q8=k89z1
+!s105 matching_length_reg_sv_unit
+!s85 0
+!s108 1745522063.054000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_length_reg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_length_reg.sv|
+!s101 -O0
+vmatching_stage
+R1
+Idc7d_2daE73:hKPUKMD>O2
+Vf5FUk3d8??kk:anUGj_m91
+S1
+R2
+w1743080478
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_stage.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_stage.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 9UI[VPgU2iH4Djn:5TA]R3
+!s105 matching_stage_sv_unit
+!s85 0
+!s108 1745522063.768000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_stage.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/matching_stage.sv|
+!s101 -O0
+vmax2_with_index
+R1
+IIWRUlMjeIz3@ZeH:=CX2m0
+V42S6^8j_[S5[P?<ZiiZc_1
+S1
+R2
+w1742270271
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max2_with_index.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max2_with_index.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ^jUY:ZJ4zQOMl^man4YY13
+!s105 max2_with_index_sv_unit
+!s85 0
+!s108 1745522063.602000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max2_with_index.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max2_with_index.sv|
+!s101 -O0
+vmax_selector
+R1
+Ige>DOm9da:9zToXfQg?Zm3
+VDKNYT?<1Jk_OC_GM;JVha2
+S1
+R2
+w1742269977
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max_selector.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max_selector.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 J_;Pb0ThI6==SFN=e`PRf3
+!s105 max_selector_sv_unit
+!s85 0
+!s108 1745522063.680000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max_selector.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/max_selector.sv|
+!s101 -O0
+vreg_file_dual
+R1
+I=CSNW8aYT]?K<V]ink2OF2
+V_IeH[50<OCRCg<Fh=^5e`1
+R6
+S1
+R2
+R7
+R8
+R9
+L0 69
+R3
+r1
+31
+R10
+R11
+R12
+R4
+R5
+!i10b 1
+!s100 [Od]GS0e6REe`m>nkD;OE3
+!s85 0
+!s101 -O0
+vstage1and2
+R1
+I44K:7R7=^jRWNjdVKK?6N2
+VPPgW7TF2VLzTm6:YhBP5;1
+S1
+R2
+w1743235150
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/stage1and2.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/stage1and2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 gW3DGWGA7bLPR6E_jA?2?0
+!s105 stage1and2_sv_unit
+!s85 0
+!s108 1745522063.528000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/stage1and2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/stage1and2.sv|
+!s101 -O0
+vtb_stage1and2
+R1
+!i10b 1
+!s100 bI_[T_ORo7?O94K8?bAH=1
+I4OWH<bmO9EekhXefPSJRQ2
+Z13 Vc@1`=f_XVTYSc6B?z>^aW0
+Z14 !s105 statge1and2_tb_sv_unit
+S1
+R2
+w1745522164
+Z15 8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv
+Z16 FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1745522168.440000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv|
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/test/statge1and2_tb.sv|
+!s101 -O0
+Z18 o-work work -O0
+vtotal_length_generator
+R1
+IQVma2n=k_Eg7WKPoBzTA63
+Vf?14OVG]aONe6I54A3[1A3
+S1
+R2
+w1742715601
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/total_length_generator.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/total_length_generator.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 oT:cBQj@QgC2gkbO82g1Y0
+!s105 total_length_generator_sv_unit
+!s85 0
+!s108 1745522063.440000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/total_length_generator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/total_length_generator.sv|
+!s101 -O0
+vword_comparator
+R1
+IH34jFeLl7SH`<04jNfz4[3
+V41JNO>0z^K0^h9I21`jlO3
+S1
+R2
+w1742273595
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_comparator.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_comparator.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 B89ER^RcKAg^M3OEcUXMl3
+!s105 word_comparator_sv_unit
+!s85 0
+!s108 1745522063.339000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_comparator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_comparator.sv|
+!s101 -O0
+vword_decoder
+R1
+IYJIm6WVm0jM3MnOdli3HA2
+V3QNVcj7Vj4ATcFh3oI=g[2
+S1
+R2
+w1742726653
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_decoder.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_decoder.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 iJ>R5c[`GHe`RD6aOgLF41
+!s105 word_decoder_sv_unit
+!s85 0
+!s108 1745522063.233000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_decoder.sv|
+!s101 -O0
+vword_length_genetator
+R1
+I=^2jkRd:ezi:6lJCL<0PI1
+V;^hj>Rjid1?AOCY;LVad93
+S1
+R2
+w1742783701
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_length_generator.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_length_generator.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 lO7QaVUf1`_@Z11X^e`eK3
+!s105 word_length_generator_sv_unit
+!s85 0
+!s108 1745522063.132000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_length_generator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2/src/word_length_generator.sv|
+!s101 -O0

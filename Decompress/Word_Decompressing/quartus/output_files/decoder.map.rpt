@@ -1,5 +1,5 @@
 Analysis & Synthesis report for decoder
-Fri Apr 25 01:57:10 2025
+Mon May 05 17:25:57 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,10 +37,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  29. Parameter Settings for User Entity Instance: register_array:register_array1
  30. Parameter Settings for User Entity Instance: mux2_1:mux_out
  31. Port Connectivity Checks: "mux2_1:mux1"
- 32. Port Connectivity Checks: "decoder:decoder2"
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
- 35. Analysis & Synthesis Suppressed Messages
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -66,15 +65,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 25 01:57:09 2025           ;
+; Analysis & Synthesis Status        ; Successful - Mon May 05 17:25:57 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; decoder                                         ;
 ; Top-level Entity Name              ; decompressor                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 5,999                                           ;
-;     Total combinational functions  ; 5,388                                           ;
-;     Dedicated logic registers      ; 1,150                                           ;
-; Total registers                    ; 1150                                            ;
+; Total logic elements               ; 6,075                                           ;
+;     Total combinational functions  ; 5,443                                           ;
+;     Dedicated logic registers      ; 1,175                                           ;
+; Total registers                    ; 1175                                            ;
 ; Total pins                         ; 261                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -207,28 +206,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------+
 ; Resource                                    ; Usage   ;
 +---------------------------------------------+---------+
-; Estimated Total logic elements              ; 5,999   ;
+; Estimated Total logic elements              ; 6,075   ;
 ;                                             ;         ;
-; Total combinational functions               ; 5388    ;
+; Total combinational functions               ; 5443    ;
 ; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 4339    ;
-;     -- 3 input functions                    ; 967     ;
-;     -- <=2 input functions                  ; 82      ;
+;     -- 4 input functions                    ; 4295    ;
+;     -- 3 input functions                    ; 1096    ;
+;     -- <=2 input functions                  ; 52      ;
 ;                                             ;         ;
 ; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 5372    ;
+;     -- normal mode                          ; 5427    ;
 ;     -- arithmetic mode                      ; 16      ;
 ;                                             ;         ;
-; Total registers                             ; 1150    ;
-;     -- Dedicated logic registers            ; 1150    ;
+; Total registers                             ; 1175    ;
+;     -- Dedicated logic registers            ; 1175    ;
 ;     -- I/O registers                        ; 0       ;
 ;                                             ;         ;
 ; I/O pins                                    ; 261     ;
 ; Embedded Multiplier 9-bit elements          ; 0       ;
 ; Maximum fan-out node                        ; i_reset ;
-; Maximum fan-out                             ; 1370    ;
-; Total fan-out                               ; 24583   ;
-; Average fan-out                             ; 3.62    ;
+; Maximum fan-out                             ; 1411    ;
+; Total fan-out                               ; 24985   ;
+; Average fan-out                             ; 3.63    ;
 +---------------------------------------------+---------+
 
 
@@ -237,27 +236,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
-; |decompressor                                      ; 5388 (1)          ; 1150 (0)     ; 0           ; 0            ; 0       ; 0         ; 261  ; 0            ; |decompressor                                                ; work         ;
-;    |barrel_shifter_d2:barrel_shifter2|             ; 1087 (1087)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|barrel_shifter_d2:barrel_shifter2              ; work         ;
-;    |barrel_shifter_right:barrel_shifter1|          ; 1063 (1063)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|barrel_shifter_right:barrel_shifter1           ; work         ;
+; |decompressor                                      ; 5443 (260)        ; 1175 (1)     ; 0           ; 0            ; 0       ; 0         ; 261  ; 0            ; |decompressor                                                ; work         ;
+;    |barrel_shifter_d2:barrel_shifter2|             ; 761 (761)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|barrel_shifter_d2:barrel_shifter2              ; work         ;
+;    |barrel_shifter_right:barrel_shifter1|          ; 836 (836)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|barrel_shifter_right:barrel_shifter1           ; work         ;
 ;    |comparator:substracter|                        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|comparator:substracter                         ; work         ;
-;    |control_signal_generator:control_signal_gen|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|control_signal_generator:control_signal_gen    ; work         ;
-;    |decoder:decoder1|                              ; 403 (403)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|decoder:decoder1                               ; work         ;
-;    |decoder:decoder2|                              ; 345 (345)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|decoder:decoder2                               ; work         ;
-;    |fifo_dict:dictionary|                          ; 402 (0)           ; 494 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|fifo_dict:dictionary                           ; work         ;
+;    |control_signal_generator:control_signal_gen|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|control_signal_generator:control_signal_gen    ; work         ;
+;    |decoder:decoder1|                              ; 411 (411)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|decoder:decoder1                               ; work         ;
+;    |decoder:decoder2|                              ; 439 (439)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|decoder:decoder2                               ; work         ;
+;    |fifo_dict:dictionary|                          ; 424 (0)           ; 518 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|fifo_dict:dictionary                           ; work         ;
 ;       |fifo_ptr_gen:ptr_gen|                       ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|fifo_dict:dictionary|fifo_ptr_gen:ptr_gen      ; work         ;
-;       |reg_file_dual:rf_dual|                      ; 396 (396)         ; 488 (488)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual     ; work         ;
+;       |reg_file_dual:rf_dual|                      ; 418 (418)         ; 512 (512)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual     ; work         ;
 ;    |latch_module:latch_module|                     ; 128 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|latch_module:latch_module                      ; work         ;
 ;    |mux2_1:mux1|                                   ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|mux2_1:mux1                                    ; work         ;
-;    |mux2_1:mux2|                                   ; 265 (265)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|mux2_1:mux2                                    ; work         ;
+;    |mux2_1:mux2|                                   ; 732 (732)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|mux2_1:mux2                                    ; work         ;
 ;    |mux2_1:mux_out|                                ; 128 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|mux2_1:mux_out                                 ; work         ;
-;    |or_gate_d:or_gate|                             ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|or_gate_d:or_gate                              ; work         ;
 ;    |reg_out:register_array3|                       ; 1 (1)             ; 257 (257)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|reg_out:register_array3                        ; work         ;
 ;    |register_array:register_array1|                ; 0 (0)             ; 196 (196)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|register_array:register_array1                 ; work         ;
 ;    |three_input_carry_save_adder:carry_save_adder| ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|three_input_carry_save_adder:carry_save_adder  ; work         ;
-;    |unpacker:unpacker|                             ; 1458 (1447)       ; 203 (203)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|unpacker:unpacker                              ; work         ;
+;    |unpacker:unpacker|                             ; 1305 (1296)       ; 203 (203)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|unpacker:unpacker                              ; work         ;
 ;       |length_generator:length_gen1|               ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|unpacker:unpacker|length_generator:length_gen1 ; work         ;
-;       |length_generator:length_gen2|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|unpacker:unpacker|length_generator:length_gen2 ; work         ;
+;       |length_generator:length_gen2|               ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |decompressor|unpacker:unpacker|length_generator:length_gen2 ; work         ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -372,38 +370,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                          ;
-+--------------------------------------------------------+--------------------------------------------------------------------+
-; Register name                                          ; Reason for Removal                                                 ;
-+--------------------------------------------------------+--------------------------------------------------------------------+
-; unpacker:unpacker|o_remain_length[0]                   ; Stuck at GND due to stuck port data_in                             ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][5] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][1] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][6] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][2] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][3] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][3] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][3] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][3] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][3] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][3] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][3] ;
-; fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][7] ; Merged with fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][3] ;
-; Total Number of Removed Registers = 25                 ;                                                                    ;
-+--------------------------------------------------------+--------------------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; unpacker:unpacker|o_remain_length[0]  ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -411,12 +385,12 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1150  ;
-; Number of registers using Synchronous Clear  ; 408   ;
-; Number of registers using Synchronous Load   ; 276   ;
-; Number of registers using Asynchronous Clear ; 534   ;
+; Total registers                              ; 1175  ;
+; Number of registers using Synchronous Clear  ; 328   ;
+; Number of registers using Synchronous Load   ; 364   ;
+; Number of registers using Asynchronous Clear ; 535   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 620   ;
+; Number of registers using Clock Enable       ; 644   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -426,56 +400,67 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
-; 4:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[158]                       ;
-; 4:1                ; 68 bits   ; 136 LEs       ; 136 LEs              ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[118]                       ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[53]                        ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[21]                        ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[12]                        ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[7][23]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[6][15]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[5][11]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[4][5]      ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[3][30]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[2][3]      ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[1][4]      ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[0][28]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][10]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][22]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][4]      ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][30]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][13]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][4]      ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][16]     ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][9]      ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[7]                         ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[1]                         ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |decompressor|unpacker:unpacker|length_generator:length_gen1|o_length1[3] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |decompressor|unpacker:unpacker|length_generator:length_gen2|o_length1[3] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_d2:barrel_shifter2|o_word[189]               ;
-; 3:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_d2:barrel_shifter2|o_word[144]               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[48]             ;
+; 4:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[154]                       ;
+; 4:1                ; 68 bits   ; 136 LEs       ; 136 LEs              ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[130]                       ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[52]                        ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[28]                        ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[13]                        ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[7][18]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[6][10]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[5][25]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[4][1]      ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[3][27]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[2][30]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[1][14]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs1[0][12]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[7][21]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[6][20]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[5][13]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[4][27]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[3][30]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[2][15]     ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[1][4]      ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|regs2[0][29]     ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[5]                         ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; Yes        ; |decompressor|unpacker:unpacker|shifted_data_r[2]                         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |decompressor|unpacker:unpacker|length_generator:length_gen1|o_length1[4] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |decompressor|unpacker:unpacker|length_generator:length_gen2|o_length1[4] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[39]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_d2:barrel_shifter2|o_word[190]               ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_d2:barrel_shifter2|o_word[145]               ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|length_generator:length_gen1|o_length1[2] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |decompressor|ShiftRight0                                                 ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|length_generator:length_gen2|o_length1[5] ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[16]             ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|Mux43            ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|Mux22            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|o_idx1[0]                                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|o_idx2[0]                                 ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[31]             ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|Mux54            ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |decompressor|fifo_dict:dictionary|reg_file_dual:rf_dual|Mux21            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|o_idx1[2]                                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|o_idx2[1]                                 ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |decompressor|ShiftRight0                                                 ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |decompressor|ShiftRight0                                                 ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[11]             ;
-; 17:1               ; 8 bits    ; 88 LEs        ; 88 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux93                                      ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[6]              ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[2]              ;
-; 19:1               ; 16 bits   ; 192 LEs       ; 176 LEs              ; 16 LEs                 ; No         ; |decompressor|decoder:decoder2|Mux78                                      ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 88 LEs               ; 8 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux85                                      ;
-; 20:1               ; 8 bits    ; 104 LEs       ; 104 LEs              ; 0 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux66                                      ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux89                                      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |decompressor|ShiftRight0                                                 ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |decompressor|ShiftRight0                                                 ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[4]              ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |decompressor|ShiftRight0                                                 ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |decompressor|ShiftRight0                                                 ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |decompressor|barrel_shifter_right:barrel_shifter1|o_data[3]              ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 104 LEs              ; 0 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux69                                      ;
+; 21:1               ; 4 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux90                                      ;
 ; 21:1               ; 4 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux92                                      ;
-; 20:1               ; 8 bits    ; 104 LEs       ; 104 LEs              ; 0 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux74                                      ;
+; 20:1               ; 6 bits    ; 78 LEs        ; 78 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux67                                      ;
+; 21:1               ; 4 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux91                                      ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux92                                      ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 104 LEs              ; 0 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux79                                      ;
 ; 21:1               ; 8 bits    ; 112 LEs       ; 104 LEs              ; 8 LEs                  ; No         ; |decompressor|decoder:decoder1|Mux80                                      ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 104 LEs              ; 0 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux78                                      ;
+; 21:1               ; 8 bits    ; 112 LEs       ; 104 LEs              ; 8 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux84                                      ;
+; 25:1               ; 2 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux65                                      ;
+; 26:1               ; 2 bits    ; 34 LEs        ; 32 LEs               ; 2 LEs                  ; No         ; |decompressor|decoder:decoder2|Mux95                                      ;
 ; 17:1               ; 2 bits    ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|ShiftRight1                               ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|second_shifted[5]                         ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|second_shifted[2]                         ;
-; 20:1               ; 2 bits    ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|o_idx2[3]                                 ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |decompressor|unpacker:unpacker|o_idx2[2]                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
 
 
@@ -710,21 +695,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "decoder:decoder2"                                                                                                                                   ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                                                                                                                            ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; i_word ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (196 bits) it drives.  Extra input bit(s) "i_word[195..1]" will be connected to GND. ;
-+--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -734,7 +710,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 25 01:56:57 2025
+    Info: Processing started: Mon May 05 17:25:43 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decoder -c decoder
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/decompress/word_decompressing/src/barrel_shifter_right.sv
@@ -775,7 +751,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: length_generator
 Info (12021): Found 1 design units, including 1 entities, in source file /users/duc/a place holder/github/code graduate/code_graduate/decompress/word_decompressing/src/decoder.sv
     Info (12023): Found entity 1: decoder
-Warning (10236): Verilog HDL Implicit Net warning at decompressor.sv(126): created implicit net for "i_decoder"
 Info (12127): Elaborating entity "decompressor" for the top level hierarchy
 Info (12128): Elaborating entity "unpacker" for hierarchy "unpacker:unpacker"
 Info (12128): Elaborating entity "length_generator" for hierarchy "unpacker:unpacker|length_generator:length_gen1"
@@ -923,19 +898,18 @@ Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:mux2"
 Info (12128): Elaborating entity "barrel_shifter_right" for hierarchy "barrel_shifter_right:barrel_shifter1"
 Info (12128): Elaborating entity "register_array" for hierarchy "register_array:register_array1"
 Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:mux_out"
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Decompress/Word_Decompressing/quartus/output_files/decoder.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6412 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6694 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 133 input pins
     Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 6151 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4633 megabytes
-    Info: Processing ended: Fri Apr 25 01:57:10 2025
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:12
+    Info (21061): Implemented 6433 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4641 megabytes
+    Info: Processing ended: Mon May 05 17:25:57 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +------------------------------------------+

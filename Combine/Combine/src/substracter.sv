@@ -1,0 +1,17 @@
+module substracter #(
+    parameter I_WIDTH = 7,
+    parameter O_WIDTH = 7,
+    parameter C_LEN = 8
+)(
+    input logic [I_WIDTH - 1 : 0] i_total_legth,
+    input logic [C_LEN - 1 : 0] i_chunk_len,
+    output logic o_shift_flag
+);
+
+
+//assign o_shift_flag
+
+
+
+
+endmodule

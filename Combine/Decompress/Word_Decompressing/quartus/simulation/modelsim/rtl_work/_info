@@ -1,0 +1,418 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Duc\A PLACE HOLDER\GitHub\Code Graduate\Code_Graduate\Combine\Decompress\Word_Decompressing\quartus\simulation\modelsim
+vbarrel_shifter_d2
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IbePdh`9D6ZGlzMAnamehP3
+VM;jM<2T?`81JRlPT150I@0
+S1
+Z2 dC:\Users\Duc\A PLACE HOLDER\GitHub\Code Graduate\Code_Graduate\Combine\Decompress\Word_Decompressing\quartus\simulation\modelsim
+w1745138446
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_d2.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_d2.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src} -O0
+!i10b 1
+!s100 XC0jWT5`Ki;JgMfbUYXRk3
+!s105 barrel_shifter_d2_sv_unit
+!s85 0
+!s108 1746441762.946000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_d2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_d2.sv|
+!s101 -O0
+vbarrel_shifter_right
+R1
+I?0SkRImV=9a0i7[TMVKJ>0
+VEGii6f6K_FgEg;eOV@D632
+S1
+R2
+w1745058063
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_right.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_right.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 aNGjZ]ZzmaSGWJ45LUiFa2
+!s105 barrel_shifter_right_sv_unit
+!s85 0
+!s108 1746441762.787000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_right.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/barrel_shifter_right.sv|
+!s101 -O0
+vcomparator_decompress
+R1
+IgBX=kcFfJWSD1CUYHX0n02
+VKNj`;7@0`GnRIf<D14QSd3
+S1
+R2
+w1746441061
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/comparator_decompress.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/comparator_decompress.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 Zb3<g27_SnK>0hPGHiX@00
+!s105 comparator_decompress_sv_unit
+!s85 0
+!s108 1746441762.612000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/comparator_decompress.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/comparator_decompress.sv|
+!s101 -O0
+vcontrol_signal_generator_decompress
+R1
+IbNKfCd6XdNgifeeBnQBDo1
+V<Ri4[^U2zm1bH76PfeJ=12
+S1
+R2
+w1746185466
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/control_signal_generator_decompress.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/control_signal_generator_decompress.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 I@VLfGVLgEhzHW>Dz9jO52
+!s105 control_signal_generator_decompress_sv_unit
+!s85 0
+!s108 1746441762.351000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/control_signal_generator_decompress.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/control_signal_generator_decompress.sv|
+!s101 -O0
+vdecoder
+R1
+IfPA]mM6VJ6j:aOXR5Y9?J3
+VYi9eaB?@Am3^]dkPzc:Wo2
+S1
+R2
+w1745240081
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decoder.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decoder.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 i?UzCmj2c`m5A?bmoc@?63
+!s105 decoder_sv_unit
+!s85 0
+!s108 1746441762.192000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decoder.sv|
+!s101 -O0
+vdecompressor
+R1
+I1j:FOG28>OE>MeoVk`h8?0
+Vo3H<_GS<hb^YgW0kTVQc<2
+S1
+R2
+w1746441092
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decompressor.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decompressor.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 XMQaWJfD1b1;1=6TflHlR1
+!s105 decompressor_sv_unit
+!s85 0
+!s108 1746441762.080000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decompressor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/decompressor.sv|
+!s101 -O0
+vdecompressor_tb
+R1
+!i10b 1
+!s100 mZRBABCZTTETc[dcVL<i=2
+IHVbanll40mWZOB`=4Kcmz3
+Z6 VFWaSfm1>^^zad]BgiBX:n1
+Z7 !s105 decompressor_tb_sv_unit
+S1
+R2
+w1746441748
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/test/decompressor_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/test/decompressor_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1746441772.562000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/test/decompressor_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/test/decompressor_tb.sv|
+!s101 -O0
+Z8 o-work work -O0
+vfifo_dict
+R1
+ILEIV<_jc]Vcd7kH?cg9n83
+Vn3Kc7=nIkmV`VkPT;0Hh^0
+Z9 !s105 fifo_dict_sv_unit
+S1
+R2
+Z10 w1745141174
+Z11 8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/fifo_dict.sv
+Z12 FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/fifo_dict.sv
+L0 1
+R3
+r1
+31
+Z13 !s108 1746441761.959000
+Z14 !s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/fifo_dict.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/fifo_dict.sv|
+R4
+R5
+!i10b 1
+!s100 6T92A<<8iMh2hNeMWGEG@2
+!s85 0
+!s101 -O0
+vfifo_ptr_gen
+R1
+If3VMn_0LK<oCEDRgibfC=0
+V:Q658XE0Kme?^f0Z;L6V_2
+R9
+S1
+R2
+R10
+R11
+R12
+L0 40
+R3
+r1
+31
+R13
+R14
+R15
+R4
+R5
+!i10b 1
+!s100 `^FYa1<W]IWX;8UVeanKH3
+!s85 0
+!s101 -O0
+vlatch_module_decompress
+R1
+I<WLZ=IAR;Q1LjJU[UTjRl2
+VlY<F]4ccfo=]a8:lD4Gk^0
+S1
+R2
+w1746185538
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/latch_module_decompress.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/latch_module_decompress.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 LWHL>hz51cjejh8Kao?XL1
+!s105 latch_module_decompress_sv_unit
+!s85 0
+!s108 1746441761.841000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/latch_module_decompress.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/latch_module_decompress.sv|
+!s101 -O0
+vlength_generator
+R1
+I:YmT^D_dE=IKO5<<Y_PZB3
+VoIbR]PVO1<8LDkHX]XK232
+S1
+R2
+w1744897201
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/length_generator.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/length_generator.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 b8YPnbbhMeDU?hfUm<jBL1
+!s105 length_generator_sv_unit
+!s85 0
+!s108 1746441761.731000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/length_generator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/length_generator.sv|
+!s101 -O0
+vmux2_1
+R1
+I^JRZLgcz`j0@;mVPW7nGJ0
+Vg:;n`5z^5]3khiBCGm7Ba3
+S1
+R2
+w1742868717
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/mux2_1.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/mux2_1.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 C6o^oI<WB[j2A@kR2X@SC0
+!s105 mux2_1_sv_unit
+!s85 0
+!s108 1746441761.594000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/mux2_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/mux2_1.sv|
+!s101 -O0
+vor_gate_d
+R1
+IPjbZJ6XGFkJgcGL4bRO2X0
+Vi:VmbIO<J]=>CI2GaKMo<1
+S1
+R2
+w1744963045
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/or_gate_d.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/or_gate_d.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 OaM5_61]d3l8n^7JAl`>L3
+!s105 or_gate_d_sv_unit
+!s85 0
+!s108 1746441761.439000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/or_gate_d.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/or_gate_d.sv|
+!s101 -O0
+vreg_file_dual
+R1
+I31HfKBJ;QoW3oVUMUClBn2
+Ve;VZ=Qg3AlDYCLUJ<2@8`3
+R9
+S1
+R2
+R10
+R11
+R12
+L0 77
+R3
+r1
+31
+R13
+R14
+R15
+R4
+R5
+!i10b 1
+!s100 `FNJ6G;>U@5b@g1kMhjfb0
+!s85 0
+!s101 -O0
+vreg_out
+R1
+IA=^U=V<^6Tb3hcd007N_62
+VFS^Zb29V]Jn?3R<DJ1N^80
+S1
+R2
+w1745056448
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/reg_out.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/reg_out.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 f0Rn?Y]bhDJ_l6<H^<:T:3
+!s105 reg_out_sv_unit
+!s85 0
+!s108 1746441761.295000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/reg_out.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/reg_out.sv|
+!s101 -O0
+vregister_array
+R1
+I6e?o@8a5l7<2N[n9gHCX60
+V3mSj`c52Qa[_64<NCED@92
+S1
+R2
+w1744294809
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/register_array.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/register_array.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 >g07Limfjk81BXi:R_U6^1
+!s105 register_array_sv_unit
+!s85 0
+!s108 1746441761.154000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/register_array.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/register_array.sv|
+!s101 -O0
+vthree_input_carry_save_adder
+R1
+IRn]z^j:X;1oBWMJ9[D^<E3
+VGDM;LN_a5C4LiWJY@Yd^a3
+S1
+R2
+w1745308135
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/three_input_carry_save_adder.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/three_input_carry_save_adder.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 QJFSkPYbO?2l^gjSIVo_f0
+!s105 three_input_carry_save_adder_sv_unit
+!s85 0
+!s108 1746441761.020000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/three_input_carry_save_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/three_input_carry_save_adder.sv|
+!s101 -O0
+vunpacker
+R1
+If@U3=@T7<SVLjl_@lOX]63
+V1M=N8S7nUVZSX9:HPbBT10
+S1
+R2
+w1745315931
+8C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/unpacker.sv
+FC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/unpacker.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ZeB;OzHL@;FTDaZ2m327D2
+!s105 unpacker_sv_unit
+!s85 0
+!s108 1746441760.928000
+!s107 C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/unpacker.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src|C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Decompress/Word_Decompressing/src/unpacker.sv|
+!s101 -O0

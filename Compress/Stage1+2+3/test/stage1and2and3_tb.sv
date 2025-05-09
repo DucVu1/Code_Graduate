@@ -32,13 +32,23 @@ logic [1:0] fifo_wr_signal;
 logic [31:0] total_compressed_bits = 0;
 logic [31:0] total_words_compressed = 0;
 logic [127:0] final_output_check = 0;
-logic                    o_stop_flag;
+logic         o_stop_flag;
+logic         o_full_flag;
+logic         o_push_flag;
 logic         o_store_flag;
-logic [127:0] final_output_check_reg = 0;
-logic [CACHE_LINE - 1:0] o_mux_array2;
-
-logic [127:0] final_output_check_reg_pre = 0;
+logic         o_done_flag;
+logic         o_finish_final;
 logic [127:0] accumulator_g = 0;
+logic [127:0] o_reg_array2;
+logic [CACHE_LINE - 1:0] o_mux_array2;
+logic [127:0] final_output_check_reg = 0;
+logic [7:0]   o_shift_amount;
+logic [7:0] sum_total_reg;
+logic [7:0]   o_length1, o_length2;
+logic [127:0] o_barrel3_shifted;
+logic [TOTAL_WIDTH - 1 :0] o_reg_array1;
+logic [127:0] final_output_check_reg_pre = 0;
+
 //logic [5:0]   g_length1, g_length2; 
 logic [127:0] final_backup_buffer = 0;
 logic [$clog2(DICT_ENTRY) - 1 :0]     i_idx1;
@@ -59,20 +69,19 @@ logic [3:0]         i_type_matched2, i_type_matched1;
 logic [COMPRESSED - 1 :0] compressed1, compressed2;
 logic [COMPRESSED - 1 :0] g_compressed1, g_compressed2;
 //reg_check
-logic [127:0] o_reg_array2;
+
 //mux check
 logic [127:0] o_mux_array1;
 logic         i_store_flag;
 //shifting 1 check
-logic [7:0]   o_shift_amount;
-logic [127:0] o_barrel3_shifted;
-logic [TOTAL_WIDTH - 1 :0] o_reg_array1;
+
+
 logic [135:0] o_barrel2_shifted;
 logic [127:0] o_or_gate;
 logic [7:0]   sum_partial_reg, next_sum_partial;
 // Internal dictionary
 logic [511:0] dictionary_data;
-logic [7:0] sum_total_reg;  
+  
 
 integer passed_tests = 0;
 integer failed_tests = 0;
@@ -87,11 +96,17 @@ stage1and2and3 dut (
   .i_reset(i_reset),
   .i_word(i_word),
   .o_mux_array2(o_mux_array2),
+  .o_finish_final(o_finish_final),
   .dictionary_data(dictionary_data)
 );
 //debugging
+assign o_done_flag = dut.o_done_flag;
+assign o_full_flag = dut.stage1and2.stage2.length_accumulator.o_full_flag;
 assign sum_total_reg = dut.stage1and2.stage2.length_accumulator.sum_total_reg;
 assign o_store_flag = dut.o_store_flag;
+assign o_push_flag = dut.o_push_flag;
+assign o_length1 = dut.stage1and2.stage2.o_length1;
+assign o_length2 = dut.stage1and2.stage2.o_length2;
 //output check
 assign o_stop_flag = dut.o_stop_flag;
 assign o_backup_buffer3 = dut.o_backup_buffer3;
@@ -362,6 +377,7 @@ task predict_final_compressor_output(
         if(toggle) accumulator_g[63:0] = current_compressed_word_g[63:0];
         else accumulator_g[127:64] = current_compressed_word_g[63:0];
         toggle = ~toggle; 
+        if(compressed_bit_exp >= 8'd128) compressed_bit_exp = '0;
       end
       $fdisplay(log_file,"Accumulator: %h", accumulator_g);
       //accumulator = {comp_word2, comp_word1} << shift_amount;
@@ -404,12 +420,12 @@ task generate_prediction(input logic [31:0] i_word, input logic [2:0] i_code, in
 begin
   case (i_code)
     3'b000: temp = 32'd0; // zzzz
-    3'b001: temp = {{(TOTAL_BITS-6){1'b0}}, 2'b10, i_dict_idx}; // mmmm
-    3'b010: temp = {{(TOTAL_BITS-12){1'b0}}, 4'b1101, i_word[7:0]}; // zzzx
-    3'b011: temp = {{(TOTAL_BITS-16){1'b0}}, 4'b1110, i_dict_idx, i_word[7:0]}; // mmmx
-    3'b100: temp = {{(TOTAL_BITS-24){1'b0}}, 4'b1100, i_dict_idx, i_word[15:0]}; // mmxx
-    3'b101: temp = {2'b01, i_word}; // xxxx
-    default: temp = {32{1'b1}};
+    3'b001: temp = {{(TOTAL_BITS-6){1'b0}}, i_dict_idx, 2'b10}; // mmmm
+    3'b010: temp = {{(TOTAL_BITS-12){1'b0}}, i_word[7:0], 4'b1101}; // zzzx
+    3'b011: temp = {{(TOTAL_BITS-16){1'b0}},  i_word[7:0], i_dict_idx, 4'b1110};// mmmx
+    3'b100: temp = {{(TOTAL_BITS-24){1'b0}},  i_word[15:0], i_dict_idx, 4'b1100 }; // mmxx
+    3'b101: temp = {i_word, 2'b01};// xxxx
+    default: temp = {TOTAL_BITS{1'b0}};
   endcase
 end
 endtask
@@ -537,77 +553,82 @@ initial begin
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
-  i_word <= {32'h556677FF, 32'h99AAABCD}; //mmmx and mmxx //40
+  i_word <= {32'h556677FF, 32'h99AAABCD}; //mmmx and mmxx //40 //total 40
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
   // Test Case 2: mmmm (All Matched)
-  i_word <= {32'hAABBCCDD, 32'h11223344}; // Already in dictionary //12
+  i_word <= {32'hAABBCCDD, 32'h11223344}; // Already in dictionary //12 //52
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
   // Test Case 2: mmmm (All Matched)
-  i_word <= {32'hAABBCCDD, 32'h11223344}; // Already in dictionary //12
+  i_word <= {32'hAABBCCDD, 32'h11223344}; // Already in dictionary //12 //64
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
 
   // Test Case 3: zzzx (Single Byte Difference)
-  i_word <= {32'h00000012, 32'h000000AB}; //24
+  i_word <= {32'h00000012, 32'h000000AB}; //24 //88
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
   // Test Case 4: mmmx (Three Byte Match)
-  i_word <= {32'hAABBCC12, 32'h11223399}; // Matches first 3 bytes in dictionary //32
+  i_word <= {32'hAABBCC12, 32'h11223399}; // Matches first 3 bytes in dictionary //32 //120
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
   
     // Test Case 7: Alternating Patterns
-  i_word <= {32'h00000000, 32'h11223344}; // zzzz and mmmm //8
+  i_word <= {32'h00000000, 32'h11223344}; // zzzz and mmmm //8 //128
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
   // Test Case 5: mmxx (Two Byte Match)
-  i_word <= {32'hAABB0012, 32'h11220099}; // Matches first 2 bytes in dictionary //48
+  i_word <= {32'hAABB0012, 32'h11220099}; // Matches first 2 bytes in dictionary //48 //48
+  wait_clk(SETUP_WAIT);
+  predict_compressed_word_pre(i_word);
+  wait_clk(1);
+
+  // Test Case 7: Alternating Patterns
+  i_word <= {32'h00000000, 32'h11223344}; // zzzz and mmmm //8 //56
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
   // Test Case 6: xxxx (Unmatched Word)
-  i_word <= {32'hFACEB00C, 32'hDEADBEEF}; // Completely new words //68
+  i_word <= {32'hFACEB00C, 32'hDEADBEEF}; // Completely new words //68 //124
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
   
-  // Test Case 7: Alternating Patterns
-  i_word <= {32'h00000000, 32'h11223344}; // zzzz and mmmm //8
+  i_word <= {32'h00000000, 32'h00000000}; //4 //128
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
-  i_word <= {32'h000000AA, 32'h55667788}; // zzzx and mmmm //12
+  i_word <= {32'h000000AA, 32'h55667788}; // zzzx and mmmm //12 //12
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
-  i_word <= {32'hAABBCCDD, 32'h00000000}; // mmmm and zzzz //8
+  i_word <= {32'hAABBCCDD, 32'h00000000}; // mmmm and zzzz //8 //20
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
-  i_word <= {32'h556677FF, 32'h99AAABCD}; //mmmx and mmxx //40
+  i_word <= {32'h556677FF, 32'h99AAABCD}; //mmmx and mmxx //40 //60
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);
 
   // Test Case 8: Dictionary Updates
-  i_word <= {32'hAAAABBBB, 32'hCCCCDDDD}; // New entries
+  i_word <= {32'hAAAABBBB, 32'hCCCCDDDD}; // New entries //128
   wait_clk(SETUP_WAIT);
   predict_compressed_word_pre(i_word);
   wait_clk(1);

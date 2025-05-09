@@ -1,0 +1,24 @@
+module padding_module (
+  input  logic [127:0] i_word,
+  input  logic         i_reset,
+  input  logic [7:0]   i_padd_amount,
+  output logic [127:0] o_word
+);
+
+  logic [127:0] mask;
+
+always_comb begin
+ if (~i_reset) begin
+	o_word = 128'd0;
+	mask = 128'd0;
+ end else begin
+	if (i_padd_amount >= 128)
+	  mask = 128'd0;  // Full padding
+	else
+	  mask = (128'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF) >> i_padd_amount;
+
+	o_word = i_word & mask;
+ end
+end
+
+endmodule

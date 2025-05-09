@@ -1,0 +1,47 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do or_gate_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/src/or_gate.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module or_gate
+# 
+# Top level modules:
+# 	or_gate
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module or_gate_tb
+# ** Warning: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv(46): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv(56): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv(66): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	or_gate_tb
+vsim -voptargs=+acc work.or_gate_tb
+# vsim -voptargs=+acc work.or_gate_tb 
+# Loading sv_std.std
+# Loading work.or_gate_tb
+# Loading work.or_gate
+add wave -position insertpoint sim:/or_gate_tb/*
+run -all
+# TC1: o_word = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# TC2: o_word = 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+# TC3: o_word = 0000000011111111111111111111111111111111000000000000000011111111111111111111111111111111111111111111111011111111111111111111111111111111
+# TC4: o_word = 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+# All test cases passed!
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv(75)
+#    Time: 40 ns  Iteration: 0  Instance: /or_gate_tb
+# 1
+# Break in Module or_gate_tb at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage3/Stage3_initial/test/or_gate_tb.sv line 75

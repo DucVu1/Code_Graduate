@@ -1,0 +1,43 @@
+module control_signal_generator_decompress(
+ input  logic [1:0] i_first_code,
+ input  logic [1:0] i_first_code_bak,
+ input  logic [1:0] i_second_code,
+ input  logic [1:0] i_second_code_bak,
+ output logic [1:0] ctrl_signal
+);
+
+logic test_first_code;
+logic test_second_code;
+logic test_first_code_bak;
+logic test_second_code_bak;
+assign test_second_code = &i_second_code;
+assign test_first_code = &i_first_code;
+assign test_first_code_bak = ~i_first_code_bak[1] &i_first_code_bak[0];
+assign test_second_code_bak = ~i_second_code_bak[1] & i_second_code_bak[0];
+
+always_comb begin: proc_first
+ ctrl_signal[0] = 1'b0; 
+ if(~test_first_code) begin
+  ctrl_signal[0] = 1'b0; //no write
+ end else begin
+    if (test_first_code_bak) begin
+        ctrl_signal[0] = 1'b0; //no write
+        end else begin
+        ctrl_signal[0] = 1'b1; //write
+        end
+ end
+end
+
+always_comb begin: proc_second
+ ctrl_signal[1] = 1'b0; 
+ if(~test_second_code) begin
+  ctrl_signal[1] = 1'b0; //no write
+ end else begin
+    if (test_second_code_bak) begin
+        ctrl_signal[1] = 1'b0; //no write
+        end else begin
+        ctrl_signal[1] = 1'b1; //write
+        end
+ end
+end
+endmodule

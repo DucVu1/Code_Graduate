@@ -1,5 +1,5 @@
 EDA Netlist Writer report for stage1and2and3
-Fri Apr 25 00:29:23 2025
+Tue May 06 10:33:19 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Apr 25 00:29:23 2025 ;
+; EDA Netlist Writer Status ; Successful - Tue May 06 10:33:19 2025 ;
 ; Revision Name             ; stage1and2and3                        ;
 ; Top-level Entity Name     ; stage1and2and3                        ;
 ; Family                    ; Cyclone II                            ;
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 25 00:29:21 2025
+    Info: Processing started: Tue May 06 10:33:16 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off stage1and2and3 -c stage1and2and3
 Info (204026): Generated files "stage1and2and3.svo", "stage1and2and3_fast.svo", "stage1and2and3_v.sdo" and "stage1and2and3_v_fast.sdo" in directory "C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/quartus/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4580 megabytes
-    Info: Processing ended: Fri Apr 25 00:29:23 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Tue May 06 10:33:19 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

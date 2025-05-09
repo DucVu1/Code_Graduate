@@ -1,0 +1,220 @@
+Word_in: 0000000000000000
+current_compressed_word: 00000000000000000000000000000000
+compressed_bit_exp:           4
+current_compressed_word_g: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0
+comp_word1: 000000000
+comp_word2: 000000000
+Accumulator: 00000000000000000000000000000000
+[INFO] at time:                15000 current predict output: 00000000000000000000000000000000 
+Word_in: 11223344aabbccdd
+current_compressed_word: 00000000000000044488cd11aabbccdd
+compressed_bit_exp:          72
+current_compressed_word_g: xxxxxxxxxxxxxx044488cd11aabbccdd
+comp_word1: 1aabbccdd
+comp_word2: 111223344
+Accumulator: 00000000000000000000000000000000
+[INFO] at time:                25000 current predict output: 00000000000000000000000000000000 
+Word_in: 99aabbcc55667788
+current_compressed_word: 000000000000000666aaef3155667788
+compressed_bit_exp:         140
+current_compressed_word_g: 488cd11aabbccdd666aaef3155667788
+comp_word1: 155667788
+comp_word2: 199aabbcc
+In
+Accumulator: 66aaef31556677880000000000000000
+[INFO] at time:                35000 current predict output: 66aaef31556677880000000000000000 
+Word_in: 12345678ddeeff00
+current_compressed_word: 000000000000000448d159e1ddeeff00
+compressed_bit_exp:          68
+current_compressed_word_g: 6aaef3155667788448d159e1ddeeff00
+comp_word1: 1ddeeff00
+comp_word2: 112345678
+Accumulator: 66aaef31556677880000000000000000
+[INFO] at time:                45000 current predict output: 66aaef31556677880000000000000000 
+PASS at time 55000: Final output matches expected.
+Word_in: 0f0e0d0c9abcdef0
+current_compressed_word: 00000000000000043c3834319abcdef0
+compressed_bit_exp:         136
+current_compressed_word_g: 8d159e1ddeeff0043c3834319abcdef0
+comp_word1: 19abcdef0
+comp_word2: 10f0e0d0c
+In
+Accumulator: 66aaef31556677883c3834319abcdef0
+[INFO] at time:                55000 current predict output: 66aaef31556677883c3834319abcdef0 
+Word_in: fedcba9887654321
+current_compressed_word: 0000000000000007fb72ea6187654321
+compressed_bit_exp:          68
+current_compressed_word_g: c3834319abcdef07fb72ea6187654321
+comp_word1: 187654321
+comp_word2: 1fedcba98
+Accumulator: 66aaef31556677883c3834319abcdef0
+[INFO] at time:                65000 current predict output: 66aaef31556677883c3834319abcdef0 
+PASS at time 75000: Final output matches expected.
+Word_in: 4455667700112233
+current_compressed_word: 0000000000000005115599dd00112233
+compressed_bit_exp:         136
+current_compressed_word_g: b72ea61876543215115599dd00112233
+comp_word1: 100112233
+comp_word2: 144556677
+In
+Accumulator: 115599dd001122333c3834319abcdef0
+[INFO] at time:                75000 current predict output: 115599dd001122333c3834319abcdef0 
+Word_in: ccddeeff8899aabb
+current_compressed_word: 00000000000000073377bbfd8899aabb
+compressed_bit_exp:          68
+current_compressed_word_g: 15599dd0011223373377bbfd8899aabb
+comp_word1: 18899aabb
+comp_word2: 1ccddeeff
+Accumulator: 115599dd001122333c3834319abcdef0
+[INFO] at time:                85000 current predict output: 115599dd001122333c3834319abcdef0 
+PASS at time 95000: Final output matches expected.
+Word_in: 0000000000000000
+current_compressed_word: 00000000000000000000000000000000
+compressed_bit_exp:          72
+current_compressed_word_g: 5599dd0011223373377bbfd8899aabb0
+comp_word1: 000000000
+comp_word2: 000000000
+Accumulator: 115599dd001122333c3834319abcdef0
+[INFO] at time:                95000 current predict output: 115599dd001122333c3834319abcdef0 
+Word_in: 0000000000000000
+current_compressed_word: 00000000000000000000000000000000
+compressed_bit_exp:          76
+current_compressed_word_g: 599dd0011223373377bbfd8899aabb00
+comp_word1: 000000000
+comp_word2: 000000000
+Accumulator: 115599dd001122333c3834319abcdef0
+[INFO] at time:                95000 current predict output: 115599dd001122333c3834319abcdef0 
+Word_in: 5060708010203040
+current_compressed_word: 00000000000000054181c20110203040
+compressed_bit_exp:         144
+current_compressed_word_g: 7bbfd8899aabb0054181c20110203040
+comp_word1: 110203040
+comp_word2: 150607080
+In
+Accumulator: 115599dd001122334181c20110203040
+[INFO] at time:               105000 current predict output: 115599dd001122334181c20110203040 
+Word_in: 556677ff99aaabcd
+current_compressed_word: 0000000000000000000000e2ffc3abcd
+compressed_bit_exp:          40
+current_compressed_word_g: abb0054181c20110203040e2ffc3abcd
+comp_word1: 000c3abcd
+comp_word2: 00000e2ff
+Accumulator: 115599dd001122334181c20110203040
+[INFO] at time:               115000 current predict output: 115599dd001122334181c20110203040 
+Word_in: aabbccdd11223344
+current_compressed_word: 00000000000000000000000000000821
+compressed_bit_exp:          52
+current_compressed_word_g: 0054181c20110203040e2ffc3abcd821
+comp_word1: 000000021
+comp_word2: 000000020
+Accumulator: 115599dd001122334181c20110203040
+[INFO] at time:               125000 current predict output: 115599dd001122334181c20110203040 
+Word_in: aabbccdd11223344
+current_compressed_word: 00000000000000000000000000000821
+compressed_bit_exp:          64
+current_compressed_word_g: 4181c20110203040e2ffc3abcd821821
+comp_word1: 000000021
+comp_word2: 000000020
+In
+Accumulator: e2ffc3abcd8218214181c20110203040
+[INFO] at time:               135000 current predict output: e2ffc3abcd8218214181c20110203040 
+Word_in: 00000012000000ab
+current_compressed_word: 00000000000000000000000000d12dab
+compressed_bit_exp:          88
+current_compressed_word_g: 0110203040e2ffc3abcd821821d12dab
+comp_word1: 000000dab
+comp_word2: 000000d12
+Accumulator: e2ffc3abcd8218214181c20110203040
+[INFO] at time:               145000 current predict output: e2ffc3abcd8218214181c20110203040 
+Word_in: aabbcc1211223399
+current_compressed_word: 000000000000000000000000e012e199
+compressed_bit_exp:         120
+current_compressed_word_g: 40e2ffc3abcd821821d12dabe012e199
+comp_word1: 00000e199
+comp_word2: 00000e012
+Accumulator: e2ffc3abcd8218214181c20110203040
+[INFO] at time:               155000 current predict output: e2ffc3abcd8218214181c20110203040 
+Word_in: 0000000011223344
+current_compressed_word: 00000000000000000000000000000021
+compressed_bit_exp:         128
+current_compressed_word_g: e2ffc3abcd821821d12dabe012e19921
+comp_word1: 000000021
+comp_word2: 000000000
+In
+Accumulator: e2ffc3abcd821821d12dabe012e19921
+[INFO] at time:               165000 current predict output: e2ffc3abcd821821d12dabe012e19921 
+Word_in: aabb001211220099
+current_compressed_word: 00000000000000000000c00012c10099
+compressed_bit_exp:          48
+current_compressed_word_g: 1821d12dabe012e19921c00012c10099
+comp_word1: 000c10099
+comp_word2: 000c00012
+Accumulator: e2ffc3abcd821821d12dabe012e19921
+[INFO] at time:               175000 current predict output: e2ffc3abcd821821d12dabe012e19921 
+Word_in: 0000000011223344
+current_compressed_word: 00000000000000000000000000000021
+compressed_bit_exp:          56
+current_compressed_word_g: 21d12dabe012e19921c00012c1009921
+comp_word1: 000000021
+comp_word2: 000000000
+Accumulator: e2ffc3abcd821821d12dabe012e19921
+[INFO] at time:               185000 current predict output: e2ffc3abcd821821d12dabe012e19921 
+Word_in: faceb00cdeadbeef
+current_compressed_word: 0000000000000007eb3ac031deadbeef
+compressed_bit_exp:         124
+current_compressed_word_g: 1c00012c10099217eb3ac031deadbeef
+comp_word1: 1deadbeef
+comp_word2: 1faceb00c
+Accumulator: e2ffc3abcd821821d12dabe012e19921
+[INFO] at time:               195000 current predict output: e2ffc3abcd821821d12dabe012e19921 
+Word_in: 0000000000000000
+current_compressed_word: 00000000000000000000000000000000
+compressed_bit_exp:         128
+current_compressed_word_g: c00012c10099217eb3ac031deadbeef0
+comp_word1: 000000000
+comp_word2: 000000000
+In
+Accumulator: b3ac031deadbeef0d12dabe012e19921
+[INFO] at time:               205000 current predict output: b3ac031deadbeef0d12dabe012e19921 
+Word_in: 000000aa55667788
+current_compressed_word: 00000000000000000000000000036aa2
+compressed_bit_exp:          18
+current_compressed_word_g: 4b04026485faceb00c77ab6fbbc36aa2
+comp_word1: 000000022
+comp_word2: 000000daa
+Accumulator: b3ac031deadbeef0d12dabe012e19921
+[INFO] at time:               215000 current predict output: b3ac031deadbeef0d12dabe012e19921 
+Word_in: aabbccdd00000000
+current_compressed_word: 000000000000000000000006aaef3374
+compressed_bit_exp:          54
+current_compressed_word_g: 5faceb00c77ab6fbbc36aa26aaef3374
+comp_word1: 000000000
+comp_word2: 1aabbccdd
+Accumulator: b3ac031deadbeef0d12dabe012e19921
+[INFO] at time:               225000 current predict output: b3ac031deadbeef0d12dabe012e19921 
+Word_in: 556677ff99aaabcd
+current_compressed_word: 000000000000000001556677ffc3abcd
+compressed_bit_exp:          58
+current_compressed_word_g: eef0daa89aabbccdd1556677ffc3abcd
+comp_word1: 000c3abcd
+comp_word2: 1556677ff
+Accumulator: b3ac031deadbeef0d12dabe012e19921
+[INFO] at time:               235000 current predict output: b3ac031deadbeef0d12dabe012e19921 
+Word_in: aaaabbbbccccdddd
+current_compressed_word: 0000000000000006aaaaeeedccccdddd
+compressed_bit_exp:         126
+current_compressed_word_g: 1556677ffc3abcd6aaaaeeedccccdddd
+comp_word1: 1ccccdddd
+comp_word2: 1aaaabbbb
+Accumulator: b3ac031deadbeef0d12dabe012e19921
+[INFO] at time:               245000 current predict output: b3ac031deadbeef0d12dabe012e19921 
+FAIL at time 255000: expected_output: aabbccdd00000000556677ff99aaabcd, actual: 556677ff99aaabcdaaaabbbbccccdddd
+Word_in: eeefffff12345678
+current_compressed_word: 0000000000000007bbbffffd12345678
+compressed_bit_exp:         194
+current_compressed_word_g: aaaeeedccccdddd7bbbffffd12345678
+comp_word1: 112345678
+comp_word2: 1eeefffff
+In
+Accumulator: b3ac031deadbeef0bbbffffd12345678
+[INFO] at time:               255000 current predict output: b3ac031deadbeef0bbbffffd12345678 

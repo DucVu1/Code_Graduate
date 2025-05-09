@@ -1,0 +1,31 @@
+[35000 ns][PASS] code check passed.
+[35000 ns][PASS] code_bak check passed.
+[35000 ns][PASS] index check passed.
+[35000 ns][PASS] length check passed.
+[35000 ns][PASS] word check passed, dut_word: 00000000 expected_word 00000000.
+[35000 ns][PASS] code check passed.
+[35000 ns][PASS] code_bak check passed.
+[35000 ns][PASS] index check passed.
+[35000 ns][PASS] length check passed.
+[35000 ns][PASS] word check passed, dut_word: 00000000 expected_word 00000000.
+[45000 ns][PASS] code check passed.
+[45000 ns][PASS] code_bak check passed.
+[45000 ns][PASS] index check passed.
+[45000 ns][PASS] length check passed.
+[45000 ns][PASS] word check passed, dut_word: 61d950c8 expected_word 61d950c8.
+[45000 ns][PASS] code check passed.
+[45000 ns][PASS] code_bak check passed.
+[45000 ns][PASS] index check passed.
+[45000 ns][PASS] length check passed.
+[45000 ns][PASS] word check passed, dut_word: aaaaaaaa expected_word aaaaaaaa.
+[55000 ns][PASS] code check passed.
+[55000 ns][PASS] code_bak check passed.
+[55000 ns][PASS] index check passed.
+[55000 ns][PASS] length check passed.
+[55000 ns][PASS] word check passed, dut_word: ccccccdc expected_word ccccccdc.
+[55000 ns][PASS] code check passed.
+[55000 ns][PASS] code_bak check passed.
+[55000 ns][PASS] index check passed.
+[55000 ns][PASS] length check passed.
+[55000 ns][PASS] word check passed, dut_word: 9abcdeff expected_word 9abcdeff.
+[85000 ns][FAIL] code mismatch: expected 00, got 11

@@ -1,0 +1,369 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do stage1and2and3_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/padding_module.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module padding_module
+# 
+# Top level modules:
+# 	padding_module
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/reg_array2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_array2
+# 
+# Top level modules:
+# 	reg_array2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/backup_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module backup_buffer
+# 
+# Top level modules:
+# 	backup_buffer
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/latch_module.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module latch_module
+# 
+# Top level modules:
+# 	latch_module
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/word_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_length_genetator
+# 
+# Top level modules:
+# 	word_length_genetator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/word_decoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_decoder
+# 
+# Top level modules:
+# 	word_decoder
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/word_comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_comparator
+# 
+# Top level modules:
+# 	word_comparator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/total_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module total_length_generator
+# 
+# Top level modules:
+# 	total_length_generator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2and3.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stage1and2and3
+# 
+# Top level modules:
+# 	stage1and2and3
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stage1and2
+# 
+# Top level modules:
+# 	stage1and2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/register_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_array
+# 
+# Top level modules:
+# 	register_array
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module packing_and_shifting
+# 
+# Top level modules:
+# 	packing_and_shifting
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/or_gate.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module or_gate
+# 
+# Top level modules:
+# 	or_gate
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/mux2_1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	mux2_1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/max2_with_index.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max2_with_index
+# 
+# Top level modules:
+# 	max2_with_index
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/max_selector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max_selector
+# 
+# Top level modules:
+# 	max_selector
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_stage.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matching_stage
+# 
+# Top level modules:
+# 	matching_stage
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_length_reg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matching_length_reg
+# 
+# Top level modules:
+# 	matching_length_reg
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_packing_reg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_packing_reg
+# 
+# Top level modules:
+# 	length_packing_reg
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_generation.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_generation
+# 
+# Top level modules:
+# 	length_generation
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/length_accumulator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_accumulator
+# 
+# Top level modules:
+# 	length_accumulator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/fifo_dict.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_dict
+# -- Compiling module fifo_ptr_gen
+# -- Compiling module reg_file_dual
+# 
+# Top level modules:
+# 	fifo_dict
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/control_signal_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_signal_generator
+# 
+# Top level modules:
+# 	control_signal_generator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/compare_value.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module compare_value
+# 
+# Top level modules:
+# 	compare_value
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array4
+# 
+# Top level modules:
+# 	comparator_array4
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array2
+# 
+# Top level modules:
+# 	comparator_array2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array1
+# 
+# Top level modules:
+# 	comparator_array1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/code_concatenator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module code_concatenator
+# 
+# Top level modules:
+# 	code_concatenator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/barrel_shifter_3.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_3
+# 
+# Top level modules:
+# 	barrel_shifter_3
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/barrel_shifter_2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_2
+# 
+# Top level modules:
+# 	barrel_shifter_2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/barrel_shifter_1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_1
+# 
+# Top level modules:
+# 	barrel_shifter_1
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/test/stage1and2and3_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stage1and2and3_tb
+# 
+# Top level modules:
+# 	stage1and2and3_tb
+vsim work.stage1and2and3_tb
+# vsim work.stage1and2and3_tb 
+# Loading sv_std.std
+# Loading work.stage1and2and3_tb
+# Loading work.stage1and2and3
+# Loading work.register_array
+# Loading work.backup_buffer
+# Loading work.stage1and2
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.control_signal_generator
+# Loading work.matching_length_reg
+# Loading work.length_generation
+# Loading work.length_accumulator
+# Loading work.total_length_generator
+# Loading work.word_length_genetator
+# Loading work.length_packing_reg
+# Loading work.packing_and_shifting
+# Loading work.code_concatenator
+# Loading work.barrel_shifter_1
+# Loading work.or_gate
+# Loading work.barrel_shifter_3
+# Loading work.barrel_shifter_2
+# Loading work.mux2_1
+# Loading work.reg_array2
+# Loading work.latch_module
+# Loading work.padding_module
+# Loading work.comparator
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_stage.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'i_match_s1'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array4.sv(5).
+# 
+#         Region: /stage1and2and3_tb/dut/stage1and2/stage1/comparator_array4
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2and3.sv(193): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'i_out_shift'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv(24).
+# 
+#         Region: /stage1and2and3_tb/dut/stage3
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv(188): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'i_padd_amount'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/padding_module.sv(4).
+# 
+#         Region: /stage1and2and3_tb/dut/stage3/padding_module
+add wave -position insertpoint sim:/stage1and2and3_tb/*
+run -all
+# Word_in: 0000000000000000
+# compressed_word1:   2, compressed_word2:   2, current_length:          4
+# Join
+# Word_in: 11223344aabbccdd
+# compressed_word1:  34, compressed_word2:  34, current_length:         72
+# [FIFO Update] Old word1: xxxxxxxx, New word1: aabbccdd inserted at index 0
+# [FIFO Update] Old word2: xxxxxxxx, New word2: 11223344 inserted at index 1
+# Join
+# Word_in: 99aabbcc55667788
+# compressed_word1:  34, compressed_word2:  34, current_length:        140
+# [FIFO Update] Old word1: xxxxxxxx, New word1: 55667788 inserted at index 2
+# [FIFO Update] Old word2: xxxxxxxx, New word2: 99aabbcc inserted at index 3
+# Join
+# Word_in: 12345678ddeeff00
+# compressed_word1:  34, compressed_word2:  34, current_length:        208
+# [FIFO Update] Old word1: xxxxxxxx, New word1: ddeeff00 inserted at index 4
+# [FIFO Update] Old word2: xxxxxxxx, New word2: 12345678 inserted at index 5
+# Join
+# Word_in: 0f0e0d0c9abcdef0
+# compressed_word1:  34, compressed_word2:  34, current_length:         68
+# [FIFO Update] Old word1: xxxxxxxx, New word1: 9abcdef0 inserted at index 6
+# [FIFO Update] Old word2: xxxxxxxx, New word2: 0f0e0d0c inserted at index 7
+# Join
+# Word_in: fedcba9887654321
+# compressed_word1:  34, compressed_word2:  34, current_length:        136
+# [FIFO Update] Old word1: xxxxxxxx, New word1: 87654321 inserted at index 8
+# [FIFO Update] Old word2: xxxxxxxx, New word2: fedcba98 inserted at index 9
+# Join
+# Word_in: 4455667700112233
+# compressed_word1:  34, compressed_word2:  34, current_length:         68
+# [FIFO Update] Old word1: xxxxxxxx, New word1: 00112233 inserted at index 10
+# [FIFO Update] Old word2: xxxxxxxx, New word2: 44556677 inserted at index 11
+# Join
+# Word_in: ccddeeff8899aabb
+# compressed_word1:  34, compressed_word2:  34, current_length:        136
+# [FIFO Update] Old word1: xxxxxxxx, New word1: 8899aabb inserted at index 12
+# [FIFO Update] Old word2: xxxxxxxx, New word2: ccddeeff inserted at index 13
+# Join
+# Dictionary preloaded.
+# Word_in: 0000000000000000
+# compressed_word1:   2, compressed_word2:   2, current_length:          4
+# Join
+# Word_in: 0000000000000000
+# compressed_word1:   2, compressed_word2:   2, current_length:          8
+# Join
+# Word_in: 5060708010203040
+# compressed_word1:  34, compressed_word2:  34, current_length:         76
+# [FIFO Update] Old word1: xxxxxxxx, New word1: 10203040 inserted at index 14
+# [FIFO Update] Old word2: xxxxxxxx, New word2: 50607080 inserted at index 15
+# Join
+# Word_in: 556677ff99aaabcd
+# compressed_word1:  24, compressed_word2:  16, current_length:        116
+# Join
+# Word_in: aabbccdd11223344
+# compressed_word1:   6, compressed_word2:   6, current_length:        128
+# Join
+# Word_in: aabbccdd11223344
+# compressed_word1:   6, compressed_word2:   6, current_length:        140
+# Join
+# Word_in: 00000012000000ab
+# compressed_word1:  12, compressed_word2:  12, current_length:        164
+# Join
+# Word_in: aabbcc1211223399
+# compressed_word1:  16, compressed_word2:  16, current_length:        196
+# Join
+# Word_in: 0000000011223344
+# compressed_word1:   6, compressed_word2:   2, current_length:        204
+# Join
+# Word_in: aabb001211220099
+# compressed_word1:  24, compressed_word2:  24, current_length:        252
+# Join
+# Word_in: 0000000011223344
+# compressed_word1:   6, compressed_word2:   2, current_length:        260
+# Join
+# Word_in: faceb00cdeadbeef
+# compressed_word1:  34, compressed_word2:  34, current_length:        328
+# [FIFO Update] Old word1: xxxxxxxx, New word1: deadbeef inserted at index 0
+# [FIFO Update] Old word2: 11223344, New word2: faceb00c inserted at index 1
+# Join
+# Word_in: 0000000000000000
+# compressed_word1:   2, compressed_word2:   2, current_length:        332
+# Join
+# Word_in: 000000aa55667788
+# compressed_word1:   6, compressed_word2:  12, current_length:        350
+# Join
+# Word_in: aabbccdd00000000
+# compressed_word1:   2, compressed_word2:  34, current_length:        386
+# [FIFO Update] Old word2: 55667788, New word2: aabbccdd inserted at index 2
+# Join
+# Word_in: 556677ff99aaabcd
+# compressed_word1:  24, compressed_word2:  34, current_length:        444
+# [FIFO Update] Old word2: 99aabbcc, New word2: 556677ff inserted at index 3
+# Join
+# Word_in: aaaabbbbccccdddd
+# compressed_word1:  34, compressed_word2:  34, current_length:        512
+# [FIFO Update] Old word1: aabbccdd, New word1: ccccdddd inserted at index 4
+# [FIFO Update] Old word2: 12345678, New word2: aaaabbbb inserted at index 5
+# Join
+# Word_in: eeefffff12345678
+# compressed_word1:  34, compressed_word2:  34, current_length:         68
+# [FIFO Update] Old word1: ddeeff00, New word1: 12345678 inserted at index 6
+# [FIFO Update] Old word2: 0f0e0d0c, New word2: eeefffff inserted at index 7
+# Join
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/test/stage1and2and3_tb.sv(667)
+#    Time: 285 ns  Iteration: 0  Instance: /stage1and2and3_tb
+# 1
+# Break in Module stage1and2and3_tb at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/test/stage1and2and3_tb.sv line 667

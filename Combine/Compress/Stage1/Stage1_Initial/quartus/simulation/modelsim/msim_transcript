@@ -1,0 +1,106 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do top_module_1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/zzzz_zzzzx_comparator2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module zzzz_zzzx_comparator2
+# 
+# Top level modules:
+# 	zzzz_zzzx_comparator2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/top_module_1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_module_1
+# 
+# Top level modules:
+# 	top_module_1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/priority_encoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module priority_encoder_64
+# 
+# Top level modules:
+# 	priority_encoder_64
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/University/Code\ Graduate/Compress/Stage1/src {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/src/comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_TopModule
+# 
+# Top level modules:
+# 	tb_TopModule
+vsim -voptargs=+acc work.tb_TopModule
+# vsim -voptargs=+acc work.tb_TopModule 
+# Loading sv_std.std
+# Loading work.tb_TopModule
+# Loading work.top_module_1
+# Loading work.zzzz_zzzx_comparator2
+# Loading work.priority_encoder_64
+# Loading work.comparator
+# ** Warning: (vsim-3017) C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tb_TopModule/top_inst
+# ** Warning: (vsim-3722) C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv(25): [TFMPC] - Missing connection for port 'local_byte_index'.
+# 
+add wave -position insertpoint sim:/tb_TopModule/*
+run -all
+# Test 1: in_word = 00000000
+#          Expected: dictionary_index = 0, matched_byte = 00, out_code = 0000_00000000
+#          Got:      dictionary_index =  0, matched_byte = 00, out_code = 000
+# Test 2: in_word = 0000000a
+#          Expected: dictionary_index = 10, matched_byte = 0A, out_code = 1101_00001010
+#          Got:      dictionary_index =  2, matched_byte = 0a, out_code = d0a
+# Test 3: in_word = ff00000a
+#          Expected: out_code = 0000_00000000 (zzzx condition not met)
+#          Got:      dictionary_index =  2, matched_byte = 0a, out_code = 000
+# Test 4: in_word = 0000002d
+#          Expected: dictionary_index = 45, matched_byte = 2D, out_code = 1101_00101101
+#          Got:      dictionary_index = 11, matched_byte = 2d, out_code = d2d
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv(90)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_TopModule
+# 1
+# Break in Module tb_TopModule at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv line 90
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_TopModule
+# 
+# Top level modules:
+# 	tb_TopModule
+vsim -voptargs=+acc work.tb_TopModule
+# vsim -voptargs=+acc work.tb_TopModule 
+# Loading sv_std.std
+# Loading work.tb_TopModule
+# Loading work.top_module_1
+# Loading work.zzzz_zzzx_comparator2
+# Loading work.priority_encoder_64
+# Loading work.comparator
+add wave -position insertpoint sim:/tb_TopModule/*
+run -all
+# Test 1: in_word = 00000000
+#          Expected: dictionary_index = 0, matched_byte = 00, out_code = 0000_00000000
+#          Got:      dictionary_index =  0, matched_byte = 00, out_code = 000
+# Test 2: in_word = 0000000a
+#          Expected: dictionary_index = 10, matched_byte = 0A, out_code = 1101_00001010
+#          Got:      dictionary_index =  2, matched_byte = 0a, out_code = d0a
+# Test 3: in_word = ff00000a
+#          Expected: out_code = 0000_00000000 (zzzx condition not met)
+#          Got:      dictionary_index =  2, matched_byte = 0a, out_code = 000
+# Test 4: in_word = 0000002d
+#          Expected: dictionary_index = 45, matched_byte = 2D, out_code = 1101_00101101
+#          Got:      dictionary_index = 11, matched_byte = 2d, out_code = d2d
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv(92)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_TopModule
+# 1
+# Break in Module tb_TopModule at C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stage1/tb/Compare_tb.sv line 92

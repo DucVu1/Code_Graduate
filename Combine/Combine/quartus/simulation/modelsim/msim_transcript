@@ -1,0 +1,377 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do compressor_decompressor_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/word_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_length_genetator
+# 
+# Top level modules:
+# 	word_length_genetator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/word_decoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_decoder
+# 
+# Top level modules:
+# 	word_decoder
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/word_comparator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module word_comparator
+# 
+# Top level modules:
+# 	word_comparator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/unpacker.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module unpacker
+# 
+# Top level modules:
+# 	unpacker
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/total_length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module total_length_generator
+# 
+# Top level modules:
+# 	total_length_generator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/three_input_carry_save_adder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module three_input_carry_save_adder
+# 
+# Top level modules:
+# 	three_input_carry_save_adder
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/stage1and2and3.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stage1and2and3
+# 
+# Top level modules:
+# 	stage1and2and3
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/stage1and2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module stage1and2
+# 
+# Top level modules:
+# 	stage1and2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/register_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_array
+# 
+# Top level modules:
+# 	register_array
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/reg_out.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_out
+# 
+# Top level modules:
+# 	reg_out
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/reg_array2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_array2
+# 
+# Top level modules:
+# 	reg_array2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/padding_module.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module padding_module
+# 
+# Top level modules:
+# 	padding_module
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/packing_and_shifting.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module packing_and_shifting
+# 
+# Top level modules:
+# 	packing_and_shifting
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/or_gate_d.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module or_gate_d
+# 
+# Top level modules:
+# 	or_gate_d
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/or_gate.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module or_gate
+# 
+# Top level modules:
+# 	or_gate
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/mux2_1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	mux2_1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/max2_with_index.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max2_with_index
+# 
+# Top level modules:
+# 	max2_with_index
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/max_selector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module max_selector
+# 
+# Top level modules:
+# 	max_selector
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/matching_stage.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matching_stage
+# 
+# Top level modules:
+# 	matching_stage
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/matching_length_reg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matching_length_reg
+# 
+# Top level modules:
+# 	matching_length_reg
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/length_packing_reg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_packing_reg
+# 
+# Top level modules:
+# 	length_packing_reg
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/length_generator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_generator
+# 
+# Top level modules:
+# 	length_generator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/length_generation.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_generation
+# 
+# Top level modules:
+# 	length_generation
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/length_accumulator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module length_accumulator
+# 
+# Top level modules:
+# 	length_accumulator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/latch_module_decompress.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module latch_module_decompress
+# 
+# Top level modules:
+# 	latch_module_decompress
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/latch_module_compress.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module latch_module_compress
+# 
+# Top level modules:
+# 	latch_module_compress
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/fifo_dict.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_dict
+# -- Compiling module fifo_ptr_gen
+# -- Compiling module reg_file_dual
+# 
+# Top level modules:
+# 	fifo_dict
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/decompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decompressor
+# 
+# Top level modules:
+# 	decompressor
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/decoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/control_signal_generator_decompress.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_signal_generator_decompress
+# 
+# Top level modules:
+# 	control_signal_generator_decompress
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/control_signal_generator_compress.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_signal_generator_compress
+# 
+# Top level modules:
+# 	control_signal_generator_compress
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/compressor_decompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module compressor_decompressor
+# 
+# Top level modules:
+# 	compressor_decompressor
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/compare_value.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module compare_value
+# 
+# Top level modules:
+# 	compare_value
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/comparator_decompress.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_decompress
+# 
+# Top level modules:
+# 	comparator_decompress
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/comparator_compress.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_compress
+# 
+# Top level modules:
+# 	comparator_compress
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/comparator_array4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array4
+# 
+# Top level modules:
+# 	comparator_array4
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/comparator_array2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array2
+# 
+# Top level modules:
+# 	comparator_array2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/comparator_array1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comparator_array1
+# 
+# Top level modules:
+# 	comparator_array1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/code_concatenator.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module code_concatenator
+# 
+# Top level modules:
+# 	code_concatenator
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/barrel_shifter_right.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_right
+# 
+# Top level modules:
+# 	barrel_shifter_right
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/barrel_shifter_d2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_d2
+# 
+# Top level modules:
+# 	barrel_shifter_d2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/barrel_shifter_3.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_3
+# 
+# Top level modules:
+# 	barrel_shifter_3
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/barrel_shifter_2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_2
+# 
+# Top level modules:
+# 	barrel_shifter_2
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/barrel_shifter_1.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module barrel_shifter_1
+# 
+# Top level modules:
+# 	barrel_shifter_1
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Combine/Combine/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/backup_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module backup_buffer
+# 
+# Top level modules:
+# 	backup_buffer
+# 
+vlog -reportprogress 300 -work work {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/test/compressor_decompressor_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_compressor_decompressor
+# 
+# Top level modules:
+# 	tb_compressor_decompressor
+vsim work.tb_compressor_decompressor
+# vsim work.tb_compressor_decompressor 
+# Loading sv_std.std
+# Loading work.tb_compressor_decompressor
+# Loading work.compressor_decompressor
+# Loading work.stage1and2and3
+# Loading work.register_array
+# Loading work.backup_buffer
+# Loading work.stage1and2
+# Loading work.matching_stage
+# Loading work.comparator_array2
+# Loading work.max_selector
+# Loading work.max2_with_index
+# Loading work.compare_value
+# Loading work.comparator_array1
+# Loading work.comparator_array4
+# Loading work.word_comparator
+# Loading work.word_decoder
+# Loading work.control_signal_generator_compress
+# Loading work.matching_length_reg
+# Loading work.length_generation
+# Loading work.length_accumulator
+# Loading work.total_length_generator
+# Loading work.word_length_genetator
+# Loading work.length_packing_reg
+# Loading work.packing_and_shifting
+# Loading work.code_concatenator
+# Loading work.barrel_shifter_1
+# Loading work.or_gate
+# Loading work.barrel_shifter_3
+# Loading work.barrel_shifter_2
+# Loading work.mux2_1
+# Loading work.reg_array2
+# Loading work.latch_module_compress
+# Loading work.padding_module
+# Loading work.decompressor
+# Loading work.unpacker
+# Loading work.length_generator
+# Loading work.control_signal_generator_decompress
+# Loading work.decoder
+# Loading work.reg_out
+# Loading work.latch_module_decompress
+# Loading work.three_input_carry_save_adder
+# Loading work.comparator_decompress
+# Loading work.barrel_shifter_d2
+# Loading work.or_gate_d
+# Loading work.barrel_shifter_right
+# Loading work.fifo_dict
+# Loading work.fifo_ptr_gen
+# Loading work.reg_file_dual
+# Loading work.comparator_compress
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/stage1and2and3.sv(204): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'i_out_shift'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/packing_and_shifting.sv(24).
+# 
+#         Region: /tb_compressor_decompressor/dut/compressor/stage3
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/packing_and_shifting.sv(188): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'i_padd_amount'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/padding_module.sv(4).
+# 
+#         Region: /tb_compressor_decompressor/dut/compressor/stage3/padding_module
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/decompressor.sv(192): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'i_b'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/src/mux2_1.sv(2).
+# 
+#         Region: /tb_compressor_decompressor/dut/decompressor/mux1
+add wave -position insertpoint sim:/tb_compressor_decompressor/*
+run -all
+# [TB] Compressed word = 00000000000000000000000000000000
+# [TB] Compressed word = 00000000000000000000000000000000
+# [TB] Compressed word = 00000000000000000000000000000000
+# [TB] Compressed word = 12345678ddeeff000f0e0d0c9abcdef0
+# [TB] Compressed word = 0000000000000000678777bbfc010000
+# [TB] Compressed word = fedcba98876543214455667700112233
+# [TB] Compressed word = 345678777bbfc010dcba9861d950c850
+# [TB] Compressed word = 11223344aabbccdd99aabbcc55667788
+# [TB] Dictionary preloaded.
+# [TB] Compressed word = dcba9861d950c8542233446aaef33750
+# [TB] Compressed word = ccddeeff8899aabb5060708010203040
+# [TB] Compressed word = 2233446aaef33759ddeeff62266aaed0
+# [TB] Compressed word = ddeeff62266aaed5060708044080c101
+# [TB] Compressed word = ddeeff62266aaed5060708044080c101
+# [TB] Compressed word = ddeeff62266aaed5060708044080c101
+# [TB] Compressed word = ddeeff62266aaed5ffababcdb38a68a6
+# [TB] Compressed word = ddeeff62266aaed5ffababcdb38a68a6
+# [TB] Compressed word = ddeeff62266aaed5ffababcdb38a68a6
+# [TB] Compressed word = 127ab7128b999b26ffababcdb38a68a6
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/test/compressor_decompressor_tb.sv(279)
+#    Time: 1235 ns  Iteration: 0  Instance: /tb_compressor_decompressor
+# 1
+# Break in Module tb_compressor_decompressor at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Combine/Combine/test/compressor_decompressor_tb.sv line 279

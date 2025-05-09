@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Duc\A PLACE HOLDER\University\Code Graduate\Compress\Design\quartus\simulation\modelsim
+vfifo_dict
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IT6[=deCS6hli0RF=]oRBm1
+VA=j;H]WMCGNRU`XRIE13k1
+S1
+Z2 dC:\Users\Duc\A PLACE HOLDER\University\Code Graduate\Compress\Design\quartus\simulation\modelsim
+w1742407791
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/fifo_dict.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/fifo_dict.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+o-sv -work work -O0
+!i10b 1
+!s100 ga]NZNP:;8A==;:13obi^2
+!s105 fifo_dict_sv_unit
+!s85 0
+!s108 1742407805.879000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/fifo_dict.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/fifo_dict.sv|
+!s101 -O0
+!s92 -sv -work work {+incdir+C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src} -O0
+vtb_fifo_dict
+R1
+!i10b 1
+!s100 dZzVX:>35VFJF@l:K[diH1
+I7YW2@aHDkBQU_RhSkokl[0
+VI^E?c7?e2V>W6OfB[ZUV_3
+!s105 fifo_dict_tb_sv_unit
+S1
+R2
+w1742403952
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/fifo_dict_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/fifo_dict_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1742407815.853000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/fifo_dict_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/fifo_dict_tb.sv|
+!s101 -O0
+o-work work -O0

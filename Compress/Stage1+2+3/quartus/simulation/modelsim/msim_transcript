@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do stage1and2and3_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,6 +11,12 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/padding_module.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module padding_module
+# 
+# Top level modules:
+# 	padding_module
 # vlog -sv -work work +incdir+C:/Users/Duc/A\ PLACE\ HOLDER/GitHub/Code\ Graduate/Code_Graduate/Compress/Stage1+2+3/src {C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/reg_array2.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module reg_array2
@@ -241,10 +248,17 @@ vsim work.stage1and2and3_tb
 # Loading work.mux2_1
 # Loading work.reg_array2
 # Loading work.latch_module
+# Loading work.padding_module
 # Loading work.comparator
-# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2and3.sv(175): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'i_out_shift'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv(22).
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/matching_stage.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'i_match_s1'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/comparator_array4.sv(5).
+# 
+#         Region: /stage1and2and3_tb/dut/stage1and2/stage1/comparator_array4
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/stage1and2and3.sv(193): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'i_out_shift'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv(24).
 # 
 #         Region: /stage1and2and3_tb/dut/stage3
+# ** Warning: (vsim-3015) C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/packing_and_shifting.sv(188): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'i_padd_amount'. The port definition is at: C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/src/padding_module.sv(4).
+# 
+#         Region: /stage1and2and3_tb/dut/stage3/padding_module
 add wave -position insertpoint sim:/stage1and2and3_tb/*
 run -all
 # Word_in: 0000000000000000
@@ -318,38 +332,39 @@ run -all
 # Word_in: aabb001211220099
 # compressed_word1:  24, compressed_word2:  24, current_length:        252
 # Join
+# Word_in: 0000000011223344
+# compressed_word1:   6, compressed_word2:   2, current_length:        260
+# Join
 # Word_in: faceb00cdeadbeef
-# compressed_word1:  34, compressed_word2:  34, current_length:         68
+# compressed_word1:  34, compressed_word2:  34, current_length:        328
 # [FIFO Update] Old word1: xxxxxxxx, New word1: deadbeef inserted at index 0
 # [FIFO Update] Old word2: 11223344, New word2: faceb00c inserted at index 1
 # Join
-# Word_in: 0000000011223344
-# compressed_word1:  34, compressed_word2:   2, current_length:        104
-# [FIFO Update] Old word1: aabbccdd, New word1: 11223344 inserted at index 2
+# Word_in: 0000000000000000
+# compressed_word1:   2, compressed_word2:   2, current_length:        332
 # Join
 # Word_in: 000000aa55667788
-# compressed_word1:  34, compressed_word2:  12, current_length:        150
-# [FIFO Update] Old word1: 55667788, New word1: 55667788 inserted at index 3
+# compressed_word1:   6, compressed_word2:  12, current_length:        350
 # Join
 # Word_in: aabbccdd00000000
-# compressed_word1:   2, compressed_word2:  34, current_length:         36
-# [FIFO Update] Old word2: ddeeff00, New word2: aabbccdd inserted at index 4
+# compressed_word1:   2, compressed_word2:  34, current_length:        386
+# [FIFO Update] Old word2: 55667788, New word2: aabbccdd inserted at index 2
 # Join
 # Word_in: 556677ff99aaabcd
-# compressed_word1:  34, compressed_word2:  16, current_length:         86
-# [FIFO Update] Old word1: 99aabbcc, New word1: 99aaabcd inserted at index 5
+# compressed_word1:  24, compressed_word2:  34, current_length:        444
+# [FIFO Update] Old word2: 99aabbcc, New word2: 556677ff inserted at index 3
 # Join
 # Word_in: aaaabbbbccccdddd
-# compressed_word1:  34, compressed_word2:  34, current_length:        154
-# [FIFO Update] Old word1: 12345678, New word1: ccccdddd inserted at index 6
-# [FIFO Update] Old word2: 0f0e0d0c, New word2: aaaabbbb inserted at index 7
+# compressed_word1:  34, compressed_word2:  34, current_length:        512
+# [FIFO Update] Old word1: aabbccdd, New word1: ccccdddd inserted at index 4
+# [FIFO Update] Old word2: 12345678, New word2: aaaabbbb inserted at index 5
 # Join
 # Word_in: eeefffff12345678
 # compressed_word1:  34, compressed_word2:  34, current_length:         68
-# [FIFO Update] Old word1: 9abcdef0, New word1: 12345678 inserted at index 8
-# [FIFO Update] Old word2: fedcba98, New word2: eeefffff inserted at index 9
+# [FIFO Update] Old word1: ddeeff00, New word1: 12345678 inserted at index 6
+# [FIFO Update] Old word2: 0f0e0d0c, New word2: eeefffff inserted at index 7
 # Join
-# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/test/stage1and2and3_tb.sv(646)
-#    Time: 275 ns  Iteration: 0  Instance: /stage1and2and3_tb
+# ** Note: $finish    : C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/test/stage1and2and3_tb.sv(667)
+#    Time: 285 ns  Iteration: 0  Instance: /stage1and2and3_tb
 # 1
-# Break in Module stage1and2and3_tb at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/test/stage1and2and3_tb.sv line 646
+# Break in Module stage1and2and3_tb at C:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stage1+2+3/test/stage1and2and3_tb.sv line 667

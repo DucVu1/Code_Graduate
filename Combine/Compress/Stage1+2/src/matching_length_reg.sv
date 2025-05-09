@@ -1,0 +1,24 @@
+module matching_length_reg(
+ input  logic        i_clk,
+ input  logic        i_reset,
+ input  logic [3:0]  i_type_matched2,
+ input  logic [1:0]  i_type_matched1,
+ input  logic [1:0]  i_match_s,
+ output logic [3:0]  o_type_matched2,
+ output logic [1:0]  o_type_matched1,
+ output logic [1:0]  o_match_s
+);
+
+always_ff @(posedge i_clk) begin
+ if(~i_reset) begin
+  o_type_matched1 <= 2'd0;
+  o_type_matched2 <= 4'd0;
+  o_match_s <= 2'd0;
+ end else begin
+  o_type_matched1 <= i_type_matched1;
+  o_type_matched2 <= i_type_matched2;
+  o_match_s <= i_match_s;
+ end
+end
+
+endmodule

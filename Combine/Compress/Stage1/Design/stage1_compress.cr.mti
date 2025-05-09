@@ -1,0 +1,79 @@
+{C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/gt4.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/gt4.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module gt4
+
+Top level modules:
+	gt4
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/word_comparator_tb.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/word_comparator_tb.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_word_comparator
+
+Top level modules:
+	tb_word_comparator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/priority_encoder.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/priority_encoder.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module priority_encoder_64
+
+Top level modules:
+	priority_encoder_64
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/max2_with_index.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/max2_with_index.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module max2_with_index
+
+Top level modules:
+	max2_with_index
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/max_selector_tb.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/test/max_selector_tb.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_max_selector
+
+Top level modules:
+	tb_max_selector
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/word_comparator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/word_comparator.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module word_comparator
+
+Top level modules:
+	word_comparator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/mux2_1_4_index.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/mux2_1_4_index.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module mux2_1_4_index
+
+Top level modules:
+	mux2_1_4_index
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/mux2_1_4.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/mux2_1_4.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module mux2_1_4
+
+Top level modules:
+	mux2_1_4
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/fifio_based_dictionary.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/fifio_based_dictionary.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fifo_dict
+-- Compiling module reg_file_single
+
+Top level modules:
+	fifo_dict
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/comparator.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/comparator.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/word_decoder.sv} {1 {vlog -work work -vopt -sv {C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Design/src/word_decoder.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module match_decoder
+
+Top level modules:
+	match_decoder
+
+} {} {}}

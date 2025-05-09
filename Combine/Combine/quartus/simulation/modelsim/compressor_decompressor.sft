@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (SystemVerilog)"
+set corner_file_list {
+	{{"Slow Model"} {compressor_decompressor.svo compressor_decompressor_v.sdo}}
+	{{"Fast Model"} {compressor_decompressor_fast.svo compressor_decompressor_v_fast.sdo}}
+}

@@ -1,0 +1,64 @@
+module unpacker #(
+  parameter WIDTH = 128,
+  parameter CODE  = 2,
+  parameter WORD  = 16
+)
+(
+  input  logic [WIDTH - 1 : 0] i_data,
+  output logic [CODE - 1 : 0]  o_first_code,
+  output logic [CODE - 1 : 0]  o_first_code_bak,
+  output logic [$clog2(WORD) - 1 : 0] o_idx1,
+  output logic [CODE - 1 : 0]  o_second_code,
+  output logic [CODE - 1 : 0]  o_second_code_bak,
+  output logic [$clog2(WORD) - 1 : 0] o_idx2
+);
+
+
+  logic test_first_code;
+  logic test_second_code;
+  
+  logic [5:0] first_length;  
+
+
+  assign test_first_code  = &i_data[1:0];
+  assign test_second_code = &o_second_code;
+
+  
+  always_comb begin : proc_first_code
+    o_first_code = i_data[1:0];
+    o_idx1 = i_data[5:2];
+    if (test_first_code) begin
+      o_first_code_bak = i_data[3:2];
+      o_idx1 = i_data[7:4];
+    end else begin 
+      o_first_code_bak = 2'b00;
+      o_idx1 = i_data[5:2];
+    end
+  end
+
+  length_generator #(
+    .CODE(CODE),
+    .LENGTH(6)
+  ) length_gen_inst (
+    .i_codes(o_first_code),
+    .i_codes_bak(o_first_code_bak),
+    .o_length1(first_length)
+  );
+
+
+  always_comb begin : proc_second_code
+    int offset;
+    offset = first_length; 
+    o_second_code = i_data[offset +: CODE];
+    if (o_second_code == 2'b11) begin
+      o_second_code_bak = i_data[offset + CODE +: CODE];
+      o_idx2 = i_data[offset + 2*CODE +: $clog2(WORD)];
+    end else begin
+      o_idx2 = i_data[offset + CODE +: $clog2(WORD)];
+    end
+  end
+
+endmodule
+
+
+

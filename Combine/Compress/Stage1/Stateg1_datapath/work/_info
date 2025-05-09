@@ -1,0 +1,455 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/Users/Duc/A PLACE HOLDER/GitHub/Code Graduate/Code_Graduate/Compress/Stateg1_datapath
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1742665738
+VRg8gkZX5Dc2<z]9jOed6[2
+04 17 4 work tb_matching_stage fast 0
+=1-a02919970ead-67def80a-2f6-1c74
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.2c;57
+vcomparator
+Z0 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+IR6hTooPlAi1S[H?lS522J3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+S1
+Z2 dC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath
+w1741871903
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv
+L0 1
+Z3 OL;L;10.2c;57
+r1
+31
+Z4 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z5 !s110 1742665727
+!s100 Vl]MJJ0mjaE?`O[9]`Lb>0
+!s105 comparator_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv|
+!s108 1742665727.251000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator.sv|
+!i10b 1
+!s85 0
+!i111 0
+vcomparator_array1
+Z6 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+R5
+ID]<hddIo^B6_;a4`6hkb<0
+R1
+S1
+R2
+w1742508213
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 j?bbIfM0TTl4Kkb74d2Il1
+!s105 comparator_array1_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv|
+!s108 1742665727.295000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array1.sv|
+!i10b 1
+!s85 0
+!i111 0
+vcomparator_array2
+R6
+R5
+Izln8I[@jTI;:mbae]3lg_3
+R1
+S1
+R2
+w1742273715
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 Ll?HgFeff]enl7YE>MBO:0
+!s105 comparator_array2_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv|
+!s108 1742665727.353000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array2.sv|
+!i10b 1
+!s85 0
+!i111 0
+vcomparator_array4
+R6
+R5
+IWP5i:bnL`DC^YE[KDdboi3
+R1
+S1
+R2
+w1742510826
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 @9`dK@0acmA<;;V=18F@b0
+!s105 comparator_array4_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv|
+!s108 1742665727.419000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/comparator_array4.sv|
+!i10b 1
+!s85 0
+!i111 0
+vcompare_value
+R6
+R5
+I:028IOo<mU:f7Ml57`M>c0
+R1
+S1
+R2
+w1742270128
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 haiB`Ym5cfDP5Pf2`I2WZ2
+!s105 compare_value_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv|
+!s108 1742665727.465000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/compare_value.sv|
+!i10b 1
+!s85 0
+!i111 0
+vcontrol_signal_generator
+R6
+R5
+I:_NFN_OkNKbDFl[PG[3iD0
+R1
+S1
+R2
+w1742508362
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 XkVoQGSmc]Ro1ZX805nzk1
+!s105 control_signal_generator_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv|
+!s108 1742665727.513000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/control_signal_generator.sv|
+!i10b 1
+!s85 0
+!i111 0
+vfifo_dict
+R6
+R5
+Id8iRm9@4<aTC1>cOQ_7D<2
+R1
+Z7 !s105 fifo_dict_sv_unit
+S1
+R2
+Z8 w1742665138
+Z9 8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/fifo_dict.sv
+Z10 FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/fifo_dict.sv
+L0 1
+R3
+r1
+31
+Z11 !s108 1742665727.560000
+Z12 !s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/fifo_dict.sv|
+Z13 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/fifo_dict.sv|
+R4
+!s100 UVWhQZcfEH7eg;`hBc3:P0
+!i10b 1
+!s85 0
+!i111 0
+vfifo_ptr_gen
+R6
+R5
+IJM1lPg5lF_nj3Sn527M9m2
+R1
+R7
+S1
+R2
+R8
+R9
+R10
+L0 40
+R3
+r1
+31
+R11
+R12
+R13
+R4
+!s100 HCD[azC`FY3?=RV`;c49k2
+!i10b 1
+!s85 0
+!i111 0
+vmatching_stage
+R6
+R5
+I>63Oe[]d5MFF[3ZUck6zN1
+R1
+S1
+R2
+w1742641808
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 QYXOB:U0]WTEJ?zD3I9dE1
+!s105 matching_stage_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv|
+!s108 1742665727.614000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/matching_stage.sv|
+!i10b 1
+!s85 0
+!i111 0
+vmax2_with_index
+R6
+R5
+I_zbcnSJO9OZ3kDQ9HJiEd3
+R1
+S1
+R2
+w1742270271
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 dDGPiRI=O1eFYYn6B1kKl1
+!s105 max2_with_index_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv|
+!s108 1742665727.717000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max2_with_index.sv|
+!i10b 1
+!s85 0
+!i111 0
+vmax_selector
+R6
+R5
+I[g5g2G]Y]FPITWmS>]H;M1
+R1
+S1
+R2
+w1742269977
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 XN37Zk7DBdTRf4RECYPH43
+!s105 max_selector_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv|
+!s108 1742665727.664000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/max_selector.sv|
+!i10b 1
+!s85 0
+!i111 0
+vreg_file_8
+R6
+I[z8K0b<8nSe]K:2KmA8I23
+R1
+R7
+S1
+R2
+w1742639657
+R9
+R10
+L0 60
+R3
+r1
+31
+R12
+R13
+R4
+!s110 1742639660
+!s108 1742639660.490000
+!s100 hM:Z;Qf40k4>8ze]QnDL`0
+!i10b 1
+!s85 0
+!i111 0
+vreg_file_dual
+R6
+R5
+IGioL;C81W69TCBNR>[_KA0
+R1
+R7
+S1
+R2
+R8
+R9
+R10
+L0 69
+R3
+r1
+31
+R11
+R12
+R13
+R4
+!s100 Qa8[zH<D^T2SG=JT>fOQG3
+!i10b 1
+!s85 0
+!i111 0
+vtb_comparator_array2
+R6
+R5
+IimiQela@a9;7G59mKRM1z2
+R1
+S1
+R2
+w1742632019
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/comparator_array2_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/comparator_array2_tb.sv
+L0 3
+R3
+r1
+31
+R4
+!s100 EnQM62ZZZYGYC:nCBm54C0
+!s105 comparator_array2_tb_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/comparator_array2_tb.sv|
+!s108 1742665727.906000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/comparator_array2_tb.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_fifo_dict
+R6
+R5
+I^k:?FP1]lgPVhY^QM3@cJ3
+R1
+S1
+R2
+w1742638011
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv
+L0 3
+R3
+r1
+31
+R4
+!s100 =[WhN=H9f`E3i@RaA0DC52
+!s105 fifo_tb_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv|
+!s108 1742665727.954000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/fifo_tb.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_matching_stage
+R6
+IEPbGoE5e^10cNn@1K=^E?1
+R1
+S1
+R2
+w1742665716
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv
+L0 3
+R3
+r1
+31
+R4
+!s105 matching_stage_tb_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv|
+!s110 1742665728
+!i10b 1
+!s100 Z=ETKLAbGR;R1mk9?We9Q3
+!s85 0
+!s108 1742665728.008000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/test/matching_stage_tb.sv|
+!i111 0
+vword_comparator
+R6
+R5
+I:z2:>DB?7WO0=nAJBj?L_0
+R1
+S1
+R2
+w1742273595
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 M7U;Nj2NY@aC0UOnPRm7[0
+!s105 word_comparator_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv|
+!s108 1742665727.764000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_comparator.sv|
+!i10b 1
+!s85 0
+!i111 0
+vword_decoder
+R6
+R5
+I]:e[OQoMdY9758ML;hK]?0
+R1
+S1
+R2
+w1742271075
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 P9I0keiXfjNgBD2z@WXl63
+!s105 word_decoder_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv|
+!s108 1742665727.815000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_decoder.sv|
+!i10b 1
+!s85 0
+!i111 0
+vword_length_genetator
+R6
+R5
+IV8LD4JTP3l`gGdGzWDCFU1
+R1
+S1
+R2
+w1742353181
+8C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv
+FC:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 1]jm]VezVomX1c0oQ5TWB0
+!s105 word_length_generator_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv|
+!s108 1742665727.860000
+!s107 C:/Users/Duc/A PLACE HOLDER/University/Code Graduate/Compress/Stateg1_datapath/src/word_length_generator.sv|
+!i10b 1
+!s85 0
+!i111 0

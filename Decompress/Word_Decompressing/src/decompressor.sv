@@ -48,9 +48,19 @@ logic [$clog2(WIDTH_DATA_IN)-1:0]    o_total_length_n;
 
 logic [I_WORD - 1 : 0]       i_decoder2;
 logic mux2_sel;
-assign mux2_sel = i_update | o_comp_signal;
-//assign i_decoder2 = reg_array1_out >> o_first_length;
 
+assign i_decoder2 = reg_array1_out >> o_first_length;
+
+logic o_comp_signal_r;
+
+always_ff @(posedge i_clk or negedge i_reset) begin
+   if (~i_reset) begin
+     o_comp_signal_r <= '0;
+   end else begin
+     o_comp_signal_r <= o_comp_signal;
+   end
+ end
+assign mux2_sel = i_update | o_comp_signal;
 unpacker #(
  .WIDTH(WIDTH_DATA_IN), //128 i_data, log o_remain_length/total_length
  .CODE(LENGTH_CODE), //2
@@ -61,8 +71,8 @@ unpacker
  .i_clk(i_clk),
  .i_decompressor_en(i_decompressor_en),
  .i_reset(i_reset),
- .i_update(i_update),
- .i_data(o_or_gate),
+ .i_update(o_comp_signal_r),
+ .i_data(o_mux_2),
  .o_first_code(o_first_code),
  .o_first_code_bak(o_first_code_bak),
  .o_idx1(o_idx1),
@@ -123,7 +133,7 @@ decoder #(
 (
  .i_codes(o_second_code),
  .i_codes_bak(o_second_code_bak),
- .i_word(i_decoder), 
+ .i_word(i_decoder2), 
  .i_idx(o_idx2),
  .i_dict(dictionary_data),
  .o_word(second_word)

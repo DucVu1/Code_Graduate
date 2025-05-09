@@ -1,0 +1,29 @@
+module length_generator#(
+ parameter CODE = 2,
+ parameter LENGTH = 6
+)(
+ input  logic                i_reset,
+ input  logic [CODE - 1 : 0] i_codes,
+ input  logic [CODE - 1 : 0] i_codes_bak,
+ output logic [LENGTH -  1 : 0] o_length1
+);
+
+always_comb begin : proc_length_1
+if(~i_reset) o_length1 = '0;
+else
+ case(i_codes)
+  2'b00: o_length1 = 6'd2; // zzzz
+  2'b01: o_length1 = 6'd34; //xxxx
+  2'b10: o_length1 = 6'd6; // mmmmm
+  2'b11: begin
+    case(i_codes_bak)
+     2'b00: o_length1 = 5'd24; //mmxx
+     2'b01: o_length1 = 6'd12; //zzzx
+     2'b10: o_length1 = 6'd16; //mmmmx
+     2'b11: o_length1 = 6'd32; //default
+    endcase
+  end
+ endcase
+end
+
+endmodule

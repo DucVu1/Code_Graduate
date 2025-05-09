@@ -1,0 +1,20 @@
+Sat Apr 26 8:15:12 PM SE Asia Standard Time 2025
+Trace back: cursorlock: Cursor "2" out of range 0 to 1.
+    while executing
+"$cursor_widget cursorlock $cnum"
+    (procedure "Wave::AutoScanCursor" line 16)
+    invoked from within
+"Wave::AutoScanCursor .main_pane.wave.interior.cs.body.pw.wf.grid.cursor,wave.data"
+    (command bound to event)
+  <2: ::tkerror {cursorlock: Cursor "2" out of range 0 to 1.}
+  <1: ::bgerror {cursorlock: Cursor "2" out of range 0 to 1.}
+Sat Apr 26 8:15:42 PM SE Asia Standard Time 2025
+Trace back: cursorlock: Cursor "7" out of range 0 to 1.
+    while executing
+"$cursor_widget cursorlock $cnum"
+    (procedure "Wave::AutoScanCursor" line 16)
+    invoked from within
+"Wave::AutoScanCursor .main_pane.wave.interior.cs.body.pw.wf.grid.cursor,wave.data"
+    (command bound to event)
+  <2: ::tkerror {cursorlock: Cursor "7" out of range 0 to 1.}
+  <1: ::bgerror {cursorlock: Cursor "7" out of range 0 to 1.}
